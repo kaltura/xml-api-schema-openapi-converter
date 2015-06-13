@@ -1,0 +1,22 @@
+{
+  "name": "kaltura-spec-converter",
+  "version": "1.0.0",
+  "description": "Convert Kaltura API specification to Swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobby-brennan/kaltura-spec-converter.git"
+  },
+  "author": "Bobby Brennan <bobby@lucybot.com> (https://lucybot.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobby-brennan/kaltura-spec-converter/issues"
+  },
+  "homepage": "https://github.com/bobby-brennan/kaltura-spec-converter",
+  "dependencies": {
+    "xml2js": "^0.4.9"
+  }
+}
