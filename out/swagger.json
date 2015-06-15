@@ -11,6 +11,18 @@
     "description": "The Kaltura API",
     "version": "3"
   },
+  "securityDefinitions": {
+    "partnerId": {
+      "in": "query",
+      "name": "partnerId",
+      "type": "apiKey"
+    },
+    "secret": {
+      "in": "query",
+      "name": "secret",
+      "type": "apiKey"
+    }
+  },
   "definitions": {
     "KalturaObjectBase": {},
     "KalturaListResponse": {
