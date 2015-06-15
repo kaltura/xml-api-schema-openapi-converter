@@ -15,7 +15,7 @@
     "partnerId": {
       "in": "query",
       "name": "partnerId",
-      "type": "basic",
+      "type": "apiKey",
       "description": "Your partner ID"
     },
     "secret": {
@@ -23,6 +23,11 @@
       "name": "secret",
       "type": "apiKey",
       "description": "Your API secret"
+    },
+    "sessionId": {
+      "in": "query",
+      "name": "ks",
+      "type": "apiKey"
     }
   },
   "definitions": {
