@@ -15,12 +15,14 @@
     "partnerId": {
       "in": "query",
       "name": "partnerId",
-      "type": "apiKey"
+      "type": "basic",
+      "description": "Your partner ID"
     },
     "secret": {
       "in": "query",
       "name": "secret",
-      "type": "apiKey"
+      "type": "apiKey",
+      "description": "Your API secret"
     }
   },
   "definitions": {
