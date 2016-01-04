@@ -4701,7 +4701,18 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* -1: AUTOMATIC\n* externalMedia.externalMedia: EXTERNAL_MEDIA\n* 1: MEDIA_CLIP\n* 2: MIX\n* 5: PLAYLIST\n* 6: DATA\n* 7: LIVE_STREAM\n* 8: LIVE_CHANNEL\n* 10: DOCUMENT",
+            "enum": [
+              "-1",
+              "externalMedia.externalMedia",
+              "1",
+              "2",
+              "5",
+              "6",
+              "7",
+              "8",
+              "10"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -4778,7 +4789,18 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* -1: AUTOMATIC\n* externalMedia.externalMedia: EXTERNAL_MEDIA\n* 1: MEDIA_CLIP\n* 2: MIX\n* 5: PLAYLIST\n* 6: DATA\n* 7: LIVE_STREAM\n* 8: LIVE_CHANNEL\n* 10: DOCUMENT",
+            "enum": [
+              "-1",
+              "externalMedia.externalMedia",
+              "1",
+              "2",
+              "5",
+              "6",
+              "7",
+              "8",
+              "10"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -5788,7 +5810,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* bulkUploadCsv.CSV: CSV\n* bulkUploadFilter.FILTER: FILTER\n* bulkUploadXml.XML: XML\n* dropFolderXmlBulkUpload.DROP_FOLDER_XML: DROP_FOLDER_XML",
+            "enum": [
+              "bulkUploadCsv.CSV",
+              "bulkUploadFilter.FILTER",
+              "bulkUploadXml.XML",
+              "dropFolderXmlBulkUpload.DROP_FOLDER_XML"
+            ],
             "in": "query",
             "name": "bulkUploadType",
             "required": false,
@@ -5964,7 +5992,52 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointEventNotifications.AdCuePoint: AD_CUE_POINT\n* annotationEventNotifications.Annotation: ANNOTATION\n* captionAssetEventNotifications.CaptionAsset: CAPTION_ASSET\n* codeCuePointEventNotifications.CodeCuePoint: CODE_CUE_POINT\n* contentDistributionEventNotifications.DistributionProfile: DISTRIBUTION_PROFILE\n* contentDistributionEventNotifications.EntryDistribution: ENTRY_DISTRIBUTION\n* cuePointEventNotifications.CuePoint: CUE_POINT\n* dropFolderEventNotifications.DropFolder: DROP_FOLDER\n* dropFolderEventNotifications.DropFolderFile: DROP_FOLDER_FILE\n* metadataEventNotifications.Metadata: METADATA\n* 1: ENTRY\n* 2: CATEGORY\n* 3: ASSET\n* 4: FLAVORASSET\n* 5: THUMBASSET\n* 8: KUSER\n* 9: ACCESSCONTROL\n* 10: BATCHJOB\n* 11: BULKUPLOADRESULT\n* 12: CATEGORYKUSER\n* 14: CONVERSIONPROFILE2\n* 15: FLAVORPARAMS\n* 16: FLAVORPARAMSCONVERSIONPROFILE\n* 17: FLAVORPARAMSOUTPUT\n* 18: GENERICSYNDICATIONFEED\n* 19: KUSERTOUSERROLE\n* 20: PARTNER\n* 21: PERMISSION\n* 22: PERMISSIONITEM\n* 23: PERMISSIONTOPERMISSIONITEM\n* 24: SCHEDULER\n* 25: SCHEDULERCONFIG\n* 26: SCHEDULERSTATUS\n* 27: SCHEDULERWORKER\n* 28: STORAGEPROFILE\n* 29: SYNDICATIONFEED\n* 31: THUMBPARAMS\n* 32: THUMBPARAMSOUTPUT\n* 33: UPLOADTOKEN\n* 34: USERLOGINDATA\n* 35: USERROLE\n* 36: WIDGET\n* 37: CATEGORYENTRY",
+            "enum": [
+              "adCuePointEventNotifications.AdCuePoint",
+              "annotationEventNotifications.Annotation",
+              "captionAssetEventNotifications.CaptionAsset",
+              "codeCuePointEventNotifications.CodeCuePoint",
+              "contentDistributionEventNotifications.DistributionProfile",
+              "contentDistributionEventNotifications.EntryDistribution",
+              "cuePointEventNotifications.CuePoint",
+              "dropFolderEventNotifications.DropFolder",
+              "dropFolderEventNotifications.DropFolderFile",
+              "metadataEventNotifications.Metadata",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -6010,7 +6083,52 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointEventNotifications.AdCuePoint: AD_CUE_POINT\n* annotationEventNotifications.Annotation: ANNOTATION\n* captionAssetEventNotifications.CaptionAsset: CAPTION_ASSET\n* codeCuePointEventNotifications.CodeCuePoint: CODE_CUE_POINT\n* contentDistributionEventNotifications.DistributionProfile: DISTRIBUTION_PROFILE\n* contentDistributionEventNotifications.EntryDistribution: ENTRY_DISTRIBUTION\n* cuePointEventNotifications.CuePoint: CUE_POINT\n* dropFolderEventNotifications.DropFolder: DROP_FOLDER\n* dropFolderEventNotifications.DropFolderFile: DROP_FOLDER_FILE\n* metadataEventNotifications.Metadata: METADATA\n* 1: ENTRY\n* 2: CATEGORY\n* 3: ASSET\n* 4: FLAVORASSET\n* 5: THUMBASSET\n* 8: KUSER\n* 9: ACCESSCONTROL\n* 10: BATCHJOB\n* 11: BULKUPLOADRESULT\n* 12: CATEGORYKUSER\n* 14: CONVERSIONPROFILE2\n* 15: FLAVORPARAMS\n* 16: FLAVORPARAMSCONVERSIONPROFILE\n* 17: FLAVORPARAMSOUTPUT\n* 18: GENERICSYNDICATIONFEED\n* 19: KUSERTOUSERROLE\n* 20: PARTNER\n* 21: PERMISSION\n* 22: PERMISSIONITEM\n* 23: PERMISSIONTOPERMISSIONITEM\n* 24: SCHEDULER\n* 25: SCHEDULERCONFIG\n* 26: SCHEDULERSTATUS\n* 27: SCHEDULERWORKER\n* 28: STORAGEPROFILE\n* 29: SYNDICATIONFEED\n* 31: THUMBPARAMS\n* 32: THUMBPARAMSOUTPUT\n* 33: UPLOADTOKEN\n* 34: USERLOGINDATA\n* 35: USERROLE\n* 36: WIDGET\n* 37: CATEGORYENTRY",
+            "enum": [
+              "adCuePointEventNotifications.AdCuePoint",
+              "annotationEventNotifications.Annotation",
+              "captionAssetEventNotifications.CaptionAsset",
+              "codeCuePointEventNotifications.CodeCuePoint",
+              "contentDistributionEventNotifications.DistributionProfile",
+              "contentDistributionEventNotifications.EntryDistribution",
+              "cuePointEventNotifications.CuePoint",
+              "dropFolderEventNotifications.DropFolder",
+              "dropFolderEventNotifications.DropFolderFile",
+              "metadataEventNotifications.Metadata",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -6049,7 +6167,52 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointEventNotifications.AdCuePoint: AD_CUE_POINT\n* annotationEventNotifications.Annotation: ANNOTATION\n* captionAssetEventNotifications.CaptionAsset: CAPTION_ASSET\n* codeCuePointEventNotifications.CodeCuePoint: CODE_CUE_POINT\n* contentDistributionEventNotifications.DistributionProfile: DISTRIBUTION_PROFILE\n* contentDistributionEventNotifications.EntryDistribution: ENTRY_DISTRIBUTION\n* cuePointEventNotifications.CuePoint: CUE_POINT\n* dropFolderEventNotifications.DropFolder: DROP_FOLDER\n* dropFolderEventNotifications.DropFolderFile: DROP_FOLDER_FILE\n* metadataEventNotifications.Metadata: METADATA\n* 1: ENTRY\n* 2: CATEGORY\n* 3: ASSET\n* 4: FLAVORASSET\n* 5: THUMBASSET\n* 8: KUSER\n* 9: ACCESSCONTROL\n* 10: BATCHJOB\n* 11: BULKUPLOADRESULT\n* 12: CATEGORYKUSER\n* 14: CONVERSIONPROFILE2\n* 15: FLAVORPARAMS\n* 16: FLAVORPARAMSCONVERSIONPROFILE\n* 17: FLAVORPARAMSOUTPUT\n* 18: GENERICSYNDICATIONFEED\n* 19: KUSERTOUSERROLE\n* 20: PARTNER\n* 21: PERMISSION\n* 22: PERMISSIONITEM\n* 23: PERMISSIONTOPERMISSIONITEM\n* 24: SCHEDULER\n* 25: SCHEDULERCONFIG\n* 26: SCHEDULERSTATUS\n* 27: SCHEDULERWORKER\n* 28: STORAGEPROFILE\n* 29: SYNDICATIONFEED\n* 31: THUMBPARAMS\n* 32: THUMBPARAMSOUTPUT\n* 33: UPLOADTOKEN\n* 34: USERLOGINDATA\n* 35: USERROLE\n* 36: WIDGET\n* 37: CATEGORYENTRY",
+            "enum": [
+              "adCuePointEventNotifications.AdCuePoint",
+              "annotationEventNotifications.Annotation",
+              "captionAssetEventNotifications.CaptionAsset",
+              "codeCuePointEventNotifications.CodeCuePoint",
+              "contentDistributionEventNotifications.DistributionProfile",
+              "contentDistributionEventNotifications.EntryDistribution",
+              "cuePointEventNotifications.CuePoint",
+              "dropFolderEventNotifications.DropFolder",
+              "dropFolderEventNotifications.DropFolderFile",
+              "metadataEventNotifications.Metadata",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -6260,7 +6423,12 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: DISABLED\n* 2: ENABLED\n* 3: DELETED",
+            "enum": [
+              "1",
+              "2",
+              "3"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
@@ -7002,7 +7170,12 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* -1: NULL_VALUE\n* 0: FALSE_VALUE\n* 1: TRUE_VALUE",
+            "enum": [
+              "-1",
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "moveEntriesToParentCategory",
             "required": false,
@@ -7995,7 +8168,11 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: MEDIA\n* 2: LIVE_STREAM",
+            "enum": [
+              "1",
+              "2"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -8999,7 +9176,12 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: DISABLED\n* 2: ENABLED\n* 3: DELETED",
+            "enum": [
+              "1",
+              "2",
+              "3"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
@@ -10419,7 +10601,11 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* playReady.PLAY_READY: PLAY_READY\n* widevine.WIDEVINE: WIDEVINE",
+            "enum": [
+              "playReady.PLAY_READY",
+              "widevine.WIDEVINE"
+            ],
             "in": "query",
             "name": "provider",
             "required": false,
@@ -10881,7 +11067,24 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: UPLOADING\n* 2: PENDING\n* 3: WAITING\n* 4: HANDLED\n* 5: IGNORE\n* 6: DELETED\n* 7: PURGED\n* 8: NO_MATCH\n* 9: ERROR_HANDLING\n* 10: ERROR_DELETING\n* 11: DOWNLOADING\n* 12: ERROR_DOWNLOADING\n* 13: PROCESSING\n* 14: PARSED\n* 15: DETECTED",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
@@ -11081,7 +11284,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: SUBMIT\n* 2: UPDATE\n* 3: DELETE\n* 4: FETCH_REPORT",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "in": "query",
             "name": "actionType",
             "required": false,
@@ -11120,7 +11329,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: SUBMIT\n* 2: UPDATE\n* 3: DELETE\n* 4: FETCH_REPORT",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "in": "query",
             "name": "actionType",
             "required": false,
@@ -11657,7 +11872,12 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: DISABLED\n* 2: ACTIVE\n* 3: DELETED",
+            "enum": [
+              "1",
+              "2",
+              "3"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
@@ -13409,7 +13629,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: SUBMIT\n* 2: UPDATE\n* 3: DELETE\n* 4: FETCH_REPORT",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "in": "query",
             "name": "actionType",
             "required": false,
@@ -13483,7 +13709,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: SUBMIT\n* 2: UPDATE\n* 3: DELETE\n* 4: FETCH_REPORT",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "in": "query",
             "name": "actionType",
             "required": false,
@@ -13588,7 +13820,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: SUBMIT\n* 2: UPDATE\n* 3: DELETE\n* 4: FETCH_REPORT",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "in": "query",
             "name": "actionType",
             "required": false,
@@ -13718,7 +13956,18 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* contentDistribution.EntryDistribution: ENTRY_DISTRIBUTION\n* dropFolderXmlBulkUpload.DropFolderFile: DROP_FOLDER_FILE\n* metadata.Metadata: METADATA\n* metadata.MetadataProfile: METADATA_PROFILE\n* scheduledTask.ScheduledTaskProfile: SCHEDULED_TASK_PROFILE\n* 1: ENTRY\n* 2: CATEGORY\n* 3: FILE_SYNC\n* 4: ASSET",
+            "enum": [
+              "contentDistribution.EntryDistribution",
+              "dropFolderXmlBulkUpload.DropFolderFile",
+              "metadata.Metadata",
+              "metadata.MetadataProfile",
+              "scheduledTask.ScheduledTaskProfile",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -13934,7 +14183,11 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 0: PRIMARY\n* 1: SECONDARY",
+            "enum": [
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "mediaServerIndex",
             "required": false,
@@ -14124,7 +14377,11 @@
             "type": "string"
           },
           {
-            "description": "Media server index primary / secondary",
+            "description": "Media server index primary / secondary\n\n#### Allowed Values:\n* 0: PRIMARY\n* 1: SECONDARY",
+            "enum": [
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "mediaServerIndex",
             "required": false,
@@ -14180,7 +14437,11 @@
             "type": "string"
           },
           {
-            "description": "Media server index primary / secondary",
+            "description": "Media server index primary / secondary\n\n#### Allowed Values:\n* 0: PRIMARY\n* 1: SECONDARY",
+            "enum": [
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "mediaServerIndex",
             "required": false,
@@ -14440,7 +14701,17 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: PARTNER_TOTAL_ALL\n* 2: PARTNER_TOTAL_LIVE\n* 11: ENTRY_TIME_LINE_ALL\n* 12: ENTRY_TIME_LINE_LIVE\n* 21: LOCATION_ALL\n* 22: LOCATION_LIVE\n* 31: SYNDICATION_ALL\n* 32: SYNDICATION_LIVE",
+            "enum": [
+              "1",
+              "2",
+              "11",
+              "12",
+              "21",
+              "22",
+              "31",
+              "32"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -14475,7 +14746,14 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* ENTRY_GEO_TIME_LINE: ENTRY_GEO_TIME_LINE\n* ENTRY_SYNDICATION_TOTAL: ENTRY_SYNDICATION_TOTAL\n* ENTRY_TIME_LINE: ENTRY_TIME_LINE\n* ENTRY_TOTAL: ENTRY_TOTAL\n* PARTNER_TOTAL: PARTNER_TOTAL",
+            "enum": [
+              "ENTRY_GEO_TIME_LINE",
+              "ENTRY_SYNDICATION_TOTAL",
+              "ENTRY_TIME_LINE",
+              "ENTRY_TOTAL",
+              "PARTNER_TOTAL"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -14507,7 +14785,14 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* ENTRY_GEO_TIME_LINE: ENTRY_GEO_TIME_LINE\n* ENTRY_SYNDICATION_TOTAL: ENTRY_SYNDICATION_TOTAL\n* ENTRY_TIME_LINE: ENTRY_TIME_LINE\n* ENTRY_TOTAL: ENTRY_TOTAL\n* PARTNER_TOTAL: PARTNER_TOTAL",
+            "enum": [
+              "ENTRY_GEO_TIME_LINE",
+              "ENTRY_SYNDICATION_TOTAL",
+              "ENTRY_TIME_LINE",
+              "ENTRY_TOTAL",
+              "PARTNER_TOTAL"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -14599,7 +14884,23 @@
             "type": "string"
           },
           {
-            "description": " Live stream source type",
+            "description": " Live stream source type\n\n#### Allowed Values:\n* limeLight.LIVE_STREAM: LIMELIGHT_LIVE\n* velocix.VELOCIX_LIVE: VELOCIX_LIVE\n* 1: FILE\n* 2: WEBCAM\n* 5: URL\n* 6: SEARCH_PROVIDER\n* 29: AKAMAI_LIVE\n* 30: MANUAL_LIVE_STREAM\n* 31: AKAMAI_UNIVERSAL_LIVE\n* 32: LIVE_STREAM\n* 33: LIVE_CHANNEL\n* 34: RECORDED_LIVE\n* 35: CLIP\n* 42: LIVE_STREAM_ONTEXTDATA_CAPTIONS",
+            "enum": [
+              "limeLight.LIVE_STREAM",
+              "velocix.VELOCIX_LIVE",
+              "1",
+              "2",
+              "5",
+              "6",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "42"
+            ],
             "in": "query",
             "name": "sourceType",
             "required": false,
@@ -14641,7 +14942,21 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* applehttp: APPLE_HTTP\n* auto: AUTO\n* hdnetwork: AKAMAI_HD\n* hdnetworkmanifest: AKAMAI_HDS\n* hds: HDS\n* hls: HLS\n* http: HTTP\n* mpegdash: MPEG_DASH\n* multicast_silverlight: MULTICAST_SL\n* rtmp: RTMP\n* rtsp: RTSP\n* sl: SILVER_LIGHT",
+            "enum": [
+              "applehttp",
+              "auto",
+              "hdnetwork",
+              "hdnetworkmanifest",
+              "hds",
+              "hls",
+              "http",
+              "mpegdash",
+              "multicast_silverlight",
+              "rtmp",
+              "rtsp",
+              "sl"
+            ],
             "in": "query",
             "name": "protocol",
             "required": false,
@@ -14697,7 +15012,11 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 0: PRIMARY\n* 1: SECONDARY",
+            "enum": [
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "mediaServerIndex",
             "required": false,
@@ -14915,7 +15234,21 @@
             "type": "string"
           },
           {
-            "description": "protocol of the stream to test.",
+            "description": "protocol of the stream to test.\n\n#### Allowed Values:\n* applehttp: APPLE_HTTP\n* auto: AUTO\n* hdnetwork: AKAMAI_HD\n* hdnetworkmanifest: AKAMAI_HDS\n* hds: HDS\n* hls: HLS\n* http: HTTP\n* mpegdash: MPEG_DASH\n* multicast_silverlight: MULTICAST_SL\n* rtmp: RTMP\n* rtsp: RTSP\n* sl: SILVER_LIGHT",
+            "enum": [
+              "applehttp",
+              "auto",
+              "hdnetwork",
+              "hdnetworkmanifest",
+              "hds",
+              "hls",
+              "http",
+              "mpegdash",
+              "multicast_silverlight",
+              "rtmp",
+              "rtsp",
+              "sl"
+            ],
             "in": "query",
             "name": "protocol",
             "required": false,
@@ -14989,7 +15322,11 @@
             "type": "string"
           },
           {
-            "description": "Media server index primary / secondary",
+            "description": "Media server index primary / secondary\n\n#### Allowed Values:\n* 0: PRIMARY\n* 1: SECONDARY",
+            "enum": [
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "mediaServerIndex",
             "required": false,
@@ -15038,7 +15375,21 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* applehttp: APPLE_HTTP\n* auto: AUTO\n* hdnetwork: AKAMAI_HD\n* hdnetworkmanifest: AKAMAI_HDS\n* hds: HDS\n* hls: HLS\n* http: HTTP\n* mpegdash: MPEG_DASH\n* multicast_silverlight: MULTICAST_SL\n* rtmp: RTMP\n* rtsp: RTSP\n* sl: SILVER_LIGHT",
+            "enum": [
+              "applehttp",
+              "auto",
+              "hdnetwork",
+              "hdnetworkmanifest",
+              "hds",
+              "hls",
+              "http",
+              "mpegdash",
+              "multicast_silverlight",
+              "rtmp",
+              "rtsp",
+              "sl"
+            ],
             "in": "query",
             "name": "protocol",
             "required": false,
@@ -15087,7 +15438,11 @@
             "type": "string"
           },
           {
-            "description": "Media server index primary / secondary",
+            "description": "Media server index primary / secondary\n\n#### Allowed Values:\n* 0: PRIMARY\n* 1: SECONDARY",
+            "enum": [
+              "0",
+              "1"
+            ],
             "in": "query",
             "name": "mediaServerIndex",
             "required": false,
@@ -16426,7 +16781,18 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointMetadata.AdCuePoint: AD_CUE_POINT\n* annotationMetadata.Annotation: ANNOTATION\n* codeCuePointMetadata.CodeCuePoint: CODE_CUE_POINT\n* thumbCuePointMetadata.thumbCuePoint: THUMB_CUE_POINT\n* 1: ENTRY\n* 2: CATEGORY\n* 3: USER\n* 4: PARTNER\n* 5: DYNAMIC_OBJECT",
+            "enum": [
+              "adCuePointMetadata.AdCuePoint",
+              "annotationMetadata.Annotation",
+              "codeCuePointMetadata.CodeCuePoint",
+              "thumbCuePointMetadata.thumbCuePoint",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -16482,7 +16848,18 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointMetadata.AdCuePoint: AD_CUE_POINT\n* annotationMetadata.Annotation: ANNOTATION\n* codeCuePointMetadata.CodeCuePoint: CODE_CUE_POINT\n* thumbCuePointMetadata.thumbCuePoint: THUMB_CUE_POINT\n* 1: ENTRY\n* 2: CATEGORY\n* 3: USER\n* 4: PARTNER\n* 5: DYNAMIC_OBJECT",
+            "enum": [
+              "adCuePointMetadata.AdCuePoint",
+              "annotationMetadata.Annotation",
+              "codeCuePointMetadata.CodeCuePoint",
+              "thumbCuePointMetadata.thumbCuePoint",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -16538,7 +16915,18 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointMetadata.AdCuePoint: AD_CUE_POINT\n* annotationMetadata.Annotation: ANNOTATION\n* codeCuePointMetadata.CodeCuePoint: CODE_CUE_POINT\n* thumbCuePointMetadata.thumbCuePoint: THUMB_CUE_POINT\n* 1: ENTRY\n* 2: CATEGORY\n* 3: USER\n* 4: PARTNER\n* 5: DYNAMIC_OBJECT",
+            "enum": [
+              "adCuePointMetadata.AdCuePoint",
+              "annotationMetadata.Annotation",
+              "codeCuePointMetadata.CodeCuePoint",
+              "thumbCuePointMetadata.thumbCuePoint",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -16587,7 +16975,18 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* adCuePointMetadata.AdCuePoint: AD_CUE_POINT\n* annotationMetadata.Annotation: ANNOTATION\n* codeCuePointMetadata.CodeCuePoint: CODE_CUE_POINT\n* thumbCuePointMetadata.thumbCuePoint: THUMB_CUE_POINT\n* 1: ENTRY\n* 2: CATEGORY\n* 3: USER\n* 4: PARTNER\n* 5: DYNAMIC_OBJECT",
+            "enum": [
+              "adCuePointMetadata.AdCuePoint",
+              "annotationMetadata.Annotation",
+              "codeCuePointMetadata.CodeCuePoint",
+              "thumbCuePointMetadata.thumbCuePoint",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
             "in": "query",
             "name": "objectType",
             "required": false,
@@ -17804,7 +18203,18 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: ENTRY_ADD\n* 2: ENTR_UPDATE_PERMISSIONS\n* 3: ENTRY_DELETE\n* 4: ENTRY_BLOCK\n* 5: ENTRY_UPDATE\n* 6: ENTRY_UPDATE_THUMBNAIL\n* 7: ENTRY_UPDATE_MODERATION\n* 21: USER_ADD\n* 26: USER_BANNED",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "21",
+              "26"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -18018,7 +18428,11 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* days: DAYS\n* months: MONTHS",
+            "enum": [
+              "days",
+              "months"
+            ],
             "in": "query",
             "name": "resolution",
             "required": false,
@@ -18874,7 +19288,12 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 3: STATIC_LIST\n* 10: DYNAMIC\n* 101: EXTERNAL",
+            "enum": [
+              "3",
+              "10",
+              "101"
+            ],
             "in": "query",
             "name": "playlistType",
             "required": false,
@@ -19001,7 +19420,12 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 3: STATIC_LIST\n* 10: DYNAMIC\n* 101: EXTERNAL",
+            "enum": [
+              "3",
+              "10",
+              "101"
+            ],
             "in": "query",
             "name": "playlistType",
             "required": false,
@@ -19148,7 +19572,32 @@
             "type": "string"
           },
           {
-            "description": " ",
+            "description": " \n\n#### Allowed Values:\n* 1: TOP_CONTENT\n* 2: CONTENT_DROPOFF\n* 3: CONTENT_INTERACTIONS\n* 4: MAP_OVERLAY\n* 5: TOP_CONTRIBUTORS\n* 6: TOP_SYNDICATION\n* 7: CONTENT_CONTRIBUTIONS\n* 11: USER_ENGAGEMENT\n* 12: SPEFICIC_USER_ENGAGEMENT\n* 13: USER_TOP_CONTENT\n* 14: USER_CONTENT_DROPOFF\n* 15: USER_CONTENT_INTERACTIONS\n* 16: APPLICATIONS\n* 17: USER_USAGE\n* 18: SPECIFIC_USER_USAGE\n* 19: VAR_USAGE\n* 20: TOP_CREATORS\n* 21: PLATFORMS\n* 22: OPERATION_SYSTEM\n* 23: BROWSERS\n* 24: LIVE\n* 25: TOP_PLAYBACK_CONTEXT\n* 201: PARTNER_USAGE",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "201"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -19258,7 +19707,32 @@
             "type": "string"
           },
           {
-            "description": " ",
+            "description": " \n\n#### Allowed Values:\n* 1: TOP_CONTENT\n* 2: CONTENT_DROPOFF\n* 3: CONTENT_INTERACTIONS\n* 4: MAP_OVERLAY\n* 5: TOP_CONTRIBUTORS\n* 6: TOP_SYNDICATION\n* 7: CONTENT_CONTRIBUTIONS\n* 11: USER_ENGAGEMENT\n* 12: SPEFICIC_USER_ENGAGEMENT\n* 13: USER_TOP_CONTENT\n* 14: USER_CONTENT_DROPOFF\n* 15: USER_CONTENT_INTERACTIONS\n* 16: APPLICATIONS\n* 17: USER_USAGE\n* 18: SPECIFIC_USER_USAGE\n* 19: VAR_USAGE\n* 20: TOP_CREATORS\n* 21: PLATFORMS\n* 22: OPERATION_SYSTEM\n* 23: BROWSERS\n* 24: LIVE\n* 25: TOP_PLAYBACK_CONTEXT\n* 201: PARTNER_USAGE",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "201"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -19304,7 +19778,32 @@
             "type": "string"
           },
           {
-            "description": " ",
+            "description": " \n\n#### Allowed Values:\n* 1: TOP_CONTENT\n* 2: CONTENT_DROPOFF\n* 3: CONTENT_INTERACTIONS\n* 4: MAP_OVERLAY\n* 5: TOP_CONTRIBUTORS\n* 6: TOP_SYNDICATION\n* 7: CONTENT_CONTRIBUTIONS\n* 11: USER_ENGAGEMENT\n* 12: SPEFICIC_USER_ENGAGEMENT\n* 13: USER_TOP_CONTENT\n* 14: USER_CONTENT_DROPOFF\n* 15: USER_CONTENT_INTERACTIONS\n* 16: APPLICATIONS\n* 17: USER_USAGE\n* 18: SPECIFIC_USER_USAGE\n* 19: VAR_USAGE\n* 20: TOP_CREATORS\n* 21: PLATFORMS\n* 22: OPERATION_SYSTEM\n* 23: BROWSERS\n* 24: LIVE\n* 25: TOP_PLAYBACK_CONTEXT\n* 201: PARTNER_USAGE",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "201"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -19353,7 +19852,32 @@
             "type": "string"
           },
           {
-            "description": " ",
+            "description": " \n\n#### Allowed Values:\n* 1: TOP_CONTENT\n* 2: CONTENT_DROPOFF\n* 3: CONTENT_INTERACTIONS\n* 4: MAP_OVERLAY\n* 5: TOP_CONTRIBUTORS\n* 6: TOP_SYNDICATION\n* 7: CONTENT_CONTRIBUTIONS\n* 11: USER_ENGAGEMENT\n* 12: SPEFICIC_USER_ENGAGEMENT\n* 13: USER_TOP_CONTENT\n* 14: USER_CONTENT_DROPOFF\n* 15: USER_CONTENT_INTERACTIONS\n* 16: APPLICATIONS\n* 17: USER_USAGE\n* 18: SPECIFIC_USER_USAGE\n* 19: VAR_USAGE\n* 20: TOP_CREATORS\n* 21: PLATFORMS\n* 22: OPERATION_SYSTEM\n* 23: BROWSERS\n* 24: LIVE\n* 25: TOP_PLAYBACK_CONTEXT\n* 201: PARTNER_USAGE",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "201"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -19416,7 +19940,32 @@
             "type": "string"
           },
           {
-            "description": " ",
+            "description": " \n\n#### Allowed Values:\n* 1: TOP_CONTENT\n* 2: CONTENT_DROPOFF\n* 3: CONTENT_INTERACTIONS\n* 4: MAP_OVERLAY\n* 5: TOP_CONTRIBUTORS\n* 6: TOP_SYNDICATION\n* 7: CONTENT_CONTRIBUTIONS\n* 11: USER_ENGAGEMENT\n* 12: SPEFICIC_USER_ENGAGEMENT\n* 13: USER_TOP_CONTENT\n* 14: USER_CONTENT_DROPOFF\n* 15: USER_CONTENT_INTERACTIONS\n* 16: APPLICATIONS\n* 17: USER_USAGE\n* 18: SPECIFIC_USER_USAGE\n* 19: VAR_USAGE\n* 20: TOP_CREATORS\n* 21: PLATFORMS\n* 22: OPERATION_SYSTEM\n* 23: BROWSERS\n* 24: LIVE\n* 25: TOP_PLAYBACK_CONTEXT\n* 201: PARTNER_USAGE",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "201"
+            ],
             "in": "query",
             "name": "reportType",
             "required": false,
@@ -19666,7 +20215,12 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: DISABLED\n* 2: ENABLED\n* 3: DELETED",
+            "enum": [
+              "1",
+              "2",
+              "3"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
@@ -19933,7 +20487,15 @@
             "type": "string"
           },
           {
-            "description": " ",
+            "description": " \n\n#### Allowed Values:\n* bulkUploadXml.bulkUploadResultXML: BULK_UPLOAD_RESULT_XML\n* bulkUploadXml.bulkUploadXML: BULK_UPLOAD_XML\n* cuePoint.ingestAPI: INGEST_API\n* cuePoint.serveAPI: SERVE_API\n* dropFolderXmlBulkUpload.dropFolderXml: DROP_FOLDER_XML\n* syndication: SYNDICATION",
+            "enum": [
+              "bulkUploadXml.bulkUploadResultXML",
+              "bulkUploadXml.bulkUploadXML",
+              "cuePoint.ingestAPI",
+              "cuePoint.serveAPI",
+              "dropFolderXmlBulkUpload.dropFolderXml",
+              "syndication"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -19965,7 +20527,25 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 3: FLICKR\n* 4: YOUTUBE\n* 7: MYSPACE\n* 8: PHOTOBUCKET\n* 9: JAMENDO\n* 10: CCMIXTER\n* 11: NYPL\n* 12: CURRENT\n* 13: MEDIA_COMMONS\n* 20: KALTURA\n* 21: KALTURA_USER_CLIPS\n* 22: ARCHIVE_ORG\n* 23: KALTURA_PARTNER\n* 24: METACAFE\n* 28: SEARCH_PROXY\n* 100: PARTNER_SPECIFIC",
+            "enum": [
+              "3",
+              "4",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "28",
+              "100"
+            ],
             "in": "query",
             "name": "searchSource",
             "required": false,
@@ -20070,7 +20650,16 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: VIDEO\n* 2: IMAGE\n* 5: AUDIO\n* 201: LIVE_STREAM_FLASH\n* 202: LIVE_STREAM_WINDOWS_MEDIA\n* 203: LIVE_STREAM_REAL_MEDIA\n* 204: LIVE_STREAM_QUICKTIME",
+            "enum": [
+              "1",
+              "2",
+              "5",
+              "201",
+              "202",
+              "203",
+              "204"
+            ],
             "in": "query",
             "name": "mediaType",
             "required": false,
@@ -20193,7 +20782,11 @@
             "type": "string"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 0: USER\n* 2: ADMIN",
+            "enum": [
+              "0",
+              "2"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -20253,7 +20846,11 @@
             "type": "string"
           },
           {
-            "description": "Type of the new KS ",
+            "description": "Type of the new KS \n\n#### Allowed Values:\n* 0: USER\n* 2: ADMIN",
+            "enum": [
+              "0",
+              "2"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -20316,7 +20913,11 @@
             "type": "string"
           },
           {
-            "description": "Regular session or Admin session",
+            "description": "Regular session or Admin session\n\n#### Allowed Values:\n* 0: USER\n* 2: ADMIN",
+            "enum": [
+              "0",
+              "2"
+            ],
             "in": "query",
             "name": "type",
             "required": false,
@@ -20861,7 +21462,12 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 1: DISABLED\n* 2: AUTOMATIC\n* 3: MANUAL",
+            "enum": [
+              "1",
+              "2",
+              "3"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
@@ -23567,7 +24173,13 @@
             "type": "integer"
           },
           {
-            "description": "",
+            "description": "#### Allowed Values:\n* 0: DELETED\n* 1: ACTIVE\n* 2: BLOCKED\n* 3: FULL_BLOCK",
+            "enum": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
             "in": "query",
             "name": "status",
             "required": false,
