@@ -36305,6 +36305,12 @@
     "https"
   ],
   "securityDefinitions": {
+    "partnerId": {
+      "description": "Your Partner ID",
+      "in": "query",
+      "name": "partnerId",
+      "type": "apiKey"
+    },
     "secret": {
       "description": "Your API secret",
       "in": "query",
