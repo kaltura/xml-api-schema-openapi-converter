@@ -3413,7 +3413,10 @@
               "$ref": "#/definitions/KalturaEmailIngestionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "EmailIngestionProfile"
+        ]
       }
     },
     "/service/EmailIngestionProfile/action/addMediaEntry": {
@@ -3519,7 +3522,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "EmailIngestionProfile"
+        ]
       }
     },
     "/service/EmailIngestionProfile/action/delete": {
@@ -3551,7 +3557,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "EmailIngestionProfile"
+        ]
       }
     },
     "/service/EmailIngestionProfile/action/get": {
@@ -3586,7 +3595,10 @@
               "$ref": "#/definitions/KalturaEmailIngestionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "EmailIngestionProfile"
+        ]
       }
     },
     "/service/EmailIngestionProfile/action/getByEmailAddress": {
@@ -3621,7 +3633,10 @@
               "$ref": "#/definitions/KalturaEmailIngestionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "EmailIngestionProfile"
+        ]
       }
     },
     "/service/EmailIngestionProfile/action/update": {
@@ -3736,7 +3751,10 @@
               "$ref": "#/definitions/KalturaEmailIngestionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "EmailIngestionProfile"
+        ]
       }
     },
     "/service/accessControl/action/add": {
@@ -3809,7 +3827,10 @@
               "$ref": "#/definitions/KalturaAccessControl"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControl"
+        ]
       }
     },
     "/service/accessControl/action/delete": {
@@ -3841,7 +3862,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "accessControl"
+        ]
       }
     },
     "/service/accessControl/action/get": {
@@ -3876,7 +3900,10 @@
               "$ref": "#/definitions/KalturaAccessControl"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControl"
+        ]
       }
     },
     "/service/accessControl/action/list": {
@@ -3914,7 +3941,10 @@
               "$ref": "#/definitions/KalturaAccessControlListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControl"
+        ]
       }
     },
     "/service/accessControl/action/update": {
@@ -3994,7 +4024,10 @@
               "$ref": "#/definitions/KalturaAccessControl"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControl"
+        ]
       }
     },
     "/service/accessControlProfile/action/add": {
@@ -4067,7 +4100,10 @@
               "$ref": "#/definitions/KalturaAccessControlProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControlProfile"
+        ]
       }
     },
     "/service/accessControlProfile/action/delete": {
@@ -4099,7 +4135,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "accessControlProfile"
+        ]
       }
     },
     "/service/accessControlProfile/action/get": {
@@ -4134,7 +4173,10 @@
               "$ref": "#/definitions/KalturaAccessControlProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControlProfile"
+        ]
       }
     },
     "/service/accessControlProfile/action/list": {
@@ -4172,7 +4214,10 @@
               "$ref": "#/definitions/KalturaAccessControlProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControlProfile"
+        ]
       }
     },
     "/service/accessControlProfile/action/update": {
@@ -4252,7 +4297,10 @@
               "$ref": "#/definitions/KalturaAccessControlProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "accessControlProfile"
+        ]
       }
     },
     "/service/adminUser/action/login": {
@@ -4298,7 +4346,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "adminUser"
+        ]
       }
     },
     "/service/adminUser/action/resetPassword": {
@@ -4330,7 +4381,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "adminUser"
+        ]
       }
     },
     "/service/adminUser/action/setInitialPassword": {
@@ -4369,7 +4423,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "adminUser"
+        ]
       }
     },
     "/service/adminUser/action/updatePassword": {
@@ -4425,7 +4482,10 @@
               "$ref": "#/definitions/KalturaAdminUser"
             }
           }
-        }
+        },
+        "tags": [
+          "adminUser"
+        ]
       }
     },
     "/service/annotation/action/add": {
@@ -4533,7 +4593,10 @@
               "$ref": "#/definitions/KalturaAnnotation"
             }
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/addFromBulk": {
@@ -4561,7 +4624,10 @@
               "$ref": "#/definitions/KalturaCuePointListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/count": {
@@ -4591,7 +4657,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/delete": {
@@ -4623,7 +4692,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/get": {
@@ -4658,7 +4730,10 @@
               "$ref": "#/definitions/KalturaCuePoint"
             }
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/list": {
@@ -4701,7 +4776,10 @@
               "$ref": "#/definitions/KalturaAnnotationListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/serveBulk": {
@@ -4741,7 +4819,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/annotation/action/update": {
@@ -4856,7 +4937,10 @@
               "$ref": "#/definitions/KalturaAnnotation"
             }
           }
-        }
+        },
+        "tags": [
+          "annotation"
+        ]
       }
     },
     "/service/aspera/action/getFaspUrl": {
@@ -4888,7 +4972,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "aspera"
+        ]
       }
     },
     "/service/attachmentAsset/action/add": {
@@ -4943,7 +5030,10 @@
               "$ref": "#/definitions/KalturaAttachmentAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/delete": {
@@ -4975,7 +5065,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/get": {
@@ -5010,7 +5103,10 @@
               "$ref": "#/definitions/KalturaAttachmentAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/getRemotePaths": {
@@ -5045,7 +5141,10 @@
               "$ref": "#/definitions/KalturaRemotePathListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/getUrl": {
@@ -5084,7 +5183,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/list": {
@@ -5122,7 +5224,10 @@
               "$ref": "#/definitions/KalturaAttachmentAssetListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/serve": {
@@ -5154,7 +5259,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/setContent": {
@@ -5189,7 +5297,10 @@
               "$ref": "#/definitions/KalturaAttachmentAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/attachmentAsset/action/update": {
@@ -5244,7 +5355,10 @@
               "$ref": "#/definitions/KalturaAttachmentAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "attachmentAsset"
+        ]
       }
     },
     "/service/auditTrail/action/add": {
@@ -5391,7 +5505,10 @@
               "$ref": "#/definitions/KalturaAuditTrail"
             }
           }
-        }
+        },
+        "tags": [
+          "auditTrail"
+        ]
       }
     },
     "/service/auditTrail/action/get": {
@@ -5426,7 +5543,10 @@
               "$ref": "#/definitions/KalturaAuditTrail"
             }
           }
-        }
+        },
+        "tags": [
+          "auditTrail"
+        ]
       }
     },
     "/service/auditTrail/action/list": {
@@ -5464,7 +5584,10 @@
               "$ref": "#/definitions/KalturaAuditTrailListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "auditTrail"
+        ]
       }
     },
     "/service/baseEntry/action/add": {
@@ -5715,7 +5838,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/addContent": {
@@ -5750,7 +5876,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/addFromUploadedFile": {
@@ -6008,7 +6137,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/anonymousRank": {
@@ -6047,7 +6179,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/approve": {
@@ -6079,7 +6214,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/clone": {
@@ -6114,7 +6252,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/count": {
@@ -6164,7 +6305,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/delete": {
@@ -6196,7 +6340,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/export": {
@@ -6238,7 +6385,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/flag": {
@@ -6318,7 +6468,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/get": {
@@ -6360,7 +6513,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/getByIds": {
@@ -6392,7 +6548,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/getContextData": {
@@ -6447,7 +6606,10 @@
               "$ref": "#/definitions/KalturaEntryContextDataResult"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/getRemotePaths": {
@@ -6482,7 +6644,10 @@
               "$ref": "#/definitions/KalturaRemotePathListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/index": {
@@ -6521,7 +6686,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/list": {
@@ -6584,7 +6752,10 @@
               "$ref": "#/definitions/KalturaBaseEntryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/listByReferenceId": {
@@ -6629,7 +6800,10 @@
               "$ref": "#/definitions/KalturaBaseEntryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/listFlags": {
@@ -6674,7 +6848,10 @@
               "$ref": "#/definitions/KalturaModerationFlagListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/reject": {
@@ -6706,7 +6883,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/update": {
@@ -6946,7 +7126,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/updateContent": {
@@ -6993,7 +7176,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/updateThumbnailFromSourceEntry": {
@@ -7042,7 +7228,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/updateThumbnailFromUrl": {
@@ -7084,7 +7273,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/updateThumbnailJpeg": {
@@ -7119,7 +7311,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/baseEntry/action/upload": {
@@ -7144,7 +7339,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "baseEntry"
+        ]
       }
     },
     "/service/bulk/action/abort": {
@@ -7179,7 +7377,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "bulk"
+        ]
       }
     },
     "/service/bulk/action/get": {
@@ -7214,7 +7415,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "bulk"
+        ]
       }
     },
     "/service/bulk/action/list": {
@@ -7252,7 +7456,10 @@
               "$ref": "#/definitions/KalturaBulkUploadListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "bulk"
+        ]
       }
     },
     "/service/bulk/action/serve": {
@@ -7284,7 +7491,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "bulk"
+        ]
       }
     },
     "/service/bulk/action/serveLog": {
@@ -7316,7 +7526,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "bulk"
+        ]
       }
     },
     "/service/bulkUpload/action/abort": {
@@ -7351,7 +7564,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "bulkUpload"
+        ]
       }
     },
     "/service/bulkUpload/action/add": {
@@ -7413,7 +7629,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "bulkUpload"
+        ]
       }
     },
     "/service/bulkUpload/action/get": {
@@ -7448,7 +7667,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "bulkUpload"
+        ]
       }
     },
     "/service/bulkUpload/action/list": {
@@ -7486,7 +7708,10 @@
               "$ref": "#/definitions/KalturaBulkUploadListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "bulkUpload"
+        ]
       }
     },
     "/service/bulkUpload/action/serve": {
@@ -7518,7 +7743,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "bulkUpload"
+        ]
       }
     },
     "/service/bulkUpload/action/serveLog": {
@@ -7550,7 +7778,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "bulkUpload"
+        ]
       }
     },
     "/service/businessProcessCase/action/abort": {
@@ -7641,7 +7872,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "businessProcessCase"
+        ]
       }
     },
     "/service/businessProcessCase/action/list": {
@@ -7725,7 +7959,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "businessProcessCase"
+        ]
       }
     },
     "/service/businessProcessCase/action/serveDiagram": {
@@ -7816,7 +8053,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "businessProcessCase"
+        ]
       }
     },
     "/service/businessProcessServer/action/add": {
@@ -7889,7 +8129,10 @@
               "$ref": "#/definitions/KalturaBusinessProcessServer"
             }
           }
-        }
+        },
+        "tags": [
+          "businessProcessServer"
+        ]
       }
     },
     "/service/businessProcessServer/action/delete": {
@@ -7921,7 +8164,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "businessProcessServer"
+        ]
       }
     },
     "/service/businessProcessServer/action/get": {
@@ -7956,7 +8202,10 @@
               "$ref": "#/definitions/KalturaBusinessProcessServer"
             }
           }
-        }
+        },
+        "tags": [
+          "businessProcessServer"
+        ]
       }
     },
     "/service/businessProcessServer/action/list": {
@@ -7994,7 +8243,10 @@
               "$ref": "#/definitions/KalturaBusinessProcessServerListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "businessProcessServer"
+        ]
       }
     },
     "/service/businessProcessServer/action/update": {
@@ -8074,7 +8326,10 @@
               "$ref": "#/definitions/KalturaBusinessProcessServer"
             }
           }
-        }
+        },
+        "tags": [
+          "businessProcessServer"
+        ]
       }
     },
     "/service/businessProcessServer/action/updateStatus": {
@@ -8121,7 +8376,10 @@
               "$ref": "#/definitions/KalturaBusinessProcessServer"
             }
           }
-        }
+        },
+        "tags": [
+          "businessProcessServer"
+        ]
       }
     },
     "/service/captionAsset/action/add": {
@@ -8191,7 +8449,10 @@
               "$ref": "#/definitions/KalturaCaptionAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/delete": {
@@ -8223,7 +8484,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/get": {
@@ -8258,7 +8522,10 @@
               "$ref": "#/definitions/KalturaCaptionAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/getRemotePaths": {
@@ -8293,7 +8560,10 @@
               "$ref": "#/definitions/KalturaRemotePathListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/getUrl": {
@@ -8332,7 +8602,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/list": {
@@ -8370,7 +8643,10 @@
               "$ref": "#/definitions/KalturaCaptionAssetListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/serve": {
@@ -8402,7 +8678,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/serveByEntryId": {
@@ -8441,7 +8720,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/serveWebVTT": {
@@ -8494,7 +8776,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/setAsDefault": {
@@ -8526,7 +8811,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/setContent": {
@@ -8561,7 +8849,10 @@
               "$ref": "#/definitions/KalturaCaptionAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAsset/action/update": {
@@ -8631,7 +8922,10 @@
               "$ref": "#/definitions/KalturaCaptionAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAsset"
+        ]
       }
     },
     "/service/captionAssetItem/action/search": {
@@ -8764,7 +9058,10 @@
               "$ref": "#/definitions/KalturaCaptionAssetItemListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAssetItem"
+        ]
       }
     },
     "/service/captionAssetItem/action/searchEntries": {
@@ -8897,7 +9194,10 @@
               "$ref": "#/definitions/KalturaBaseEntryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "captionAssetItem"
+        ]
       }
     },
     "/service/captionParams/action/add": {
@@ -8950,7 +9250,10 @@
               "$ref": "#/definitions/KalturaCaptionParams"
             }
           }
-        }
+        },
+        "tags": [
+          "captionParams"
+        ]
       }
     },
     "/service/captionParams/action/delete": {
@@ -8982,7 +9285,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "captionParams"
+        ]
       }
     },
     "/service/captionParams/action/get": {
@@ -9017,7 +9323,10 @@
               "$ref": "#/definitions/KalturaCaptionParams"
             }
           }
-        }
+        },
+        "tags": [
+          "captionParams"
+        ]
       }
     },
     "/service/captionParams/action/list": {
@@ -9055,7 +9364,10 @@
               "$ref": "#/definitions/KalturaCaptionParamsListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "captionParams"
+        ]
       }
     },
     "/service/captionParams/action/update": {
@@ -9115,7 +9427,10 @@
               "$ref": "#/definitions/KalturaCaptionParams"
             }
           }
-        }
+        },
+        "tags": [
+          "captionParams"
+        ]
       }
     },
     "/service/category/action/add": {
@@ -9308,7 +9623,10 @@
               "$ref": "#/definitions/KalturaCategory"
             }
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/addFromBulkUpload": {
@@ -9405,7 +9723,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/delete": {
@@ -9449,7 +9770,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/get": {
@@ -9484,7 +9808,10 @@
               "$ref": "#/definitions/KalturaCategory"
             }
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/index": {
@@ -9523,7 +9850,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/list": {
@@ -9601,7 +9931,10 @@
               "$ref": "#/definitions/KalturaCategoryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/move": {
@@ -9643,7 +9976,10 @@
               "$ref": "#/definitions/KalturaCategoryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/unlockCategories": {
@@ -9668,7 +10004,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/category/action/update": {
@@ -9868,7 +10207,10 @@
               "$ref": "#/definitions/KalturaCategory"
             }
           }
-        }
+        },
+        "tags": [
+          "category"
+        ]
       }
     },
     "/service/categoryEntry/action/activate": {
@@ -9907,7 +10249,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/add": {
@@ -9960,7 +10305,10 @@
               "$ref": "#/definitions/KalturaCategoryEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/addFromBulkUpload": {
@@ -9988,7 +10336,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/delete": {
@@ -10027,7 +10378,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/index": {
@@ -10073,7 +10427,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/list": {
@@ -10111,7 +10468,10 @@
               "$ref": "#/definitions/KalturaCategoryEntryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/reject": {
@@ -10150,7 +10510,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryEntry/action/syncPrivacyContext": {
@@ -10189,7 +10552,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryEntry"
+        ]
       }
     },
     "/service/categoryUser/action/activate": {
@@ -10231,7 +10597,10 @@
               "$ref": "#/definitions/KalturaCategoryUser"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/add": {
@@ -10309,7 +10678,10 @@
               "$ref": "#/definitions/KalturaCategoryUser"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/addFromBulkUpload": {
@@ -10406,7 +10778,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/copyFromCategory": {
@@ -10438,7 +10813,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/deactivate": {
@@ -10480,7 +10858,10 @@
               "$ref": "#/definitions/KalturaCategoryUser"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/delete": {
@@ -10519,7 +10900,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/get": {
@@ -10561,7 +10945,10 @@
               "$ref": "#/definitions/KalturaCategoryUser"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/index": {
@@ -10607,7 +10994,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/list": {
@@ -10660,7 +11050,10 @@
               "$ref": "#/definitions/KalturaCategoryUserListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/categoryUser/action/update": {
@@ -10759,7 +11152,10 @@
               "$ref": "#/definitions/KalturaCategoryUser"
             }
           }
-        }
+        },
+        "tags": [
+          "categoryUser"
+        ]
       }
     },
     "/service/conversionProfile/action/add": {
@@ -10881,7 +11277,10 @@
               "$ref": "#/definitions/KalturaConversionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfile/action/delete": {
@@ -10913,7 +11312,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfile/action/get": {
@@ -10948,7 +11350,10 @@
               "$ref": "#/definitions/KalturaConversionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfile/action/getDefault": {
@@ -10987,7 +11392,10 @@
               "$ref": "#/definitions/KalturaConversionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfile/action/list": {
@@ -11025,7 +11433,10 @@
               "$ref": "#/definitions/KalturaConversionProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfile/action/setAsDefault": {
@@ -11060,7 +11471,10 @@
               "$ref": "#/definitions/KalturaConversionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfile/action/update": {
@@ -11189,7 +11603,10 @@
               "$ref": "#/definitions/KalturaConversionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfile"
+        ]
       }
     },
     "/service/conversionProfileAssetParams/action/list": {
@@ -11235,7 +11652,10 @@
               "$ref": "#/definitions/KalturaConversionProfileAssetParamsListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfileAssetParams"
+        ]
       }
     },
     "/service/conversionProfileAssetParams/action/update": {
@@ -11312,7 +11732,10 @@
               "$ref": "#/definitions/KalturaConversionProfileAssetParams"
             }
           }
-        }
+        },
+        "tags": [
+          "conversionProfileAssetParams"
+        ]
       }
     },
     "/service/cuePoint/action/add": {
@@ -11420,7 +11843,10 @@
               "$ref": "#/definitions/KalturaCuePoint"
             }
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/addFromBulk": {
@@ -11448,7 +11874,10 @@
               "$ref": "#/definitions/KalturaCuePointListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/count": {
@@ -11478,7 +11907,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/delete": {
@@ -11510,7 +11942,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/get": {
@@ -11545,7 +11980,10 @@
               "$ref": "#/definitions/KalturaCuePoint"
             }
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/list": {
@@ -11588,7 +12026,10 @@
               "$ref": "#/definitions/KalturaCuePointListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/serveBulk": {
@@ -11628,7 +12069,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/cuePoint/action/update": {
@@ -11743,7 +12187,10 @@
               "$ref": "#/definitions/KalturaCuePoint"
             }
           }
-        }
+        },
+        "tags": [
+          "cuePoint"
+        ]
       }
     },
     "/service/data/action/add": {
@@ -11781,7 +12228,10 @@
               "$ref": "#/definitions/KalturaDataEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "data"
+        ]
       }
     },
     "/service/data/action/delete": {
@@ -11813,7 +12263,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "data"
+        ]
       }
     },
     "/service/data/action/get": {
@@ -11855,7 +12308,10 @@
               "$ref": "#/definitions/KalturaDataEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "data"
+        ]
       }
     },
     "/service/data/action/list": {
@@ -11893,7 +12349,10 @@
               "$ref": "#/definitions/KalturaDataListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "data"
+        ]
       }
     },
     "/service/data/action/serve": {
@@ -11939,7 +12398,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "data"
+        ]
       }
     },
     "/service/data/action/update": {
@@ -11984,7 +12446,10 @@
               "$ref": "#/definitions/KalturaDataEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "data"
+        ]
       }
     },
     "/service/deliveryProfile/action/add": {
@@ -12100,7 +12565,10 @@
               "$ref": "#/definitions/KalturaDeliveryProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "deliveryProfile"
+        ]
       }
     },
     "/service/deliveryProfile/action/clone": {
@@ -12135,7 +12603,10 @@
               "$ref": "#/definitions/KalturaDeliveryProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "deliveryProfile"
+        ]
       }
     },
     "/service/deliveryProfile/action/get": {
@@ -12170,7 +12641,10 @@
               "$ref": "#/definitions/KalturaDeliveryProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "deliveryProfile"
+        ]
       }
     },
     "/service/deliveryProfile/action/list": {
@@ -12208,7 +12682,10 @@
               "$ref": "#/definitions/KalturaDeliveryProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "deliveryProfile"
+        ]
       }
     },
     "/service/deliveryProfile/action/update": {
@@ -12331,7 +12808,10 @@
               "$ref": "#/definitions/KalturaDeliveryProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "deliveryProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/add": {
@@ -12479,7 +12959,10 @@
               "$ref": "#/definitions/KalturaDistributionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/delete": {
@@ -12511,7 +12994,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/get": {
@@ -12546,7 +13032,10 @@
               "$ref": "#/definitions/KalturaDistributionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/list": {
@@ -12584,7 +13073,10 @@
               "$ref": "#/definitions/KalturaDistributionProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/listByPartner": {
@@ -12622,7 +13114,10 @@
               "$ref": "#/definitions/KalturaDistributionProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/update": {
@@ -12777,7 +13272,10 @@
               "$ref": "#/definitions/KalturaDistributionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProfile/action/updateStatus": {
@@ -12824,7 +13322,10 @@
               "$ref": "#/definitions/KalturaDistributionProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProfile"
+        ]
       }
     },
     "/service/distributionProvider/action/list": {
@@ -12862,7 +13363,10 @@
               "$ref": "#/definitions/KalturaDistributionProviderListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "distributionProvider"
+        ]
       }
     },
     "/service/document/action/addFromEntry": {
@@ -12914,7 +13418,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/addFromFlavorAsset": {
@@ -12959,7 +13466,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/addFromUploadedFile": {
@@ -13004,7 +13514,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/approveReplace": {
@@ -13039,7 +13552,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/cancelReplace": {
@@ -13074,7 +13590,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/convert": {
@@ -13113,7 +13632,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/convertPptToSwf": {
@@ -13145,7 +13667,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/delete": {
@@ -13177,7 +13702,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/get": {
@@ -13219,7 +13747,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/list": {
@@ -13257,7 +13788,10 @@
               "$ref": "#/definitions/KalturaDocumentListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/serve": {
@@ -13303,7 +13837,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/serveByFlavorParamsId": {
@@ -13349,7 +13886,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/update": {
@@ -13394,7 +13934,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/updateContent": {
@@ -13436,7 +13979,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/document/action/upload": {
@@ -13461,7 +14007,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "document"
+        ]
       }
     },
     "/service/documents/action/addFromEntry": {
@@ -13513,7 +14062,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/addFromFlavorAsset": {
@@ -13558,7 +14110,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/addFromUploadedFile": {
@@ -13603,7 +14158,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/approveReplace": {
@@ -13638,7 +14196,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/cancelReplace": {
@@ -13673,7 +14234,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/convert": {
@@ -13712,7 +14276,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/convertPptToSwf": {
@@ -13744,7 +14311,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/delete": {
@@ -13776,7 +14346,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/get": {
@@ -13818,7 +14391,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/list": {
@@ -13856,7 +14432,10 @@
               "$ref": "#/definitions/KalturaDocumentListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/serve": {
@@ -13902,7 +14481,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/serveByFlavorParamsId": {
@@ -13948,7 +14530,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/update": {
@@ -13993,7 +14578,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/updateContent": {
@@ -14035,7 +14623,10 @@
               "$ref": "#/definitions/KalturaDocumentEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/documents/action/upload": {
@@ -14060,7 +14651,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "documents"
+        ]
       }
     },
     "/service/drmPolicy/action/add": {
@@ -14153,7 +14747,10 @@
               "$ref": "#/definitions/KalturaDrmPolicy"
             }
           }
-        }
+        },
+        "tags": [
+          "drmPolicy"
+        ]
       }
     },
     "/service/drmPolicy/action/delete": {
@@ -14188,7 +14785,10 @@
               "$ref": "#/definitions/KalturaDrmPolicy"
             }
           }
-        }
+        },
+        "tags": [
+          "drmPolicy"
+        ]
       }
     },
     "/service/drmPolicy/action/get": {
@@ -14223,7 +14823,10 @@
               "$ref": "#/definitions/KalturaDrmPolicy"
             }
           }
-        }
+        },
+        "tags": [
+          "drmPolicy"
+        ]
       }
     },
     "/service/drmPolicy/action/list": {
@@ -14261,7 +14864,10 @@
               "$ref": "#/definitions/KalturaDrmPolicyListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "drmPolicy"
+        ]
       }
     },
     "/service/drmPolicy/action/update": {
@@ -14361,7 +14967,10 @@
               "$ref": "#/definitions/KalturaDrmPolicy"
             }
           }
-        }
+        },
+        "tags": [
+          "drmPolicy"
+        ]
       }
     },
     "/service/drmProfile/action/add": {
@@ -14439,7 +15048,10 @@
               "$ref": "#/definitions/KalturaDrmProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "drmProfile"
+        ]
       }
     },
     "/service/drmProfile/action/delete": {
@@ -14474,7 +15086,10 @@
               "$ref": "#/definitions/KalturaDrmProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "drmProfile"
+        ]
       }
     },
     "/service/drmProfile/action/get": {
@@ -14509,7 +15124,10 @@
               "$ref": "#/definitions/KalturaDrmProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "drmProfile"
+        ]
       }
     },
     "/service/drmProfile/action/getByProvider": {
@@ -14548,7 +15166,10 @@
               "$ref": "#/definitions/KalturaDrmProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "drmProfile"
+        ]
       }
     },
     "/service/drmProfile/action/list": {
@@ -14586,7 +15207,10 @@
               "$ref": "#/definitions/KalturaDrmProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "drmProfile"
+        ]
       }
     },
     "/service/drmProfile/action/update": {
@@ -14671,7 +15295,10 @@
               "$ref": "#/definitions/KalturaDrmProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "drmProfile"
+        ]
       }
     },
     "/service/dropFolder/action/add": {
@@ -14838,7 +15465,10 @@
               "$ref": "#/definitions/KalturaDropFolder"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolder"
+        ]
       }
     },
     "/service/dropFolder/action/delete": {
@@ -14873,7 +15503,10 @@
               "$ref": "#/definitions/KalturaDropFolder"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolder"
+        ]
       }
     },
     "/service/dropFolder/action/get": {
@@ -14908,7 +15541,10 @@
               "$ref": "#/definitions/KalturaDropFolder"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolder"
+        ]
       }
     },
     "/service/dropFolder/action/list": {
@@ -14951,7 +15587,10 @@
               "$ref": "#/definitions/KalturaDropFolderListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolder"
+        ]
       }
     },
     "/service/dropFolder/action/update": {
@@ -15125,7 +15764,10 @@
               "$ref": "#/definitions/KalturaDropFolder"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolder"
+        ]
       }
     },
     "/service/dropFolderFile/action/add": {
@@ -15273,7 +15915,10 @@
               "$ref": "#/definitions/KalturaDropFolderFile"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/dropFolderFile/action/delete": {
@@ -15308,7 +15953,10 @@
               "$ref": "#/definitions/KalturaDropFolderFile"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/dropFolderFile/action/get": {
@@ -15343,7 +15991,10 @@
               "$ref": "#/definitions/KalturaDropFolderFile"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/dropFolderFile/action/ignore": {
@@ -15378,7 +16029,10 @@
               "$ref": "#/definitions/KalturaDropFolderFile"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/dropFolderFile/action/list": {
@@ -15416,7 +16070,10 @@
               "$ref": "#/definitions/KalturaDropFolderFileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/dropFolderFile/action/update": {
@@ -15571,7 +16228,10 @@
               "$ref": "#/definitions/KalturaDropFolderFile"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/dropFolderFile/action/updateStatus": {
@@ -15630,7 +16290,10 @@
               "$ref": "#/definitions/KalturaDropFolderFile"
             }
           }
-        }
+        },
+        "tags": [
+          "dropFolderFile"
+        ]
       }
     },
     "/service/entryDistribution/action/add": {
@@ -15798,7 +16461,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/delete": {
@@ -15830,7 +16496,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/get": {
@@ -15865,7 +16534,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/list": {
@@ -15903,7 +16575,10 @@
               "$ref": "#/definitions/KalturaEntryDistributionListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/retrySubmit": {
@@ -15938,7 +16613,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/serveReturnedData": {
@@ -15983,7 +16661,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/serveSentData": {
@@ -16028,7 +16709,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/submitAdd": {
@@ -16070,7 +16754,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/submitDelete": {
@@ -16105,7 +16792,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/submitFetchReport": {
@@ -16140,7 +16830,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/submitUpdate": {
@@ -16175,7 +16868,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/update": {
@@ -16350,7 +17046,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/entryDistribution/action/validate": {
@@ -16385,7 +17084,10 @@
               "$ref": "#/definitions/KalturaEntryDistribution"
             }
           }
-        }
+        },
+        "tags": [
+          "entryDistribution"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/add": {
@@ -16493,7 +17195,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplate"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/clone": {
@@ -16608,7 +17313,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplate"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/delete": {
@@ -16640,7 +17348,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/dispatch": {
@@ -16682,7 +17393,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/get": {
@@ -16717,7 +17431,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplate"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/list": {
@@ -16755,7 +17472,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplateListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/listByPartner": {
@@ -16793,7 +17513,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplateListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/listTemplates": {
@@ -16831,7 +17554,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplateListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/update": {
@@ -16946,7 +17672,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplate"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/eventNotificationTemplate/action/updateStatus": {
@@ -16993,7 +17722,10 @@
               "$ref": "#/definitions/KalturaEventNotificationTemplate"
             }
           }
-        }
+        },
+        "tags": [
+          "eventNotificationTemplate"
+        ]
       }
     },
     "/service/externalMedia/action/add": {
@@ -17031,7 +17763,10 @@
               "$ref": "#/definitions/KalturaExternalMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "externalMedia"
+        ]
       }
     },
     "/service/externalMedia/action/count": {
@@ -17056,7 +17791,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "externalMedia"
+        ]
       }
     },
     "/service/externalMedia/action/delete": {
@@ -17088,7 +17826,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "externalMedia"
+        ]
       }
     },
     "/service/externalMedia/action/get": {
@@ -17123,7 +17864,10 @@
               "$ref": "#/definitions/KalturaExternalMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "externalMedia"
+        ]
       }
     },
     "/service/externalMedia/action/list": {
@@ -17161,7 +17905,10 @@
               "$ref": "#/definitions/KalturaExternalMediaEntryListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "externalMedia"
+        ]
       }
     },
     "/service/externalMedia/action/update": {
@@ -17206,7 +17953,10 @@
               "$ref": "#/definitions/KalturaExternalMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "externalMedia"
+        ]
       }
     },
     "/service/fileAsset/action/add": {
@@ -17289,7 +18039,10 @@
               "$ref": "#/definitions/KalturaFileAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/fileAsset/action/delete": {
@@ -17321,7 +18074,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/fileAsset/action/get": {
@@ -17356,7 +18112,10 @@
               "$ref": "#/definitions/KalturaFileAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/fileAsset/action/list": {
@@ -17394,7 +18153,10 @@
               "$ref": "#/definitions/KalturaFileAssetListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/fileAsset/action/serve": {
@@ -17426,7 +18188,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/fileAsset/action/setContent": {
@@ -17461,7 +18226,10 @@
               "$ref": "#/definitions/KalturaFileAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/fileAsset/action/update": {
@@ -17551,7 +18319,10 @@
               "$ref": "#/definitions/KalturaFileAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "fileAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/add": {
@@ -17636,7 +18407,10 @@
               "$ref": "#/definitions/KalturaFlavorAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/convert": {
@@ -17682,7 +18456,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/delete": {
@@ -17714,7 +18491,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/deleteLocalContent": {
@@ -17746,7 +18526,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/export": {
@@ -17788,7 +18571,10 @@
               "$ref": "#/definitions/KalturaFlavorAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/get": {
@@ -17823,7 +18609,10 @@
               "$ref": "#/definitions/KalturaFlavorAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/getByEntryId": {
@@ -17855,7 +18644,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/getDownloadUrl": {
@@ -17894,7 +18686,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/getFlavorAssetsWithParams": {
@@ -17926,7 +18721,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/getRemotePaths": {
@@ -17961,7 +18759,10 @@
               "$ref": "#/definitions/KalturaRemotePathListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/getUrl": {
@@ -18012,7 +18813,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/getWebPlayableByEntryId": {
@@ -18044,7 +18848,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/list": {
@@ -18082,7 +18889,10 @@
               "$ref": "#/definitions/KalturaFlavorAssetListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/reconvert": {
@@ -18114,7 +18924,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/setAsSource": {
@@ -18146,7 +18959,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/setContent": {
@@ -18181,7 +18997,10 @@
               "$ref": "#/definitions/KalturaFlavorAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorAsset/action/update": {
@@ -18266,7 +19085,10 @@
               "$ref": "#/definitions/KalturaFlavorAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorAsset"
+        ]
       }
     },
     "/service/flavorParams/action/add": {
@@ -18469,7 +19291,10 @@
               "$ref": "#/definitions/KalturaFlavorParams"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorParams"
+        ]
       }
     },
     "/service/flavorParams/action/delete": {
@@ -18501,7 +19326,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorParams"
+        ]
       }
     },
     "/service/flavorParams/action/get": {
@@ -18536,7 +19364,10 @@
               "$ref": "#/definitions/KalturaFlavorParams"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorParams"
+        ]
       }
     },
     "/service/flavorParams/action/getByConversionProfileId": {
@@ -18568,7 +19399,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "flavorParams"
+        ]
       }
     },
     "/service/flavorParams/action/list": {
@@ -18606,7 +19440,10 @@
               "$ref": "#/definitions/KalturaFlavorParamsListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorParams"
+        ]
       }
     },
     "/service/flavorParams/action/update": {
@@ -18816,7 +19653,10 @@
               "$ref": "#/definitions/KalturaFlavorParams"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorParams"
+        ]
       }
     },
     "/service/flavorParamsOutput/action/get": {
@@ -18851,7 +19691,10 @@
               "$ref": "#/definitions/KalturaFlavorParamsOutput"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorParamsOutput"
+        ]
       }
     },
     "/service/flavorParamsOutput/action/list": {
@@ -18889,7 +19732,10 @@
               "$ref": "#/definitions/KalturaFlavorParamsOutputListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "flavorParamsOutput"
+        ]
       }
     },
     "/service/genericDistributionProvider/action/add": {
@@ -18977,7 +19823,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProvider"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProvider"
+        ]
       }
     },
     "/service/genericDistributionProvider/action/delete": {
@@ -19009,7 +19858,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProvider"
+        ]
       }
     },
     "/service/genericDistributionProvider/action/get": {
@@ -19044,7 +19896,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProvider"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProvider"
+        ]
       }
     },
     "/service/genericDistributionProvider/action/list": {
@@ -19082,7 +19937,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProvider"
+        ]
       }
     },
     "/service/genericDistributionProvider/action/update": {
@@ -19177,7 +20035,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProvider"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProvider"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/add": {
@@ -19290,7 +20151,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/addMrssTransform": {
@@ -19332,7 +20196,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/addMrssTransformFromFile": {
@@ -19367,7 +20234,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/addMrssValidate": {
@@ -19409,7 +20279,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/addMrssValidateFromFile": {
@@ -19444,7 +20317,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/addResultsTransform": {
@@ -19486,7 +20362,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/addResultsTransformFromFile": {
@@ -19521,7 +20400,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/delete": {
@@ -19553,7 +20435,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/deleteByProviderId": {
@@ -19598,7 +20483,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/get": {
@@ -19633,7 +20521,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/getByProviderId": {
@@ -19681,7 +20572,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/list": {
@@ -19719,7 +20613,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderActionListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/update": {
@@ -19839,7 +20736,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/genericDistributionProviderAction/action/updateByProviderId": {
@@ -19972,7 +20872,10 @@
               "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
             }
           }
-        }
+        },
+        "tags": [
+          "genericDistributionProviderAction"
+        ]
       }
     },
     "/service/groupUser/action/add": {
@@ -20030,7 +20933,10 @@
               "$ref": "#/definitions/KalturaGroupUser"
             }
           }
-        }
+        },
+        "tags": [
+          "groupUser"
+        ]
       }
     },
     "/service/groupUser/action/delete": {
@@ -20069,7 +20975,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "groupUser"
+        ]
       }
     },
     "/service/groupUser/action/list": {
@@ -20107,7 +21016,10 @@
               "$ref": "#/definitions/KalturaGroupUserListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "groupUser"
+        ]
       }
     },
     "/service/integration/action/dispatch": {
@@ -20180,7 +21092,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "integration"
+        ]
       }
     },
     "/service/integration/action/notify": {
@@ -20212,7 +21127,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "integration"
+        ]
       }
     },
     "/service/like/action/checkLikeExists": {
@@ -20251,7 +21169,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "like"
+        ]
       }
     },
     "/service/like/action/like": {
@@ -20283,7 +21204,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "like"
+        ]
       }
     },
     "/service/like/action/unlike": {
@@ -20315,7 +21239,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "like"
+        ]
       }
     },
     "/service/liveChannel/action/add": {
@@ -20353,7 +21280,10 @@
               "$ref": "#/definitions/KalturaLiveChannel"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/appendRecording": {
@@ -20420,7 +21350,10 @@
               "$ref": "#/definitions/KalturaLiveEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/delete": {
@@ -20452,7 +21385,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/get": {
@@ -20487,7 +21423,10 @@
               "$ref": "#/definitions/KalturaLiveChannel"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/isLive": {
@@ -20519,7 +21458,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/list": {
@@ -20557,7 +21499,10 @@
               "$ref": "#/definitions/KalturaLiveChannelListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/registerMediaServer": {
@@ -20617,7 +21562,10 @@
               "$ref": "#/definitions/KalturaLiveEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/unregisterMediaServer": {
@@ -20670,7 +21618,10 @@
               "$ref": "#/definitions/KalturaLiveEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/update": {
@@ -20715,7 +21666,10 @@
               "$ref": "#/definitions/KalturaLiveChannel"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannel/action/validateRegisteredMediaServers": {
@@ -20747,7 +21701,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveChannel"
+        ]
       }
     },
     "/service/liveChannelSegment/action/add": {
@@ -20850,7 +21807,10 @@
               "$ref": "#/definitions/KalturaLiveChannelSegment"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannelSegment"
+        ]
       }
     },
     "/service/liveChannelSegment/action/delete": {
@@ -20882,7 +21842,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveChannelSegment"
+        ]
       }
     },
     "/service/liveChannelSegment/action/get": {
@@ -20917,7 +21880,10 @@
               "$ref": "#/definitions/KalturaLiveChannelSegment"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannelSegment"
+        ]
       }
     },
     "/service/liveChannelSegment/action/list": {
@@ -20955,7 +21921,10 @@
               "$ref": "#/definitions/KalturaLiveChannelSegmentListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannelSegment"
+        ]
       }
     },
     "/service/liveChannelSegment/action/update": {
@@ -21065,7 +22034,10 @@
               "$ref": "#/definitions/KalturaLiveChannelSegment"
             }
           }
-        }
+        },
+        "tags": [
+          "liveChannelSegment"
+        ]
       }
     },
     "/service/liveReports/action/exportToCsv": {
@@ -21130,7 +22102,10 @@
               "$ref": "#/definitions/KalturaLiveReportExportResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "liveReports"
+        ]
       }
     },
     "/service/liveReports/action/getEvents": {
@@ -21204,7 +22179,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveReports"
+        ]
       }
     },
     "/service/liveReports/action/getReport": {
@@ -21281,7 +22259,10 @@
               "$ref": "#/definitions/KalturaLiveStatsListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "liveReports"
+        ]
       }
     },
     "/service/liveReports/action/serveReport": {
@@ -21313,7 +22294,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveReports"
+        ]
       }
     },
     "/service/liveStats/action/collect": {
@@ -21393,7 +22377,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveStats"
+        ]
       }
     },
     "/service/liveStream/action/add": {
@@ -21519,7 +22506,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/addLiveStreamPushPublishConfiguration": {
@@ -21607,7 +22597,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/appendRecording": {
@@ -21674,7 +22667,10 @@
               "$ref": "#/definitions/KalturaLiveEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/authenticate": {
@@ -21716,7 +22712,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/createPeriodicSyncPoints": {
@@ -21762,7 +22761,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/delete": {
@@ -21794,7 +22796,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/get": {
@@ -21836,7 +22841,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/isLive": {
@@ -21889,7 +22897,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/list": {
@@ -21927,7 +22938,10 @@
               "$ref": "#/definitions/KalturaLiveStreamListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/registerMediaServer": {
@@ -21987,7 +23001,10 @@
               "$ref": "#/definitions/KalturaLiveEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/removeLiveStreamPushPublishConfiguration": {
@@ -22043,7 +23060,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/unregisterMediaServer": {
@@ -22096,7 +23116,10 @@
               "$ref": "#/definitions/KalturaLiveEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/update": {
@@ -22206,7 +23229,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/updateOfflineThumbnailFromUrl": {
@@ -22248,7 +23274,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/updateOfflineThumbnailJpeg": {
@@ -22283,7 +23312,10 @@
               "$ref": "#/definitions/KalturaLiveStreamEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/liveStream/action/validateRegisteredMediaServers": {
@@ -22315,7 +23347,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "liveStream"
+        ]
       }
     },
     "/service/media/action/add": {
@@ -22393,7 +23428,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addContent": {
@@ -22428,7 +23466,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addFromEntry": {
@@ -22520,7 +23561,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addFromFlavorAsset": {
@@ -22605,7 +23649,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addFromRecordedWebcam": {
@@ -22690,7 +23737,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addFromSearchResult": {
@@ -22823,7 +23873,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addFromUploadedFile": {
@@ -22908,7 +23961,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/addFromUrl": {
@@ -22993,7 +24049,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/anonymousRank": {
@@ -23032,7 +24091,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/approve": {
@@ -23064,7 +24126,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/approveReplace": {
@@ -23099,7 +24164,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/bulkUploadAdd": {
@@ -23201,7 +24269,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/cancelReplace": {
@@ -23236,7 +24307,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/convert": {
@@ -23275,7 +24349,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/count": {
@@ -23300,7 +24377,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/delete": {
@@ -23332,7 +24412,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/flag": {
@@ -23412,7 +24495,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/get": {
@@ -23454,7 +24540,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/getMrss": {
@@ -23486,7 +24575,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/list": {
@@ -23524,7 +24616,10 @@
               "$ref": "#/definitions/KalturaMediaListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/listFlags": {
@@ -23569,7 +24664,10 @@
               "$ref": "#/definitions/KalturaModerationFlagListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/reject": {
@@ -23601,7 +24699,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/requestConversion": {
@@ -23640,7 +24741,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/update": {
@@ -23725,7 +24829,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/updateContent": {
@@ -23772,7 +24879,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/updateThumbnail": {
@@ -23821,7 +24931,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/updateThumbnailFromSourceEntry": {
@@ -23877,7 +24990,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/updateThumbnailFromUrl": {
@@ -23919,7 +25035,10 @@
               "$ref": "#/definitions/KalturaBaseEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/updateThumbnailJpeg": {
@@ -23954,7 +25073,10 @@
               "$ref": "#/definitions/KalturaMediaEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/media/action/upload": {
@@ -23979,7 +25101,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "media"
+        ]
       }
     },
     "/service/mediaInfo/action/list": {
@@ -24017,7 +25142,10 @@
               "$ref": "#/definitions/KalturaMediaInfoListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "mediaInfo"
+        ]
       }
     },
     "/service/mediaServer/action/get": {
@@ -24052,7 +25180,10 @@
               "$ref": "#/definitions/KalturaMediaServer"
             }
           }
-        }
+        },
+        "tags": [
+          "mediaServer"
+        ]
       }
     },
     "/service/mediaServer/action/reportStatus": {
@@ -24087,7 +25218,10 @@
               "$ref": "#/definitions/KalturaMediaServer"
             }
           }
-        }
+        },
+        "tags": [
+          "mediaServer"
+        ]
       }
     },
     "/service/metadata/action/add": {
@@ -24154,7 +25288,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/addFromBulk": {
@@ -24221,7 +25358,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/addFromFile": {
@@ -24281,7 +25421,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/addFromUrl": {
@@ -24348,7 +25491,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/delete": {
@@ -24380,7 +25526,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/get": {
@@ -24415,7 +25564,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/index": {
@@ -24454,7 +25606,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/invalidate": {
@@ -24493,7 +25648,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/list": {
@@ -24531,7 +25689,10 @@
               "$ref": "#/definitions/KalturaMetadataListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/serve": {
@@ -24563,7 +25724,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/update": {
@@ -24612,7 +25776,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/updateFromFile": {
@@ -24647,7 +25814,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadata/action/updateFromXSL": {
@@ -24682,7 +25852,10 @@
               "$ref": "#/definitions/KalturaMetadata"
             }
           }
-        }
+        },
+        "tags": [
+          "metadata"
+        ]
       }
     },
     "/service/metadataProfile/action/add": {
@@ -24794,7 +25967,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/addFromFile": {
@@ -24892,7 +26068,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/delete": {
@@ -24924,7 +26103,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/get": {
@@ -24959,7 +26141,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/list": {
@@ -24997,7 +26182,10 @@
               "$ref": "#/definitions/KalturaMetadataProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/listFields": {
@@ -25032,7 +26220,10 @@
               "$ref": "#/definitions/KalturaMetadataProfileFieldListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/revert": {
@@ -25074,7 +26265,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/serve": {
@@ -25106,7 +26300,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/serveView": {
@@ -25138,7 +26335,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/update": {
@@ -25257,7 +26457,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/updateDefinitionFromFile": {
@@ -25292,7 +26495,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/updateTransformationFromFile": {
@@ -25327,7 +26533,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/metadataProfile/action/updateViewsFromFile": {
@@ -25362,7 +26571,10 @@
               "$ref": "#/definitions/KalturaMetadataProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "metadataProfile"
+        ]
       }
     },
     "/service/mixing/action/add": {
@@ -25405,7 +26617,10 @@
               "$ref": "#/definitions/KalturaMixEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/anonymousRank": {
@@ -25444,7 +26659,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/appendMediaEntry": {
@@ -25486,7 +26704,10 @@
               "$ref": "#/definitions/KalturaMixEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/clone": {
@@ -25521,7 +26742,10 @@
               "$ref": "#/definitions/KalturaMixEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/count": {
@@ -25546,7 +26770,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/delete": {
@@ -25578,7 +26805,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/get": {
@@ -25620,7 +26850,10 @@
               "$ref": "#/definitions/KalturaMixEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/getMixesByMediaId": {
@@ -25652,7 +26885,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/getReadyMediaEntries": {
@@ -25691,7 +26927,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/list": {
@@ -25729,7 +26968,10 @@
               "$ref": "#/definitions/KalturaMixListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/mixing/action/update": {
@@ -25779,7 +27021,10 @@
               "$ref": "#/definitions/KalturaMixEntry"
             }
           }
-        }
+        },
+        "tags": [
+          "mixing"
+        ]
       }
     },
     "/service/notification/action/getClientNotification": {
@@ -25832,7 +27077,10 @@
               "$ref": "#/definitions/KalturaClientNotification"
             }
           }
-        }
+        },
+        "tags": [
+          "notification"
+        ]
       }
     },
     "/service/partner/action/count": {
@@ -25857,7 +27105,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/get": {
@@ -25892,7 +27143,10 @@
               "$ref": "#/definitions/KalturaPartner"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/getInfo": {
@@ -25920,7 +27174,10 @@
               "$ref": "#/definitions/KalturaPartner"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/getSecrets": {
@@ -25969,7 +27226,10 @@
               "$ref": "#/definitions/KalturaPartner"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/getStatistics": {
@@ -25997,7 +27257,10 @@
               "$ref": "#/definitions/KalturaPartnerStatistics"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/getUsage": {
@@ -26050,7 +27313,10 @@
               "$ref": "#/definitions/KalturaPartnerUsage"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/list": {
@@ -26088,7 +27354,10 @@
               "$ref": "#/definitions/KalturaPartnerListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/listFeatureStatus": {
@@ -26116,7 +27385,10 @@
               "$ref": "#/definitions/KalturaFeatureStatusListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/listPartnersForUser": {
@@ -26154,7 +27426,10 @@
               "$ref": "#/definitions/KalturaPartnerListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/register": {
@@ -26463,7 +27738,10 @@
               "$ref": "#/definitions/KalturaPartner"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/partner/action/update": {
@@ -26758,7 +28036,10 @@
               "$ref": "#/definitions/KalturaPartner"
             }
           }
-        }
+        },
+        "tags": [
+          "partner"
+        ]
       }
     },
     "/service/permission/action/add": {
@@ -26851,7 +28132,10 @@
               "$ref": "#/definitions/KalturaPermission"
             }
           }
-        }
+        },
+        "tags": [
+          "permission"
+        ]
       }
     },
     "/service/permission/action/delete": {
@@ -26886,7 +28170,10 @@
               "$ref": "#/definitions/KalturaPermission"
             }
           }
-        }
+        },
+        "tags": [
+          "permission"
+        ]
       }
     },
     "/service/permission/action/get": {
@@ -26921,7 +28208,10 @@
               "$ref": "#/definitions/KalturaPermission"
             }
           }
-        }
+        },
+        "tags": [
+          "permission"
+        ]
       }
     },
     "/service/permission/action/getCurrentPermissions": {
@@ -26946,7 +28236,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "permission"
+        ]
       }
     },
     "/service/permission/action/list": {
@@ -26984,7 +28277,10 @@
               "$ref": "#/definitions/KalturaPermissionListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "permission"
+        ]
       }
     },
     "/service/permission/action/update": {
@@ -27084,7 +28380,10 @@
               "$ref": "#/definitions/KalturaPermission"
             }
           }
-        }
+        },
+        "tags": [
+          "permission"
+        ]
       }
     },
     "/service/permissionItem/action/add": {
@@ -27142,7 +28441,10 @@
               "$ref": "#/definitions/KalturaPermissionItem"
             }
           }
-        }
+        },
+        "tags": [
+          "permissionItem"
+        ]
       }
     },
     "/service/permissionItem/action/delete": {
@@ -27177,7 +28479,10 @@
               "$ref": "#/definitions/KalturaPermissionItem"
             }
           }
-        }
+        },
+        "tags": [
+          "permissionItem"
+        ]
       }
     },
     "/service/permissionItem/action/get": {
@@ -27212,7 +28517,10 @@
               "$ref": "#/definitions/KalturaPermissionItem"
             }
           }
-        }
+        },
+        "tags": [
+          "permissionItem"
+        ]
       }
     },
     "/service/permissionItem/action/list": {
@@ -27250,7 +28558,10 @@
               "$ref": "#/definitions/KalturaPermissionItemListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "permissionItem"
+        ]
       }
     },
     "/service/permissionItem/action/update": {
@@ -27315,7 +28626,10 @@
               "$ref": "#/definitions/KalturaPermissionItem"
             }
           }
-        }
+        },
+        "tags": [
+          "permissionItem"
+        ]
       }
     },
     "/service/playReadyDrm/action/generateKey": {
@@ -27343,7 +28657,10 @@
               "$ref": "#/definitions/KalturaPlayReadyContentKey"
             }
           }
-        }
+        },
+        "tags": [
+          "playReadyDrm"
+        ]
       }
     },
     "/service/playReadyDrm/action/getContentKeys": {
@@ -27375,7 +28692,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "playReadyDrm"
+        ]
       }
     },
     "/service/playReadyDrm/action/getEntryContentKey": {
@@ -27417,7 +28737,10 @@
               "$ref": "#/definitions/KalturaPlayReadyContentKey"
             }
           }
-        }
+        },
+        "tags": [
+          "playReadyDrm"
+        ]
       }
     },
     "/service/playReadyDrm/action/getLicenseDetails": {
@@ -27480,7 +28803,10 @@
               "$ref": "#/definitions/KalturaPlayReadyLicenseDetails"
             }
           }
-        }
+        },
+        "tags": [
+          "playReadyDrm"
+        ]
       }
     },
     "/service/playlist/action/add": {
@@ -27555,7 +28881,10 @@
               "$ref": "#/definitions/KalturaPlaylist"
             }
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/clone": {
@@ -27630,7 +28959,10 @@
               "$ref": "#/definitions/KalturaPlaylist"
             }
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/delete": {
@@ -27662,7 +28994,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/execute": {
@@ -27716,7 +29051,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/executeFromContent": {
@@ -27777,7 +29115,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/executeFromFilters": {
@@ -27826,7 +29167,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/get": {
@@ -27868,7 +29212,10 @@
               "$ref": "#/definitions/KalturaPlaylist"
             }
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/getStatsFromContent": {
@@ -27915,7 +29262,10 @@
               "$ref": "#/definitions/KalturaPlaylist"
             }
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/list": {
@@ -27953,7 +29303,10 @@
               "$ref": "#/definitions/KalturaPlaylistListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/playlist/action/update": {
@@ -28035,7 +29388,10 @@
               "$ref": "#/definitions/KalturaPlaylist"
             }
           }
-        }
+        },
+        "tags": [
+          "playlist"
+        ]
       }
     },
     "/service/report/action/execute": {
@@ -28070,7 +29426,10 @@
               "$ref": "#/definitions/KalturaReportResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getBaseTotal": {
@@ -28164,7 +29523,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getCsv": {
@@ -28196,7 +29558,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getCsvFromStringParams": {
@@ -28235,7 +29600,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getGraphs": {
@@ -28336,7 +29704,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getTable": {
@@ -28450,7 +29821,10 @@
               "$ref": "#/definitions/KalturaReportTable"
             }
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getTotal": {
@@ -28547,7 +29921,10 @@
               "$ref": "#/definitions/KalturaReportTotal"
             }
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/getUrlForReportAsCsv": {
@@ -28686,7 +30063,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/report/action/serve": {
@@ -28718,7 +30098,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "report"
+        ]
       }
     },
     "/service/responseProfile/action/add": {
@@ -28776,7 +30159,10 @@
               "$ref": "#/definitions/KalturaResponseProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "responseProfile"
+        ]
       }
     },
     "/service/responseProfile/action/delete": {
@@ -28808,7 +30194,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "responseProfile"
+        ]
       }
     },
     "/service/responseProfile/action/get": {
@@ -28843,7 +30232,10 @@
               "$ref": "#/definitions/KalturaResponseProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "responseProfile"
+        ]
       }
     },
     "/service/responseProfile/action/list": {
@@ -28881,7 +30273,10 @@
               "$ref": "#/definitions/KalturaResponseProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "responseProfile"
+        ]
       }
     },
     "/service/responseProfile/action/update": {
@@ -28946,7 +30341,10 @@
               "$ref": "#/definitions/KalturaResponseProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "responseProfile"
+        ]
       }
     },
     "/service/responseProfile/action/updateStatus": {
@@ -28993,7 +30391,10 @@
               "$ref": "#/definitions/KalturaResponseProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "responseProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/add": {
@@ -29085,7 +30486,10 @@
               "$ref": "#/definitions/KalturaScheduledTaskProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/delete": {
@@ -29117,7 +30521,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/get": {
@@ -29152,7 +30559,10 @@
               "$ref": "#/definitions/KalturaScheduledTaskProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/getDryRunResults": {
@@ -29187,7 +30597,10 @@
               "$ref": "#/definitions/KalturaObjectListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/list": {
@@ -29225,7 +30638,10 @@
               "$ref": "#/definitions/KalturaScheduledTaskProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/requestDryRun": {
@@ -29264,7 +30680,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/scheduledTaskProfile/action/update": {
@@ -29363,7 +30782,10 @@
               "$ref": "#/definitions/KalturaScheduledTaskProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "scheduledTaskProfile"
+        ]
       }
     },
     "/service/schema/action/serve": {
@@ -29403,7 +30825,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "schema"
+        ]
       }
     },
     "/service/search/action/externalLogin": {
@@ -29470,7 +30895,10 @@
               "$ref": "#/definitions/KalturaSearchAuthData"
             }
           }
-        }
+        },
+        "tags": [
+          "search"
+        ]
       }
     },
     "/service/search/action/getMediaInfo": {
@@ -29553,7 +30981,10 @@
               "$ref": "#/definitions/KalturaSearchResult"
             }
           }
-        }
+        },
+        "tags": [
+          "search"
+        ]
       }
     },
     "/service/search/action/search": {
@@ -29616,7 +31047,10 @@
               "$ref": "#/definitions/KalturaSearchResultResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "search"
+        ]
       }
     },
     "/service/search/action/searchUrl": {
@@ -29667,7 +31101,10 @@
               "$ref": "#/definitions/KalturaSearchResult"
             }
           }
-        }
+        },
+        "tags": [
+          "search"
+        ]
       }
     },
     "/service/session/action/end": {
@@ -29692,7 +31129,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "session"
+        ]
       }
     },
     "/service/session/action/get": {
@@ -29727,7 +31167,10 @@
               "$ref": "#/definitions/KalturaSessionInfo"
             }
           }
-        }
+        },
+        "tags": [
+          "session"
+        ]
       }
     },
     "/service/session/action/impersonate": {
@@ -29805,7 +31248,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "session"
+        ]
       }
     },
     "/service/session/action/impersonateByKs": {
@@ -29865,7 +31311,10 @@
               "$ref": "#/definitions/KalturaSessionInfo"
             }
           }
-        }
+        },
+        "tags": [
+          "session"
+        ]
       }
     },
     "/service/session/action/start": {
@@ -29936,7 +31385,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "session"
+        ]
       }
     },
     "/service/session/action/startWidgetSession": {
@@ -29978,7 +31430,10 @@
               "$ref": "#/definitions/KalturaStartWidgetSessionResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "session"
+        ]
       }
     },
     "/service/shortLink/action/add": {
@@ -30056,7 +31511,10 @@
               "$ref": "#/definitions/KalturaShortLink"
             }
           }
-        }
+        },
+        "tags": [
+          "shortLink"
+        ]
       }
     },
     "/service/shortLink/action/delete": {
@@ -30091,7 +31549,10 @@
               "$ref": "#/definitions/KalturaShortLink"
             }
           }
-        }
+        },
+        "tags": [
+          "shortLink"
+        ]
       }
     },
     "/service/shortLink/action/get": {
@@ -30126,7 +31587,10 @@
               "$ref": "#/definitions/KalturaShortLink"
             }
           }
-        }
+        },
+        "tags": [
+          "shortLink"
+        ]
       }
     },
     "/service/shortLink/action/goto": {
@@ -30165,7 +31629,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "shortLink"
+        ]
       }
     },
     "/service/shortLink/action/list": {
@@ -30203,7 +31670,10 @@
               "$ref": "#/definitions/KalturaShortLinkListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "shortLink"
+        ]
       }
     },
     "/service/shortLink/action/update": {
@@ -30288,7 +31758,10 @@
               "$ref": "#/definitions/KalturaShortLink"
             }
           }
-        }
+        },
+        "tags": [
+          "shortLink"
+        ]
       }
     },
     "/service/stats/action/collect": {
@@ -30423,7 +31896,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "stats"
+        ]
       }
     },
     "/service/stats/action/kmcCollect": {
@@ -30503,7 +31979,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "stats"
+        ]
       }
     },
     "/service/stats/action/reportError": {
@@ -30542,7 +32021,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "stats"
+        ]
       }
     },
     "/service/stats/action/reportKceError": {
@@ -30620,7 +32102,10 @@
               "$ref": "#/definitions/KalturaCEError"
             }
           }
-        }
+        },
+        "tags": [
+          "stats"
+        ]
       }
     },
     "/service/storageProfile/action/add": {
@@ -30803,7 +32288,10 @@
               "$ref": "#/definitions/KalturaStorageProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "storageProfile"
+        ]
       }
     },
     "/service/storageProfile/action/get": {
@@ -30838,7 +32326,10 @@
               "$ref": "#/definitions/KalturaStorageProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "storageProfile"
+        ]
       }
     },
     "/service/storageProfile/action/list": {
@@ -30876,7 +32367,10 @@
               "$ref": "#/definitions/KalturaStorageProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "storageProfile"
+        ]
       }
     },
     "/service/storageProfile/action/update": {
@@ -31066,7 +32560,10 @@
               "$ref": "#/definitions/KalturaStorageProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "storageProfile"
+        ]
       }
     },
     "/service/storageProfile/action/updateStatus": {
@@ -31110,7 +32607,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "storageProfile"
+        ]
       }
     },
     "/service/syndicationFeed/action/add": {
@@ -31238,7 +32738,10 @@
               "$ref": "#/definitions/KalturaBaseSyndicationFeed"
             }
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/syndicationFeed/action/delete": {
@@ -31270,7 +32773,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/syndicationFeed/action/get": {
@@ -31305,7 +32811,10 @@
               "$ref": "#/definitions/KalturaBaseSyndicationFeed"
             }
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/syndicationFeed/action/getEntryCount": {
@@ -31340,7 +32849,10 @@
               "$ref": "#/definitions/KalturaSyndicationFeedEntryCount"
             }
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/syndicationFeed/action/list": {
@@ -31378,7 +32890,10 @@
               "$ref": "#/definitions/KalturaBaseSyndicationFeedListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/syndicationFeed/action/requestConversion": {
@@ -31410,7 +32925,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/syndicationFeed/action/update": {
@@ -31545,7 +33063,10 @@
               "$ref": "#/definitions/KalturaBaseSyndicationFeed"
             }
           }
-        }
+        },
+        "tags": [
+          "syndicationFeed"
+        ]
       }
     },
     "/service/system/action/getTime": {
@@ -31570,7 +33091,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "system"
+        ]
       }
     },
     "/service/system/action/getVersion": {
@@ -31595,7 +33119,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "system"
+        ]
       }
     },
     "/service/system/action/ping": {
@@ -31620,7 +33147,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "system"
+        ]
       }
     },
     "/service/system/action/pingDatabase": {
@@ -31645,7 +33175,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "system"
+        ]
       }
     },
     "/service/tag/action/deletePending": {
@@ -31670,7 +33203,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "tag"
+        ]
       }
     },
     "/service/tag/action/indexCategoryEntryTags": {
@@ -31716,7 +33252,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "tag"
+        ]
       }
     },
     "/service/tag/action/search": {
@@ -31779,7 +33318,10 @@
               "$ref": "#/definitions/KalturaTagListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "tag"
+        ]
       }
     },
     "/service/thumbAsset/action/add": {
@@ -31834,7 +33376,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/addFromImage": {
@@ -31869,7 +33414,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/addFromUrl": {
@@ -31911,7 +33459,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/delete": {
@@ -31943,7 +33494,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/generate": {
@@ -32070,7 +33624,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/generateByEntryId": {
@@ -32112,7 +33669,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/get": {
@@ -32147,7 +33707,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/getByEntryId": {
@@ -32179,7 +33742,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/getRemotePaths": {
@@ -32214,7 +33780,10 @@
               "$ref": "#/definitions/KalturaRemotePathListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/getUrl": {
@@ -32338,7 +33907,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/list": {
@@ -32376,7 +33948,10 @@
               "$ref": "#/definitions/KalturaThumbAssetListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/regenerate": {
@@ -32411,7 +33986,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/serve": {
@@ -32540,7 +34118,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/serveByEntryId": {
@@ -32579,7 +34160,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/setAsDefault": {
@@ -32611,7 +34195,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/setContent": {
@@ -32646,7 +34233,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbAsset/action/update": {
@@ -32701,7 +34291,10 @@
               "$ref": "#/definitions/KalturaThumbAsset"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbAsset"
+        ]
       }
     },
     "/service/thumbParams/action/add": {
@@ -32814,7 +34407,10 @@
               "$ref": "#/definitions/KalturaThumbParams"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbParams"
+        ]
       }
     },
     "/service/thumbParams/action/delete": {
@@ -32846,7 +34442,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbParams"
+        ]
       }
     },
     "/service/thumbParams/action/get": {
@@ -32881,7 +34480,10 @@
               "$ref": "#/definitions/KalturaThumbParams"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbParams"
+        ]
       }
     },
     "/service/thumbParams/action/getByConversionProfileId": {
@@ -32913,7 +34515,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "thumbParams"
+        ]
       }
     },
     "/service/thumbParams/action/list": {
@@ -32951,7 +34556,10 @@
               "$ref": "#/definitions/KalturaThumbParamsListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbParams"
+        ]
       }
     },
     "/service/thumbParams/action/update": {
@@ -33071,7 +34679,10 @@
               "$ref": "#/definitions/KalturaThumbParams"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbParams"
+        ]
       }
     },
     "/service/thumbParamsOutput/action/get": {
@@ -33106,7 +34717,10 @@
               "$ref": "#/definitions/KalturaThumbParamsOutput"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbParamsOutput"
+        ]
       }
     },
     "/service/thumbParamsOutput/action/list": {
@@ -33144,7 +34758,10 @@
               "$ref": "#/definitions/KalturaThumbParamsOutputListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "thumbParamsOutput"
+        ]
       }
     },
     "/service/uiConf/action/add": {
@@ -33292,7 +34909,10 @@
               "$ref": "#/definitions/KalturaUiConf"
             }
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/clone": {
@@ -33327,7 +34947,10 @@
               "$ref": "#/definitions/KalturaUiConf"
             }
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/delete": {
@@ -33359,7 +34982,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/get": {
@@ -33394,7 +35020,10 @@
               "$ref": "#/definitions/KalturaUiConf"
             }
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/getAvailableTypes": {
@@ -33419,7 +35048,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/list": {
@@ -33457,7 +35089,10 @@
               "$ref": "#/definitions/KalturaUiConfListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/listTemplates": {
@@ -33495,7 +35130,10 @@
               "$ref": "#/definitions/KalturaUiConfListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/uiConf/action/update": {
@@ -33650,7 +35288,10 @@
               "$ref": "#/definitions/KalturaUiConf"
             }
           }
-        }
+        },
+        "tags": [
+          "uiConf"
+        ]
       }
     },
     "/service/upload/action/getUploadedFileTokenByFileName": {
@@ -33685,7 +35326,10 @@
               "$ref": "#/definitions/KalturaUploadResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "upload"
+        ]
       }
     },
     "/service/upload/action/upload": {
@@ -33710,7 +35354,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "upload"
+        ]
       }
     },
     "/service/uploadToken/action/add": {
@@ -33783,7 +35430,10 @@
               "$ref": "#/definitions/KalturaUploadToken"
             }
           }
-        }
+        },
+        "tags": [
+          "uploadToken"
+        ]
       }
     },
     "/service/uploadToken/action/delete": {
@@ -33815,7 +35465,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "uploadToken"
+        ]
       }
     },
     "/service/uploadToken/action/get": {
@@ -33850,7 +35503,10 @@
               "$ref": "#/definitions/KalturaUploadToken"
             }
           }
-        }
+        },
+        "tags": [
+          "uploadToken"
+        ]
       }
     },
     "/service/uploadToken/action/list": {
@@ -33888,7 +35544,10 @@
               "$ref": "#/definitions/KalturaUploadTokenListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "uploadToken"
+        ]
       }
     },
     "/service/uploadToken/action/upload": {
@@ -33944,7 +35603,10 @@
               "$ref": "#/definitions/KalturaUploadToken"
             }
           }
-        }
+        },
+        "tags": [
+          "uploadToken"
+        ]
       }
     },
     "/service/user/action/add": {
@@ -34157,7 +35819,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/addFromBulkUpload": {
@@ -34254,7 +35919,10 @@
               "$ref": "#/definitions/KalturaBulkUpload"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/checkLoginDataExists": {
@@ -34279,7 +35947,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/delete": {
@@ -34314,7 +35985,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/disableLogin": {
@@ -34356,7 +36030,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/enableLogin": {
@@ -34405,7 +36082,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/get": {
@@ -34440,7 +36120,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/getByLoginId": {
@@ -34475,7 +36158,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/index": {
@@ -34514,7 +36200,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/list": {
@@ -34602,7 +36291,10 @@
               "$ref": "#/definitions/KalturaUserListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/login": {
@@ -34662,7 +36354,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/loginByLoginId": {
@@ -34722,7 +36417,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/notifyBan": {
@@ -34754,7 +36452,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/resetPassword": {
@@ -34786,7 +36487,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/setInitialPassword": {
@@ -34825,7 +36529,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/update": {
@@ -35045,7 +36752,10 @@
               "$ref": "#/definitions/KalturaUser"
             }
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/user/action/updateLoginData": {
@@ -35112,7 +36822,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "user"
+        ]
       }
     },
     "/service/userRole/action/add": {
@@ -35190,7 +36903,10 @@
               "$ref": "#/definitions/KalturaUserRole"
             }
           }
-        }
+        },
+        "tags": [
+          "userRole"
+        ]
       }
     },
     "/service/userRole/action/clone": {
@@ -35225,7 +36941,10 @@
               "$ref": "#/definitions/KalturaUserRole"
             }
           }
-        }
+        },
+        "tags": [
+          "userRole"
+        ]
       }
     },
     "/service/userRole/action/delete": {
@@ -35260,7 +36979,10 @@
               "$ref": "#/definitions/KalturaUserRole"
             }
           }
-        }
+        },
+        "tags": [
+          "userRole"
+        ]
       }
     },
     "/service/userRole/action/get": {
@@ -35295,7 +37017,10 @@
               "$ref": "#/definitions/KalturaUserRole"
             }
           }
-        }
+        },
+        "tags": [
+          "userRole"
+        ]
       }
     },
     "/service/userRole/action/list": {
@@ -35333,7 +37058,10 @@
               "$ref": "#/definitions/KalturaUserRoleListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "userRole"
+        ]
       }
     },
     "/service/userRole/action/update": {
@@ -35418,7 +37146,10 @@
               "$ref": "#/definitions/KalturaUserRole"
             }
           }
-        }
+        },
+        "tags": [
+          "userRole"
+        ]
       }
     },
     "/service/varConsole/action/getPartnerUsage": {
@@ -35486,7 +37217,10 @@
               "$ref": "#/definitions/KalturaPartnerUsageListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "varConsole"
+        ]
       }
     },
     "/service/varConsole/action/updateStatus": {
@@ -35531,7 +37265,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "varConsole"
+        ]
       }
     },
     "/service/virusScanProfile/action/add": {
@@ -35603,7 +37340,10 @@
               "$ref": "#/definitions/KalturaVirusScanProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "virusScanProfile"
+        ]
       }
     },
     "/service/virusScanProfile/action/delete": {
@@ -35638,7 +37378,10 @@
               "$ref": "#/definitions/KalturaVirusScanProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "virusScanProfile"
+        ]
       }
     },
     "/service/virusScanProfile/action/get": {
@@ -35673,7 +37416,10 @@
               "$ref": "#/definitions/KalturaVirusScanProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "virusScanProfile"
+        ]
       }
     },
     "/service/virusScanProfile/action/list": {
@@ -35711,7 +37457,10 @@
               "$ref": "#/definitions/KalturaVirusScanProfileListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "virusScanProfile"
+        ]
       }
     },
     "/service/virusScanProfile/action/scan": {
@@ -35750,7 +37499,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "virusScanProfile"
+        ]
       }
     },
     "/service/virusScanProfile/action/update": {
@@ -35829,7 +37581,10 @@
               "$ref": "#/definitions/KalturaVirusScanProfile"
             }
           }
-        }
+        },
+        "tags": [
+          "virusScanProfile"
+        ]
       }
     },
     "/service/widevineDrm/action/getLicense": {
@@ -35868,7 +37623,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "widevineDrm"
+        ]
       }
     },
     "/service/widget/action/add": {
@@ -35971,7 +37729,10 @@
               "$ref": "#/definitions/KalturaWidget"
             }
           }
-        }
+        },
+        "tags": [
+          "widget"
+        ]
       }
     },
     "/service/widget/action/clone": {
@@ -36074,7 +37835,10 @@
               "$ref": "#/definitions/KalturaWidget"
             }
           }
-        }
+        },
+        "tags": [
+          "widget"
+        ]
       }
     },
     "/service/widget/action/get": {
@@ -36109,7 +37873,10 @@
               "$ref": "#/definitions/KalturaWidget"
             }
           }
-        }
+        },
+        "tags": [
+          "widget"
+        ]
       }
     },
     "/service/widget/action/list": {
@@ -36147,7 +37914,10 @@
               "$ref": "#/definitions/KalturaWidgetListResponse"
             }
           }
-        }
+        },
+        "tags": [
+          "widget"
+        ]
       }
     },
     "/service/widget/action/update": {
@@ -36257,7 +38027,10 @@
               "$ref": "#/definitions/KalturaWidget"
             }
           }
-        }
+        },
+        "tags": [
+          "widget"
+        ]
       }
     },
     "/service/xInternal/action/xAddBulkDownload": {
@@ -36296,7 +38069,10 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "tags": [
+          "xInternal"
+        ]
       }
     }
   },
@@ -36324,5 +38100,93 @@
       "type": "apiKey"
     }
   },
-  "swagger": "2.0"
+  "swagger": "2.0",
+  "tags": [
+    "accessControlProfile",
+    "accessControl",
+    "adminUser",
+    "baseEntry",
+    "bulkUpload",
+    "categoryEntry",
+    "category",
+    "categoryUser",
+    "conversionProfileAssetParams",
+    "conversionProfile",
+    "data",
+    "deliveryProfile",
+    "document",
+    "EmailIngestionProfile",
+    "fileAsset",
+    "flavorAsset",
+    "flavorParamsOutput",
+    "flavorParams",
+    "groupUser",
+    "liveChannelSegment",
+    "liveChannel",
+    "liveReports",
+    "liveStats",
+    "liveStream",
+    "mediaInfo",
+    "mediaServer",
+    "media",
+    "mixing",
+    "notification",
+    "partner",
+    "permissionItem",
+    "permission",
+    "playlist",
+    "report",
+    "responseProfile",
+    "schema",
+    "search",
+    "session",
+    "stats",
+    "storageProfile",
+    "syndicationFeed",
+    "system",
+    "thumbAsset",
+    "thumbParamsOutput",
+    "thumbParams",
+    "uiConf",
+    "upload",
+    "uploadToken",
+    "userRole",
+    "user",
+    "widget",
+    "xInternal",
+    "metadata",
+    "metadataProfile",
+    "documents",
+    "annotation",
+    "aspera",
+    "attachmentAsset",
+    "auditTrail",
+    "bulk",
+    "captionAsset",
+    "captionParams",
+    "captionAssetItem",
+    "distributionProfile",
+    "entryDistribution",
+    "distributionProvider",
+    "genericDistributionProvider",
+    "genericDistributionProviderAction",
+    "cuePoint",
+    "dropFolder",
+    "dropFolderFile",
+    "eventNotificationTemplate",
+    "like",
+    "shortLink",
+    "tag",
+    "varConsole",
+    "virusScanProfile",
+    "externalMedia",
+    "drmPolicy",
+    "drmProfile",
+    "widevineDrm",
+    "scheduledTaskProfile",
+    "playReadyDrm",
+    "integration",
+    "businessProcessServer",
+    "businessProcessCase"
+  ]
 }
