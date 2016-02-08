@@ -5,7 +5,7 @@ var Kaltura = require('./lib/kaltura-spec');
 Converter.convert({
   from: 'kaltura',
   to: 'swagger_2',
-  source: 'http://www.kaltura.com/api_v3/api_schema.php'
+  source: __dirname + '/node_modules/kaltura-schema/api_schema.xml',
 }, function(err, spec) {
   if (err) console.log(err);
   FS.writeFileSync('out/swagger.json', spec.stringify());
