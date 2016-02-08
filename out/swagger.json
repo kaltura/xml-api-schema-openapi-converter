@@ -46,7 +46,9 @@
           "type": "integer"
         },
         "restrictions": {
-          "description": "Array of Access Control Restrictions",
+          "items": {
+            "$ref": "#/definitions/KalturaBaseRestriction"
+          },
           "type": "array"
         },
         "systemName": {
@@ -136,6 +138,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaAccessControl"
+          },
           "type": "array"
         }
       }
@@ -199,7 +204,9 @@
           "type": "integer"
         },
         "rules": {
-          "description": "Array of access control rules",
+          "items": {
+            "$ref": "#/definitions/KalturaRule"
+          },
           "type": "array"
         },
         "systemName": {
@@ -264,6 +271,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaAccessControlProfile"
+          },
           "type": "array"
         }
       }
@@ -272,11 +282,15 @@
       "description": "",
       "properties": {
         "contexts": {
-          "description": "Indicates what contexts should be tested. No contexts means any context.",
+          "items": {
+            "$ref": "#/definitions/KalturaAccessControlContextTypeHolder"
+          },
           "type": "array"
         },
         "hashes": {
-          "description": "Array of hashes to pass to the access control profile scope",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "ip": {
@@ -721,6 +735,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaAnnotation"
+          },
           "type": "array"
         }
       }
@@ -957,7 +974,9 @@
       "description": "",
       "properties": {
         "assetDistributionConditions": {
-          "description": "An array of asset distribution conditions",
+          "items": {
+            "$ref": "#/definitions/KalturaAssetDistributionCondition"
+          },
           "type": "array"
         },
         "validationError": {
@@ -1020,7 +1039,9 @@
           "type": "integer"
         },
         "requiredPermissions": {
-          "description": "Array of partner permisison names that required for using this asset params",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         },
         "sourceAssetParamsIds": {
@@ -1180,7 +1201,9 @@
       "description": "",
       "properties": {
         "properties": {
-          "description": "Array of key/value objects that holds the property and the value to find and compare on an asset object",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         }
       }
@@ -1208,7 +1231,9 @@
       "description": "",
       "properties": {
         "resources": {
-          "description": "Array of resources associated with asset params ids",
+          "items": {
+            "$ref": "#/definitions/KalturaAssetParamsResourceContainer"
+          },
           "type": "array"
         }
       }
@@ -1308,6 +1333,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaAttachmentAsset"
+          },
           "type": "array"
         }
       }
@@ -1693,6 +1721,9 @@
       "description": "",
       "properties": {
         "changedItems": {
+          "items": {
+            "$ref": "#/definitions/KalturaAuditTrailChangeItem"
+          },
           "type": "array"
         }
       }
@@ -1781,6 +1812,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaAuditTrail"
+          },
           "type": "array"
         }
       }
@@ -1807,7 +1841,9 @@
       "description": "",
       "properties": {
         "privileges": {
-          "description": "The privelege needed to remove the restriction",
+          "items": {
+            "$ref": "#/definitions/KalturaStringValue"
+          },
           "type": "array"
         }
       }
@@ -1913,7 +1949,9 @@
           "type": "string"
         },
         "operationAttributes": {
-          "description": "clipping, skipping and cropping attributes that used to create this entry",
+          "items": {
+            "$ref": "#/definitions/KalturaOperationAttributes"
+          },
           "type": "array"
         },
         "parentEntryId": {
@@ -2403,6 +2441,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaBaseEntry"
+          },
           "type": "array"
         }
       }
@@ -2534,6 +2575,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaBaseSyndicationFeed"
+          },
           "type": "array"
         }
       }
@@ -2635,6 +2679,9 @@
           "type": "integer"
         },
         "history": {
+          "items": {
+            "$ref": "#/definitions/KalturaBatchHistoryData"
+          },
           "type": "array"
         },
         "id": {
@@ -3028,6 +3075,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaBatchJob"
+          },
           "type": "array"
         }
       }
@@ -3181,6 +3231,9 @@
           "type": "integer"
         },
         "results": {
+          "items": {
+            "$ref": "#/definitions/KalturaBulkUploadResult"
+          },
           "type": "array"
         },
         "status": {
@@ -3301,7 +3354,9 @@
       "description": "Represents the Bulk upload job data for xml bulk upload\n ",
       "properties": {
         "columns": {
-          "description": "Array containing CSV headers",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         },
         "csvVersion": {
@@ -3440,6 +3495,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaBulkUpload"
+          },
           "type": "array"
         }
       }
@@ -3520,6 +3578,9 @@
           "type": "integer"
         },
         "pluginsData": {
+          "items": {
+            "$ref": "#/definitions/KalturaBulkUploadPluginData"
+          },
           "type": "array"
         },
         "rowData": {
@@ -4005,6 +4066,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaBusinessProcessServer"
+          },
           "type": "array"
         }
       }
@@ -4737,6 +4801,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCaptionAssetItem"
+          },
           "type": "array"
         }
       }
@@ -4750,6 +4817,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCaptionAsset"
+          },
           "type": "array"
         }
       }
@@ -4978,6 +5048,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCaptionParams"
+          },
           "type": "array"
         }
       }
@@ -5492,6 +5565,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCategoryEntry"
+          },
           "type": "array"
         }
       }
@@ -5559,6 +5635,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCategory"
+          },
           "type": "array"
         }
       }
@@ -5761,6 +5840,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCategoryUser"
+          },
           "type": "array"
         }
       }
@@ -6025,7 +6107,9 @@
           "type": "number"
         },
         "srcFiles": {
-          "description": "Source files to be concatenated",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         }
       }
@@ -6086,9 +6170,15 @@
       "description": "",
       "properties": {
         "fieldConfigArray": {
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionFieldConfig"
+          },
           "type": "array"
         },
         "itemXpathsToExtend": {
+          "items": {
+            "$ref": "#/definitions/KalturaExtendingItemMrssParameter"
+          },
           "type": "array"
         }
       }
@@ -6188,11 +6278,15 @@
       "description": "",
       "properties": {
         "actions": {
-          "description": "Array of actions as received from the rules that invalidated",
+          "items": {
+            "$ref": "#/definitions/KalturaRuleAction"
+          },
           "type": "array"
         },
         "messages": {
-          "description": "Array of messages as received from the rules that invalidated",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         }
       }
@@ -6379,6 +6473,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaControlPanelCommand"
+          },
           "type": "array"
         }
       }
@@ -6414,6 +6511,9 @@
           "type": "integer"
         },
         "pluginData": {
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "srcFileSyncLocalPath": {
@@ -6423,6 +6523,9 @@
           "type": "string"
         },
         "srcFileSyncs": {
+          "items": {
+            "$ref": "#/definitions/KalturaSourceFileSyncDescriptor"
+          },
           "type": "array"
         }
       }
@@ -6669,6 +6772,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaConversionProfileAssetParams"
+          },
           "type": "array"
         }
       }
@@ -6749,6 +6855,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaConversionProfile"
+          },
           "type": "array"
         }
       }
@@ -6800,6 +6909,9 @@
           "type": "string"
         },
         "flavors": {
+          "items": {
+            "$ref": "#/definitions/KalturaConvertCollectionFlavorData"
+          },
           "type": "array"
         },
         "inputXmlLocalPath": {
@@ -6849,6 +6961,9 @@
           "type": "string"
         },
         "extraDestFileSyncs": {
+          "items": {
+            "$ref": "#/definitions/KalturaDestFileSyncDescriptor"
+          },
           "type": "array"
         },
         "flavorAssetId": {
@@ -7259,6 +7374,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaCuePoint"
+          },
           "type": "array"
         }
       }
@@ -7317,6 +7435,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDataEntry"
+          },
           "type": "array"
         }
       }
@@ -7891,6 +8012,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDeliveryProfile"
+          },
           "type": "array"
         }
       }
@@ -7990,6 +8114,9 @@
           "$ref": "#/definitions/KalturaRelatedFilter"
         },
         "mappings": {
+          "items": {
+            "$ref": "#/definitions/KalturaResponseProfileMapping"
+          },
           "type": "array"
         },
         "name": {
@@ -8000,6 +8127,9 @@
           "$ref": "#/definitions/KalturaFilterPager"
         },
         "relatedProfiles": {
+          "items": {
+            "$ref": "#/definitions/KalturaDetachedResponseProfile"
+          },
           "type": "array"
         },
         "type": {
@@ -8130,7 +8260,9 @@
           "type": "boolean"
         },
         "updateParams": {
-          "description": "Entry column or metadata xpath that should trigger an update",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         },
         "userFriendlyFieldName": {
@@ -8160,7 +8292,9 @@
           "type": "integer"
         },
         "mediaFiles": {
-          "description": "Stores array of media files that submitted to the destination site\n\t Could be used later for media update",
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionRemoteMediaFile"
+          },
           "type": "array"
         },
         "providerData": {
@@ -8250,7 +8384,9 @@
           "type": "string"
         },
         "optionalAssetDistributionRules": {
-          "description": "Asset Distribution Rules for assets that should be submitted if ready",
+          "items": {
+            "$ref": "#/definitions/KalturaAssetDistributionRule"
+          },
           "type": "array"
         },
         "optionalFlavorParamsIds": {
@@ -8258,7 +8394,9 @@
           "type": "string"
         },
         "optionalThumbDimensions": {
-          "description": "Thumbnail dimensions that should be submitted if ready",
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionThumbDimensions"
+          },
           "type": "array"
         },
         "partnerId": {
@@ -8320,7 +8458,9 @@
           "type": "integer"
         },
         "requiredAssetDistributionRules": {
-          "description": "Assets Asset Distribution Rules for assets that are required to be ready before submission",
+          "items": {
+            "$ref": "#/definitions/KalturaAssetDistributionRule"
+          },
           "type": "array"
         },
         "requiredFlavorParamsIds": {
@@ -8328,7 +8468,9 @@
           "type": "string"
         },
         "requiredThumbDimensions": {
-          "description": "Thumbnail dimensions that required to be readt before submission",
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionThumbDimensions"
+          },
           "type": "array"
         },
         "status": {
@@ -8426,6 +8568,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionProfile"
+          },
           "type": "array"
         }
       }
@@ -8560,6 +8705,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionProvider"
+          },
           "type": "array"
         }
       }
@@ -8862,6 +9010,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDocumentEntry"
+          },
           "type": "array"
         }
       }
@@ -9044,6 +9195,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDrmPolicy"
+          },
           "type": "array"
         }
       }
@@ -9154,6 +9308,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDrmProfile"
+          },
           "type": "array"
         }
       }
@@ -9744,6 +9901,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDropFolderFile"
+          },
           "type": "array"
         }
       }
@@ -9802,6 +9962,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaDropFolder"
+          },
           "type": "array"
         }
       }
@@ -9927,7 +10090,9 @@
           "type": "string"
         },
         "customHeaders": {
-          "description": "Adds a e-mail custom header",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "fromEmail": {
@@ -10010,7 +10175,9 @@
       "description": "JobData representing the static receipient array\n ",
       "properties": {
         "emailRecipients": {
-          "description": "Email to emails and names",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         }
       }
@@ -10024,7 +10191,9 @@
       "description": "API class for recipient provider containing a static list of email recipients.\n ",
       "properties": {
         "emailRecipients": {
-          "description": "Email to emails and names",
+          "items": {
+            "$ref": "#/definitions/KalturaEmailNotificationRecipient"
+          },
           "type": "array"
         }
       }
@@ -10052,7 +10221,9 @@
           "type": "string"
         },
         "customHeaders": {
-          "description": "Adds a e-mail custom header",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "format": {
@@ -10243,15 +10414,21 @@
       "description": "",
       "properties": {
         "accessControlActions": {
-          "description": "Array of actions as received from the access control rules that invalidated",
+          "items": {
+            "$ref": "#/definitions/KalturaRuleAction"
+          },
           "type": "array"
         },
         "accessControlMessages": {
-          "description": "Array of messages as received from the access control rules that invalidated",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         },
         "flavorAssets": {
-          "description": "Array of allowed flavor assets according to access control limitations and requested tags",
+          "items": {
+            "$ref": "#/definitions/KalturaFlavorAsset"
+          },
           "type": "array"
         },
         "isAdmin": {
@@ -10469,6 +10646,9 @@
           "type": "integer"
         },
         "validationErrors": {
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionValidationError"
+          },
           "type": "array"
         },
         "views": {
@@ -10588,6 +10768,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaEntryDistribution"
+          },
           "type": "array"
         }
       }
@@ -10765,10 +10948,15 @@
       "description": "",
       "properties": {
         "allowedValues": {
-          "description": "Used to restrict the values to close list",
+          "items": {
+            "$ref": "#/definitions/KalturaStringValue"
+          },
           "type": "array"
         },
         "values": {
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         }
       }
@@ -10782,7 +10970,9 @@
       "description": "",
       "properties": {
         "contentParameters": {
-          "description": "Define the content dynamic parameters",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "templateId": {
@@ -10874,7 +11064,9 @@
           "type": "boolean"
         },
         "contentParameters": {
-          "description": "Define the content dynamic parameters",
+          "items": {
+            "$ref": "#/definitions/KalturaEventNotificationParameter"
+          },
           "type": "array"
         },
         "createdAt": {
@@ -10884,7 +11076,9 @@
           "type": "string"
         },
         "eventConditions": {
-          "description": "Define the conditions that cause this notification to be triggered",
+          "items": {
+            "$ref": "#/definitions/KalturaCondition"
+          },
           "type": "array"
         },
         "eventObjectType": {
@@ -10994,7 +11188,9 @@
           "type": "integer"
         },
         "userParameters": {
-          "description": "Define the content dynamic parameters",
+          "items": {
+            "$ref": "#/definitions/KalturaEventNotificationParameter"
+          },
           "type": "array"
         }
       }
@@ -11081,6 +11277,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaEventNotificationTemplate"
+          },
           "type": "array"
         }
       }
@@ -11218,6 +11417,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaExternalMediaEntry"
+          },
           "type": "array"
         }
       }
@@ -11263,6 +11465,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaFeatureStatus"
+          },
           "type": "array"
         }
       }
@@ -11481,6 +11686,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaFileAsset"
+          },
           "type": "array"
         }
       }
@@ -11781,6 +11989,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaFileSync"
+          },
           "type": "array"
         }
       }
@@ -11963,6 +12174,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaFlavorAsset"
+          },
           "type": "array"
         }
       }
@@ -12250,6 +12464,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaFlavorParams"
+          },
           "type": "array"
         }
       }
@@ -12322,6 +12539,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaFlavorParamsOutput"
+          },
           "type": "array"
         }
       }
@@ -12505,6 +12725,9 @@
           "type": "string"
         },
         "optionalThumbDimensions": {
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionThumbDimensions"
+          },
           "type": "array"
         },
         "partnerId": {
@@ -12514,6 +12737,9 @@
           "type": "string"
         },
         "requiredThumbDimensions": {
+          "items": {
+            "$ref": "#/definitions/KalturaDistributionThumbDimensions"
+          },
           "type": "array"
         },
         "status": {
@@ -12675,6 +12901,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaGenericDistributionProviderAction"
+          },
           "type": "array"
         }
       }
@@ -12752,6 +12981,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaGenericDistributionProvider"
+          },
           "type": "array"
         }
       }
@@ -12801,6 +13033,9 @@
       "description": "",
       "properties": {
         "itemXpathsToExtend": {
+          "items": {
+            "$ref": "#/definitions/KalturaExtendingItemMrssParameter"
+          },
           "type": "array"
         },
         "xslt": {
@@ -12985,6 +13220,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaGroupUser"
+          },
           "type": "array"
         }
       }
@@ -13133,7 +13371,9 @@
           "type": "integer"
         },
         "customHeaders": {
-          "description": "Adds a e-mail custom header",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "data": {
@@ -13282,7 +13522,9 @@
           "type": "integer"
         },
         "customHeaders": {
-          "description": "Adds a e-mail custom header",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "data": {
@@ -14005,6 +14247,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaLiveChannel"
+          },
           "type": "array"
         }
       }
@@ -14147,6 +14392,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaLiveChannelSegment"
+          },
           "type": "array"
         }
       }
@@ -14188,7 +14436,9 @@
           "type": "integer"
         },
         "liveStreamConfigurations": {
-          "description": "Array of key value protocol->live stream url objects",
+          "items": {
+            "$ref": "#/definitions/KalturaLiveStreamConfiguration"
+          },
           "type": "array"
         },
         "offlineMessage": {
@@ -14196,7 +14446,9 @@
           "type": "string"
         },
         "publishConfigurations": {
-          "description": "Array of publish configurations",
+          "items": {
+            "$ref": "#/definitions/KalturaLiveStreamPushPublishConfiguration"
+          },
           "type": "array"
         },
         "pushPublishEnabled": {
@@ -14584,7 +14836,9 @@
       "description": "",
       "properties": {
         "bitrates": {
-          "description": "Array of supported bitrates",
+          "items": {
+            "$ref": "#/definitions/KalturaLiveStreamBitrate"
+          },
           "type": "array"
         },
         "encodingIP1": {
@@ -14667,6 +14921,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaLiveStreamEntry"
+          },
           "type": "array"
         }
       }
@@ -14970,6 +15227,9 @@
       "description": "",
       "properties": {
         "values": {
+          "items": {
+            "$ref": "#/definitions/KalturaStringValue"
+          },
           "type": "array"
         }
       }
@@ -15416,6 +15676,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaMediaInfo"
+          },
           "type": "array"
         }
       }
@@ -15429,6 +15692,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaMediaEntry"
+          },
           "type": "array"
         }
       }
@@ -15662,6 +15928,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaMetadata"
+          },
           "type": "array"
         }
       }
@@ -15850,6 +16119,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaMetadataProfileField"
+          },
           "type": "array"
         }
       }
@@ -15872,6 +16144,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaMetadataProfile"
+          },
           "type": "array"
         }
       }
@@ -15954,6 +16229,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaMixEntry"
+          },
           "type": "array"
         }
       }
@@ -16028,6 +16306,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaModerationFlag"
+          },
           "type": "array"
         }
       }
@@ -16049,7 +16330,9 @@
           "type": "integer"
         },
         "categoryIds": {
-          "description": "The list of category ids to add or remove",
+          "items": {
+            "$ref": "#/definitions/KalturaIntegerValue"
+          },
           "type": "array"
         }
       }
@@ -16163,7 +16446,10 @@
       "description": "",
       "properties": {
         "relatedObjects": {
-          "type": "object"
+          "items": {
+            "$ref": "#/definitions/KalturaListResponse"
+          },
+          "type": "array"
         }
       }
     },
@@ -16195,6 +16481,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaObject"
+          },
           "type": "array"
         }
       }
@@ -16238,6 +16527,9 @@
           "type": "integer"
         },
         "operationAttributes": {
+          "items": {
+            "$ref": "#/definitions/KalturaOperationAttributes"
+          },
           "type": "array"
         },
         "resource": {
@@ -16254,6 +16546,9 @@
       "description": "",
       "properties": {
         "conditions": {
+          "items": {
+            "$ref": "#/definitions/KalturaCondition"
+          },
           "type": "array"
         }
       }
@@ -16275,6 +16570,9 @@
       "description": "",
       "properties": {
         "additionalParams": {
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "adminEmail": {
@@ -16344,6 +16642,9 @@
           "type": "boolean"
         },
         "deliveryTypes": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayerDeliveryType"
+          },
           "type": "array"
         },
         "describeYourself": {
@@ -16353,6 +16654,9 @@
           "type": "string"
         },
         "embedCodeTypes": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayerEmbedCodeType"
+          },
           "type": "array"
         },
         "firstName": {
@@ -16548,6 +16852,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaPartner"
+          },
           "type": "array"
         }
       }
@@ -16619,6 +16926,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaVarPartnerUsageItem"
+          },
           "type": "array"
         },
         "total": {
@@ -16928,6 +17238,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaPermissionItem"
+          },
           "type": "array"
         }
       }
@@ -16941,6 +17254,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaPermission"
+          },
           "type": "array"
         }
       }
@@ -17009,6 +17325,9 @@
           "type": "integer"
         },
         "copyEnablers": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayReadyCopyEnablerHolder"
+          },
           "type": "array"
         }
       }
@@ -17080,6 +17399,9 @@
           "type": "integer"
         },
         "analogVideoOutputProtectionList": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayReadyAnalogVideoOPIdHolder"
+          },
           "type": "array"
         },
         "compressedDigitalAudioOPL": {
@@ -17100,12 +17422,18 @@
           "type": "integer"
         },
         "digitalAudioOutputProtectionList": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayReadyDigitalAudioOPIdHolder"
+          },
           "type": "array"
         },
         "firstPlayExpiration": {
           "type": "integer"
         },
         "playEnablers": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayReadyPlayEnablerHolder"
+          },
           "type": "array"
         },
         "uncompressedDigitalAudioOPL": {
@@ -17159,6 +17487,9 @@
           "type": "integer"
         },
         "rights": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlayReadyRight"
+          },
           "type": "array"
         }
       }
@@ -17311,6 +17642,9 @@
           "type": "boolean"
         },
         "flashvars": {
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "id": {
@@ -17358,6 +17692,9 @@
           "type": "string"
         },
         "filters": {
+          "items": {
+            "$ref": "#/definitions/KalturaMediaEntryFilterForPlaylist"
+          },
           "type": "array"
         },
         "playlistContent": {
@@ -17414,6 +17751,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaPlaylist"
+          },
           "type": "array"
         }
       }
@@ -17582,6 +17922,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaRemotePath"
+          },
           "type": "array"
         }
       }
@@ -17609,7 +17952,9 @@
       "description": "Used to ingest media that is available on remote server and accessible using the supplied URL, the media file won't be downloaded but a file sync object of URL type will point to the media URL.\n ",
       "properties": {
         "resources": {
-          "description": "Array of remote stoage resources",
+          "items": {
+            "$ref": "#/definitions/KalturaRemoteStorageResource"
+          },
           "type": "array"
         }
       }
@@ -17778,6 +18123,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaReport"
+          },
           "type": "array"
         }
       }
@@ -17789,6 +18137,9 @@
           "type": "string"
         },
         "results": {
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         }
       }
@@ -17956,6 +18307,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaResponseProfile"
+          },
           "type": "array"
         }
       }
@@ -17978,15 +18332,21 @@
       "description": "",
       "properties": {
         "actions": {
-          "description": "Actions to be performed by the player in case the rule is fulfilled",
+          "items": {
+            "$ref": "#/definitions/KalturaRuleAction"
+          },
           "type": "array"
         },
         "conditions": {
-          "description": "Conditions to validate the rule",
+          "items": {
+            "$ref": "#/definitions/KalturaCondition"
+          },
           "type": "array"
         },
         "contexts": {
-          "description": "Indicates what contexts should be tested by this rule",
+          "items": {
+            "$ref": "#/definitions/KalturaContextTypeHolder"
+          },
           "type": "array"
         },
         "message": {
@@ -18067,7 +18427,9 @@
           "type": "string"
         },
         "objectTasks": {
-          "description": "A list of tasks to execute on the founded objects",
+          "items": {
+            "$ref": "#/definitions/KalturaObjectTask"
+          },
           "type": "array"
         },
         "partnerId": {
@@ -18168,6 +18530,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaScheduledTaskProfile"
+          },
           "type": "array"
         }
       }
@@ -18176,7 +18541,9 @@
       "description": "",
       "properties": {
         "configs": {
-          "description": "Array of the last configs",
+          "items": {
+            "$ref": "#/definitions/KalturaSchedulerConfig"
+          },
           "type": "array"
         },
         "configuredId": {
@@ -18208,11 +18575,15 @@
           "type": "string"
         },
         "statuses": {
-          "description": "Array of the last statuses",
+          "items": {
+            "$ref": "#/definitions/KalturaSchedulerStatus"
+          },
           "type": "array"
         },
         "workers": {
-          "description": "Array of the workers",
+          "items": {
+            "$ref": "#/definitions/KalturaSchedulerWorker"
+          },
           "type": "array"
         }
       }
@@ -18287,6 +18658,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaScheduler"
+          },
           "type": "array"
         }
       }
@@ -18405,7 +18779,9 @@
           "type": "integer"
         },
         "configs": {
-          "description": "Array of the last configs",
+          "items": {
+            "$ref": "#/definitions/KalturaSchedulerConfig"
+          },
           "type": "array"
         },
         "configuredId": {
@@ -18425,7 +18801,9 @@
           "type": "string"
         },
         "lockedJobs": {
-          "description": "Array of jobs that locked to this worker",
+          "items": {
+            "$ref": "#/definitions/KalturaBatchJob"
+          },
           "type": "array"
         },
         "name": {
@@ -18441,7 +18819,9 @@
           "type": "integer"
         },
         "statuses": {
-          "description": "Array of the last statuses",
+          "items": {
+            "$ref": "#/definitions/KalturaSchedulerStatus"
+          },
           "type": "array"
         },
         "type": {
@@ -18519,6 +18899,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaSchedulerWorker"
+          },
           "type": "array"
         }
       }
@@ -18668,6 +19051,9 @@
       "description": "",
       "properties": {
         "items": {
+          "items": {
+            "$ref": "#/definitions/KalturaSearchItem"
+          },
           "type": "array"
         },
         "type": {
@@ -18748,6 +19134,9 @@
           "type": "boolean"
         },
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaSearchResult"
+          },
           "type": "array"
         }
       }
@@ -18950,6 +19339,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaShortLink"
+          },
           "type": "array"
         }
       }
@@ -19455,7 +19847,9 @@
           "type": "integer"
         },
         "deliveryProfileIds": {
-          "description": "Delivery profile ids",
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "deliveryStatus": {
@@ -19496,6 +19890,9 @@
           "type": "string"
         },
         "pathManagerParams": {
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "privateKey": {
@@ -19524,7 +19921,9 @@
           "type": "integer"
         },
         "rules": {
-          "description": "Holds storage profile export rules",
+          "items": {
+            "$ref": "#/definitions/KalturaRule"
+          },
           "type": "array"
         },
         "status": {
@@ -19646,6 +20045,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaStorageProfile"
+          },
           "type": "array"
         }
       }
@@ -19921,6 +20323,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaTag"
+          },
           "type": "array"
         }
       }
@@ -20016,6 +20421,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaThumbAsset"
+          },
           "type": "array"
         }
       }
@@ -20259,6 +20667,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaThumbParams"
+          },
           "type": "array"
         }
       }
@@ -20328,6 +20739,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaThumbParamsOutput"
+          },
           "type": "array"
         }
       }
@@ -20682,6 +21096,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaUiConf"
+          },
           "type": "array"
         }
       }
@@ -20725,7 +21142,9 @@
           "type": "integer"
         },
         "versions": {
-          "description": "Available versions",
+          "items": {
+            "$ref": "#/definitions/KalturaString"
+          },
           "type": "array"
         }
       }
@@ -20858,6 +21277,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaUploadToken"
+          },
           "type": "array"
         }
       }
@@ -21583,6 +22005,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaUser"
+          },
           "type": "array"
         }
       }
@@ -21629,6 +22054,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaUserLoginData"
+          },
           "type": "array"
         }
       }
@@ -21771,6 +22199,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaUserRole"
+          },
           "type": "array"
         }
       }
@@ -21931,6 +22362,9 @@
           "type": "string"
         },
         "provisioningParams": {
+          "items": {
+            "$ref": "#/definitions/KalturaKeyValue"
+          },
           "type": "array"
         },
         "userName": {
@@ -22102,6 +22536,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaVirusScanProfile"
+          },
           "type": "array"
         }
       }
@@ -22521,6 +22958,9 @@
       "description": "",
       "properties": {
         "objects": {
+          "items": {
+            "$ref": "#/definitions/KalturaWidget"
+          },
           "type": "array"
         }
       }
@@ -23278,7 +23718,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of Access Control Restrictions",
             "in": "query",
             "name": "accessControl[restrictions]",
             "type": "array"
@@ -23540,7 +23979,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of Access Control Restrictions",
             "in": "query",
             "name": "accessControl[restrictions]",
             "type": "array"
@@ -23640,7 +24078,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of access control rules",
             "in": "query",
             "name": "accessControlProfile[rules]",
             "type": "array"
@@ -23912,7 +24349,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of access control rules",
             "in": "query",
             "name": "accessControlProfile[rules]",
             "type": "array"
@@ -26807,7 +27243,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "entry[operationAttributes]",
             "type": "array"
@@ -27205,7 +27640,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "entry[operationAttributes]",
             "type": "array"
@@ -28297,13 +28731,11 @@
             "type": "integer"
           },
           {
-            "description": "Indicates what contexts should be tested. No contexts means any context.",
             "in": "query",
             "name": "contextDataParams[contexts]",
             "type": "array"
           },
           {
-            "description": "Array of hashes to pass to the access control profile scope",
             "in": "query",
             "name": "contextDataParams[hashes]",
             "type": "array"
@@ -29421,7 +29853,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "baseEntry[operationAttributes]",
             "type": "array"
@@ -34268,7 +34699,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "captionParams[requiredPermissions]",
             "type": "array"
@@ -34729,7 +35159,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "captionParams[requiredPermissions]",
             "type": "array"
@@ -39507,7 +39936,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "dataEntry[operationAttributes]",
             "type": "array"
@@ -40055,7 +40483,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -40892,25 +41319,21 @@
             "type": "string"
           },
           {
-            "description": "Thumbnail dimensions that should be submitted if ready",
             "in": "query",
             "name": "distributionProfile[optionalThumbDimensions]",
             "type": "array"
           },
           {
-            "description": "Thumbnail dimensions that required to be readt before submission",
             "in": "query",
             "name": "distributionProfile[requiredThumbDimensions]",
             "type": "array"
           },
           {
-            "description": "Asset Distribution Rules for assets that should be submitted if ready",
             "in": "query",
             "name": "distributionProfile[optionalAssetDistributionRules]",
             "type": "array"
           },
           {
-            "description": "Assets Asset Distribution Rules for assets that are required to be ready before submission",
             "in": "query",
             "name": "distributionProfile[requiredAssetDistributionRules]",
             "type": "array"
@@ -41434,25 +41857,21 @@
             "type": "string"
           },
           {
-            "description": "Thumbnail dimensions that should be submitted if ready",
             "in": "query",
             "name": "distributionProfile[optionalThumbDimensions]",
             "type": "array"
           },
           {
-            "description": "Thumbnail dimensions that required to be readt before submission",
             "in": "query",
             "name": "distributionProfile[requiredThumbDimensions]",
             "type": "array"
           },
           {
-            "description": "Asset Distribution Rules for assets that should be submitted if ready",
             "in": "query",
             "name": "distributionProfile[optionalAssetDistributionRules]",
             "type": "array"
           },
           {
-            "description": "Assets Asset Distribution Rules for assets that are required to be ready before submission",
             "in": "query",
             "name": "distributionProfile[requiredAssetDistributionRules]",
             "type": "array"
@@ -41976,7 +42395,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -42344,7 +42762,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -42698,7 +43115,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -43510,7 +43926,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -43954,7 +44369,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -44322,7 +44736,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -44676,7 +45089,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -45488,7 +45900,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "documentEntry[operationAttributes]",
             "type": "array"
@@ -49363,19 +49774,16 @@
             "type": "string"
           },
           {
-            "description": "Define the conditions that cause this notification to be triggered",
             "in": "query",
             "name": "eventNotificationTemplate[eventConditions]",
             "type": "array"
           },
           {
-            "description": "Define the content dynamic parameters",
             "in": "query",
             "name": "eventNotificationTemplate[contentParameters]",
             "type": "array"
           },
           {
-            "description": "Define the content dynamic parameters",
             "in": "query",
             "name": "eventNotificationTemplate[userParameters]",
             "type": "array"
@@ -49566,19 +49974,16 @@
             "type": "string"
           },
           {
-            "description": "Define the conditions that cause this notification to be triggered",
             "in": "query",
             "name": "eventNotificationTemplate[eventConditions]",
             "type": "array"
           },
           {
-            "description": "Define the content dynamic parameters",
             "in": "query",
             "name": "eventNotificationTemplate[contentParameters]",
             "type": "array"
           },
           {
-            "description": "Define the content dynamic parameters",
             "in": "query",
             "name": "eventNotificationTemplate[userParameters]",
             "type": "array"
@@ -50337,19 +50742,16 @@
             "type": "string"
           },
           {
-            "description": "Define the conditions that cause this notification to be triggered",
             "in": "query",
             "name": "eventNotificationTemplate[eventConditions]",
             "type": "array"
           },
           {
-            "description": "Define the content dynamic parameters",
             "in": "query",
             "name": "eventNotificationTemplate[contentParameters]",
             "type": "array"
           },
           {
-            "description": "Define the content dynamic parameters",
             "in": "query",
             "name": "eventNotificationTemplate[userParameters]",
             "type": "array"
@@ -52923,7 +53325,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "flavorParams[requiredPermissions]",
             "type": "array"
@@ -53517,7 +53918,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "flavorParams[requiredPermissions]",
             "type": "array"
@@ -55838,7 +56238,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of key value protocol->live stream url objects",
             "in": "query",
             "name": "liveChannel[liveStreamConfigurations]",
             "type": "array"
@@ -55860,7 +56259,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of publish configurations",
             "in": "query",
             "name": "liveChannel[publishConfigurations]",
             "type": "array"
@@ -56362,7 +56760,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of key value protocol->live stream url objects",
             "in": "query",
             "name": "liveChannel[liveStreamConfigurations]",
             "type": "array"
@@ -56384,7 +56781,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of publish configurations",
             "in": "query",
             "name": "liveChannel[publishConfigurations]",
             "type": "array"
@@ -57388,7 +57784,6 @@
             "type": "string"
           },
           {
-            "description": "Array of supported bitrates",
             "in": "query",
             "name": "liveStreamEntry[bitrates]",
             "type": "array"
@@ -57500,7 +57895,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of key value protocol->live stream url objects",
             "in": "query",
             "name": "liveStreamEntry[liveStreamConfigurations]",
             "type": "array"
@@ -57522,7 +57916,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of publish configurations",
             "in": "query",
             "name": "liveStreamEntry[publishConfigurations]",
             "type": "array"
@@ -58309,7 +58702,6 @@
             "type": "string"
           },
           {
-            "description": "Array of supported bitrates",
             "in": "query",
             "name": "liveStreamEntry[bitrates]",
             "type": "array"
@@ -58421,7 +58813,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of key value protocol->live stream url objects",
             "in": "query",
             "name": "liveStreamEntry[liveStreamConfigurations]",
             "type": "array"
@@ -58443,7 +58834,6 @@
             "type": "integer"
           },
           {
-            "description": "Array of publish configurations",
             "in": "query",
             "name": "liveStreamEntry[publishConfigurations]",
             "type": "array"
@@ -67114,7 +67504,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "playlist[operationAttributes]",
             "type": "array"
@@ -67517,7 +67906,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "newPlaylist[operationAttributes]",
             "type": "array"
@@ -68300,7 +68688,6 @@
             "type": "string"
           },
           {
-            "description": "clipping, skipping and cropping attributes that used to create this entry",
             "in": "query",
             "name": "playlist[operationAttributes]",
             "type": "array"
@@ -69816,7 +70203,6 @@
             "name": "scheduledTaskProfile[objectFilter]"
           },
           {
-            "description": "A list of tasks to execute on the founded objects",
             "in": "query",
             "name": "scheduledTaskProfile[objectTasks]",
             "type": "array"
@@ -70234,7 +70620,6 @@
             "name": "scheduledTaskProfile[objectFilter]"
           },
           {
-            "description": "A list of tasks to execute on the founded objects",
             "in": "query",
             "name": "scheduledTaskProfile[objectTasks]",
             "type": "array"
@@ -72207,13 +72592,11 @@
             "type": "boolean"
           },
           {
-            "description": "Holds storage profile export rules",
             "in": "query",
             "name": "storageProfile[rules]",
             "type": "array"
           },
           {
-            "description": "Delivery profile ids",
             "in": "query",
             "name": "storageProfile[deliveryProfileIds]",
             "type": "array"
@@ -72608,13 +72991,11 @@
             "type": "boolean"
           },
           {
-            "description": "Holds storage profile export rules",
             "in": "query",
             "name": "storageProfile[rules]",
             "type": "array"
           },
           {
-            "description": "Delivery profile ids",
             "in": "query",
             "name": "storageProfile[deliveryProfileIds]",
             "type": "array"
@@ -74051,7 +74432,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "thumbParams[requiredPermissions]",
             "type": "array"
@@ -74499,7 +74879,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "thumbParams[requiredPermissions]",
             "type": "array"
@@ -74937,7 +75316,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "thumbParams[requiredPermissions]",
             "type": "array"
@@ -75476,7 +75854,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "thumbParams[requiredPermissions]",
             "type": "array"
@@ -75940,7 +76317,6 @@
             "type": "string"
           },
           {
-            "description": "Array of partner permisison names that required for using this asset params",
             "in": "query",
             "name": "thumbParams[requiredPermissions]",
             "type": "array"
