@@ -26,6 +26,11 @@
           "type": "integer"
         },
         "isDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "name": {
@@ -165,6 +170,11 @@
           "type": "integer"
         },
         "isDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "name": {
@@ -284,6 +294,10 @@
           "type": "integer"
         },
         "protocol": {
+          "enum": [
+            "http",
+            "https"
+          ],
           "type": "string"
         },
         "username": {
@@ -318,6 +332,10 @@
       "description": "",
       "properties": {
         "adType": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "duration": {
@@ -327,6 +345,12 @@
           "type": "integer"
         },
         "protocolType": {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "sourceUrl": {
@@ -358,6 +382,12 @@
           "type": "integer"
         },
         "protocolTypeEqual": {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "protocolTypeIn": {
@@ -450,6 +480,10 @@
           "type": "string"
         },
         "dvrEnabled": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "dvrWindow": {
@@ -468,6 +502,10 @@
           "type": "integer"
         },
         "streamType": {
+          "enum": [
+            "HD iPhone/iPad Live",
+            "Universal Streaming Live"
+          ],
           "type": "string"
         },
         "systemPassword": {
@@ -487,6 +525,12 @@
       "description": "",
       "properties": {
         "filesPermissionInS3": {
+          "enum": [
+            "authenticated-read",
+            "private",
+            "public-read",
+            "public-read-write"
+          ],
           "type": "string"
         },
         "s3Region": {
@@ -503,6 +547,12 @@
       "description": "",
       "properties": {
         "filesPermissionInS3": {
+          "enum": [
+            "authenticated-read",
+            "private",
+            "public-read",
+            "public-read-write"
+          ],
           "type": "string"
         },
         "s3Region": {
@@ -552,12 +602,22 @@
           "type": "integer"
         },
         "isPublic": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "parentId": {
           "type": "string"
         },
         "searchableOnEntry": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "text": {
@@ -586,6 +646,11 @@
           "type": "integer"
         },
         "isPublicEqual": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "parentIdEqual": {
@@ -681,6 +746,12 @@
       "description": "",
       "properties": {
         "action": {
+          "enum": [
+            "all",
+            "insert",
+            "read",
+            "update"
+          ],
           "type": "string"
         },
         "object": {
@@ -870,9 +941,19 @@
           "type": "integer"
         },
         "isSystemDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "mediaParserType": {
+          "enum": [
+            "0",
+            "remoteMediaInfo.RemoteMediaInfo",
+            "1"
+          ],
           "type": "string"
         },
         "name": {
@@ -910,6 +991,11 @@
       "description": "",
       "properties": {
         "isSystemDefaultEqual": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "systemNameEqual": {
@@ -953,6 +1039,36 @@
           "type": "string"
         },
         "format": {
+          "enum": [
+            "3gp",
+            "applehttp",
+            "avi",
+            "bmp",
+            "copy",
+            "flv",
+            "hls",
+            "ismv",
+            "jpg",
+            "m2ts",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp3",
+            "mp4",
+            "mpeg",
+            "mpegts",
+            "mxf",
+            "ogg",
+            "ogv",
+            "pdf",
+            "png",
+            "swf",
+            "wav",
+            "webm",
+            "wma",
+            "wmv",
+            "wvm"
+          ],
           "type": "string"
         },
         "readyBehavior": {
@@ -1045,9 +1161,22 @@
           "type": "string"
         },
         "format": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "status": {
+          "enum": [
+            -1,
+            0,
+            2,
+            3,
+            7,
+            9
+          ],
           "type": "integer"
         },
         "title": {
@@ -1064,12 +1193,25 @@
       "description": "",
       "properties": {
         "formatEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "formatIn": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            -1,
+            0,
+            2,
+            3,
+            7,
+            9
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -1106,15 +1248,64 @@
       "description": "",
       "properties": {
         "action": {
+          "enum": [
+            "CHANGED",
+            "CONTENT_VIEWED",
+            "COPIED",
+            "CREATED",
+            "DELETED",
+            "FILE_SYNC_CREATED",
+            "RELATION_ADDED",
+            "RELATION_REMOVED",
+            "VIEWED"
+          ],
           "type": "string"
         },
         "auditObjectType": {
+          "enum": [
+            "BatchJob",
+            "EmailIngestionProfile",
+            "FileSync",
+            "KshowKuser",
+            "Metadata",
+            "MetadataProfile",
+            "Partner",
+            "Permission",
+            "UploadToken",
+            "UserLoginData",
+            "UserRole",
+            "accessControl",
+            "category",
+            "conversionProfile2",
+            "entry",
+            "flavorAsset",
+            "flavorParams",
+            "flavorParamsConversionProfile",
+            "flavorParamsOutput",
+            "kshow",
+            "kuser",
+            "mediaInfo",
+            "moderation",
+            "roughcutEntry",
+            "syndicationFeed",
+            "thumbAsset",
+            "thumbParams",
+            "thumbParamsOutput",
+            "uiConf",
+            "widget"
+          ],
           "type": "string"
         },
         "clientTag": {
           "type": "string"
         },
         "context": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "createdAt": {
@@ -1160,6 +1351,38 @@
           "type": "string"
         },
         "relatedObjectType": {
+          "enum": [
+            "BatchJob",
+            "EmailIngestionProfile",
+            "FileSync",
+            "KshowKuser",
+            "Metadata",
+            "MetadataProfile",
+            "Partner",
+            "Permission",
+            "UploadToken",
+            "UserLoginData",
+            "UserRole",
+            "accessControl",
+            "category",
+            "conversionProfile2",
+            "entry",
+            "flavorAsset",
+            "flavorParams",
+            "flavorParamsConversionProfile",
+            "flavorParamsOutput",
+            "kshow",
+            "kuser",
+            "mediaInfo",
+            "moderation",
+            "roughcutEntry",
+            "syndicationFeed",
+            "thumbAsset",
+            "thumbParams",
+            "thumbParamsOutput",
+            "uiConf",
+            "widget"
+          ],
           "type": "string"
         },
         "requestId": {
@@ -1169,6 +1392,11 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "userAgent": {
@@ -1188,12 +1416,55 @@
       "description": "",
       "properties": {
         "actionEqual": {
+          "enum": [
+            "CHANGED",
+            "CONTENT_VIEWED",
+            "COPIED",
+            "CREATED",
+            "DELETED",
+            "FILE_SYNC_CREATED",
+            "RELATION_ADDED",
+            "RELATION_REMOVED",
+            "VIEWED"
+          ],
           "type": "string"
         },
         "actionIn": {
           "type": "string"
         },
         "auditObjectTypeEqual": {
+          "enum": [
+            "BatchJob",
+            "EmailIngestionProfile",
+            "FileSync",
+            "KshowKuser",
+            "Metadata",
+            "MetadataProfile",
+            "Partner",
+            "Permission",
+            "UploadToken",
+            "UserLoginData",
+            "UserRole",
+            "accessControl",
+            "category",
+            "conversionProfile2",
+            "entry",
+            "flavorAsset",
+            "flavorParams",
+            "flavorParamsConversionProfile",
+            "flavorParamsOutput",
+            "kshow",
+            "kuser",
+            "mediaInfo",
+            "moderation",
+            "roughcutEntry",
+            "syndicationFeed",
+            "thumbAsset",
+            "thumbParams",
+            "thumbParamsOutput",
+            "uiConf",
+            "widget"
+          ],
           "type": "string"
         },
         "auditObjectTypeIn": {
@@ -1203,6 +1474,12 @@
           "type": "string"
         },
         "contextEqual": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "contextIn": {
@@ -1269,6 +1546,38 @@
           "type": "string"
         },
         "relatedObjectTypeEqual": {
+          "enum": [
+            "BatchJob",
+            "EmailIngestionProfile",
+            "FileSync",
+            "KshowKuser",
+            "Metadata",
+            "MetadataProfile",
+            "Partner",
+            "Permission",
+            "UploadToken",
+            "UserLoginData",
+            "UserRole",
+            "accessControl",
+            "category",
+            "conversionProfile2",
+            "entry",
+            "flavorAsset",
+            "flavorParams",
+            "flavorParamsConversionProfile",
+            "flavorParamsOutput",
+            "kshow",
+            "kuser",
+            "mediaInfo",
+            "moderation",
+            "roughcutEntry",
+            "syndicationFeed",
+            "thumbAsset",
+            "thumbParams",
+            "thumbParamsOutput",
+            "uiConf",
+            "widget"
+          ],
           "type": "string"
         },
         "relatedObjectTypeIn": {
@@ -1287,6 +1596,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -1336,6 +1650,11 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         }
       }
@@ -1352,6 +1671,11 @@
           "type": "integer"
         },
         "fileType": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "objectSubType": {
@@ -1463,12 +1787,38 @@
           "type": "string"
         },
         "licenseType": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
           "type": "integer"
         },
         "moderationCount": {
           "type": "integer"
         },
         "moderationStatus": {
+          "enum": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "name": {
@@ -1502,6 +1852,13 @@
           "type": "string"
         },
         "replacementStatus": {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "type": "string"
         },
         "replacingEntryId": {
@@ -1517,6 +1874,20 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            "-2",
+            "-1",
+            "virusScan.ScanFailure",
+            "0",
+            "virusScan.Infected",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
           "type": "string"
         },
         "tags": {
@@ -1529,6 +1900,17 @@
           "type": "integer"
         },
         "type": {
+          "enum": [
+            "-1",
+            "externalMedia.externalMedia",
+            "1",
+            "2",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -1569,6 +1951,11 @@
           "type": "string"
         },
         "categoriesIdsEmpty": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "categoriesIdsMatchAnd": {
@@ -1629,12 +2016,26 @@
           "type": "string"
         },
         "moderationStatusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "moderationStatusIn": {
           "type": "string"
         },
         "moderationStatusNotEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "moderationStatusNotIn": {
@@ -1680,6 +2081,13 @@
           "type": "string"
         },
         "replacementStatusEqual": {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "type": "string"
         },
         "replacementStatusIn": {
@@ -1716,12 +2124,40 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            "-2",
+            "-1",
+            "virusScan.ScanFailure",
+            "0",
+            "virusScan.Infected",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
           "type": "string"
         },
         "statusIn": {
           "type": "string"
         },
         "statusNotEqual": {
+          "enum": [
+            "-2",
+            "-1",
+            "virusScan.ScanFailure",
+            "0",
+            "virusScan.Infected",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
           "type": "string"
         },
         "statusNotIn": {
@@ -1761,6 +2197,17 @@
           "type": "integer"
         },
         "typeEqual": {
+          "enum": [
+            "-1",
+            "externalMedia.externalMedia",
+            "1",
+            "2",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -1798,6 +2245,11 @@
           "type": "string"
         },
         "isRoot": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "redirectFromEntryId": {
@@ -1845,6 +2297,10 @@
           "type": "boolean"
         },
         "entriesOrderBy": {
+          "enum": [
+            "-createdAt",
+            "recent"
+          ],
           "type": "string"
         },
         "feedUrl": {
@@ -1875,6 +2331,10 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            -1,
+            1
+          ],
           "type": "integer"
         },
         "storageId": {
@@ -1884,6 +2344,14 @@
           "type": "boolean"
         },
         "type": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -1997,6 +2465,14 @@
           "type": "integer"
         },
         "errType": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "estimatedEffort": {
@@ -2024,6 +2500,62 @@
           "type": "integer"
         },
         "jobType": {
+          "enum": [
+            "captionSearch.parseCaptionAsset",
+            "contentDistribution.DistributionDelete",
+            "contentDistribution.DistributionDisable",
+            "contentDistribution.DistributionEnable",
+            "contentDistribution.DistributionFetchReport",
+            "0",
+            "contentDistribution.DistributionSubmit",
+            "contentDistribution.DistributionSync",
+            "contentDistribution.DistributionUpdate",
+            "dropFolder.DropFolderContentProcessor",
+            "dropFolder.DropFolderWatcher",
+            "eventNotification.EventNotificationHandler",
+            "integration.Integration",
+            "scheduledTask.ScheduledTask",
+            "tagSearch.IndexTagsByPrivacyContext",
+            "tagSearch.TagResolve",
+            "virusScan.VirusScan",
+            "widevine.WidevineRepositorySync",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "10",
+            "11",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
           "type": "string"
         },
         "lastSchedulerId": {
@@ -2060,6 +2592,21 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -2109,6 +2656,14 @@
           "type": "string"
         },
         "errTypeEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "errTypeIn": {
@@ -2151,6 +2706,62 @@
           "type": "string"
         },
         "jobTypeEqual": {
+          "enum": [
+            "captionSearch.parseCaptionAsset",
+            "contentDistribution.DistributionDelete",
+            "contentDistribution.DistributionDisable",
+            "contentDistribution.DistributionEnable",
+            "contentDistribution.DistributionFetchReport",
+            "0",
+            "contentDistribution.DistributionSubmit",
+            "contentDistribution.DistributionSync",
+            "contentDistribution.DistributionUpdate",
+            "dropFolder.DropFolderContentProcessor",
+            "dropFolder.DropFolderWatcher",
+            "eventNotification.EventNotificationHandler",
+            "integration.Integration",
+            "scheduledTask.ScheduledTask",
+            "tagSearch.IndexTagsByPrivacyContext",
+            "tagSearch.TagResolve",
+            "virusScan.VirusScan",
+            "widevine.WidevineRepositorySync",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "10",
+            "11",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
           "type": "string"
         },
         "jobTypeIn": {
@@ -2196,6 +2807,21 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -2340,9 +2966,22 @@
           "type": "string"
         },
         "bulkUploadObjectType": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "bulkUploadType": {
+          "enum": [
+            "bulkUploadCsv.CSV",
+            "bulkUploadFilter.FILTER",
+            "bulkUploadXml.XML",
+            "dropFolderXmlBulkUpload.DROP_FOLDER_XML"
+          ],
           "type": "string"
         },
         "csvFileUrl": {
@@ -2358,6 +2997,14 @@
           "type": "integer"
         },
         "errorType": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "fileName": {
@@ -2379,6 +3026,21 @@
           "type": "array"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "uploadedBy": {
@@ -2401,12 +3063,34 @@
       "description": "",
       "properties": {
         "bulkUploadObjectTypeEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "bulkUploadObjectTypeIn": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -2462,6 +3146,11 @@
           "type": "array"
         },
         "csvVersion": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         }
       }
@@ -2513,6 +3202,13 @@
       "description": "",
       "properties": {
         "bulkUploadObjectType": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "conversionProfileId": {
@@ -2546,6 +3242,12 @@
           "type": "string"
         },
         "type": {
+          "enum": [
+            "bulkUploadCsv.CSV",
+            "bulkUploadFilter.FILTER",
+            "bulkUploadXml.XML",
+            "dropFolderXmlBulkUpload.DROP_FOLDER_XML"
+          ],
           "type": "string"
         },
         "uploadedBy": {
@@ -2588,12 +3290,27 @@
       "description": "",
       "properties": {
         "action": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
           "type": "string"
         },
         "bulkUploadJobId": {
           "type": "integer"
         },
         "bulkUploadResultObjectType": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "errorCode": {
@@ -2633,6 +3350,11 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         }
       }
@@ -2992,12 +3714,20 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "systemName": {
           "type": "string"
         },
         "type": {
+          "enum": [
+            "activitiBusinessProcessNotification.Activiti"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -3035,18 +3765,31 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "statusIn": {
           "type": "string"
         },
         "statusNotEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "statusNotIn": {
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            "activitiBusinessProcessNotification.Activiti"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -3194,21 +3937,329 @@
           "type": "integer"
         },
         "format": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "isDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "label": {
           "type": "string"
         },
         "language": {
+          "enum": [
+            "Abkhazian",
+            "Afar",
+            "Afrikaans",
+            "Albanian",
+            "Amharic",
+            "Arabic",
+            "Armenian",
+            "Assamese",
+            "Aymara",
+            "Azerbaijani",
+            "Bashkir",
+            "Basque",
+            "Bengali (Bangla)",
+            "Bhutani",
+            "Bihari",
+            "Bislama",
+            "Breton",
+            "Bulgarian",
+            "Burmese",
+            "Byelorussian (Belarusian)",
+            "Cambodian",
+            "Catalan",
+            "Chinese",
+            "Corsican",
+            "Croatian",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "English",
+            "Esperanto",
+            "Estonian",
+            "Faeroese",
+            "Farsi",
+            "Fiji",
+            "Finnish",
+            "French",
+            "Frisian",
+            "Gaelic (Manx)",
+            "Gaelic (Scottish)",
+            "Galician",
+            "Georgian",
+            "German",
+            "Greek",
+            "Greenlandic",
+            "Guarani",
+            "Gujarati",
+            "Hausa",
+            "Hebrew",
+            "Hebrew",
+            "Hindi",
+            "Hungarian",
+            "Icelandic",
+            "Indonesian",
+            "Indonesian",
+            "Interlingua",
+            "Interlingue",
+            "Inuktitut",
+            "Inupiak",
+            "Irish",
+            "Italian",
+            "Japanese",
+            "Javanese",
+            "Kannada",
+            "Kashmiri",
+            "Kazakh",
+            "Kinyarwanda (Ruanda)",
+            "Kirghiz",
+            "Kirundi (Rundi)",
+            "Korean",
+            "Kurdish",
+            "Laothian",
+            "Latin",
+            "Latvian (Lettish)",
+            "Limburgish ( Limburger)",
+            "Lingala",
+            "Lithuanian",
+            "Macedonian",
+            "Malagasy",
+            "Malay",
+            "Malayalam",
+            "Maltese",
+            "Maori",
+            "Marathi",
+            "Moldavian",
+            "Mongolian",
+            "Nauru",
+            "Nepali",
+            "Norwegian",
+            "Occitan",
+            "Oriya",
+            "Oromo (Afan, Galla)",
+            "Pashto (Pushto)",
+            "Polish",
+            "Portuguese",
+            "Punjabi",
+            "Quechua",
+            "Rhaeto-Romance",
+            "Romanian",
+            "Russian",
+            "Samoan",
+            "Sangro",
+            "Sanskrit",
+            "Serbian",
+            "Serbo-Croatian",
+            "Sesotho",
+            "Setswana",
+            "Shona",
+            "Sindhi",
+            "Sinhalese",
+            "Siswati",
+            "Slovak",
+            "Slovenian",
+            "Somali",
+            "Spanish",
+            "Sundanese",
+            "Swahili (Kiswahili)",
+            "Swedish",
+            "Tagalog",
+            "Tajik",
+            "Tamil",
+            "Tatar",
+            "Telugu",
+            "Thai",
+            "Tibetan",
+            "Tigrinya",
+            "Tonga",
+            "Tsonga",
+            "Turkish",
+            "Turkmen",
+            "Twi",
+            "Uighur",
+            "Ukrainian",
+            "Urdu",
+            "Uzbek",
+            "Vietnamese",
+            "Volapuk",
+            "Welsh",
+            "Wolof",
+            "Xhosa",
+            "Yiddish",
+            "Yiddish",
+            "Yoruba",
+            "Zulu"
+          ],
           "type": "string"
         },
         "languageCode": {
+          "enum": [
+            "aa",
+            "ab",
+            "af",
+            "am",
+            "ar",
+            "as",
+            "ay",
+            "az",
+            "ba",
+            "be",
+            "bg",
+            "bh",
+            "bi",
+            "bn",
+            "bo",
+            "br",
+            "ca",
+            "co",
+            "cs",
+            "cy",
+            "da",
+            "de",
+            "dz",
+            "el",
+            "en",
+            "eo",
+            "es",
+            "et",
+            "eu",
+            "fa",
+            "fi",
+            "fj",
+            "fo",
+            "fr",
+            "fy",
+            "ga",
+            "gd",
+            "gl",
+            "gn",
+            "gu",
+            "gv",
+            "ha",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "hy",
+            "ia",
+            "id",
+            "ie",
+            "ik",
+            "in",
+            "is",
+            "it",
+            "iu",
+            "iw",
+            "ja",
+            "ji",
+            "jv",
+            "ka",
+            "kk",
+            "kl",
+            "km",
+            "kn",
+            "ko",
+            "ks",
+            "ku",
+            "ky",
+            "la",
+            "li",
+            "ln",
+            "lo",
+            "lt",
+            "lv",
+            "mg",
+            "mi",
+            "mk",
+            "ml",
+            "mn",
+            "mo",
+            "mr",
+            "ms",
+            "mt",
+            "my",
+            "na",
+            "ne",
+            "nl",
+            "no",
+            "oc",
+            "om",
+            "or",
+            "pa",
+            "pl",
+            "ps",
+            "pt",
+            "qu",
+            "rm",
+            "rn",
+            "ro",
+            "ru",
+            "rw",
+            "sa",
+            "sd",
+            "sg",
+            "sh",
+            "si",
+            "sk",
+            "sl",
+            "sm",
+            "sn",
+            "so",
+            "sq",
+            "sr",
+            "ss",
+            "st",
+            "su",
+            "sv",
+            "sw",
+            "ta",
+            "te",
+            "tg",
+            "th",
+            "ti",
+            "tk",
+            "tl",
+            "tn",
+            "to",
+            "tr",
+            "ts",
+            "tt",
+            "tw",
+            "ug",
+            "uk",
+            "ur",
+            "uz",
+            "vi",
+            "vo",
+            "wo",
+            "xh",
+            "yi",
+            "yo",
+            "zh",
+            "zu"
+          ],
           "type": "string"
         },
         "status": {
+          "enum": [
+            -1,
+            0,
+            2,
+            3,
+            7,
+            9
+          ],
           "type": "integer"
         }
       }
@@ -3228,12 +4279,25 @@
           "type": "string"
         },
         "formatEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "formatIn": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            -1,
+            0,
+            2,
+            3,
+            7,
+            9
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -3303,6 +4367,151 @@
           "type": "string"
         },
         "languageEqual": {
+          "enum": [
+            "Abkhazian",
+            "Afar",
+            "Afrikaans",
+            "Albanian",
+            "Amharic",
+            "Arabic",
+            "Armenian",
+            "Assamese",
+            "Aymara",
+            "Azerbaijani",
+            "Bashkir",
+            "Basque",
+            "Bengali (Bangla)",
+            "Bhutani",
+            "Bihari",
+            "Bislama",
+            "Breton",
+            "Bulgarian",
+            "Burmese",
+            "Byelorussian (Belarusian)",
+            "Cambodian",
+            "Catalan",
+            "Chinese",
+            "Corsican",
+            "Croatian",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "English",
+            "Esperanto",
+            "Estonian",
+            "Faeroese",
+            "Farsi",
+            "Fiji",
+            "Finnish",
+            "French",
+            "Frisian",
+            "Gaelic (Manx)",
+            "Gaelic (Scottish)",
+            "Galician",
+            "Georgian",
+            "German",
+            "Greek",
+            "Greenlandic",
+            "Guarani",
+            "Gujarati",
+            "Hausa",
+            "Hebrew",
+            "Hebrew",
+            "Hindi",
+            "Hungarian",
+            "Icelandic",
+            "Indonesian",
+            "Indonesian",
+            "Interlingua",
+            "Interlingue",
+            "Inuktitut",
+            "Inupiak",
+            "Irish",
+            "Italian",
+            "Japanese",
+            "Javanese",
+            "Kannada",
+            "Kashmiri",
+            "Kazakh",
+            "Kinyarwanda (Ruanda)",
+            "Kirghiz",
+            "Kirundi (Rundi)",
+            "Korean",
+            "Kurdish",
+            "Laothian",
+            "Latin",
+            "Latvian (Lettish)",
+            "Limburgish ( Limburger)",
+            "Lingala",
+            "Lithuanian",
+            "Macedonian",
+            "Malagasy",
+            "Malay",
+            "Malayalam",
+            "Maltese",
+            "Maori",
+            "Marathi",
+            "Moldavian",
+            "Mongolian",
+            "Nauru",
+            "Nepali",
+            "Norwegian",
+            "Occitan",
+            "Oriya",
+            "Oromo (Afan, Galla)",
+            "Pashto (Pushto)",
+            "Polish",
+            "Portuguese",
+            "Punjabi",
+            "Quechua",
+            "Rhaeto-Romance",
+            "Romanian",
+            "Russian",
+            "Samoan",
+            "Sangro",
+            "Sanskrit",
+            "Serbian",
+            "Serbo-Croatian",
+            "Sesotho",
+            "Setswana",
+            "Shona",
+            "Sindhi",
+            "Sinhalese",
+            "Siswati",
+            "Slovak",
+            "Slovenian",
+            "Somali",
+            "Spanish",
+            "Sundanese",
+            "Swahili (Kiswahili)",
+            "Swedish",
+            "Tagalog",
+            "Tajik",
+            "Tamil",
+            "Tatar",
+            "Telugu",
+            "Thai",
+            "Tibetan",
+            "Tigrinya",
+            "Tonga",
+            "Tsonga",
+            "Turkish",
+            "Turkmen",
+            "Twi",
+            "Uighur",
+            "Ukrainian",
+            "Urdu",
+            "Uzbek",
+            "Vietnamese",
+            "Volapuk",
+            "Welsh",
+            "Wolof",
+            "Xhosa",
+            "Yiddish",
+            "Yiddish",
+            "Yoruba",
+            "Zulu"
+          ],
           "type": "string"
         },
         "languageIn": {
@@ -3360,15 +4569,170 @@
       "description": "",
       "properties": {
         "format": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "isDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "label": {
           "type": "string"
         },
         "language": {
+          "enum": [
+            "Abkhazian",
+            "Afar",
+            "Afrikaans",
+            "Albanian",
+            "Amharic",
+            "Arabic",
+            "Armenian",
+            "Assamese",
+            "Aymara",
+            "Azerbaijani",
+            "Bashkir",
+            "Basque",
+            "Bengali (Bangla)",
+            "Bhutani",
+            "Bihari",
+            "Bislama",
+            "Breton",
+            "Bulgarian",
+            "Burmese",
+            "Byelorussian (Belarusian)",
+            "Cambodian",
+            "Catalan",
+            "Chinese",
+            "Corsican",
+            "Croatian",
+            "Czech",
+            "Danish",
+            "Dutch",
+            "English",
+            "Esperanto",
+            "Estonian",
+            "Faeroese",
+            "Farsi",
+            "Fiji",
+            "Finnish",
+            "French",
+            "Frisian",
+            "Gaelic (Manx)",
+            "Gaelic (Scottish)",
+            "Galician",
+            "Georgian",
+            "German",
+            "Greek",
+            "Greenlandic",
+            "Guarani",
+            "Gujarati",
+            "Hausa",
+            "Hebrew",
+            "Hebrew",
+            "Hindi",
+            "Hungarian",
+            "Icelandic",
+            "Indonesian",
+            "Indonesian",
+            "Interlingua",
+            "Interlingue",
+            "Inuktitut",
+            "Inupiak",
+            "Irish",
+            "Italian",
+            "Japanese",
+            "Javanese",
+            "Kannada",
+            "Kashmiri",
+            "Kazakh",
+            "Kinyarwanda (Ruanda)",
+            "Kirghiz",
+            "Kirundi (Rundi)",
+            "Korean",
+            "Kurdish",
+            "Laothian",
+            "Latin",
+            "Latvian (Lettish)",
+            "Limburgish ( Limburger)",
+            "Lingala",
+            "Lithuanian",
+            "Macedonian",
+            "Malagasy",
+            "Malay",
+            "Malayalam",
+            "Maltese",
+            "Maori",
+            "Marathi",
+            "Moldavian",
+            "Mongolian",
+            "Nauru",
+            "Nepali",
+            "Norwegian",
+            "Occitan",
+            "Oriya",
+            "Oromo (Afan, Galla)",
+            "Pashto (Pushto)",
+            "Polish",
+            "Portuguese",
+            "Punjabi",
+            "Quechua",
+            "Rhaeto-Romance",
+            "Romanian",
+            "Russian",
+            "Samoan",
+            "Sangro",
+            "Sanskrit",
+            "Serbian",
+            "Serbo-Croatian",
+            "Sesotho",
+            "Setswana",
+            "Shona",
+            "Sindhi",
+            "Sinhalese",
+            "Siswati",
+            "Slovak",
+            "Slovenian",
+            "Somali",
+            "Spanish",
+            "Sundanese",
+            "Swahili (Kiswahili)",
+            "Swedish",
+            "Tagalog",
+            "Tajik",
+            "Tamil",
+            "Tatar",
+            "Telugu",
+            "Thai",
+            "Tibetan",
+            "Tigrinya",
+            "Tonga",
+            "Tsonga",
+            "Turkish",
+            "Turkmen",
+            "Twi",
+            "Uighur",
+            "Ukrainian",
+            "Urdu",
+            "Uzbek",
+            "Vietnamese",
+            "Volapuk",
+            "Welsh",
+            "Wolof",
+            "Xhosa",
+            "Yiddish",
+            "Yiddish",
+            "Yoruba",
+            "Zulu"
+          ],
           "type": "string"
         },
         "sourceParamsId": {
@@ -3385,6 +4749,11 @@
       "description": "",
       "properties": {
         "formatEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "formatIn": {
@@ -3429,6 +4798,19 @@
           "type": "string"
         },
         "srcAssetType": {
+          "enum": [
+            "attachment.Attachment",
+            "caption.Caption",
+            "document.Document",
+            "document.Image",
+            "document.PDF",
+            "document.SWF",
+            "thumbCuePoint.timedThumb",
+            "widevine.WidevineFlavor",
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "srcFileSyncLocalPath": {
@@ -3452,18 +4834,55 @@
       "description": "",
       "properties": {
         "appearInList": {
+          "enum": [
+            1,
+            3
+          ],
           "type": "integer"
         },
         "contributionPolicy": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "createdAt": {
           "type": "integer"
         },
         "defaultOrderBy": {
+          "enum": [
+            "+createdAt",
+            "+depth",
+            "+directEntriesCount",
+            "+directSubCategoriesCount",
+            "+entriesCount",
+            "+fullName",
+            "+membersCount",
+            "+name",
+            "+partnerSortValue",
+            "+updatedAt",
+            "-createdAt",
+            "-depth",
+            "-directEntriesCount",
+            "-directSubCategoriesCount",
+            "-entriesCount",
+            "-fullName",
+            "-membersCount",
+            "-name",
+            "-partnerSortValue",
+            "-updatedAt"
+          ],
           "type": "string"
         },
         "defaultPermissionLevel": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "depth": {
@@ -3491,6 +4910,10 @@
           "type": "integer"
         },
         "inheritanceType": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "inheritedParentId": {
@@ -3500,6 +4923,11 @@
           "type": "integer"
         },
         "moderation": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "name": {
@@ -3527,6 +4955,11 @@
           "type": "integer"
         },
         "privacy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "privacyContext": {
@@ -3539,6 +4972,12 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "tags": {
@@ -3548,6 +4987,11 @@
           "type": "integer"
         },
         "userJoinPolicy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         }
       }
@@ -3561,9 +5005,17 @@
       "description": "",
       "properties": {
         "appearInListEqual": {
+          "enum": [
+            1,
+            3
+          ],
           "type": "integer"
         },
         "contributionPolicyEqual": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "createdAtGreaterThanOrEqual": {
@@ -3600,6 +5052,10 @@
           "type": "string"
         },
         "inheritanceTypeEqual": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "inheritanceTypeIn": {
@@ -3639,18 +5095,34 @@
           "type": "string"
         },
         "privacyEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "privacyIn": {
           "type": "string"
         },
         "referenceIdEmpty": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "referenceIdEqual": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -3689,6 +5161,12 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         }
       }
@@ -3711,6 +5189,10 @@
           "type": "integer"
         },
         "orderBy": {
+          "enum": [
+            "+createdAt",
+            "-createdAt"
+          ],
           "type": "string"
         }
       }
@@ -3745,6 +5227,12 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -3817,6 +5305,11 @@
       "description": "",
       "properties": {
         "identifier": {
+          "enum": [
+            "fullName",
+            "id",
+            "referenceId"
+          ],
           "type": "string"
         }
       }
@@ -3850,15 +5343,32 @@
           "type": "integer"
         },
         "permissionLevel": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "permissionNames": {
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "updateMethod": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -3918,6 +5428,13 @@
           "type": "integer"
         },
         "permissionLevelEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "permissionLevelIn": {
@@ -3933,12 +5450,22 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
           "type": "string"
         },
         "updateMethodEqual": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "updateMethodIn": {
@@ -4011,12 +5538,22 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
           "type": "string"
         },
         "updateMethodEqual": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "updateMethodIn": {
@@ -4160,6 +5697,13 @@
       "description": "",
       "properties": {
         "comparison": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "value": {
@@ -4234,6 +5778,25 @@
           "type": "boolean"
         },
         "type": {
+          "enum": [
+            "abcScreenersWatermarkAccessControl.abcWatermark",
+            "eventNotification.BooleanField",
+            "eventNotification.ObjectChanged",
+            "metadata.FieldChanged",
+            "metadata.FieldCompare",
+            "metadata.FieldMatch",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
           "type": "string"
         }
       }
@@ -4297,12 +5860,40 @@
           "type": "integer"
         },
         "distributionSunStatus": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "entryDistributionFlag": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "entryDistributionStatus": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "entryDistributionValidationErrors": {
@@ -4344,6 +5935,13 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         }
       }
@@ -4379,12 +5977,28 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "targetType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "type": {
+          "enum": [
+            4
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -4428,18 +6042,34 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
           "type": "string"
         },
         "targetTypeEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "targetTypeIn": {
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            4
+          ],
           "type": "integer"
         },
         "typeIn": {
@@ -4554,12 +6184,22 @@
           "type": "integer"
         },
         "isDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "isPartnerDefault": {
           "type": "boolean"
         },
         "mediaParserType": {
+          "enum": [
+            "0",
+            "remoteMediaInfo.RemoteMediaInfo",
+            "1"
+          ],
           "type": "string"
         },
         "name": {
@@ -4569,6 +6209,11 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "storageProfileId": {
@@ -4581,6 +6226,10 @@
           "type": "string"
         },
         "type": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "xslTransformation": {
@@ -4598,15 +6247,35 @@
           "type": "integer"
         },
         "deletePolicy": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "forceNoneComplied": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "origin": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "readyBehavior": {
+          "enum": [
+            0,
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -4635,12 +6304,23 @@
           "type": "string"
         },
         "originEqual": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "originIn": {
           "type": "string"
         },
         "readyBehaviorEqual": {
+          "enum": [
+            0,
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "readyBehaviorIn": {
@@ -4707,6 +6387,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "statusIn": {
@@ -4725,6 +6410,10 @@
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -4888,6 +6577,10 @@
           "type": "integer"
         },
         "mediaServerIndex": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "srcFilePath": {
@@ -4937,6 +6630,9 @@
       "description": "Represents the current request country context as calculated based on the IP address\n ",
       "properties": {
         "geoCoderType": {
+          "enum": [
+            "1"
+          ],
           "type": "string"
         }
       }
@@ -4966,6 +6662,9 @@
       "description": "",
       "properties": {
         "geoCoderType": {
+          "enum": [
+            "1"
+          ],
           "type": "string"
         }
       }
@@ -4979,6 +6678,9 @@
       "description": "Represents the current request country context as calculated based on the IP address\n ",
       "properties": {
         "geoCoderType": {
+          "enum": [
+            "1"
+          ],
           "type": "string"
         }
       }
@@ -4995,6 +6697,10 @@
           "type": "string"
         },
         "countryRestrictionType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -5023,12 +6729,24 @@
           "type": "integer"
         },
         "cuePointType": {
+          "enum": [
+            "adCuePoint.Ad",
+            "annotation.Annotation",
+            "codeCuePoint.Code",
+            "eventCuePoint.Event",
+            "thumbCuePoint.Thumb"
+          ],
           "type": "string"
         },
         "entryId": {
           "type": "string"
         },
         "forceStop": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "id": {
@@ -5047,6 +6765,12 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -5084,6 +6808,13 @@
           "type": "integer"
         },
         "cuePointTypeEqual": {
+          "enum": [
+            "adCuePoint.Ad",
+            "annotation.Annotation",
+            "codeCuePoint.Code",
+            "eventCuePoint.Event",
+            "thumbCuePoint.Thumb"
+          ],
           "type": "string"
         },
         "cuePointTypeIn": {
@@ -5096,6 +6827,11 @@
           "type": "string"
         },
         "forceStopEqual": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "idEqual": {
@@ -5123,6 +6859,12 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -5254,6 +6996,11 @@
       "description": "",
       "properties": {
         "deleteType": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "flavorParamsIds": {
@@ -5321,6 +7068,11 @@
           "type": "integer"
         },
         "isDefault": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "mediaProtocols": {
@@ -5342,9 +7094,29 @@
           "$ref": "#/definitions/KalturaUrlRecognizer"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "streamerType": {
+          "enum": [
+            "applehttp",
+            "auto",
+            "hdnetwork",
+            "hdnetworkmanifest",
+            "hds",
+            "hls",
+            "http",
+            "mpegdash",
+            "multicast_silverlight",
+            "rtmp",
+            "rtsp",
+            "sl"
+          ],
           "type": "string"
         },
         "systemName": {
@@ -5354,6 +7126,54 @@
           "$ref": "#/definitions/KalturaUrlTokenizer"
         },
         "type": {
+          "enum": [
+            "edgeCast.EDGE_CAST_HTTP",
+            "edgeCast.EDGE_CAST_RTMP",
+            "kontiki.KONTIKI_HTTP",
+            "uplynk.UPLYNK_HTTP",
+            "uplynk.UPLYNK_RTMP",
+            "velocix.VELOCIX_HDS",
+            "velocix.VELOCIX_HLS",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "21",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "31",
+            "34",
+            "35",
+            "44",
+            "45",
+            "51",
+            "53",
+            "54",
+            "55",
+            "61",
+            "63",
+            "67",
+            "68",
+            "1001",
+            "1002",
+            "1003",
+            "1005",
+            "1013"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -5484,12 +7304,32 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
           "type": "string"
         },
         "streamerTypeEqual": {
+          "enum": [
+            "applehttp",
+            "auto",
+            "hdnetwork",
+            "hdnetworkmanifest",
+            "hds",
+            "hls",
+            "http",
+            "mpegdash",
+            "multicast_silverlight",
+            "rtmp",
+            "rtsp",
+            "sl"
+          ],
           "type": "string"
         },
         "systemNameEqual": {
@@ -5524,6 +7364,11 @@
       "description": "",
       "properties": {
         "manifestRedirect": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "pattern": {
@@ -5799,6 +7644,10 @@
           "type": "array"
         },
         "type": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         }
       }
@@ -5812,6 +7661,10 @@
       "description": "",
       "properties": {
         "directoryRestrictionType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -5898,6 +7751,12 @@
           "type": "boolean"
         },
         "isRequired": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "updateOnChange": {
@@ -5938,6 +7797,38 @@
           "$ref": "#/definitions/KalturaDistributionJobProviderData"
         },
         "providerType": {
+          "enum": [
+            "attUverseDistribution.ATT_UVERSE",
+            "avnDistribution.AVN",
+            "comcastMrssDistribution.COMCAST_MRSS",
+            "crossKalturaDistribution.CROSS_KALTURA",
+            "dailymotionDistribution.DAILYMOTION",
+            "doubleClickDistribution.DOUBLECLICK",
+            "freewheelDistribution.FREEWHEEL",
+            "freewheelGenericDistribution.FREEWHEEL_GENERIC",
+            "ftpDistribution.FTP",
+            "ftpDistribution.FTP_SCHEDULED",
+            "huluDistribution.HULU",
+            "ideticDistribution.IDETIC",
+            "metroPcsDistribution.METRO_PCS",
+            "msnDistribution.MSN",
+            "ndnDistribution.NDN",
+            "podcastDistribution.PODCAST",
+            "quickPlayDistribution.QUICKPLAY",
+            "synacorHboDistribution.SYNACOR_HBO",
+            "timeWarnerDistribution.TIME_WARNER",
+            "tvComDistribution.TVCOM",
+            "tvinciDistribution.TVINCI",
+            "unicornDistribution.UNICORN",
+            "uverseClickToOrderDistribution.UVERSE_CLICK_TO_ORDER",
+            "uverseDistribution.UVERSE",
+            "verizonVcastDistribution.VERIZON_VCAST",
+            "yahooDistribution.YAHOO",
+            "youTubeDistribution.YOUTUBE",
+            "youtubeApiDistribution.YOUTUBE_API",
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "remoteId": {
@@ -5968,6 +7859,11 @@
           "type": "integer"
         },
         "deleteEnabled": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "id": {
@@ -5989,6 +7885,38 @@
           "type": "integer"
         },
         "providerType": {
+          "enum": [
+            "attUverseDistribution.ATT_UVERSE",
+            "avnDistribution.AVN",
+            "comcastMrssDistribution.COMCAST_MRSS",
+            "crossKalturaDistribution.CROSS_KALTURA",
+            "dailymotionDistribution.DAILYMOTION",
+            "doubleClickDistribution.DOUBLECLICK",
+            "freewheelDistribution.FREEWHEEL",
+            "freewheelGenericDistribution.FREEWHEEL_GENERIC",
+            "ftpDistribution.FTP",
+            "ftpDistribution.FTP_SCHEDULED",
+            "huluDistribution.HULU",
+            "ideticDistribution.IDETIC",
+            "metroPcsDistribution.METRO_PCS",
+            "msnDistribution.MSN",
+            "ndnDistribution.NDN",
+            "podcastDistribution.PODCAST",
+            "quickPlayDistribution.QUICKPLAY",
+            "synacorHboDistribution.SYNACOR_HBO",
+            "timeWarnerDistribution.TIME_WARNER",
+            "tvComDistribution.TVCOM",
+            "tvinciDistribution.TVINCI",
+            "unicornDistribution.UNICORN",
+            "uverseClickToOrderDistribution.UVERSE_CLICK_TO_ORDER",
+            "uverseDistribution.UVERSE",
+            "verizonVcastDistribution.VERIZON_VCAST",
+            "yahooDistribution.YAHOO",
+            "youTubeDistribution.YOUTUBE",
+            "youtubeApiDistribution.YOUTUBE_API",
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "recommendedDcForDownload": {
@@ -6001,6 +7929,11 @@
           "type": "integer"
         },
         "reportEnabled": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "requiredAssetDistributionRules": {
@@ -6013,9 +7946,19 @@
           "type": "array"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "submitEnabled": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "sunriseDefaultOffset": {
@@ -6025,6 +7968,11 @@
           "type": "integer"
         },
         "updateEnabled": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -6053,6 +8001,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -6110,6 +8063,38 @@
           "type": "boolean"
         },
         "type": {
+          "enum": [
+            "attUverseDistribution.ATT_UVERSE",
+            "avnDistribution.AVN",
+            "comcastMrssDistribution.COMCAST_MRSS",
+            "crossKalturaDistribution.CROSS_KALTURA",
+            "dailymotionDistribution.DAILYMOTION",
+            "doubleClickDistribution.DOUBLECLICK",
+            "freewheelDistribution.FREEWHEEL",
+            "freewheelGenericDistribution.FREEWHEEL_GENERIC",
+            "ftpDistribution.FTP",
+            "ftpDistribution.FTP_SCHEDULED",
+            "huluDistribution.HULU",
+            "ideticDistribution.IDETIC",
+            "metroPcsDistribution.METRO_PCS",
+            "msnDistribution.MSN",
+            "ndnDistribution.NDN",
+            "podcastDistribution.PODCAST",
+            "quickPlayDistribution.QUICKPLAY",
+            "synacorHboDistribution.SYNACOR_HBO",
+            "timeWarnerDistribution.TIME_WARNER",
+            "tvComDistribution.TVCOM",
+            "tvinciDistribution.TVINCI",
+            "unicornDistribution.UNICORN",
+            "uverseClickToOrderDistribution.UVERSE_CLICK_TO_ORDER",
+            "uverseDistribution.UVERSE",
+            "verizonVcastDistribution.VERIZON_VCAST",
+            "yahooDistribution.YAHOO",
+            "youTubeDistribution.YOUTUBE",
+            "youtubeApiDistribution.YOUTUBE_API",
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "updateRequiredEntryFields": {
@@ -6129,6 +8114,38 @@
       "description": "",
       "properties": {
         "typeEqual": {
+          "enum": [
+            "attUverseDistribution.ATT_UVERSE",
+            "avnDistribution.AVN",
+            "comcastMrssDistribution.COMCAST_MRSS",
+            "crossKalturaDistribution.CROSS_KALTURA",
+            "dailymotionDistribution.DAILYMOTION",
+            "doubleClickDistribution.DOUBLECLICK",
+            "freewheelDistribution.FREEWHEEL",
+            "freewheelGenericDistribution.FREEWHEEL_GENERIC",
+            "ftpDistribution.FTP",
+            "ftpDistribution.FTP_SCHEDULED",
+            "huluDistribution.HULU",
+            "ideticDistribution.IDETIC",
+            "metroPcsDistribution.METRO_PCS",
+            "msnDistribution.MSN",
+            "ndnDistribution.NDN",
+            "podcastDistribution.PODCAST",
+            "quickPlayDistribution.QUICKPLAY",
+            "synacorHboDistribution.SYNACOR_HBO",
+            "timeWarnerDistribution.TIME_WARNER",
+            "tvComDistribution.TVCOM",
+            "tvinciDistribution.TVINCI",
+            "unicornDistribution.UNICORN",
+            "uverseClickToOrderDistribution.UVERSE_CLICK_TO_ORDER",
+            "uverseDistribution.UVERSE",
+            "verizonVcastDistribution.VERIZON_VCAST",
+            "yahooDistribution.YAHOO",
+            "youTubeDistribution.YOUTUBE",
+            "youtubeApiDistribution.YOUTUBE_API",
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -6205,12 +8222,26 @@
       "description": "",
       "properties": {
         "action": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "description": {
           "type": "string"
         },
         "errorType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
           "type": "integer"
         }
       }
@@ -6243,6 +8274,13 @@
           "type": "string"
         },
         "validationErrorType": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         }
       }
@@ -6324,6 +8362,11 @@
           "type": "string"
         },
         "documentType": {
+          "enum": [
+            11,
+            12,
+            13
+          ],
           "type": "integer"
         }
       }
@@ -6343,6 +8386,11 @@
           "type": "string"
         },
         "documentTypeEqual": {
+          "enum": [
+            11,
+            12,
+            13
+          ],
           "type": "integer"
         },
         "documentTypeIn": {
@@ -6444,6 +8492,10 @@
           "type": "string"
         },
         "providerEqual": {
+          "enum": [
+            "playReady.PLAY_READY",
+            "widevine.WIDEVINE"
+          ],
           "type": "string"
         },
         "providerIn": {
@@ -6476,9 +8528,18 @@
           "type": "integer"
         },
         "licenseExpirationPolicy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "licenseType": {
+          "enum": [
+            "playReady.NON_PERSISTENT",
+            "playReady.PERSISTENT"
+          ],
           "type": "string"
         },
         "name": {
@@ -6488,12 +8549,26 @@
           "type": "integer"
         },
         "provider": {
+          "enum": [
+            "playReady.PLAY_READY",
+            "widevine.WIDEVINE"
+          ],
           "type": "string"
         },
         "scenario": {
+          "enum": [
+            "playReady.PROTECTION",
+            "playReady.PURCHASE",
+            "playReady.RENTAL",
+            "playReady.SUBSCRIPTION"
+          ],
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -6522,18 +8597,32 @@
           "type": "string"
         },
         "providerEqual": {
+          "enum": [
+            "playReady.PLAY_READY",
+            "widevine.WIDEVINE"
+          ],
           "type": "string"
         },
         "providerIn": {
           "type": "string"
         },
         "scenarioEqual": {
+          "enum": [
+            "playReady.PROTECTION",
+            "playReady.PURCHASE",
+            "playReady.RENTAL",
+            "playReady.SUBSCRIPTION"
+          ],
           "type": "string"
         },
         "scenarioIn": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -6591,9 +8680,17 @@
           "type": "integer"
         },
         "provider": {
+          "enum": [
+            "playReady.PLAY_READY",
+            "widevine.WIDEVINE"
+          ],
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -6625,12 +8722,20 @@
           "type": "string"
         },
         "providerEqual": {
+          "enum": [
+            "playReady.PLAY_READY",
+            "widevine.WIDEVINE"
+          ],
           "type": "string"
         },
         "providerIn": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -6685,18 +8790,35 @@
           "type": "boolean"
         },
         "errorCode": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
           "type": "string"
         },
         "errorDescription": {
           "type": "string"
         },
         "fileDeletePolicy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "fileHandlerConfig": {
           "$ref": "#/definitions/KalturaDropFolderFileHandlerConfig"
         },
         "fileHandlerType": {
+          "enum": [
+            "dropFolderXmlBulkUpload.XML",
+            "1"
+          ],
           "type": "string"
         },
         "fileNamePatterns": {
@@ -6736,12 +8858,27 @@
           "type": "boolean"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "tags": {
           "type": "string"
         },
         "type": {
+          "enum": [
+            "FeedDropFolder.FEED",
+            "WebexDropFolder.WEBEX",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -6776,12 +8913,24 @@
           "type": "string"
         },
         "errorCodeEqual": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
           "type": "string"
         },
         "errorCodeIn": {
           "type": "string"
         },
         "fileHandlerTypeEqual": {
+          "enum": [
+            "dropFolderXmlBulkUpload.XML",
+            "1"
+          ],
           "type": "string"
         },
         "fileHandlerTypeIn": {
@@ -6818,6 +8967,12 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -6833,6 +8988,15 @@
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            "FeedDropFolder.FEED",
+            "WebexDropFolder.WEBEX",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -6855,6 +9019,11 @@
       "description": "",
       "properties": {
         "contentMatchPolicy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "slugRegex": {
@@ -6871,6 +9040,11 @@
       "description": "",
       "properties": {
         "contentMatchPolicy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "conversionProfileId": {
@@ -6909,6 +9083,28 @@
           "type": "string"
         },
         "errorCode": {
+          "enum": [
+            "dropFolderXmlBulkUpload.ERROR_ADDING_BULK_UPLOAD",
+            "dropFolderXmlBulkUpload.ERROR_ADD_CONTENT_RESOURCE",
+            "dropFolderXmlBulkUpload.ERROR_IN_BULK_UPLOAD",
+            "dropFolderXmlBulkUpload.ERROR_WRITING_TEMP_FILE",
+            "dropFolderXmlBulkUpload.LOCAL_FILE_WRONG_CHECKSUM",
+            "dropFolderXmlBulkUpload.LOCAL_FILE_WRONG_SIZE",
+            "dropFolderXmlBulkUpload.MALFORMED_XML_FILE",
+            "dropFolderXmlBulkUpload.XML_FILE_SIZE_EXCEED_LIMIT",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
           "type": "string"
         },
         "errorDescription": {
@@ -6951,9 +9147,35 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
           "type": "integer"
         },
         "type": {
+          "enum": [
+            "FeedDropFolder.FEED",
+            "WebexDropFolder.WEBEX",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -6994,6 +9216,28 @@
           "type": "string"
         },
         "errorCodeEqual": {
+          "enum": [
+            "dropFolderXmlBulkUpload.ERROR_ADDING_BULK_UPLOAD",
+            "dropFolderXmlBulkUpload.ERROR_ADD_CONTENT_RESOURCE",
+            "dropFolderXmlBulkUpload.ERROR_IN_BULK_UPLOAD",
+            "dropFolderXmlBulkUpload.ERROR_WRITING_TEMP_FILE",
+            "dropFolderXmlBulkUpload.LOCAL_FILE_WRONG_CHECKSUM",
+            "dropFolderXmlBulkUpload.LOCAL_FILE_WRONG_SIZE",
+            "dropFolderXmlBulkUpload.MALFORMED_XML_FILE",
+            "dropFolderXmlBulkUpload.XML_FILE_SIZE_EXCEED_LIMIT",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
           "type": "string"
         },
         "errorCodeIn": {
@@ -7042,6 +9286,23 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -7071,6 +9332,10 @@
       "description": "",
       "properties": {
         "handlerType": {
+          "enum": [
+            "dropFolderXmlBulkUpload.XML",
+            "1"
+          ],
           "type": "string"
         }
       }
@@ -7110,6 +9375,11 @@
       "description": "",
       "properties": {
         "currentDc": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -7189,6 +9459,13 @@
           "type": "integer"
         },
         "moderationStatus": {
+          "enum": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "name": {
@@ -7198,6 +9475,10 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -7264,6 +9545,11 @@
           "type": "string"
         },
         "priority": {
+          "enum": [
+            1,
+            3,
+            5
+          ],
           "type": "integer"
         },
         "replyTo": {
@@ -7298,6 +9584,11 @@
       "description": "Abstract class representing the final output recipients going into the batch mechanism\n ",
       "properties": {
         "providerType": {
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ],
           "type": "string"
         }
       }
@@ -7356,6 +9647,10 @@
           "type": "array"
         },
         "format": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "fromEmail": {
@@ -7371,6 +9666,11 @@
           "type": "string"
         },
         "priority": {
+          "enum": [
+            1,
+            3,
+            5
+          ],
           "type": "integer"
         },
         "replyTo": {
@@ -7481,6 +9781,11 @@
           "type": "string"
         },
         "followEntryRedirect": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -7588,6 +9893,14 @@
           "type": "integer"
         },
         "dirtyStatus": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "distributionProfileId": {
@@ -7603,27 +9916,65 @@
           "type": "integer"
         },
         "errorType": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "flavorAssetIds": {
           "type": "string"
         },
         "hasDeleteResultsLog": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "hasDeleteSentDataLog": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "hasSubmitResultsLog": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "hasSubmitSentDataLog": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "hasUpdateResultsLog": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "hasUpdateSentDataLog": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "id": {
@@ -7639,12 +9990,32 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "submittedAt": {
           "type": "integer"
         },
         "sunStatus": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "sunrise": {
@@ -7682,6 +10053,14 @@
           "type": "integer"
         },
         "dirtyStatusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "dirtyStatusIn": {
@@ -7706,6 +10085,21 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -7768,6 +10162,10 @@
       "description": "",
       "properties": {
         "identifier": {
+          "enum": [
+            "id",
+            "referenceId"
+          ],
           "type": "string"
         }
       }
@@ -7863,6 +10261,10 @@
       "description": "",
       "properties": {
         "eventType": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         }
       }
@@ -7876,6 +10278,10 @@
       "description": "",
       "properties": {
         "eventTypeEqual": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "eventTypeIn": {
@@ -7963,6 +10369,51 @@
           "type": "string"
         },
         "scopeObjectType": {
+          "enum": [
+            "adCuePointEventNotifications.AdCuePoint",
+            "annotationEventNotifications.Annotation",
+            "captionAssetEventNotifications.CaptionAsset",
+            "codeCuePointEventNotifications.CodeCuePoint",
+            "contentDistributionEventNotifications.DistributionProfile",
+            "contentDistributionEventNotifications.EntryDistribution",
+            "cuePointEventNotifications.CuePoint",
+            "dropFolderEventNotifications.DropFolder",
+            "dropFolderEventNotifications.DropFolderFile",
+            "metadataEventNotifications.Metadata",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37"
+          ],
           "type": "string"
         }
       }
@@ -7986,9 +10437,70 @@
           "type": "array"
         },
         "eventObjectType": {
+          "enum": [
+            "adCuePointEventNotifications.AdCuePoint",
+            "annotationEventNotifications.Annotation",
+            "captionAssetEventNotifications.CaptionAsset",
+            "codeCuePointEventNotifications.CodeCuePoint",
+            "contentDistributionEventNotifications.DistributionProfile",
+            "contentDistributionEventNotifications.EntryDistribution",
+            "cuePointEventNotifications.CuePoint",
+            "dropFolderEventNotifications.DropFolder",
+            "dropFolderEventNotifications.DropFolderFile",
+            "metadataEventNotifications.Metadata",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37"
+          ],
           "type": "string"
         },
         "eventType": {
+          "enum": [
+            "integrationEventNotifications.INTEGRATION_JOB_CLOSED",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
           "type": "string"
         },
         "id": {
@@ -8004,12 +10516,24 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "systemName": {
           "type": "string"
         },
         "type": {
+          "enum": [
+            "businessProcessNotification.BusinessProcessAbort",
+            "businessProcessNotification.BusinessProcessSignal",
+            "businessProcessNotification.BusinessProcessStart",
+            "emailNotification.Email",
+            "httpNotification.Http"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -8047,6 +10571,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -8059,6 +10588,13 @@
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            "businessProcessNotification.BusinessProcessAbort",
+            "businessProcessNotification.BusinessProcessSignal",
+            "businessProcessNotification.BusinessProcessStart",
+            "emailNotification.Email",
+            "httpNotification.Http"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -8116,6 +10652,17 @@
       "description": "",
       "properties": {
         "metadataObjectType": {
+          "enum": [
+            "adCuePointMetadata.AdCuePoint",
+            "annotationMetadata.Annotation",
+            "codeCuePointMetadata.CodeCuePoint",
+            "thumbCuePointMetadata.thumbCuePoint",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "metadataProfileId": {
@@ -8130,6 +10677,10 @@
       "description": "",
       "properties": {
         "extensionMode": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "identifier": {
@@ -8152,6 +10703,10 @@
           "type": "string"
         },
         "externalSourceType": {
+          "enum": [
+            "InterCall",
+            "YouTube"
+          ],
           "type": "string"
         }
       }
@@ -8171,6 +10726,10 @@
           "type": "string"
         },
         "externalSourceTypeEqual": {
+          "enum": [
+            "InterCall",
+            "YouTube"
+          ],
           "type": "string"
         },
         "externalSourceTypeIn": {
@@ -8217,6 +10776,14 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "value": {
@@ -8334,6 +10901,9 @@
           "type": "integer"
         },
         "fileAssetObjectType": {
+          "enum": [
+            "2"
+          ],
           "type": "string"
         },
         "fileExt": {
@@ -8352,6 +10922,13 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "type": "string"
         },
         "systemName": {
@@ -8380,6 +10957,9 @@
           "type": "integer"
         },
         "fileAssetObjectTypeEqual": {
+          "enum": [
+            "2"
+          ],
           "type": "string"
         },
         "idEqual": {
@@ -8398,6 +10978,13 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "type": "string"
         },
         "statusIn": {
@@ -8449,6 +11036,23 @@
           "type": "number"
         },
         "fileObjectType": {
+          "enum": [
+            "contentDistribution.DistributionProfile",
+            "contentDistribution.EntryDistribution",
+            "contentDistribution.GenericDistributionAction",
+            "emailNotification.EmailNotificationTemplate",
+            "httpNotification.HttpNotificationTemplate",
+            "1",
+            "2",
+            "3",
+            "4",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
           "type": "string"
         },
         "filePath": {
@@ -8461,6 +11065,11 @@
           "type": "number"
         },
         "fileType": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "fileUrl": {
@@ -8494,6 +11103,13 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            -1,
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "syncTime": {
@@ -8528,6 +11144,23 @@
           "type": "string"
         },
         "fileObjectTypeEqual": {
+          "enum": [
+            "contentDistribution.DistributionProfile",
+            "contentDistribution.EntryDistribution",
+            "contentDistribution.GenericDistributionAction",
+            "emailNotification.EmailNotificationTemplate",
+            "httpNotification.HttpNotificationTemplate",
+            "1",
+            "2",
+            "3",
+            "4",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
           "type": "string"
         },
         "fileObjectTypeIn": {
@@ -8540,6 +11173,11 @@
           "type": "number"
         },
         "fileTypeEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "fileTypeIn": {
@@ -8579,6 +11217,13 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            -1,
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -8627,6 +11272,11 @@
       "description": "",
       "properties": {
         "currentDc": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -8752,6 +11402,19 @@
           "type": "boolean"
         },
         "status": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
           "type": "integer"
         },
         "videoCodecId": {
@@ -8777,6 +11440,19 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -8852,6 +11528,20 @@
           "type": "integer"
         },
         "audioCodec": {
+          "enum": [
+            "",
+            "aac",
+            "aache",
+            "ac3",
+            "amrnb",
+            "copy",
+            "mp3",
+            "mpeg2",
+            "pcm",
+            "vorbis",
+            "wma",
+            "wmapro"
+          ],
           "type": "string"
         },
         "audioSampleRate": {
@@ -8879,6 +11569,36 @@
           "type": "integer"
         },
         "format": {
+          "enum": [
+            "3gp",
+            "applehttp",
+            "avi",
+            "bmp",
+            "copy",
+            "flv",
+            "hls",
+            "ismv",
+            "jpg",
+            "m2ts",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp3",
+            "mp4",
+            "mpeg",
+            "mpegts",
+            "mxf",
+            "ogg",
+            "ogv",
+            "pdf",
+            "png",
+            "swf",
+            "wav",
+            "webm",
+            "wma",
+            "wmv",
+            "wvm"
+          ],
           "type": "string"
         },
         "frameRate": {
@@ -8933,6 +11653,32 @@
           "type": "integer"
         },
         "videoCodec": {
+          "enum": [
+            "",
+            "apch",
+            "apcn",
+            "apco",
+            "apcs",
+            "copy",
+            "dnxhd",
+            "dv",
+            "flv",
+            "h263",
+            "h264",
+            "h264b",
+            "h264h",
+            "h264m",
+            "h265",
+            "mpeg2",
+            "mpeg4",
+            "theora",
+            "vp6",
+            "vp8",
+            "vp9",
+            "wmv2",
+            "wmv3",
+            "wvc1a"
+          ],
           "type": "string"
         },
         "videoConstantBitrate": {
@@ -8955,6 +11701,36 @@
       "description": "",
       "properties": {
         "formatEqual": {
+          "enum": [
+            "3gp",
+            "applehttp",
+            "avi",
+            "bmp",
+            "copy",
+            "flv",
+            "hls",
+            "ismv",
+            "jpg",
+            "m2ts",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp3",
+            "mp4",
+            "mpeg",
+            "mpegts",
+            "mxf",
+            "ogg",
+            "ogv",
+            "pdf",
+            "png",
+            "swf",
+            "wav",
+            "webm",
+            "wma",
+            "wmv",
+            "wvm"
+          ],
           "type": "string"
         }
       }
@@ -9105,6 +11881,11 @@
           "type": "string"
         },
         "resultParserType": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "xml": {
@@ -9159,6 +11940,14 @@
           "type": "string"
         },
         "protocol": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10
+          ],
           "type": "integer"
         },
         "serverPath": {
@@ -9229,6 +12018,10 @@
           "type": "array"
         },
         "status": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -9240,6 +12033,12 @@
       "description": "",
       "properties": {
         "action": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "createdAt": {
@@ -9264,6 +12063,14 @@
           "type": "string"
         },
         "protocol": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10
+          ],
           "type": "integer"
         },
         "remotePassword": {
@@ -9276,6 +12083,11 @@
           "type": "string"
         },
         "resultsParser": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "resultsTransformer": {
@@ -9285,6 +12097,10 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -9301,6 +12117,12 @@
       "description": "",
       "properties": {
         "actionEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "actionIn": {
@@ -9375,6 +12197,11 @@
           "type": "string"
         },
         "isDefaultEqual": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "isDefaultIn": {
@@ -9387,6 +12214,10 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -9499,6 +12330,9 @@
       "description": "",
       "properties": {
         "geoCoderType": {
+          "enum": [
+            "1"
+          ],
           "type": "string"
         }
       }
@@ -9528,6 +12362,10 @@
       "description": "",
       "properties": {
         "adultContent": {
+          "enum": [
+            "No",
+            "Yes"
+          ],
           "type": "string"
         }
       }
@@ -9563,6 +12401,10 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -9594,6 +12436,10 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -9642,9 +12488,70 @@
           "type": "integer"
         },
         "eventObjectType": {
+          "enum": [
+            "adCuePointEventNotifications.AdCuePoint",
+            "annotationEventNotifications.Annotation",
+            "captionAssetEventNotifications.CaptionAsset",
+            "codeCuePointEventNotifications.CodeCuePoint",
+            "contentDistributionEventNotifications.DistributionProfile",
+            "contentDistributionEventNotifications.EntryDistribution",
+            "cuePointEventNotifications.CuePoint",
+            "dropFolderEventNotifications.DropFolder",
+            "dropFolderEventNotifications.DropFolderFile",
+            "metadataEventNotifications.Metadata",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37"
+          ],
           "type": "string"
         },
         "eventType": {
+          "enum": [
+            "integrationEventNotifications.INTEGRATION_JOB_CLOSED",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
           "type": "string"
         },
         "object": {
@@ -9696,6 +12603,14 @@
       "description": "",
       "properties": {
         "authenticationMethod": {
+          "enum": [
+            -18,
+            -17,
+            1,
+            2,
+            4,
+            8
+          ],
           "type": "integer"
         },
         "connectTimeout": {
@@ -9708,6 +12623,12 @@
           "type": "string"
         },
         "method": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "password": {
@@ -9723,6 +12644,11 @@
           "type": "string"
         },
         "sslCertificateType": {
+          "enum": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
           "type": "string"
         },
         "sslEngine": {
@@ -9738,9 +12664,18 @@
           "type": "string"
         },
         "sslKeyType": {
+          "enum": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
           "type": "string"
         },
         "sslVersion": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "timeout": {
@@ -9769,6 +12704,15 @@
           "type": "string"
         },
         "format": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9
+          ],
           "type": "integer"
         },
         "ignoreNull": {
@@ -9785,6 +12729,14 @@
       "description": "",
       "properties": {
         "authenticationMethod": {
+          "enum": [
+            -18,
+            -17,
+            1,
+            2,
+            4,
+            8
+          ],
           "type": "integer"
         },
         "connectTimeout": {
@@ -9797,6 +12749,12 @@
           "$ref": "#/definitions/KalturaHttpNotificationData"
         },
         "method": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "password": {
@@ -9809,6 +12767,11 @@
           "type": "string"
         },
         "sslCertificateType": {
+          "enum": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
           "type": "string"
         },
         "sslEngine": {
@@ -9824,9 +12787,18 @@
           "type": "string"
         },
         "sslKeyType": {
+          "enum": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
           "type": "string"
         },
         "sslVersion": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "timeout": {
@@ -9867,12 +12839,91 @@
       "description": "",
       "properties": {
         "adultContent": {
+          "enum": [
+            "clean",
+            "no",
+            "yes"
+          ],
           "type": "string"
         },
         "category": {
+          "enum": [
+            "Arts",
+            "Arts/Design",
+            "Arts/Fashion &amp; Beauty",
+            "Arts/Food",
+            "Arts/Literature",
+            "Arts/Performing Arts",
+            "Arts/Visual Arts",
+            "Business",
+            "Business/Business News",
+            "Business/Careers",
+            "Business/Investing",
+            "Business/Management &amp; Marketing",
+            "Business/Shopping",
+            "Comedy",
+            "Education",
+            "Education/Education Technology",
+            "Education/Higher Education",
+            "Education/K-12",
+            "Education/Language Courses",
+            "Education/Training",
+            "Games &amp; Hobbies",
+            "Games &amp; Hobbies/Automotive",
+            "Games &amp; Hobbies/Aviation",
+            "Games &amp; Hobbies/Hobbies",
+            "Games &amp; Hobbies/Other Games",
+            "Games &amp; Hobbies/Video Games",
+            "Government &amp; Organizations",
+            "Government &amp; Organizations/Local",
+            "Government &amp; Organizations/National",
+            "Government &amp; Organizations/Non-Profit",
+            "Government &amp; Organizations/Regional",
+            "Health",
+            "Health/Alternative Health",
+            "Health/Fitness &amp; Nutrition",
+            "Health/Self-Help",
+            "Health/Sexuality",
+            "Kids &amp; Family",
+            "Music",
+            "News &amp; Politics",
+            "Religion &amp; Spirituality",
+            "Religion &amp; Spirituality/Buddhism",
+            "Religion &amp; Spirituality/Christianity",
+            "Religion &amp; Spirituality/Hinduism",
+            "Religion &amp; Spirituality/Islam",
+            "Religion &amp; Spirituality/Judaism",
+            "Religion &amp; Spirituality/Other",
+            "Religion &amp; Spirituality/Spirituality",
+            "Science &amp; Medicine",
+            "Science &amp; Medicine/Medicine",
+            "Science &amp; Medicine/Natural Sciences",
+            "Science &amp; Medicine/Social Sciences",
+            "Society &amp; Culture",
+            "Society &amp; Culture/History",
+            "Society &amp; Culture/Personal Journals",
+            "Society &amp; Culture/Philosophy",
+            "Society &amp; Culture/Places &amp; Travel",
+            "Sports &amp; Recreation",
+            "Sports &amp; Recreation/Amateur",
+            "Sports &amp; Recreation/College &amp; High School",
+            "Sports &amp; Recreation/Outdoor",
+            "Sports &amp; Recreation/Professional",
+            "TV &amp; Film",
+            "Technology",
+            "Technology/Gadgets",
+            "Technology/Podcasting",
+            "Technology/Software How-To",
+            "Technology/Tech News"
+          ],
           "type": "string"
         },
         "enforceOrder": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "feedAuthor": {
@@ -10131,12 +13182,16 @@
           "$ref": "#/definitions/KalturaIntegrationJobProviderData"
         },
         "providerType": {
+          "enum": [],
           "type": "string"
         },
         "triggerData": {
           "$ref": "#/definitions/KalturaIntegrationJobTriggerData"
         },
         "triggerType": {
+          "enum": [
+            "bpmEventNotificationIntegration.BpmEventNotification"
+          ],
           "type": "string"
         }
       }
@@ -10179,6 +13234,10 @@
           "type": "string"
         },
         "ipAddressRestrictionType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -10276,6 +13335,10 @@
           "type": "string"
         },
         "limitFlavorsRestrictionType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -10334,6 +13397,11 @@
           "type": "string"
         },
         "repeat": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -10400,6 +13468,10 @@
           "type": "number"
         },
         "status": {
+          "enum": [
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "tags": {
@@ -10409,9 +13481,18 @@
           "type": "string"
         },
         "triggerType": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "type": "string"
         },
         "type": {
+          "enum": [
+            "1"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -10446,6 +13527,10 @@
           "type": "number"
         },
         "statusEqual": {
+          "enum": [
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "statusIn": {
@@ -10493,6 +13578,10 @@
           "type": "number"
         },
         "dvrStatus": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "dvrWindow": {
@@ -10517,9 +13606,18 @@
           "type": "array"
         },
         "pushPublishEnabled": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "recordStatus": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "recordedEntryId": {
@@ -10548,9 +13646,19 @@
       "description": "",
       "properties": {
         "isLive": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "isRecordedEntryIdEmpty": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -10559,6 +13667,11 @@
       "description": "A representation of a live stream recording entry configuration\n ",
       "properties": {
         "shouldCopyEntitlement": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -10657,9 +13770,20 @@
           "type": "integer"
         },
         "live": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "orderBy": {
+          "enum": [
+            "+name",
+            "-audience",
+            "-eventTime",
+            "-plays"
+          ],
           "type": "string"
         },
         "toTime": {
@@ -10706,6 +13830,20 @@
           "type": "integer"
         },
         "deliveryType": {
+          "enum": [
+            "applehttp",
+            "auto",
+            "hdnetwork",
+            "hdnetworkmanifest",
+            "hds",
+            "hls",
+            "http",
+            "mpegdash",
+            "multicast_silverlight",
+            "rtmp",
+            "rtsp",
+            "sl"
+          ],
           "type": "string"
         },
         "entryId": {
@@ -10715,6 +13853,10 @@
           "type": "integer"
         },
         "eventType": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "isLive": {
@@ -10798,6 +13940,20 @@
           "type": "string"
         },
         "protocol": {
+          "enum": [
+            "applehttp",
+            "auto",
+            "hdnetwork",
+            "hdnetworkmanifest",
+            "hds",
+            "hls",
+            "http",
+            "mpegdash",
+            "multicast_silverlight",
+            "rtmp",
+            "rtsp",
+            "sl"
+          ],
           "type": "string"
         },
         "publishUrl": {
@@ -10957,12 +14113,201 @@
           "type": "boolean"
         },
         "language": {
+          "enum": [
+            "aa",
+            "ab",
+            "af",
+            "am",
+            "ar",
+            "as",
+            "ay",
+            "az",
+            "ba",
+            "be",
+            "bg",
+            "bh",
+            "bi",
+            "bn",
+            "bo",
+            "br",
+            "ca",
+            "co",
+            "cs",
+            "cy",
+            "da",
+            "de",
+            "dz",
+            "el",
+            "en",
+            "eo",
+            "es",
+            "et",
+            "eu",
+            "fa",
+            "fi",
+            "fj",
+            "fo",
+            "fr",
+            "fy",
+            "ga",
+            "gd",
+            "gl",
+            "gn",
+            "gu",
+            "gv",
+            "ha",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "hy",
+            "ia",
+            "id",
+            "ie",
+            "ik",
+            "in",
+            "is",
+            "it",
+            "iu",
+            "iw",
+            "ja",
+            "ji",
+            "jv",
+            "ka",
+            "kk",
+            "kl",
+            "km",
+            "kn",
+            "ko",
+            "ks",
+            "ku",
+            "ky",
+            "la",
+            "li",
+            "ln",
+            "lo",
+            "lt",
+            "lv",
+            "mg",
+            "mi",
+            "mk",
+            "ml",
+            "mn",
+            "mo",
+            "mr",
+            "ms",
+            "mt",
+            "my",
+            "na",
+            "ne",
+            "nl",
+            "no",
+            "oc",
+            "om",
+            "or",
+            "pa",
+            "pl",
+            "ps",
+            "pt",
+            "qu",
+            "rm",
+            "rn",
+            "ro",
+            "ru",
+            "rw",
+            "sa",
+            "sd",
+            "sg",
+            "sh",
+            "si",
+            "sk",
+            "sl",
+            "sm",
+            "sn",
+            "so",
+            "sq",
+            "sr",
+            "ss",
+            "st",
+            "su",
+            "sv",
+            "sw",
+            "ta",
+            "te",
+            "tg",
+            "th",
+            "ti",
+            "tk",
+            "tl",
+            "tn",
+            "to",
+            "tr",
+            "ts",
+            "tt",
+            "tw",
+            "ug",
+            "uk",
+            "ur",
+            "uz",
+            "vi",
+            "vo",
+            "wo",
+            "xh",
+            "yi",
+            "yo",
+            "zh",
+            "zu"
+          ],
           "type": "string"
         },
         "mailPriority": {
           "type": "integer"
         },
         "mailType": {
+          "enum": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "30",
+            "31",
+            "32",
+            "33",
+            "40",
+            "41",
+            "42",
+            "43",
+            "50",
+            "51",
+            "52",
+            "54",
+            "60",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "70",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "110",
+            "111",
+            "112",
+            "113",
+            "130",
+            "131",
+            "132"
+          ],
           "type": "string"
         },
         "minSendDate": {
@@ -10981,6 +14326,12 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "subjectParams": {
@@ -11050,15 +14401,58 @@
           "type": "integer"
         },
         "mediaType": {
+          "enum": [
+            1,
+            2,
+            5,
+            201,
+            202,
+            203,
+            204
+          ],
           "type": "integer"
         },
         "searchProviderId": {
           "type": "string"
         },
         "searchProviderType": {
+          "enum": [
+            3,
+            4,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            20,
+            21,
+            22,
+            23,
+            24,
+            28,
+            100
+          ],
           "type": "integer"
         },
         "sourceType": {
+          "enum": [
+            "limeLight.LIVE_STREAM",
+            "velocix.VELOCIX_LIVE",
+            "1",
+            "2",
+            "5",
+            "6",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "42"
+          ],
           "type": "string"
         }
       }
@@ -11084,18 +14478,59 @@
           "type": "integer"
         },
         "mediaTypeEqual": {
+          "enum": [
+            1,
+            2,
+            5,
+            201,
+            202,
+            203,
+            204
+          ],
           "type": "integer"
         },
         "mediaTypeIn": {
           "type": "string"
         },
         "sourceTypeEqual": {
+          "enum": [
+            "limeLight.LIVE_STREAM",
+            "velocix.VELOCIX_LIVE",
+            "1",
+            "2",
+            "5",
+            "6",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "42"
+          ],
           "type": "string"
         },
         "sourceTypeIn": {
           "type": "string"
         },
         "sourceTypeNotEqual": {
+          "enum": [
+            "limeLight.LIVE_STREAM",
+            "velocix.VELOCIX_LIVE",
+            "1",
+            "2",
+            "5",
+            "6",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "42"
+          ],
           "type": "string"
         },
         "sourceTypeNotIn": {
@@ -11186,6 +14621,10 @@
           "type": "integer"
         },
         "audioBitRateMode": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "audioChannels": {
@@ -11252,6 +14691,10 @@
           "type": "integer"
         },
         "videoBitRateMode": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "videoCodecId": {
@@ -11387,6 +14830,17 @@
           "type": "integer"
         },
         "metadataObjectType": {
+          "enum": [
+            "adCuePointMetadata.AdCuePoint",
+            "annotationMetadata.Annotation",
+            "codeCuePointMetadata.CodeCuePoint",
+            "thumbCuePointMetadata.thumbCuePoint",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "metadataProfileId": {
@@ -11402,6 +14856,11 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -11430,6 +14889,17 @@
           "type": "integer"
         },
         "metadataObjectTypeEqual": {
+          "enum": [
+            "adCuePointMetadata.AdCuePoint",
+            "annotationMetadata.Annotation",
+            "codeCuePointMetadata.CodeCuePoint",
+            "thumbCuePointMetadata.thumbCuePoint",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "metadataProfileIdEqual": {
@@ -11454,6 +14924,11 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -11527,6 +15002,11 @@
       "description": "",
       "properties": {
         "createMode": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "createdAt": {
@@ -11539,6 +15019,17 @@
           "type": "integer"
         },
         "metadataObjectType": {
+          "enum": [
+            "adCuePointMetadata.AdCuePoint",
+            "annotationMetadata.Annotation",
+            "codeCuePointMetadata.CodeCuePoint",
+            "thumbCuePointMetadata.thumbCuePoint",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "name": {
@@ -11548,6 +15039,11 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -11579,12 +15075,22 @@
       "description": "",
       "properties": {
         "createModeEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "createModeIn": {
           "type": "string"
         },
         "createModeNotEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "createModeNotIn": {
@@ -11600,6 +15106,17 @@
           "type": "integer"
         },
         "metadataObjectTypeEqual": {
+          "enum": [
+            "adCuePointMetadata.AdCuePoint",
+            "annotationMetadata.Annotation",
+            "codeCuePointMetadata.CodeCuePoint",
+            "thumbCuePointMetadata.thumbCuePoint",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         },
         "metadataObjectTypeIn": {
@@ -11612,6 +15129,11 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -11723,6 +15245,10 @@
           "type": "string"
         },
         "editorType": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "hasRealThumbnail": {
@@ -11771,6 +15297,14 @@
           "type": "integer"
         },
         "flagType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
           "type": "integer"
         },
         "flaggedEntryId": {
@@ -11783,12 +15317,20 @@
           "type": "integer"
         },
         "moderationObjectType": {
+          "enum": [
+            "2",
+            "3"
+          ],
           "type": "string"
         },
         "partnerId": {
           "type": "integer"
         },
         "status": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -11821,6 +15363,10 @@
       "description": "",
       "properties": {
         "addRemoveType": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "categoryIds": {
@@ -11880,15 +15426,41 @@
           "type": "integer"
         },
         "objType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "objectId": {
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
           "type": "integer"
         },
         "type": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            21,
+            26
+          ],
           "type": "integer"
         },
         "typeAsString": {
@@ -11945,6 +15517,17 @@
           "type": "boolean"
         },
         "type": {
+          "enum": [
+            "scheduledTaskContentDistribution.Distribute",
+            "scheduledTaskEventNotification.DispatchEventNotification",
+            "scheduledTaskMetadata.ExecuteMetadataXslt",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
           "type": "string"
         }
       }
@@ -12038,6 +15621,10 @@
           "type": "string"
         },
         "commercialUse": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "contentCategories": {
@@ -12119,6 +15706,12 @@
           "type": "integer"
         },
         "partnerGroupType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "partnerPackage": {
@@ -12143,12 +15736,31 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "templatePartnerId": {
           "type": "integer"
         },
         "type": {
+          "enum": [
+            1,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
           "type": "integer"
         },
         "userLandingPage": {
@@ -12189,6 +15801,12 @@
           "type": "string"
         },
         "partnerGroupTypeEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "partnerNameDescriptionWebsiteAdminNameAdminEmailLike": {
@@ -12204,6 +15822,12 @@
           "type": "integer"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -12388,12 +16012,23 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "tags": {
           "type": "string"
         },
         "type": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -12446,6 +16081,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -12458,6 +16098,12 @@
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "typeIn": {
@@ -12496,6 +16142,10 @@
           "type": "string"
         },
         "type": {
+          "enum": [
+            "kApiActionPermissionItem",
+            "kApiParameterPermissionItem"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -12536,6 +16186,10 @@
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            "kApiActionPermissionItem",
+            "kApiParameterPermissionItem"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -12588,6 +16242,13 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            "2098DE8D-7DDD-4BAB-96C6-32EBB6FABEA3",
+            "225CD36F-F132-49EF-BA8C-C91EA28E4369",
+            "811C5110-46C8-4C6E-8163-C0482A15D47E",
+            "C3FD11C6-F8B7-4D20-B008-1DB17D61F2DA",
+            "D783A191-E083-4BAF-B2DA-E69F910B3772"
+          ],
           "type": "string"
         }
       }
@@ -12607,6 +16268,20 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            "3CAF2814-A7AB-467C-B4DF-54ACC56C66DC",
+            "3CF2E054-F4D5-46cd-85A6-FCD152AD5FBE",
+            "6848955D-516B-4EB0-90E8-8F6D5A77B85F",
+            "6E76C588-C3A9-47ea-A875-546D5209FF38",
+            "79F78A0D-0B69-401e-8A90-8BEF30BCE192",
+            "81BD9AD4-A720-4ea1-B510-5D4E6FFB6A4D",
+            "C3CF56E0-7FF2-4491-809F-53E21D3ABF07",
+            "CCB0B4E3-8B46-409e-A998-82556E3F5AF4",
+            "CDD801AD-A577-48DB-950E-46D5F1592FAE",
+            "CE480EDE-516B-40B3-90E1-D6CFC47630C5",
+            "E6785609-64CC-4bfa-B82D-6B619733B746",
+            "EC930B7D-1F2D-4682-A38B-8AB977721D0D"
+          ],
           "type": "string"
         }
       }
@@ -12631,6 +16306,9 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            "6D5CFA59-C250-4426-930E-FAC72C8FCFA6"
+          ],
           "type": "string"
         }
       }
@@ -12656,6 +16334,15 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            "002F9772-38A0-43E5-9F79-0F6361DCC62A",
+            "1B4542E3-B5CF-4C99-B3BA-829AF46C92F8",
+            "5ABF0F0D-DC29-4B82-9982-FD8E57525BFC",
+            "786627D8-C2A6-44BE-8F88-08AE255B01A",
+            "A340C256-0941-4D4C-AD1D-0B6735C0CB24",
+            "B621D91F-EDCC-4035-8D4B-DC71760D43E9",
+            "D685030B-0F4F-43A6-BBAD-356F1EA0049A"
+          ],
           "type": "string"
         }
       }
@@ -12669,15 +16356,31 @@
       "description": "",
       "properties": {
         "analogVideoOPL": {
+          "enum": [
+            100,
+            150,
+            200
+          ],
           "type": "integer"
         },
         "analogVideoOutputProtectionList": {
           "type": "array"
         },
         "compressedDigitalAudioOPL": {
+          "enum": [
+            100,
+            150,
+            200,
+            250,
+            300
+          ],
           "type": "integer"
         },
         "compressedDigitalVideoOPL": {
+          "enum": [
+            400,
+            500
+          ],
           "type": "integer"
         },
         "digitalAudioOutputProtectionList": {
@@ -12690,9 +16393,22 @@
           "type": "array"
         },
         "uncompressedDigitalAudioOPL": {
+          "enum": [
+            100,
+            150,
+            200,
+            250,
+            300
+          ],
           "type": "integer"
         },
         "uncompressedDigitalVideoOPL": {
+          "enum": [
+            100,
+            250,
+            270,
+            300
+          ],
           "type": "integer"
         }
       }
@@ -12712,9 +16428,18 @@
           "type": "integer"
         },
         "licenseRemovalPolicy": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "minSecurityLevel": {
+          "enum": [
+            150,
+            2000
+          ],
           "type": "integer"
         },
         "rights": {
@@ -12787,6 +16512,12 @@
           "type": "integer"
         },
         "durationType": {
+          "enum": [
+            "long",
+            "medium",
+            "notavailable",
+            "short"
+          ],
           "type": "string"
         },
         "height": {
@@ -12907,6 +16638,11 @@
           "type": "string"
         },
         "playlistType": {
+          "enum": [
+            3,
+            10,
+            101
+          ],
           "type": "integer"
         },
         "plays": {
@@ -13256,6 +16992,10 @@
           "type": "string"
         },
         "interval": {
+          "enum": [
+            "days",
+            "months"
+          ],
           "type": "string"
         },
         "keywords": {
@@ -13357,6 +17097,11 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -13388,6 +17133,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -13483,6 +17233,13 @@
       "description": "",
       "properties": {
         "type": {
+          "enum": [
+            "playReady.DRM_POLICY",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "type": "string"
         }
       }
@@ -13531,6 +17288,9 @@
           "$ref": "#/definitions/KalturaFilter"
         },
         "objectFilterEngineType": {
+          "enum": [
+            "1"
+          ],
           "type": "string"
         },
         "objectTasks": {
@@ -13540,6 +17300,13 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -13583,6 +17350,13 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -13732,6 +17506,15 @@
           "type": "integer"
         },
         "type": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
           "type": "integer"
         },
         "value": {
@@ -13744,6 +17527,62 @@
           "type": "integer"
         },
         "workerType": {
+          "enum": [
+            "captionSearch.parseCaptionAsset",
+            "contentDistribution.DistributionDelete",
+            "contentDistribution.DistributionDisable",
+            "contentDistribution.DistributionEnable",
+            "contentDistribution.DistributionFetchReport",
+            "0",
+            "contentDistribution.DistributionSubmit",
+            "contentDistribution.DistributionSync",
+            "contentDistribution.DistributionUpdate",
+            "dropFolder.DropFolderContentProcessor",
+            "dropFolder.DropFolderWatcher",
+            "eventNotification.EventNotificationHandler",
+            "integration.Integration",
+            "scheduledTask.ScheduledTask",
+            "tagSearch.IndexTagsByPrivacyContext",
+            "tagSearch.TagResolve",
+            "virusScan.VirusScan",
+            "widevine.WidevineRepositorySync",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "10",
+            "11",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
           "type": "string"
         }
       }
@@ -13788,6 +17627,62 @@
           "type": "array"
         },
         "type": {
+          "enum": [
+            "captionSearch.parseCaptionAsset",
+            "contentDistribution.DistributionDelete",
+            "contentDistribution.DistributionDisable",
+            "contentDistribution.DistributionEnable",
+            "contentDistribution.DistributionFetchReport",
+            "0",
+            "contentDistribution.DistributionSubmit",
+            "contentDistribution.DistributionSync",
+            "contentDistribution.DistributionUpdate",
+            "dropFolder.DropFolderContentProcessor",
+            "dropFolder.DropFolderWatcher",
+            "eventNotification.EventNotificationHandler",
+            "integration.Integration",
+            "scheduledTask.ScheduledTask",
+            "tagSearch.IndexTagsByPrivacyContext",
+            "tagSearch.TagResolve",
+            "virusScan.VirusScan",
+            "widevine.WidevineRepositorySync",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "10",
+            "11",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
           "type": "string"
         },
         "typeName": {
@@ -13852,9 +17747,36 @@
           "type": "string"
         },
         "mediaType": {
+          "enum": [
+            1,
+            2,
+            5,
+            201,
+            202,
+            203,
+            204
+          ],
           "type": "integer"
         },
         "searchSource": {
+          "enum": [
+            3,
+            4,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            20,
+            21,
+            22,
+            23,
+            24,
+            28,
+            100
+          ],
           "type": "integer"
         }
       }
@@ -13882,6 +17804,13 @@
       "description": "",
       "properties": {
         "comparison": {
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "type": "string"
         }
       }
@@ -13918,6 +17847,10 @@
           "type": "array"
         },
         "type": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         }
       }
@@ -13946,6 +17879,25 @@
           "type": "string"
         },
         "licenseType": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
           "type": "integer"
         },
         "sourceLink": {
@@ -14005,6 +17957,10 @@
           "type": "string"
         },
         "sessionType": {
+          "enum": [
+            0,
+            2
+          ],
           "type": "integer"
         },
         "userId": {
@@ -14070,6 +18026,11 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -14116,6 +18077,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -14184,6 +18150,10 @@
           "type": "string"
         },
         "siteRestrictionType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -14336,9 +18306,55 @@
           "type": "number"
         },
         "eventType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
           "type": "integer"
         },
         "featureType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "isFirstInSession": {
@@ -14395,6 +18411,72 @@
           "type": "string"
         },
         "kmcEventType": {
+          "enum": [
+            1001,
+            1010,
+            1011,
+            1012,
+            1013,
+            1014,
+            1015,
+            1016,
+            1017,
+            1018,
+            1019,
+            1020,
+            1021,
+            1022,
+            1023,
+            1030,
+            1031,
+            1032,
+            1033,
+            1034,
+            1035,
+            1036,
+            1037,
+            1038,
+            1039,
+            1040,
+            1041,
+            1042,
+            1043,
+            1044,
+            1045,
+            1046,
+            1047,
+            1048,
+            1050,
+            1051,
+            1052,
+            1053,
+            1054,
+            1055,
+            1056,
+            1057,
+            1058,
+            1059,
+            1070,
+            1071,
+            1072,
+            1073,
+            1074,
+            1075,
+            1076,
+            1077,
+            1078,
+            1079,
+            1080,
+            1081,
+            1082,
+            1083,
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089
+          ],
           "type": "integer"
         },
         "partnerId": {
@@ -14523,6 +18605,10 @@
           "type": "array"
         },
         "deliveryStatus": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "desciption": {
@@ -14562,18 +18648,36 @@
           "type": "string"
         },
         "protocol": {
+          "enum": [
+            "kontiki.KONTIKI",
+            "0",
+            "1",
+            "2",
+            "3",
+            "6",
+            "7"
+          ],
           "type": "string"
         },
         "publicKey": {
           "type": "string"
         },
         "readyBehavior": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "rules": {
           "type": "array"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "storageBaseDir": {
@@ -14629,12 +18733,26 @@
           "type": "string"
         },
         "protocolEqual": {
+          "enum": [
+            "kontiki.KONTIKI",
+            "0",
+            "1",
+            "2",
+            "3",
+            "6",
+            "7"
+          ],
           "type": "string"
         },
         "protocolIn": {
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -14891,6 +19009,10 @@
           "type": "string"
         },
         "taggedObjectType": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "updatedAt": {
@@ -14913,6 +19035,10 @@
           "type": "integer"
         },
         "objectTypeEqual": {
+          "enum": [
+            "1",
+            "2"
+          ],
           "type": "string"
         },
         "tagEqual": {
@@ -14948,6 +19074,15 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            7,
+            9
+          ],
           "type": "integer"
         },
         "thumbParamsId": {
@@ -14967,6 +19102,15 @@
       "description": "",
       "properties": {
         "statusEqual": {
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            7,
+            9
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -15024,6 +19168,10 @@
           "type": "string"
         },
         "subType": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "title": {
@@ -15049,6 +19197,10 @@
           "type": "string"
         },
         "subTypeEqual": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "subTypeIn": {
@@ -15089,6 +19241,13 @@
           "type": "integer"
         },
         "cropType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "cropWidth": {
@@ -15104,6 +19263,36 @@
           "type": "integer"
         },
         "format": {
+          "enum": [
+            "3gp",
+            "applehttp",
+            "avi",
+            "bmp",
+            "copy",
+            "flv",
+            "hls",
+            "ismv",
+            "jpg",
+            "m2ts",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp3",
+            "mp4",
+            "mpeg",
+            "mpegts",
+            "mxf",
+            "ogg",
+            "ogv",
+            "pdf",
+            "png",
+            "swf",
+            "wav",
+            "webm",
+            "wma",
+            "wmv",
+            "wvm"
+          ],
           "type": "string"
         },
         "height": {
@@ -15144,6 +19333,36 @@
       "description": "",
       "properties": {
         "formatEqual": {
+          "enum": [
+            "3gp",
+            "applehttp",
+            "avi",
+            "bmp",
+            "copy",
+            "flv",
+            "hls",
+            "ismv",
+            "jpg",
+            "m2ts",
+            "m4v",
+            "mkv",
+            "mov",
+            "mp3",
+            "mp4",
+            "mpeg",
+            "mpegts",
+            "mxf",
+            "ogg",
+            "ogv",
+            "pdf",
+            "png",
+            "swf",
+            "wav",
+            "webm",
+            "wma",
+            "wmv",
+            "wvm"
+          ],
           "type": "string"
         }
       }
@@ -15325,6 +19544,23 @@
       "description": "",
       "properties": {
         "category": {
+          "enum": [
+            "Animals &amp; Pets",
+            "Arts &amp; Animation",
+            "Autos",
+            "Comedy",
+            "Commercials/Promotional",
+            "Entertainment",
+            "Family &amp; Kids",
+            "How To/Instructional/DIY",
+            "Music",
+            "News &amp; Blogs",
+            "Science &amp; Technology",
+            "Sports",
+            "Travel &amp; Places",
+            "Video Games",
+            "Vlogs &amp; People"
+          ],
           "type": "string"
         }
       }
@@ -15369,6 +19605,10 @@
           "type": "integer"
         },
         "creationMode": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "description": {
@@ -15390,6 +19630,29 @@
           "type": "string"
         },
         "objType": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
           "type": "integer"
         },
         "objTypeAsString": {
@@ -15439,6 +19702,10 @@
           "type": "integer"
         },
         "creationModeEqual": {
+          "enum": [
+            2,
+            3
+          ],
           "type": "integer"
         },
         "creationModeIn": {
@@ -15454,6 +19721,29 @@
           "type": "string"
         },
         "objTypeEqual": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
           "type": "integer"
         },
         "objTypeIn": {
@@ -15526,6 +19816,29 @@
           "type": "string"
         },
         "type": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
           "type": "integer"
         },
         "versions": {
@@ -15537,6 +19850,11 @@
       "description": "",
       "properties": {
         "errorCode": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "errorDescription": {
@@ -15569,6 +19887,14 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -15603,6 +19929,14 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -15916,6 +20250,11 @@
           "type": "string"
         },
         "gender": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "id": {
@@ -15934,6 +20273,151 @@
           "type": "boolean"
         },
         "language": {
+          "enum": [
+            "aa",
+            "ab",
+            "af",
+            "am",
+            "ar",
+            "as",
+            "ay",
+            "az",
+            "ba",
+            "be",
+            "bg",
+            "bh",
+            "bi",
+            "bn",
+            "bo",
+            "br",
+            "ca",
+            "co",
+            "cs",
+            "cy",
+            "da",
+            "de",
+            "dz",
+            "el",
+            "en",
+            "eo",
+            "es",
+            "et",
+            "eu",
+            "fa",
+            "fi",
+            "fj",
+            "fo",
+            "fr",
+            "fy",
+            "ga",
+            "gd",
+            "gl",
+            "gn",
+            "gu",
+            "gv",
+            "ha",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "hy",
+            "ia",
+            "id",
+            "ie",
+            "ik",
+            "in",
+            "is",
+            "it",
+            "iu",
+            "iw",
+            "ja",
+            "ji",
+            "jv",
+            "ka",
+            "kk",
+            "kl",
+            "km",
+            "kn",
+            "ko",
+            "ks",
+            "ku",
+            "ky",
+            "la",
+            "li",
+            "ln",
+            "lo",
+            "lt",
+            "lv",
+            "mg",
+            "mi",
+            "mk",
+            "ml",
+            "mn",
+            "mo",
+            "mr",
+            "ms",
+            "mt",
+            "my",
+            "na",
+            "ne",
+            "nl",
+            "no",
+            "oc",
+            "om",
+            "or",
+            "pa",
+            "pl",
+            "ps",
+            "pt",
+            "qu",
+            "rm",
+            "rn",
+            "ro",
+            "ru",
+            "rw",
+            "sa",
+            "sd",
+            "sg",
+            "sh",
+            "si",
+            "sk",
+            "sl",
+            "sm",
+            "sn",
+            "so",
+            "sq",
+            "sr",
+            "ss",
+            "st",
+            "su",
+            "sv",
+            "sw",
+            "ta",
+            "te",
+            "tg",
+            "th",
+            "ti",
+            "tk",
+            "tl",
+            "tn",
+            "to",
+            "tr",
+            "ts",
+            "tt",
+            "tw",
+            "ug",
+            "uk",
+            "ur",
+            "uz",
+            "vi",
+            "vo",
+            "wo",
+            "xh",
+            "yi",
+            "yo",
+            "zh",
+            "zu"
+          ],
           "type": "string"
         },
         "lastLoginTime": {
@@ -15967,6 +20451,11 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "statusUpdatedAt": {
@@ -15982,6 +20471,10 @@
           "type": "string"
         },
         "type": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -16022,6 +20515,10 @@
           "type": "string"
         },
         "userAgentRestrictionType": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         }
       }
@@ -16050,6 +20547,11 @@
           "type": "string"
         },
         "isAdminEqual": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "lastNameStartsWith": {
@@ -16065,6 +20567,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -16077,6 +20584,10 @@
           "type": "string"
         },
         "typeEqual": {
+          "enum": [
+            0,
+            1
+          ],
           "type": "integer"
         },
         "typeIn": {
@@ -16114,6 +20625,11 @@
           "type": "string"
         },
         "loginEnabledEqual": {
+          "enum": [
+            -1,
+            0,
+            1
+          ],
           "type": "integer"
         },
         "permissionNamesMultiLikeAnd": {
@@ -16214,6 +20730,11 @@
           "type": "string"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -16263,6 +20784,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -16340,6 +20866,12 @@
       "description": "",
       "properties": {
         "groupTypeEq": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "groupTypeIn": {
@@ -16393,6 +20925,12 @@
           "type": "integer"
         },
         "partnerStatus": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "peakStorage": {
@@ -16461,12 +20999,24 @@
           "type": "string"
         },
         "scanResult": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ],
           "type": "integer"
         },
         "srcFilePath": {
           "type": "string"
         },
         "virusFoundAction": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         }
       }
@@ -16475,12 +21025,24 @@
       "description": "",
       "properties": {
         "actionIfInfected": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "createdAt": {
           "type": "integer"
         },
         "engineType": {
+          "enum": [
+            "clamAVScanEngine.ClamAV",
+            "symantecScanEngine.SymantecScanDirectEngine",
+            "symantecScanEngine.SymantecScanEngine",
+            "symantecScanEngine.SymantecScanJavaEngine"
+          ],
           "type": "string"
         },
         "entryFilter": {
@@ -16496,6 +21058,11 @@
           "type": "integer"
         },
         "status": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -16518,6 +21085,12 @@
           "type": "integer"
         },
         "engineTypeEqual": {
+          "enum": [
+            "clamAVScanEngine.ClamAV",
+            "symantecScanEngine.SymantecScanDirectEngine",
+            "symantecScanEngine.SymantecScanEngine",
+            "symantecScanEngine.SymantecScanJavaEngine"
+          ],
           "type": "string"
         },
         "engineTypeIn": {
@@ -16542,6 +21115,11 @@
           "type": "string"
         },
         "statusEqual": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -16854,6 +21432,9 @@
           "type": "integer"
         },
         "syncMode": {
+          "enum": [
+            0
+          ],
           "type": "integer"
         },
         "wvAssetIds": {
@@ -16895,6 +21476,10 @@
           "type": "integer"
         },
         "securityType": {
+          "enum": [
+            1,
+            2
+          ],
           "type": "integer"
         },
         "sourceWidgetId": {
@@ -16988,9 +21573,35 @@
       "description": "",
       "properties": {
         "adultContent": {
+          "enum": [
+            "adult",
+            "nonadult"
+          ],
           "type": "string"
         },
         "category": {
+          "enum": [
+            "Action",
+            "Animals",
+            "Art &amp; Animation",
+            "Commercials",
+            "Entertainment &amp; TV",
+            "Family",
+            "Food",
+            "Funny Videos",
+            "Games",
+            "Health &amp; Beauty",
+            "How-To",
+            "Movies &amp; Shorts",
+            "Music",
+            "News &amp; Politics",
+            "People &amp; Vlogs",
+            "Products &amp; Tech.",
+            "Science &amp; Environment",
+            "Sports",
+            "Transportation",
+            "Travel"
+          ],
           "type": "string"
         },
         "feedDescription": {
