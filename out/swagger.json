@@ -7311,7 +7311,6 @@
             "eventCuePoint.Event",
             "thumbCuePoint.Thumb"
           ],
-          "readOnly": true,
           "type": "string"
         },
         "entryId": {
@@ -10054,7 +10053,6 @@
             "dropFolderXmlBulkUpload.XML",
             "1"
           ],
-          "readOnly": true,
           "type": "string"
         }
       }
@@ -10329,7 +10327,6 @@
             "2",
             "3"
           ],
-          "readOnly": true,
           "type": "string"
         }
       }
@@ -24263,6 +24260,18 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "adCuePoint.Ad",
+              "annotation.Annotation",
+              "codeCuePoint.Code",
+              "eventCuePoint.Event",
+              "thumbCuePoint.Thumb"
+            ],
+            "in": "query",
+            "name": "annotation[cuePointType]",
+            "type": "string"
+          },
+          {
             "in": "query",
             "name": "annotation[entryId]",
             "type": "string"
@@ -25046,6 +25055,18 @@
             "in": "query",
             "name": "id",
             "required": false,
+            "type": "string"
+          },
+          {
+            "enum": [
+              "adCuePoint.Ad",
+              "annotation.Annotation",
+              "codeCuePoint.Code",
+              "eventCuePoint.Event",
+              "thumbCuePoint.Thumb"
+            ],
+            "in": "query",
+            "name": "annotation[cuePointType]",
             "type": "string"
           },
           {
@@ -38516,6 +38537,18 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "adCuePoint.Ad",
+              "annotation.Annotation",
+              "codeCuePoint.Code",
+              "eventCuePoint.Event",
+              "thumbCuePoint.Thumb"
+            ],
+            "in": "query",
+            "name": "cuePoint[cuePointType]",
+            "type": "string"
+          },
+          {
             "in": "query",
             "name": "cuePoint[entryId]",
             "type": "string"
@@ -39299,6 +39332,18 @@
             "in": "query",
             "name": "id",
             "required": false,
+            "type": "string"
+          },
+          {
+            "enum": [
+              "adCuePoint.Ad",
+              "annotation.Annotation",
+              "codeCuePoint.Code",
+              "eventCuePoint.Event",
+              "thumbCuePoint.Thumb"
+            ],
+            "in": "query",
+            "name": "cuePoint[cuePointType]",
             "type": "string"
           },
           {
