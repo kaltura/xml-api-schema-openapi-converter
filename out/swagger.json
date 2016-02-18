@@ -39,6 +39,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "name": {
@@ -200,6 +205,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "name": {
@@ -345,6 +355,10 @@
             "http",
             "https"
           ],
+          "enumLabels": [
+            "HTTP",
+            "HTTPS"
+          ],
           "type": "string"
         },
         "username": {
@@ -383,6 +397,10 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "VIDEO",
+            "OVERLAY"
+          ],
           "type": "string"
         },
         "duration": {
@@ -398,6 +416,12 @@
             "1",
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "CUSTOM",
+            "VAST",
+            "VAST_2_0",
+            "VPAID"
           ],
           "type": "string"
         },
@@ -435,6 +459,12 @@
             "1",
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "CUSTOM",
+            "VAST",
+            "VAST_2_0",
+            "VPAID"
           ],
           "type": "string"
         },
@@ -532,6 +562,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED"
+          ],
           "type": "integer"
         },
         "dvrWindow": {
@@ -553,6 +587,10 @@
           "enum": [
             "HD iPhone/iPad Live",
             "Universal Streaming Live"
+          ],
+          "enumLabels": [
+            "HD_IPHONE_IPAD_LIVE",
+            "UNIVERSAL_STREAMING_LIVE"
           ],
           "type": "string"
         },
@@ -579,6 +617,12 @@
             "public-read",
             "public-read-write"
           ],
+          "enumLabels": [
+            "ACL_AUTHENTICATED_READ",
+            "ACL_PRIVATE",
+            "ACL_PUBLIC_READ",
+            "ACL_PUBLIC_READ_WRITE"
+          ],
           "type": "string"
         },
         "s3Region": {
@@ -600,6 +644,12 @@
             "private",
             "public-read",
             "public-read-write"
+          ],
+          "enumLabels": [
+            "ACL_AUTHENTICATED_READ",
+            "ACL_PRIVATE",
+            "ACL_PUBLIC_READ",
+            "ACL_PUBLIC_READ_WRITE"
           ],
           "type": "string"
         },
@@ -665,6 +715,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "parentId": {
@@ -676,6 +731,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -709,6 +769,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -813,6 +878,12 @@
             "insert",
             "read",
             "update"
+          ],
+          "enumLabels": [
+            "USAGE",
+            "INSERT",
+            "READ",
+            "UPDATE"
           ],
           "type": "string"
         },
@@ -1039,6 +1110,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -1048,6 +1124,11 @@
             "0",
             "remoteMediaInfo.RemoteMediaInfo",
             "1"
+          ],
+          "enumLabels": [
+            "MEDIAINFO",
+            "REMOTE_MEDIAINFO",
+            "FFMPEG"
           ],
           "type": "string"
         },
@@ -1099,6 +1180,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -1173,6 +1259,36 @@
             "wma",
             "wmv",
             "wvm"
+          ],
+          "enumLabels": [
+            "_3GP",
+            "APPLEHTTP",
+            "AVI",
+            "BMP",
+            "COPY",
+            "FLV",
+            "HLS",
+            "ISMV",
+            "JPG",
+            "M2TS",
+            "M4V",
+            "MKV",
+            "MOV",
+            "MP3",
+            "MP4",
+            "MPEG",
+            "MPEGTS",
+            "MXF",
+            "OGG",
+            "OGV",
+            "PDF",
+            "PNG",
+            "SWF",
+            "WAV",
+            "WEBM",
+            "WMA",
+            "WMV",
+            "WVM"
           ],
           "type": "string"
         },
@@ -1281,6 +1397,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "TEXT",
+            "MEDIA",
+            "DOCUMENT"
+          ],
           "type": "string"
         },
         "status": {
@@ -1292,6 +1413,14 @@
             3,
             7,
             9
+          ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "IMPORTING",
+            "EXPORTING"
           ],
           "readOnly": true,
           "type": "integer"
@@ -1316,6 +1445,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "TEXT",
+            "MEDIA",
+            "DOCUMENT"
+          ],
           "type": "string"
         },
         "formatIn": {
@@ -1329,6 +1463,14 @@
             3,
             7,
             9
+          ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "IMPORTING",
+            "EXPORTING"
           ],
           "type": "integer"
         },
@@ -1380,6 +1522,17 @@
             "RELATION_REMOVED",
             "VIEWED"
           ],
+          "enumLabels": [
+            "CHANGED",
+            "CONTENT_VIEWED",
+            "COPIED",
+            "CREATED",
+            "DELETED",
+            "FILE_SYNC_CREATED",
+            "RELATION_ADDED",
+            "RELATION_REMOVED",
+            "VIEWED"
+          ],
           "type": "string"
         },
         "auditObjectType": {
@@ -1415,6 +1568,38 @@
             "uiConf",
             "widget"
           ],
+          "enumLabels": [
+            "BATCH_JOB",
+            "EMAIL_INGESTION_PROFILE",
+            "FILE_SYNC",
+            "KSHOW_KUSER",
+            "METADATA",
+            "METADATA_PROFILE",
+            "PARTNER",
+            "PERMISSION",
+            "UPLOAD_TOKEN",
+            "USER_LOGIN_DATA",
+            "USER_ROLE",
+            "ACCESS_CONTROL",
+            "CATEGORY",
+            "CONVERSION_PROFILE_2",
+            "ENTRY",
+            "FLAVOR_ASSET",
+            "FLAVOR_PARAMS",
+            "FLAVOR_PARAMS_CONVERSION_PROFILE",
+            "FLAVOR_PARAMS_OUTPUT",
+            "KSHOW",
+            "KUSER",
+            "MEDIA_INFO",
+            "MODERATION",
+            "ROUGHCUT",
+            "SYNDICATION",
+            "THUMBNAIL_ASSET",
+            "THUMBNAIL_PARAMS",
+            "THUMBNAIL_PARAMS_OUTPUT",
+            "UI_CONF",
+            "WIDGET"
+          ],
           "type": "string"
         },
         "clientTag": {
@@ -1426,6 +1611,12 @@
             0,
             1,
             2
+          ],
+          "enumLabels": [
+            "CLIENT",
+            "SCRIPT",
+            "PS2",
+            "API_V3"
           ],
           "readOnly": true,
           "type": "integer"
@@ -1516,6 +1707,38 @@
             "uiConf",
             "widget"
           ],
+          "enumLabels": [
+            "BATCH_JOB",
+            "EMAIL_INGESTION_PROFILE",
+            "FILE_SYNC",
+            "KSHOW_KUSER",
+            "METADATA",
+            "METADATA_PROFILE",
+            "PARTNER",
+            "PERMISSION",
+            "UPLOAD_TOKEN",
+            "USER_LOGIN_DATA",
+            "USER_ROLE",
+            "ACCESS_CONTROL",
+            "CATEGORY",
+            "CONVERSION_PROFILE_2",
+            "ENTRY",
+            "FLAVOR_ASSET",
+            "FLAVOR_PARAMS",
+            "FLAVOR_PARAMS_CONVERSION_PROFILE",
+            "FLAVOR_PARAMS_OUTPUT",
+            "KSHOW",
+            "KUSER",
+            "MEDIA_INFO",
+            "MODERATION",
+            "ROUGHCUT",
+            "SYNDICATION",
+            "THUMBNAIL_ASSET",
+            "THUMBNAIL_PARAMS",
+            "THUMBNAIL_PARAMS_OUTPUT",
+            "UI_CONF",
+            "WIDGET"
+          ],
           "type": "string"
         },
         "requestId": {
@@ -1531,6 +1754,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "PENDING",
+            "READY",
+            "FAILED"
           ],
           "readOnly": true,
           "type": "integer"
@@ -1554,6 +1782,17 @@
       "properties": {
         "actionEqual": {
           "enum": [
+            "CHANGED",
+            "CONTENT_VIEWED",
+            "COPIED",
+            "CREATED",
+            "DELETED",
+            "FILE_SYNC_CREATED",
+            "RELATION_ADDED",
+            "RELATION_REMOVED",
+            "VIEWED"
+          ],
+          "enumLabels": [
             "CHANGED",
             "CONTENT_VIEWED",
             "COPIED",
@@ -1602,6 +1841,38 @@
             "uiConf",
             "widget"
           ],
+          "enumLabels": [
+            "BATCH_JOB",
+            "EMAIL_INGESTION_PROFILE",
+            "FILE_SYNC",
+            "KSHOW_KUSER",
+            "METADATA",
+            "METADATA_PROFILE",
+            "PARTNER",
+            "PERMISSION",
+            "UPLOAD_TOKEN",
+            "USER_LOGIN_DATA",
+            "USER_ROLE",
+            "ACCESS_CONTROL",
+            "CATEGORY",
+            "CONVERSION_PROFILE_2",
+            "ENTRY",
+            "FLAVOR_ASSET",
+            "FLAVOR_PARAMS",
+            "FLAVOR_PARAMS_CONVERSION_PROFILE",
+            "FLAVOR_PARAMS_OUTPUT",
+            "KSHOW",
+            "KUSER",
+            "MEDIA_INFO",
+            "MODERATION",
+            "ROUGHCUT",
+            "SYNDICATION",
+            "THUMBNAIL_ASSET",
+            "THUMBNAIL_PARAMS",
+            "THUMBNAIL_PARAMS_OUTPUT",
+            "UI_CONF",
+            "WIDGET"
+          ],
           "type": "string"
         },
         "auditObjectTypeIn": {
@@ -1616,6 +1887,12 @@
             0,
             1,
             2
+          ],
+          "enumLabels": [
+            "CLIENT",
+            "SCRIPT",
+            "PS2",
+            "API_V3"
           ],
           "type": "integer"
         },
@@ -1715,6 +1992,38 @@
             "uiConf",
             "widget"
           ],
+          "enumLabels": [
+            "BATCH_JOB",
+            "EMAIL_INGESTION_PROFILE",
+            "FILE_SYNC",
+            "KSHOW_KUSER",
+            "METADATA",
+            "METADATA_PROFILE",
+            "PARTNER",
+            "PERMISSION",
+            "UPLOAD_TOKEN",
+            "USER_LOGIN_DATA",
+            "USER_ROLE",
+            "ACCESS_CONTROL",
+            "CATEGORY",
+            "CONVERSION_PROFILE_2",
+            "ENTRY",
+            "FLAVOR_ASSET",
+            "FLAVOR_PARAMS",
+            "FLAVOR_PARAMS_CONVERSION_PROFILE",
+            "FLAVOR_PARAMS_OUTPUT",
+            "KSHOW",
+            "KUSER",
+            "MEDIA_INFO",
+            "MODERATION",
+            "ROUGHCUT",
+            "SYNDICATION",
+            "THUMBNAIL_ASSET",
+            "THUMBNAIL_PARAMS",
+            "THUMBNAIL_PARAMS_OUTPUT",
+            "UI_CONF",
+            "WIDGET"
+          ],
           "type": "string"
         },
         "relatedObjectTypeIn": {
@@ -1737,6 +2046,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "PENDING",
+            "READY",
+            "FAILED"
           ],
           "type": "integer"
         },
@@ -1795,6 +2109,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "CHANGED",
+            "ADDED",
+            "REMOVED"
+          ],
           "type": "integer"
         }
       }
@@ -1815,6 +2134,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "FILE",
+            "LINK",
+            "URL"
           ],
           "type": "integer"
         },
@@ -1969,6 +2293,25 @@
             14,
             15
           ],
+          "enumLabels": [
+            "UNKNOWN",
+            "NONE",
+            "COPYRIGHTED",
+            "PUBLIC_DOMAIN",
+            "CREATIVECOMMONS_ATTRIBUTION",
+            "CREATIVECOMMONS_ATTRIBUTION_SHARE_ALIKE",
+            "CREATIVECOMMONS_ATTRIBUTION_NO_DERIVATIVES",
+            "CREATIVECOMMONS_ATTRIBUTION_NON_COMMERCIAL",
+            "CREATIVECOMMONS_ATTRIBUTION_NON_COMMERCIAL_SHARE_ALIKE",
+            "CREATIVECOMMONS_ATTRIBUTION_NON_COMMERCIAL_NO_DERIVATIVES",
+            "GFDL",
+            "GPL",
+            "AFFERO_GPL",
+            "LGPL",
+            "BSD",
+            "APACHE",
+            "MOZILLA"
+          ],
           "type": "integer"
         },
         "moderationCount": {
@@ -1984,6 +2327,13 @@
             3,
             5,
             6
+          ],
+          "enumLabels": [
+            "PENDING_MODERATION",
+            "APPROVED",
+            "REJECTED",
+            "FLAGGED_FOR_REVIEW",
+            "AUTO_APPROVED"
           ],
           "readOnly": true,
           "type": "integer"
@@ -2041,6 +2391,13 @@
             "3",
             "4"
           ],
+          "enumLabels": [
+            "NONE",
+            "APPROVED_BUT_NOT_READY",
+            "READY_BUT_NOT_APPROVED",
+            "NOT_READY_AND_NOT_APPROVED",
+            "FAILED"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -2078,6 +2435,20 @@
             "6",
             "7"
           ],
+          "enumLabels": [
+            "ERROR_IMPORTING",
+            "ERROR_CONVERTING",
+            "SCAN_FAILURE",
+            "IMPORT",
+            "INFECTED",
+            "PRECONVERT",
+            "READY",
+            "DELETED",
+            "PENDING",
+            "MODERATE",
+            "BLOCKED",
+            "NO_CONTENT"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -2106,6 +2477,17 @@
             "7",
             "8",
             "10"
+          ],
+          "enumLabels": [
+            "AUTOMATIC",
+            "EXTERNAL_MEDIA",
+            "MEDIA_CLIP",
+            "MIX",
+            "PLAYLIST",
+            "DATA",
+            "LIVE_STREAM",
+            "LIVE_CHANNEL",
+            "DOCUMENT"
           ],
           "type": "string"
         },
@@ -2161,6 +2543,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -2235,6 +2622,13 @@
             5,
             6
           ],
+          "enumLabels": [
+            "PENDING_MODERATION",
+            "APPROVED",
+            "REJECTED",
+            "FLAGGED_FOR_REVIEW",
+            "AUTO_APPROVED"
+          ],
           "type": "integer"
         },
         "moderationStatusIn": {
@@ -2247,6 +2641,13 @@
             3,
             5,
             6
+          ],
+          "enumLabels": [
+            "PENDING_MODERATION",
+            "APPROVED",
+            "REJECTED",
+            "FLAGGED_FOR_REVIEW",
+            "AUTO_APPROVED"
           ],
           "type": "integer"
         },
@@ -2306,6 +2707,13 @@
             "3",
             "4"
           ],
+          "enumLabels": [
+            "NONE",
+            "APPROVED_BUT_NOT_READY",
+            "READY_BUT_NOT_APPROVED",
+            "NOT_READY_AND_NOT_APPROVED",
+            "FAILED"
+          ],
           "type": "string"
         },
         "replacementStatusIn": {
@@ -2359,6 +2767,20 @@
             "6",
             "7"
           ],
+          "enumLabels": [
+            "ERROR_IMPORTING",
+            "ERROR_CONVERTING",
+            "SCAN_FAILURE",
+            "IMPORT",
+            "INFECTED",
+            "PRECONVERT",
+            "READY",
+            "DELETED",
+            "PENDING",
+            "MODERATE",
+            "BLOCKED",
+            "NO_CONTENT"
+          ],
           "type": "string"
         },
         "statusIn": {
@@ -2380,6 +2802,20 @@
             "5",
             "6",
             "7"
+          ],
+          "enumLabels": [
+            "ERROR_IMPORTING",
+            "ERROR_CONVERTING",
+            "SCAN_FAILURE",
+            "IMPORT",
+            "INFECTED",
+            "PRECONVERT",
+            "READY",
+            "DELETED",
+            "PENDING",
+            "MODERATE",
+            "BLOCKED",
+            "NO_CONTENT"
           ],
           "type": "string"
         },
@@ -2435,6 +2871,17 @@
             "8",
             "10"
           ],
+          "enumLabels": [
+            "AUTOMATIC",
+            "EXTERNAL_MEDIA",
+            "MEDIA_CLIP",
+            "MIX",
+            "PLAYLIST",
+            "DATA",
+            "LIVE_STREAM",
+            "LIVE_CHANNEL",
+            "DOCUMENT"
+          ],
           "type": "string"
         },
         "typeIn": {
@@ -2479,6 +2926,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -2539,6 +2991,10 @@
             "-createdAt",
             "recent"
           ],
+          "enumLabels": [
+            "CREATED_AT_DESC",
+            "RECENT"
+          ],
           "type": "string"
         },
         "feedUrl": {
@@ -2582,6 +3038,10 @@
             -1,
             1
           ],
+          "enumLabels": [
+            "DELETED",
+            "ACTIVE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -2600,6 +3060,14 @@
             4,
             5,
             6
+          ],
+          "enumLabels": [
+            "GOOGLE_VIDEO",
+            "YAHOO",
+            "ITUNES",
+            "TUBE_MOGUL",
+            "KALTURA",
+            "KALTURA_XSLT"
           ],
           "type": "integer"
         },
@@ -2730,6 +3198,14 @@
             4,
             5
           ],
+          "enumLabels": [
+            "APP",
+            "RUNTIME",
+            "HTTP",
+            "CURL",
+            "KALTURA_API",
+            "KALTURA_CLIENT"
+          ],
           "type": "integer"
         },
         "estimatedEffort": {
@@ -2819,6 +3295,62 @@
             "39",
             "40"
           ],
+          "enumLabels": [
+            "PARSE_CAPTION_ASSET",
+            "DISTRIBUTION_DELETE",
+            "DISTRIBUTION_DISABLE",
+            "DISTRIBUTION_ENABLE",
+            "DISTRIBUTION_FETCH_REPORT",
+            "CONVERT",
+            "DISTRIBUTION_SUBMIT",
+            "DISTRIBUTION_SYNC",
+            "DISTRIBUTION_UPDATE",
+            "DROP_FOLDER_CONTENT_PROCESSOR",
+            "DROP_FOLDER_WATCHER",
+            "EVENT_NOTIFICATION_HANDLER",
+            "INTEGRATION",
+            "SCHEDULED_TASK",
+            "INDEX_TAGS",
+            "TAG_RESOLVE",
+            "VIRUS_SCAN",
+            "WIDEVINE_REPOSITORY_SYNC",
+            "IMPORT",
+            "DELETE",
+            "FLATTEN",
+            "BULKUPLOAD",
+            "DVDCREATOR",
+            "DOWNLOAD",
+            "OOCONVERT",
+            "CONVERT_PROFILE",
+            "POSTCONVERT",
+            "EXTRACT_MEDIA",
+            "MAIL",
+            "NOTIFICATION",
+            "CLEANUP",
+            "SCHEDULER_HELPER",
+            "BULKDOWNLOAD",
+            "DB_CLEANUP",
+            "PROVISION_PROVIDE",
+            "CONVERT_COLLECTION",
+            "STORAGE_EXPORT",
+            "PROVISION_DELETE",
+            "STORAGE_DELETE",
+            "EMAIL_INGESTION",
+            "METADATA_IMPORT",
+            "METADATA_TRANSFORM",
+            "FILESYNC_IMPORT",
+            "CAPTURE_THUMB",
+            "DELETE_FILE",
+            "INDEX",
+            "MOVE_CATEGORY_ENTRIES",
+            "COPY",
+            "CONCAT",
+            "CONVERT_LIVE_SEGMENT",
+            "COPY_PARTNER",
+            "VALIDATE_LIVE_MEDIA_SERVERS",
+            "SYNC_CATEGORY_PRIVACY_CONTEXT",
+            "LIVE_REPORT_EXPORT"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -2877,6 +3409,21 @@
             11,
             12
           ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "PROCESSING",
+            "PROCESSED",
+            "MOVEFILE",
+            "FINISHED",
+            "FAILED",
+            "ABORTED",
+            "ALMOST_DONE",
+            "RETRY",
+            "FATAL",
+            "DONT_PROCESS",
+            "FINISHED_PARTIALLY"
+          ],
           "type": "integer"
         },
         "updatedAt": {
@@ -2934,6 +3481,14 @@
             3,
             4,
             5
+          ],
+          "enumLabels": [
+            "APP",
+            "RUNTIME",
+            "HTTP",
+            "CURL",
+            "KALTURA_API",
+            "KALTURA_CLIENT"
           ],
           "type": "integer"
         },
@@ -3033,6 +3588,62 @@
             "39",
             "40"
           ],
+          "enumLabels": [
+            "PARSE_CAPTION_ASSET",
+            "DISTRIBUTION_DELETE",
+            "DISTRIBUTION_DISABLE",
+            "DISTRIBUTION_ENABLE",
+            "DISTRIBUTION_FETCH_REPORT",
+            "CONVERT",
+            "DISTRIBUTION_SUBMIT",
+            "DISTRIBUTION_SYNC",
+            "DISTRIBUTION_UPDATE",
+            "DROP_FOLDER_CONTENT_PROCESSOR",
+            "DROP_FOLDER_WATCHER",
+            "EVENT_NOTIFICATION_HANDLER",
+            "INTEGRATION",
+            "SCHEDULED_TASK",
+            "INDEX_TAGS",
+            "TAG_RESOLVE",
+            "VIRUS_SCAN",
+            "WIDEVINE_REPOSITORY_SYNC",
+            "IMPORT",
+            "DELETE",
+            "FLATTEN",
+            "BULKUPLOAD",
+            "DVDCREATOR",
+            "DOWNLOAD",
+            "OOCONVERT",
+            "CONVERT_PROFILE",
+            "POSTCONVERT",
+            "EXTRACT_MEDIA",
+            "MAIL",
+            "NOTIFICATION",
+            "CLEANUP",
+            "SCHEDULER_HELPER",
+            "BULKDOWNLOAD",
+            "DB_CLEANUP",
+            "PROVISION_PROVIDE",
+            "CONVERT_COLLECTION",
+            "STORAGE_EXPORT",
+            "PROVISION_DELETE",
+            "STORAGE_DELETE",
+            "EMAIL_INGESTION",
+            "METADATA_IMPORT",
+            "METADATA_TRANSFORM",
+            "FILESYNC_IMPORT",
+            "CAPTURE_THUMB",
+            "DELETE_FILE",
+            "INDEX",
+            "MOVE_CATEGORY_ENTRIES",
+            "COPY",
+            "CONCAT",
+            "CONVERT_LIVE_SEGMENT",
+            "COPY_PARTNER",
+            "VALIDATE_LIVE_MEDIA_SERVERS",
+            "SYNC_CATEGORY_PRIVACY_CONTEXT",
+            "LIVE_REPORT_EXPORT"
+          ],
           "type": "string"
         },
         "jobTypeIn": {
@@ -3092,6 +3703,21 @@
             10,
             11,
             12
+          ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "PROCESSING",
+            "PROCESSED",
+            "MOVEFILE",
+            "FINISHED",
+            "FAILED",
+            "ABORTED",
+            "ALMOST_DONE",
+            "RETRY",
+            "FATAL",
+            "DONT_PROCESS",
+            "FINISHED_PARTIALLY"
           ],
           "type": "integer"
         },
@@ -3252,6 +3878,13 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "CATEGORY_USER",
+            "CATEGORY_ENTRY"
+          ],
           "type": "string"
         },
         "bulkUploadType": {
@@ -3260,6 +3893,12 @@
             "bulkUploadFilter.FILTER",
             "bulkUploadXml.XML",
             "dropFolderXmlBulkUpload.DROP_FOLDER_XML"
+          ],
+          "enumLabels": [
+            "CSV",
+            "FILTER",
+            "XML",
+            "DROP_FOLDER_XML"
           ],
           "type": "string"
         },
@@ -3283,6 +3922,14 @@
             3,
             4,
             5
+          ],
+          "enumLabels": [
+            "APP",
+            "RUNTIME",
+            "HTTP",
+            "CURL",
+            "KALTURA_API",
+            "KALTURA_CLIENT"
           ],
           "type": "integer"
         },
@@ -3323,6 +3970,21 @@
             11,
             12
           ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "PROCESSING",
+            "PROCESSED",
+            "MOVEFILE",
+            "FINISHED",
+            "FAILED",
+            "ABORTED",
+            "ALMOST_DONE",
+            "RETRY",
+            "FATAL",
+            "DONT_PROCESS",
+            "FINISHED_PARTIALLY"
+          ],
           "type": "integer"
         },
         "uploadedBy": {
@@ -3352,6 +4014,13 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "CATEGORY_USER",
+            "CATEGORY_ENTRY"
+          ],
           "type": "string"
         },
         "bulkUploadObjectTypeIn": {
@@ -3372,6 +4041,21 @@
             10,
             11,
             12
+          ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "PROCESSING",
+            "PROCESSED",
+            "MOVEFILE",
+            "FINISHED",
+            "FAILED",
+            "ABORTED",
+            "ALMOST_DONE",
+            "RETRY",
+            "FATAL",
+            "DONT_PROCESS",
+            "FINISHED_PARTIALLY"
           ],
           "type": "integer"
         },
@@ -3437,6 +4121,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "V1",
+            "V2",
+            "V3"
+          ],
           "readOnly": true,
           "type": "integer"
         }
@@ -3498,6 +4187,13 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "CATEGORY_USER",
+            "CATEGORY_ENTRY"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -3553,6 +4249,12 @@
             "bulkUploadFilter.FILTER",
             "bulkUploadXml.XML",
             "dropFolderXmlBulkUpload.DROP_FOLDER_XML"
+          ],
+          "enumLabels": [
+            "CSV",
+            "FILTER",
+            "XML",
+            "DROP_FOLDER_XML"
           ],
           "readOnly": true,
           "type": "string"
@@ -3611,6 +4313,14 @@
             "5",
             "6"
           ],
+          "enumLabels": [
+            "ADD",
+            "UPDATE",
+            "DELETE",
+            "REPLACE",
+            "TRANSFORM_XSLT",
+            "ADD_OR_UPDATE"
+          ],
           "type": "string"
         },
         "bulkUploadJobId": {
@@ -3624,6 +4334,13 @@
             "3",
             "4",
             "5"
+          ],
+          "enumLabels": [
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "CATEGORY_USER",
+            "CATEGORY_ENTRY"
           ],
           "type": "string"
         },
@@ -3675,6 +4392,11 @@
             "1",
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "ERROR",
+            "OK",
+            "IN_PROGRESS"
           ],
           "type": "string"
         }
@@ -4048,6 +4770,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -4058,6 +4785,9 @@
           "description": "The type of the server, this is auto filled by the derived server object",
           "enum": [
             "activitiBusinessProcessNotification.Activiti"
+          ],
+          "enumLabels": [
+            "ACTIVITI"
           ],
           "readOnly": true,
           "type": "string"
@@ -4104,6 +4834,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "type": "string"
         },
         "statusIn": {
@@ -4115,6 +4850,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "type": "string"
         },
         "statusNotIn": {
@@ -4123,6 +4863,9 @@
         "typeEqual": {
           "enum": [
             "activitiBusinessProcessNotification.Activiti"
+          ],
+          "enumLabels": [
+            "ACTIVITI"
           ],
           "type": "string"
         },
@@ -4285,6 +5028,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "SRT",
+            "DFXP",
+            "WEBVTT"
+          ],
           "type": "string"
         },
         "isDefault": {
@@ -4293,6 +5041,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -4447,6 +5200,151 @@
             "Yoruba",
             "Zulu"
           ],
+          "enumLabels": [
+            "AB",
+            "AA",
+            "AF",
+            "SQ",
+            "AM",
+            "AR",
+            "HY",
+            "AS_",
+            "AY",
+            "AZ",
+            "BA",
+            "EU",
+            "BN",
+            "DZ",
+            "BH",
+            "BI",
+            "BR",
+            "BG",
+            "MY",
+            "BE",
+            "KM",
+            "CA",
+            "ZH",
+            "CO",
+            "HR",
+            "CS",
+            "DA",
+            "NL",
+            "EN",
+            "EO",
+            "ET",
+            "FO",
+            "FA",
+            "FJ",
+            "FI",
+            "FR",
+            "FY",
+            "GV",
+            "GD",
+            "GL",
+            "KA",
+            "DE",
+            "EL",
+            "KL",
+            "GN",
+            "GU",
+            "HA",
+            "IW",
+            "HE",
+            "HI",
+            "HU",
+            "IS",
+            "IN",
+            "ID",
+            "IA",
+            "IE",
+            "IU",
+            "IK",
+            "GA",
+            "IT",
+            "JA",
+            "JV",
+            "KN",
+            "KS",
+            "KK",
+            "RW",
+            "KY",
+            "RN",
+            "KO",
+            "KU",
+            "LO",
+            "LA",
+            "LV",
+            "LI",
+            "LN",
+            "LT",
+            "MK",
+            "MG",
+            "MS",
+            "ML",
+            "MT",
+            "MI",
+            "MR",
+            "MO",
+            "MN",
+            "NA",
+            "NE",
+            "NO",
+            "OC",
+            "OR_",
+            "OM",
+            "PS",
+            "PL",
+            "PT",
+            "PA",
+            "QU",
+            "RM",
+            "RO",
+            "RU",
+            "SM",
+            "SG",
+            "SA",
+            "SR",
+            "SH",
+            "ST",
+            "TN",
+            "SN",
+            "SD",
+            "SI",
+            "SS",
+            "SK",
+            "SL",
+            "SO",
+            "ES",
+            "SU",
+            "SW",
+            "SV",
+            "TL",
+            "TG",
+            "TA",
+            "TT",
+            "TE",
+            "TH",
+            "BO",
+            "TI",
+            "TO",
+            "TS",
+            "TR",
+            "TK",
+            "TW",
+            "UG",
+            "UK",
+            "UR",
+            "UZ",
+            "VI",
+            "VO",
+            "CY",
+            "WO",
+            "XH",
+            "YI",
+            "JI",
+            "YO",
+            "ZU"
+          ],
           "type": "string"
         },
         "languageCode": {
@@ -4596,6 +5494,151 @@
             "zh",
             "zu"
           ],
+          "enumLabels": [
+            "AA",
+            "AB",
+            "AF",
+            "AM",
+            "AR",
+            "AS_",
+            "AY",
+            "AZ",
+            "BA",
+            "BE",
+            "BG",
+            "BH",
+            "BI",
+            "BN",
+            "BO",
+            "BR",
+            "CA",
+            "CO",
+            "CS",
+            "CY",
+            "DA",
+            "DE",
+            "DZ",
+            "EL",
+            "EN",
+            "EO",
+            "ES",
+            "ET",
+            "EU",
+            "FA",
+            "FI",
+            "FJ",
+            "FO",
+            "FR",
+            "FY",
+            "GA",
+            "GD",
+            "GL",
+            "GN",
+            "GU",
+            "GV",
+            "HA",
+            "HE",
+            "HI",
+            "HR",
+            "HU",
+            "HY",
+            "IA",
+            "ID",
+            "IE",
+            "IK",
+            "IN",
+            "IS",
+            "IT",
+            "IU",
+            "IW",
+            "JA",
+            "JI",
+            "JV",
+            "KA",
+            "KK",
+            "KL",
+            "KM",
+            "KN",
+            "KO",
+            "KS",
+            "KU",
+            "KY",
+            "LA",
+            "LI",
+            "LN",
+            "LO",
+            "LT",
+            "LV",
+            "MG",
+            "MI",
+            "MK",
+            "ML",
+            "MN",
+            "MO",
+            "MR",
+            "MS",
+            "MT",
+            "MY",
+            "NA",
+            "NE",
+            "NL",
+            "NO",
+            "OC",
+            "OM",
+            "OR_",
+            "PA",
+            "PL",
+            "PS",
+            "PT",
+            "QU",
+            "RM",
+            "RN",
+            "RO",
+            "RU",
+            "RW",
+            "SA",
+            "SD",
+            "SG",
+            "SH",
+            "SI",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SQ",
+            "SR",
+            "SS",
+            "ST",
+            "SU",
+            "SV",
+            "SW",
+            "TA",
+            "TE",
+            "TG",
+            "TH",
+            "TI",
+            "TK",
+            "TL",
+            "TN",
+            "TO",
+            "TR",
+            "TS",
+            "TT",
+            "TW",
+            "UG",
+            "UK",
+            "UR",
+            "UZ",
+            "VI",
+            "VO",
+            "WO",
+            "XH",
+            "YI",
+            "YO",
+            "ZH",
+            "ZU"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -4608,6 +5651,14 @@
             3,
             7,
             9
+          ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "IMPORTING",
+            "EXPORTING"
           ],
           "readOnly": true,
           "type": "integer"
@@ -4634,6 +5685,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "SRT",
+            "DFXP",
+            "WEBVTT"
+          ],
           "type": "string"
         },
         "formatIn": {
@@ -4647,6 +5703,14 @@
             3,
             7,
             9
+          ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "IMPORTING",
+            "EXPORTING"
           ],
           "type": "integer"
         },
@@ -4862,6 +5926,151 @@
             "Yoruba",
             "Zulu"
           ],
+          "enumLabels": [
+            "AB",
+            "AA",
+            "AF",
+            "SQ",
+            "AM",
+            "AR",
+            "HY",
+            "AS_",
+            "AY",
+            "AZ",
+            "BA",
+            "EU",
+            "BN",
+            "DZ",
+            "BH",
+            "BI",
+            "BR",
+            "BG",
+            "MY",
+            "BE",
+            "KM",
+            "CA",
+            "ZH",
+            "CO",
+            "HR",
+            "CS",
+            "DA",
+            "NL",
+            "EN",
+            "EO",
+            "ET",
+            "FO",
+            "FA",
+            "FJ",
+            "FI",
+            "FR",
+            "FY",
+            "GV",
+            "GD",
+            "GL",
+            "KA",
+            "DE",
+            "EL",
+            "KL",
+            "GN",
+            "GU",
+            "HA",
+            "IW",
+            "HE",
+            "HI",
+            "HU",
+            "IS",
+            "IN",
+            "ID",
+            "IA",
+            "IE",
+            "IU",
+            "IK",
+            "GA",
+            "IT",
+            "JA",
+            "JV",
+            "KN",
+            "KS",
+            "KK",
+            "RW",
+            "KY",
+            "RN",
+            "KO",
+            "KU",
+            "LO",
+            "LA",
+            "LV",
+            "LI",
+            "LN",
+            "LT",
+            "MK",
+            "MG",
+            "MS",
+            "ML",
+            "MT",
+            "MI",
+            "MR",
+            "MO",
+            "MN",
+            "NA",
+            "NE",
+            "NO",
+            "OC",
+            "OR_",
+            "OM",
+            "PS",
+            "PL",
+            "PT",
+            "PA",
+            "QU",
+            "RM",
+            "RO",
+            "RU",
+            "SM",
+            "SG",
+            "SA",
+            "SR",
+            "SH",
+            "ST",
+            "TN",
+            "SN",
+            "SD",
+            "SI",
+            "SS",
+            "SK",
+            "SL",
+            "SO",
+            "ES",
+            "SU",
+            "SW",
+            "SV",
+            "TL",
+            "TG",
+            "TA",
+            "TT",
+            "TE",
+            "TH",
+            "BO",
+            "TI",
+            "TO",
+            "TS",
+            "TR",
+            "TK",
+            "TW",
+            "UG",
+            "UK",
+            "UR",
+            "UZ",
+            "VI",
+            "VO",
+            "CY",
+            "WO",
+            "XH",
+            "YI",
+            "JI",
+            "YO",
+            "ZU"
+          ],
           "type": "string"
         },
         "languageIn": {
@@ -4931,6 +6140,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "SRT",
+            "DFXP",
+            "WEBVTT"
+          ],
           "type": "string"
         },
         "isDefault": {
@@ -4939,6 +6153,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -5093,6 +6312,151 @@
             "Yoruba",
             "Zulu"
           ],
+          "enumLabels": [
+            "AB",
+            "AA",
+            "AF",
+            "SQ",
+            "AM",
+            "AR",
+            "HY",
+            "AS_",
+            "AY",
+            "AZ",
+            "BA",
+            "EU",
+            "BN",
+            "DZ",
+            "BH",
+            "BI",
+            "BR",
+            "BG",
+            "MY",
+            "BE",
+            "KM",
+            "CA",
+            "ZH",
+            "CO",
+            "HR",
+            "CS",
+            "DA",
+            "NL",
+            "EN",
+            "EO",
+            "ET",
+            "FO",
+            "FA",
+            "FJ",
+            "FI",
+            "FR",
+            "FY",
+            "GV",
+            "GD",
+            "GL",
+            "KA",
+            "DE",
+            "EL",
+            "KL",
+            "GN",
+            "GU",
+            "HA",
+            "IW",
+            "HE",
+            "HI",
+            "HU",
+            "IS",
+            "IN",
+            "ID",
+            "IA",
+            "IE",
+            "IU",
+            "IK",
+            "GA",
+            "IT",
+            "JA",
+            "JV",
+            "KN",
+            "KS",
+            "KK",
+            "RW",
+            "KY",
+            "RN",
+            "KO",
+            "KU",
+            "LO",
+            "LA",
+            "LV",
+            "LI",
+            "LN",
+            "LT",
+            "MK",
+            "MG",
+            "MS",
+            "ML",
+            "MT",
+            "MI",
+            "MR",
+            "MO",
+            "MN",
+            "NA",
+            "NE",
+            "NO",
+            "OC",
+            "OR_",
+            "OM",
+            "PS",
+            "PL",
+            "PT",
+            "PA",
+            "QU",
+            "RM",
+            "RO",
+            "RU",
+            "SM",
+            "SG",
+            "SA",
+            "SR",
+            "SH",
+            "ST",
+            "TN",
+            "SN",
+            "SD",
+            "SI",
+            "SS",
+            "SK",
+            "SL",
+            "SO",
+            "ES",
+            "SU",
+            "SW",
+            "SV",
+            "TL",
+            "TG",
+            "TA",
+            "TT",
+            "TE",
+            "TH",
+            "BO",
+            "TI",
+            "TO",
+            "TS",
+            "TR",
+            "TK",
+            "TW",
+            "UG",
+            "UK",
+            "UR",
+            "UZ",
+            "VI",
+            "VO",
+            "CY",
+            "WO",
+            "XH",
+            "YI",
+            "JI",
+            "YO",
+            "ZU"
+          ],
           "type": "string"
         },
         "sourceParamsId": {
@@ -5114,6 +6478,11 @@
             "1",
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "SRT",
+            "DFXP",
+            "WEBVTT"
           ],
           "type": "string"
         },
@@ -5176,6 +6545,19 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "ATTACHMENT",
+            "CAPTION",
+            "DOCUMENT",
+            "IMAGE",
+            "PDF",
+            "SWF",
+            "TIMED_THUMB_ASSET",
+            "WIDEVINE_FLAVOR",
+            "FLAVOR",
+            "THUMBNAIL",
+            "LIVE"
+          ],
           "type": "string"
         },
         "srcFileSyncLocalPath": {
@@ -5204,6 +6586,10 @@
             1,
             3
           ],
+          "enumLabels": [
+            "PARTNER_ONLY",
+            "CATEGORY_MEMBERS_ONLY"
+          ],
           "type": "integer"
         },
         "contributionPolicy": {
@@ -5211,6 +6597,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ALL",
+            "MEMBERS_WITH_CONTRIBUTION_PERMISSION"
           ],
           "type": "integer"
         },
@@ -5243,6 +6633,28 @@
             "-partnerSortValue",
             "-updatedAt"
           ],
+          "enumLabels": [
+            "CREATED_AT_ASC",
+            "DEPTH_ASC",
+            "DIRECT_ENTRIES_COUNT_ASC",
+            "DIRECT_SUB_CATEGORIES_COUNT_ASC",
+            "ENTRIES_COUNT_ASC",
+            "FULL_NAME_ASC",
+            "MEMBERS_COUNT_ASC",
+            "NAME_ASC",
+            "PARTNER_SORT_VALUE_ASC",
+            "UPDATED_AT_ASC",
+            "CREATED_AT_DESC",
+            "DEPTH_DESC",
+            "DIRECT_ENTRIES_COUNT_DESC",
+            "DIRECT_SUB_CATEGORIES_COUNT_DESC",
+            "ENTRIES_COUNT_DESC",
+            "FULL_NAME_DESC",
+            "MEMBERS_COUNT_DESC",
+            "NAME_DESC",
+            "PARTNER_SORT_VALUE_DESC",
+            "UPDATED_AT_DESC"
+          ],
           "type": "string"
         },
         "defaultPermissionLevel": {
@@ -5253,6 +6665,13 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "MANAGER",
+            "MODERATOR",
+            "CONTRIBUTOR",
+            "MEMBER",
+            "NONE"
           ],
           "type": "integer"
         },
@@ -5300,6 +6719,10 @@
             1,
             2
           ],
+          "enumLabels": [
+            "INHERIT",
+            "MANUAL"
+          ],
           "type": "integer"
         },
         "inheritedParentId": {
@@ -5318,6 +6741,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -5361,6 +6789,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ALL",
+            "AUTHENTICATED_USERS",
+            "MEMBERS_ONLY"
+          ],
           "type": "integer"
         },
         "privacyContext": {
@@ -5384,6 +6817,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "UPDATING",
+            "ACTIVE",
+            "DELETED",
+            "PURGED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -5403,6 +6842,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "AUTO_JOIN",
+            "REQUEST_TO_JOIN",
+            "NOT_ALLOWED"
+          ],
           "readOnly": true,
           "type": "integer"
         }
@@ -5421,12 +6865,20 @@
             1,
             3
           ],
+          "enumLabels": [
+            "PARTNER_ONLY",
+            "CATEGORY_MEMBERS_ONLY"
+          ],
           "type": "integer"
         },
         "contributionPolicyEqual": {
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ALL",
+            "MEMBERS_WITH_CONTRIBUTION_PERMISSION"
           ],
           "type": "integer"
         },
@@ -5467,6 +6919,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "INHERIT",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -5512,6 +6968,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ALL",
+            "AUTHENTICATED_USERS",
+            "MEMBERS_ONLY"
+          ],
           "type": "integer"
         },
         "privacyIn": {
@@ -5522,6 +6983,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -5534,6 +7000,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "UPDATING",
+            "ACTIVE",
+            "DELETED",
+            "PURGED"
           ],
           "type": "integer"
         },
@@ -5585,6 +7057,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "PENDING",
+            "ACTIVE",
+            "DELETED",
+            "REJECTED"
+          ],
           "readOnly": true,
           "type": "integer"
         }
@@ -5611,6 +7089,10 @@
           "enum": [
             "+createdAt",
             "-createdAt"
+          ],
+          "enumLabels": [
+            "CREATED_AT_ASC",
+            "CREATED_AT_DESC"
           ],
           "type": "string"
         }
@@ -5651,6 +7133,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "PENDING",
+            "ACTIVE",
+            "DELETED",
+            "REJECTED"
           ],
           "type": "integer"
         },
@@ -5734,6 +7222,11 @@
             "id",
             "referenceId"
           ],
+          "enumLabels": [
+            "FULL_NAME",
+            "ID",
+            "REFERENCE_ID"
+          ],
           "type": "string"
         }
       }
@@ -5784,6 +7277,13 @@
             3,
             4
           ],
+          "enumLabels": [
+            "MANAGER",
+            "MODERATOR",
+            "CONTRIBUTOR",
+            "MEMBER",
+            "NONE"
+          ],
           "type": "integer"
         },
         "permissionNames": {
@@ -5798,6 +7298,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "PENDING",
+            "NOT_ACTIVE",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -5806,6 +7312,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "MANUAL",
+            "AUTOMATIC"
           ],
           "type": "integer"
         },
@@ -5876,6 +7386,13 @@
             3,
             4
           ],
+          "enumLabels": [
+            "MANAGER",
+            "MODERATOR",
+            "CONTRIBUTOR",
+            "MEMBER",
+            "NONE"
+          ],
           "type": "integer"
         },
         "permissionLevelIn": {
@@ -5897,6 +7414,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "PENDING",
+            "NOT_ACTIVE",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -5906,6 +7429,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "MANUAL",
+            "AUTOMATIC"
           ],
           "type": "integer"
         },
@@ -5991,6 +7518,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "PENDING",
+            "NOT_ACTIVE",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -6000,6 +7533,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "MANUAL",
+            "AUTOMATIC"
           ],
           "type": "integer"
         },
@@ -6158,6 +7695,13 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "EQUAL",
+            "GREATER_THAN",
+            "GREATER_THAN_OR_EQUAL",
+            "LESS_THAN",
+            "LESS_THAN_OR_EQUAL"
+          ],
           "type": "string"
         },
         "value": {
@@ -6262,6 +7806,25 @@
             "10",
             "11"
           ],
+          "enumLabels": [
+            "ABC_WATERMARK",
+            "EVENT_NOTIFICATION_FIELD",
+            "EVENT_NOTIFICATION_OBJECT_CHANGED",
+            "METADATA_FIELD_CHANGED",
+            "METADATA_FIELD_COMPARE",
+            "METADATA_FIELD_MATCH",
+            "AUTHENTICATED",
+            "COUNTRY",
+            "IP_ADDRESS",
+            "SITE",
+            "USER_AGENT",
+            "FIELD_MATCH",
+            "FIELD_COMPARE",
+            "ASSET_PROPERTIES_COMPARE",
+            "USER_ROLE",
+            "GEO_DISTANCE",
+            "OR_OPERATOR"
+          ],
           "readOnly": true,
           "type": "string"
         }
@@ -6337,6 +7900,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "BEFORE_SUNRISE",
+            "AFTER_SUNRISE",
+            "AFTER_SUNSET"
+          ],
           "type": "integer"
         },
         "entryDistributionFlag": {
@@ -6347,6 +7915,14 @@
             3,
             4,
             5
+          ],
+          "enumLabels": [
+            "NONE",
+            "SUBMIT_REQUIRED",
+            "DELETE_REQUIRED",
+            "UPDATE_REQUIRED",
+            "ENABLE_REQUIRED",
+            "DISABLE_REQUIRED"
           ],
           "type": "integer"
         },
@@ -6365,6 +7941,21 @@
             10,
             11,
             12
+          ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "SUBMITTING",
+            "UPDATING",
+            "DELETING",
+            "ERROR_SUBMITTING",
+            "ERROR_UPDATING",
+            "ERROR_DELETING",
+            "REMOVED",
+            "IMPORT_SUBMITTING",
+            "IMPORT_UPDATING"
           ],
           "type": "integer"
         },
@@ -6422,6 +8013,13 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "PLAY",
+            "DOWNLOAD",
+            "THUMBNAIL",
+            "METADATA",
+            "EXPORT"
+          ],
           "type": "string"
         }
       }
@@ -6475,6 +8073,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "PENDING",
+            "HANDLED",
+            "DONE",
+            "FAILED"
+          ],
           "type": "integer"
         },
         "targetType": {
@@ -6486,12 +8090,22 @@
             4,
             5
           ],
+          "enumLabels": [
+            "DATA_CENTER",
+            "SCHEDULER",
+            "JOB_TYPE",
+            "JOB",
+            "BATCH"
+          ],
           "type": "integer"
         },
         "type": {
           "description": "The command type - stop / start / config",
           "enum": [
             4
+          ],
+          "enumLabels": [
+            "KILL"
           ],
           "type": "integer"
         },
@@ -6548,6 +8162,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "PENDING",
+            "HANDLED",
+            "DONE",
+            "FAILED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -6561,6 +8181,13 @@
             4,
             5
           ],
+          "enumLabels": [
+            "DATA_CENTER",
+            "SCHEDULER",
+            "JOB_TYPE",
+            "JOB",
+            "BATCH"
+          ],
           "type": "integer"
         },
         "targetTypeIn": {
@@ -6569,6 +8196,9 @@
         "typeEqual": {
           "enum": [
             4
+          ],
+          "enumLabels": [
+            "KILL"
           ],
           "type": "integer"
         },
@@ -6712,6 +8342,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "isPartnerDefault": {
@@ -6725,6 +8360,11 @@
             "0",
             "remoteMediaInfo.RemoteMediaInfo",
             "1"
+          ],
+          "enumLabels": [
+            "MEDIAINFO",
+            "REMOTE_MEDIAINFO",
+            "FFMPEG"
           ],
           "type": "string"
         },
@@ -6741,6 +8381,11 @@
             "1",
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
           ],
           "type": "string"
         },
@@ -6760,6 +8405,10 @@
           "enum": [
             "1",
             "2"
+          ],
+          "enumLabels": [
+            "MEDIA",
+            "LIVE_STREAM"
           ],
           "type": "string"
         },
@@ -6788,6 +8437,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "KEEP",
+            "DELETE"
+          ],
           "type": "integer"
         },
         "forceNoneComplied": {
@@ -6796,6 +8449,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -6806,6 +8464,11 @@
             1,
             2
           ],
+          "enumLabels": [
+            "CONVERT",
+            "INGEST",
+            "CONVERT_WHEN_MISSING"
+          ],
           "type": "integer"
         },
         "readyBehavior": {
@@ -6815,6 +8478,12 @@
             0,
             1,
             2
+          ],
+          "enumLabels": [
+            "NO_IMPACT",
+            "INHERIT_FLAVOR_PARAMS",
+            "REQUIRED",
+            "OPTIONAL"
           ],
           "type": "integer"
         },
@@ -6850,6 +8519,11 @@
             1,
             2
           ],
+          "enumLabels": [
+            "CONVERT",
+            "INGEST",
+            "CONVERT_WHEN_MISSING"
+          ],
           "type": "integer"
         },
         "originIn": {
@@ -6861,6 +8535,12 @@
             0,
             1,
             2
+          ],
+          "enumLabels": [
+            "NO_IMPACT",
+            "INHERIT_FLAVOR_PARAMS",
+            "REQUIRED",
+            "OPTIONAL"
           ],
           "type": "integer"
         },
@@ -6936,6 +8616,11 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "type": "string"
         },
         "statusIn": {
@@ -6957,6 +8642,10 @@
           "enum": [
             "1",
             "2"
+          ],
+          "enumLabels": [
+            "MEDIA",
+            "LIVE_STREAM"
           ],
           "type": "string"
         },
@@ -7141,6 +8830,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "PRIMARY",
+            "SECONDARY"
+          ],
           "type": "integer"
         },
         "srcFilePath": {
@@ -7197,6 +8890,9 @@
           "enum": [
             "1"
           ],
+          "enumLabels": [
+            "KALTURA"
+          ],
           "type": "string"
         }
       }
@@ -7232,6 +8928,9 @@
           "enum": [
             "1"
           ],
+          "enumLabels": [
+            "KALTURA"
+          ],
           "type": "string"
         }
       }
@@ -7248,6 +8947,9 @@
           "description": "The ip geo coder engine to be used",
           "enum": [
             "1"
+          ],
+          "enumLabels": [
+            "KALTURA"
           ],
           "type": "string"
         }
@@ -7270,6 +8972,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "RESTRICT_COUNTRY_LIST",
+            "ALLOW_COUNTRY_LIST"
           ],
           "type": "integer"
         }
@@ -7311,6 +9017,13 @@
             "eventCuePoint.Event",
             "thumbCuePoint.Thumb"
           ],
+          "enumLabels": [
+            "AD",
+            "ANNOTATION",
+            "CODE",
+            "EVENT",
+            "THUMB"
+          ],
           "type": "string"
         },
         "entryId": {
@@ -7321,6 +9034,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -7348,6 +9066,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "READY",
+            "DELETED",
+            "HANDLED",
+            "PENDING"
           ],
           "readOnly": true,
           "type": "integer"
@@ -7396,6 +9120,13 @@
             "eventCuePoint.Event",
             "thumbCuePoint.Thumb"
           ],
+          "enumLabels": [
+            "AD",
+            "ANNOTATION",
+            "CODE",
+            "EVENT",
+            "THUMB"
+          ],
           "type": "string"
         },
         "cuePointTypeIn": {
@@ -7412,6 +9143,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -7445,6 +9181,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "READY",
+            "DELETED",
+            "HANDLED",
+            "PENDING"
           ],
           "type": "integer"
         },
@@ -7591,6 +9333,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "KEEP_LIST_DELETE_OTHERS",
+            "DELETE_LIST",
+            "DELETE_KEEP_SMALLEST"
+          ],
           "type": "integer"
         },
         "flavorParamsIds": {
@@ -7672,6 +9419,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -7706,6 +9458,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED",
+            "STAGING_IN",
+            "STAGING_OUT"
+          ],
           "type": "integer"
         },
         "streamerType": {
@@ -7722,6 +9480,20 @@
             "rtmp",
             "rtsp",
             "sl"
+          ],
+          "enumLabels": [
+            "APPLE_HTTP",
+            "AUTO",
+            "AKAMAI_HD",
+            "AKAMAI_HDS",
+            "HDS",
+            "HLS",
+            "HTTP",
+            "MPEG_DASH",
+            "MULTICAST_SL",
+            "RTMP",
+            "RTSP",
+            "SILVER_LIGHT"
           ],
           "type": "string"
         },
@@ -7781,6 +9553,54 @@
             "1003",
             "1005",
             "1013"
+          ],
+          "enumLabels": [
+            "EDGE_CAST_HTTP",
+            "EDGE_CAST_RTMP",
+            "KONTIKI_HTTP",
+            "UPLYNK_HTTP",
+            "UPLYNK_RTMP",
+            "VELOCIX_HDS",
+            "VELOCIX_HLS",
+            "APPLE_HTTP",
+            "HDS",
+            "HTTP",
+            "RTMP",
+            "RTSP",
+            "SILVER_LIGHT",
+            "AKAMAI_HLS_DIRECT",
+            "AKAMAI_HLS_MANIFEST",
+            "AKAMAI_HD",
+            "AKAMAI_HDS",
+            "AKAMAI_HTTP",
+            "AKAMAI_RTMP",
+            "AKAMAI_RTSP",
+            "AKAMAI_SS",
+            "GENERIC_HLS",
+            "GENERIC_HDS",
+            "GENERIC_HTTP",
+            "GENERIC_HLS_MANIFEST",
+            "GENERIC_HDS_MANIFEST",
+            "GENERIC_SS",
+            "GENERIC_RTMP",
+            "LEVEL3_HLS",
+            "LEVEL3_HTTP",
+            "LEVEL3_RTMP",
+            "LIMELIGHT_HTTP",
+            "LIMELIGHT_RTMP",
+            "LOCAL_PATH_APPLE_HTTP",
+            "LOCAL_PATH_HDS",
+            "LOCAL_PATH_HTTP",
+            "LOCAL_PATH_RTMP",
+            "VOD_PACKAGER_HLS",
+            "VOD_PACKAGER_HDS",
+            "VOD_PACKAGER_MSS",
+            "VOD_PACKAGER_DASH",
+            "LIVE_HLS",
+            "LIVE_HDS",
+            "LIVE_DASH",
+            "LIVE_RTMP",
+            "LIVE_AKAMAI_HDS"
           ],
           "type": "string"
         },
@@ -7923,6 +9743,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED",
+            "STAGING_IN",
+            "STAGING_OUT"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -7942,6 +9768,20 @@
             "rtmp",
             "rtsp",
             "sl"
+          ],
+          "enumLabels": [
+            "APPLE_HTTP",
+            "AUTO",
+            "AKAMAI_HD",
+            "AKAMAI_HDS",
+            "HDS",
+            "HLS",
+            "HTTP",
+            "MPEG_DASH",
+            "MULTICAST_SL",
+            "RTMP",
+            "RTSP",
+            "SILVER_LIGHT"
           ],
           "type": "string"
         },
@@ -7982,6 +9822,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -8278,6 +10123,10 @@
             1,
             2
           ],
+          "enumLabels": [
+            "INCLUDE_FIELDS",
+            "EXCLUDE_FIELDS"
+          ],
           "type": "integer"
         }
       }
@@ -8295,6 +10144,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "DONT_DISPLAY",
+            "DISPLAY_WITH_LINK"
           ],
           "type": "integer"
         }
@@ -8395,6 +10248,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "NOT_REQUIRED",
+            "REQUIRED_BY_PROVIDER",
+            "REQUIRED_BY_PARTNER",
+            "REQUIRED_FOR_AUTOMATIC_DISTRIBUTION"
+          ],
           "type": "integer"
         },
         "updateOnChange": {
@@ -8475,6 +10334,38 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "ATT_UVERSE",
+            "AVN",
+            "COMCAST_MRSS",
+            "CROSS_KALTURA",
+            "DAILYMOTION",
+            "DOUBLECLICK",
+            "FREEWHEEL",
+            "FREEWHEEL_GENERIC",
+            "FTP",
+            "FTP_SCHEDULED",
+            "HULU",
+            "IDETIC",
+            "METRO_PCS",
+            "MSN",
+            "NDN",
+            "PODCAST",
+            "QUICKPLAY",
+            "SYNACOR_HBO",
+            "TIME_WARNER",
+            "TVCOM",
+            "TVINCI",
+            "UNICORN",
+            "UVERSE_CLICK_TO_ORDER",
+            "UVERSE",
+            "VERIZON_VCAST",
+            "YAHOO",
+            "YOUTUBE",
+            "YOUTUBE_API",
+            "GENERIC",
+            "SYNDICATION"
+          ],
           "type": "string"
         },
         "remoteId": {
@@ -8516,6 +10407,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "AUTOMATIC",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -8580,6 +10476,38 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "ATT_UVERSE",
+            "AVN",
+            "COMCAST_MRSS",
+            "CROSS_KALTURA",
+            "DAILYMOTION",
+            "DOUBLECLICK",
+            "FREEWHEEL",
+            "FREEWHEEL_GENERIC",
+            "FTP",
+            "FTP_SCHEDULED",
+            "HULU",
+            "IDETIC",
+            "METRO_PCS",
+            "MSN",
+            "NDN",
+            "PODCAST",
+            "QUICKPLAY",
+            "SYNACOR_HBO",
+            "TIME_WARNER",
+            "TVCOM",
+            "TVINCI",
+            "UNICORN",
+            "UVERSE_CLICK_TO_ORDER",
+            "UVERSE",
+            "VERIZON_VCAST",
+            "YAHOO",
+            "YOUTUBE",
+            "YOUTUBE_API",
+            "GENERIC",
+            "SYNDICATION"
+          ],
           "type": "string"
         },
         "recommendedDcForDownload": {
@@ -8599,6 +10527,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "AUTOMATIC",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -8624,6 +10557,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "submitEnabled": {
@@ -8631,6 +10569,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "AUTOMATIC",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -8647,6 +10590,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "AUTOMATIC",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -8682,6 +10630,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -8775,6 +10728,38 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "ATT_UVERSE",
+            "AVN",
+            "COMCAST_MRSS",
+            "CROSS_KALTURA",
+            "DAILYMOTION",
+            "DOUBLECLICK",
+            "FREEWHEEL",
+            "FREEWHEEL_GENERIC",
+            "FTP",
+            "FTP_SCHEDULED",
+            "HULU",
+            "IDETIC",
+            "METRO_PCS",
+            "MSN",
+            "NDN",
+            "PODCAST",
+            "QUICKPLAY",
+            "SYNACOR_HBO",
+            "TIME_WARNER",
+            "TVCOM",
+            "TVINCI",
+            "UNICORN",
+            "UVERSE_CLICK_TO_ORDER",
+            "UVERSE",
+            "VERIZON_VCAST",
+            "YAHOO",
+            "YOUTUBE",
+            "YOUTUBE_API",
+            "GENERIC",
+            "SYNDICATION"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -8826,6 +10811,38 @@
             "youtubeApiDistribution.YOUTUBE_API",
             "1",
             "2"
+          ],
+          "enumLabels": [
+            "ATT_UVERSE",
+            "AVN",
+            "COMCAST_MRSS",
+            "CROSS_KALTURA",
+            "DAILYMOTION",
+            "DOUBLECLICK",
+            "FREEWHEEL",
+            "FREEWHEEL_GENERIC",
+            "FTP",
+            "FTP_SCHEDULED",
+            "HULU",
+            "IDETIC",
+            "METRO_PCS",
+            "MSN",
+            "NDN",
+            "PODCAST",
+            "QUICKPLAY",
+            "SYNACOR_HBO",
+            "TIME_WARNER",
+            "TVCOM",
+            "TVINCI",
+            "UNICORN",
+            "UVERSE_CLICK_TO_ORDER",
+            "UVERSE",
+            "VERIZON_VCAST",
+            "YAHOO",
+            "YOUTUBE",
+            "YOUTUBE_API",
+            "GENERIC",
+            "SYNDICATION"
           ],
           "type": "string"
         },
@@ -8912,6 +10929,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "SUBMIT",
+            "UPDATE",
+            "DELETE",
+            "FETCH_REPORT"
+          ],
           "type": "integer"
         },
         "description": {
@@ -8925,6 +10948,14 @@
             4,
             5,
             6
+          ],
+          "enumLabels": [
+            "MISSING_FLAVOR",
+            "MISSING_THUMBNAIL",
+            "MISSING_METADATA",
+            "INVALID_DATA",
+            "MISSING_ASSET",
+            "CONDITION_NOT_MET"
           ],
           "type": "integer"
         }
@@ -8965,6 +10996,13 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "CUSTOM_ERROR",
+            "STRING_EMPTY",
+            "STRING_TOO_LONG",
+            "STRING_TOO_SHORT",
+            "INVALID_FORMAT"
           ],
           "type": "integer"
         }
@@ -9055,6 +11093,11 @@
             12,
             13
           ],
+          "enumLabels": [
+            "DOCUMENT",
+            "SWF",
+            "PDF"
+          ],
           "type": "integer"
         }
       }
@@ -9078,6 +11121,11 @@
             11,
             12,
             13
+          ],
+          "enumLabels": [
+            "DOCUMENT",
+            "SWF",
+            "PDF"
           ],
           "type": "integer"
         },
@@ -9187,6 +11235,10 @@
             "playReady.PLAY_READY",
             "widevine.WIDEVINE"
           ],
+          "enumLabels": [
+            "PLAY_READY",
+            "WIDEVINE"
+          ],
           "type": "string"
         },
         "providerIn": {
@@ -9227,12 +11279,21 @@
             2,
             3
           ],
+          "enumLabels": [
+            "FIXED_DURATION",
+            "ENTRY_SCHEDULING_END",
+            "UNLIMITED"
+          ],
           "type": "integer"
         },
         "licenseType": {
           "enum": [
             "playReady.NON_PERSISTENT",
             "playReady.PERSISTENT"
+          ],
+          "enumLabels": [
+            "NON_PERSISTENT",
+            "PERSISTENT"
           ],
           "type": "string"
         },
@@ -9247,6 +11308,10 @@
             "playReady.PLAY_READY",
             "widevine.WIDEVINE"
           ],
+          "enumLabels": [
+            "PLAY_READY",
+            "WIDEVINE"
+          ],
           "type": "string"
         },
         "scenario": {
@@ -9256,12 +11321,22 @@
             "playReady.RENTAL",
             "playReady.SUBSCRIPTION"
           ],
+          "enumLabels": [
+            "PROTECTION",
+            "PURCHASE",
+            "RENTAL",
+            "SUBSCRIPTION"
+          ],
           "type": "string"
         },
         "status": {
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -9296,6 +11371,10 @@
             "playReady.PLAY_READY",
             "widevine.WIDEVINE"
           ],
+          "enumLabels": [
+            "PLAY_READY",
+            "WIDEVINE"
+          ],
           "type": "string"
         },
         "providerIn": {
@@ -9308,6 +11387,12 @@
             "playReady.RENTAL",
             "playReady.SUBSCRIPTION"
           ],
+          "enumLabels": [
+            "PROTECTION",
+            "PURCHASE",
+            "RENTAL",
+            "SUBSCRIPTION"
+          ],
           "type": "string"
         },
         "scenarioIn": {
@@ -9317,6 +11402,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -9384,12 +11473,20 @@
             "playReady.PLAY_READY",
             "widevine.WIDEVINE"
           ],
+          "enumLabels": [
+            "PLAY_READY",
+            "WIDEVINE"
+          ],
           "type": "string"
         },
         "status": {
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -9427,6 +11524,10 @@
             "playReady.PLAY_READY",
             "widevine.WIDEVINE"
           ],
+          "enumLabels": [
+            "PLAY_READY",
+            "WIDEVINE"
+          ],
           "type": "string"
         },
         "providerIn": {
@@ -9436,6 +11537,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -9503,6 +11608,14 @@
             "5",
             "6"
           ],
+          "enumLabels": [
+            "ERROR_CONNECT",
+            "ERROR_AUTENTICATE",
+            "ERROR_GET_PHISICAL_FILE_LIST",
+            "ERROR_GET_DB_FILE_LIST",
+            "DROP_FOLDER_APP_ERROR",
+            "CONTENT_MATCH_POLICY_UNDEFINED"
+          ],
           "type": "string"
         },
         "errorDescription": {
@@ -9514,6 +11627,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "MANUAL_DELETE",
+            "AUTO_DELETE",
+            "AUTO_DELETE_WHEN_ENTRY_IS_READY"
+          ],
           "type": "integer"
         },
         "fileHandlerConfig": {
@@ -9523,6 +11641,10 @@
           "enum": [
             "dropFolderXmlBulkUpload.XML",
             "1"
+          ],
+          "enumLabels": [
+            "XML",
+            "CONTENT"
           ],
           "type": "string"
         },
@@ -9571,6 +11693,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED",
+            "ERROR"
+          ],
           "type": "integer"
         },
         "tags": {
@@ -9585,6 +11713,15 @@
             "3",
             "4",
             "6"
+          ],
+          "enumLabels": [
+            "FEED",
+            "WEBEX",
+            "LOCAL",
+            "FTP",
+            "SCP",
+            "SFTP",
+            "S3"
           ],
           "type": "string"
         },
@@ -9629,6 +11766,14 @@
             "5",
             "6"
           ],
+          "enumLabels": [
+            "ERROR_CONNECT",
+            "ERROR_AUTENTICATE",
+            "ERROR_GET_PHISICAL_FILE_LIST",
+            "ERROR_GET_DB_FILE_LIST",
+            "DROP_FOLDER_APP_ERROR",
+            "CONTENT_MATCH_POLICY_UNDEFINED"
+          ],
           "type": "string"
         },
         "errorCodeIn": {
@@ -9638,6 +11783,10 @@
           "enum": [
             "dropFolderXmlBulkUpload.XML",
             "1"
+          ],
+          "enumLabels": [
+            "XML",
+            "CONTENT"
           ],
           "type": "string"
         },
@@ -9681,6 +11830,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED",
+            "ERROR"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -9704,6 +11859,15 @@
             "3",
             "4",
             "6"
+          ],
+          "enumLabels": [
+            "FEED",
+            "WEBEX",
+            "LOCAL",
+            "FTP",
+            "SCP",
+            "SFTP",
+            "S3"
           ],
           "type": "string"
         },
@@ -9732,6 +11896,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ADD_AS_NEW",
+            "MATCH_EXISTING_OR_ADD_AS_NEW",
+            "MATCH_EXISTING_OR_KEEP_IN_FOLDER"
+          ],
           "type": "integer"
         },
         "slugRegex": {
@@ -9753,6 +11922,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "ADD_AS_NEW",
+            "MATCH_EXISTING_OR_ADD_AS_NEW",
+            "MATCH_EXISTING_OR_KEEP_IN_FOLDER"
           ],
           "type": "integer"
         },
@@ -9816,6 +11990,28 @@
             "12",
             "13"
           ],
+          "enumLabels": [
+            "ERROR_ADDING_BULK_UPLOAD",
+            "ERROR_ADD_CONTENT_RESOURCE",
+            "ERROR_IN_BULK_UPLOAD",
+            "ERROR_WRITING_TEMP_FILE",
+            "LOCAL_FILE_WRONG_CHECKSUM",
+            "LOCAL_FILE_WRONG_SIZE",
+            "MALFORMED_XML_FILE",
+            "XML_FILE_SIZE_EXCEED_LIMIT",
+            "ERROR_UPDATE_ENTRY",
+            "ERROR_ADD_ENTRY",
+            "FLAVOR_NOT_FOUND",
+            "FLAVOR_MISSING_IN_FILE_NAME",
+            "SLUG_REGEX_NO_MATCH",
+            "ERROR_READING_FILE",
+            "ERROR_DOWNLOADING_FILE",
+            "ERROR_UPDATE_FILE",
+            "ERROR_ADDING_CONTENT_PROCESSOR",
+            "ERROR_IN_CONTENT_PROCESSOR",
+            "ERROR_DELETING_FILE",
+            "FILE_NO_MATCH"
+          ],
           "type": "string"
         },
         "errorDescription": {
@@ -9878,6 +12074,23 @@
             14,
             15
           ],
+          "enumLabels": [
+            "UPLOADING",
+            "PENDING",
+            "WAITING",
+            "HANDLED",
+            "IGNORE",
+            "DELETED",
+            "PURGED",
+            "NO_MATCH",
+            "ERROR_HANDLING",
+            "ERROR_DELETING",
+            "DOWNLOADING",
+            "ERROR_DOWNLOADING",
+            "PROCESSING",
+            "PARSED",
+            "DETECTED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -9890,6 +12103,15 @@
             "3",
             "4",
             "6"
+          ],
+          "enumLabels": [
+            "FEED",
+            "WEBEX",
+            "LOCAL",
+            "FTP",
+            "SCP",
+            "SFTP",
+            "S3"
           ],
           "readOnly": true,
           "type": "string"
@@ -9954,6 +12176,28 @@
             "11",
             "12",
             "13"
+          ],
+          "enumLabels": [
+            "ERROR_ADDING_BULK_UPLOAD",
+            "ERROR_ADD_CONTENT_RESOURCE",
+            "ERROR_IN_BULK_UPLOAD",
+            "ERROR_WRITING_TEMP_FILE",
+            "LOCAL_FILE_WRONG_CHECKSUM",
+            "LOCAL_FILE_WRONG_SIZE",
+            "MALFORMED_XML_FILE",
+            "XML_FILE_SIZE_EXCEED_LIMIT",
+            "ERROR_UPDATE_ENTRY",
+            "ERROR_ADD_ENTRY",
+            "FLAVOR_NOT_FOUND",
+            "FLAVOR_MISSING_IN_FILE_NAME",
+            "SLUG_REGEX_NO_MATCH",
+            "ERROR_READING_FILE",
+            "ERROR_DOWNLOADING_FILE",
+            "ERROR_UPDATE_FILE",
+            "ERROR_ADDING_CONTENT_PROCESSOR",
+            "ERROR_IN_CONTENT_PROCESSOR",
+            "ERROR_DELETING_FILE",
+            "FILE_NO_MATCH"
           ],
           "type": "string"
         },
@@ -10020,6 +12264,23 @@
             14,
             15
           ],
+          "enumLabels": [
+            "UPLOADING",
+            "PENDING",
+            "WAITING",
+            "HANDLED",
+            "IGNORE",
+            "DELETED",
+            "PURGED",
+            "NO_MATCH",
+            "ERROR_HANDLING",
+            "ERROR_DELETING",
+            "DOWNLOADING",
+            "ERROR_DOWNLOADING",
+            "PROCESSING",
+            "PARSED",
+            "DETECTED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -10052,6 +12313,10 @@
           "enum": [
             "dropFolderXmlBulkUpload.XML",
             "1"
+          ],
+          "enumLabels": [
+            "XML",
+            "CONTENT"
           ],
           "type": "string"
         }
@@ -10100,6 +12365,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         }
@@ -10192,6 +12462,13 @@
             5,
             6
           ],
+          "enumLabels": [
+            "PENDING_MODERATION",
+            "APPROVED",
+            "REJECTED",
+            "FLAGGED_FOR_REVIEW",
+            "AUTO_APPROVED"
+          ],
           "type": "integer"
         },
         "name": {
@@ -10205,6 +12482,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "INACTIVE",
+            "ACTIVE"
           ],
           "readOnly": true,
           "type": "integer"
@@ -10287,6 +12568,11 @@
             3,
             5
           ],
+          "enumLabels": [
+            "HIGH",
+            "NORMAL",
+            "LOW"
+          ],
           "type": "integer"
         },
         "replyTo": {
@@ -10326,6 +12612,11 @@
             "1",
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "STATIC_LIST",
+            "CATEGORY",
+            "USER"
           ],
           "type": "string"
         }
@@ -10401,6 +12692,10 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "HTML",
+            "TEXT"
+          ],
           "type": "string"
         },
         "fromEmail": {
@@ -10425,6 +12720,11 @@
             1,
             3,
             5
+          ],
+          "enumLabels": [
+            "HIGH",
+            "NORMAL",
+            "LOW"
           ],
           "type": "integer"
         },
@@ -10543,6 +12843,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         }
@@ -10677,6 +12982,14 @@
             4,
             5
           ],
+          "enumLabels": [
+            "NONE",
+            "SUBMIT_REQUIRED",
+            "DELETE_REQUIRED",
+            "UPDATE_REQUIRED",
+            "ENABLE_REQUIRED",
+            "DISABLE_REQUIRED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -10703,6 +13016,14 @@
             4,
             5
           ],
+          "enumLabels": [
+            "APP",
+            "RUNTIME",
+            "HTTP",
+            "CURL",
+            "KALTURA_API",
+            "KALTURA_CLIENT"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -10716,6 +13037,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -10724,6 +13050,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "readOnly": true,
           "type": "integer"
@@ -10734,6 +13065,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -10742,6 +13078,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "readOnly": true,
           "type": "integer"
@@ -10752,6 +13093,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -10760,6 +13106,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "readOnly": true,
           "type": "integer"
@@ -10799,6 +13150,21 @@
             11,
             12
           ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "SUBMITTING",
+            "UPDATING",
+            "DELETING",
+            "ERROR_SUBMITTING",
+            "ERROR_UPDATING",
+            "ERROR_DELETING",
+            "REMOVED",
+            "IMPORT_SUBMITTING",
+            "IMPORT_UPDATING"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -10812,6 +13178,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "BEFORE_SUNRISE",
+            "AFTER_SUNRISE",
+            "AFTER_SUNSET"
           ],
           "readOnly": true,
           "type": "integer"
@@ -10869,6 +13240,14 @@
             4,
             5
           ],
+          "enumLabels": [
+            "NONE",
+            "SUBMIT_REQUIRED",
+            "DELETE_REQUIRED",
+            "UPDATE_REQUIRED",
+            "ENABLE_REQUIRED",
+            "DISABLE_REQUIRED"
+          ],
           "type": "integer"
         },
         "dirtyStatusIn": {
@@ -10907,6 +13286,21 @@
             10,
             11,
             12
+          ],
+          "enumLabels": [
+            "PENDING",
+            "QUEUED",
+            "READY",
+            "DELETED",
+            "SUBMITTING",
+            "UPDATING",
+            "DELETING",
+            "ERROR_SUBMITTING",
+            "ERROR_UPDATING",
+            "ERROR_DELETING",
+            "REMOVED",
+            "IMPORT_SUBMITTING",
+            "IMPORT_UPDATING"
           ],
           "type": "integer"
         },
@@ -10977,6 +13371,10 @@
           "enum": [
             "id",
             "referenceId"
+          ],
+          "enumLabels": [
+            "ID",
+            "REFERENCE_ID"
           ],
           "type": "string"
         }
@@ -11082,6 +13480,10 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "BROADCAST_START",
+            "BROADCAST_END"
+          ],
           "type": "string"
         }
       }
@@ -11098,6 +13500,10 @@
           "enum": [
             "1",
             "2"
+          ],
+          "enumLabels": [
+            "BROADCAST_START",
+            "BROADCAST_END"
           ],
           "type": "string"
         },
@@ -11241,6 +13647,51 @@
             "36",
             "37"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CAPTION_ASSET",
+            "CODE_CUE_POINT",
+            "DISTRIBUTION_PROFILE",
+            "ENTRY_DISTRIBUTION",
+            "CUE_POINT",
+            "DROP_FOLDER",
+            "DROP_FOLDER_FILE",
+            "METADATA",
+            "ENTRY",
+            "CATEGORY",
+            "ASSET",
+            "FLAVORASSET",
+            "THUMBASSET",
+            "KUSER",
+            "ACCESSCONTROL",
+            "BATCHJOB",
+            "BULKUPLOADRESULT",
+            "CATEGORYKUSER",
+            "CONVERSIONPROFILE2",
+            "FLAVORPARAMS",
+            "FLAVORPARAMSCONVERSIONPROFILE",
+            "FLAVORPARAMSOUTPUT",
+            "GENERICSYNDICATIONFEED",
+            "KUSERTOUSERROLE",
+            "PARTNER",
+            "PERMISSION",
+            "PERMISSIONITEM",
+            "PERMISSIONTOPERMISSIONITEM",
+            "SCHEDULER",
+            "SCHEDULERCONFIG",
+            "SCHEDULERSTATUS",
+            "SCHEDULERWORKER",
+            "STORAGEPROFILE",
+            "SYNDICATIONFEED",
+            "THUMBPARAMS",
+            "THUMBPARAMSOUTPUT",
+            "UPLOADTOKEN",
+            "USERLOGINDATA",
+            "USERROLE",
+            "WIDGET",
+            "CATEGORYENTRY"
+          ],
           "type": "string"
         }
       }
@@ -11318,6 +13769,51 @@
             "36",
             "37"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CAPTION_ASSET",
+            "CODE_CUE_POINT",
+            "DISTRIBUTION_PROFILE",
+            "ENTRY_DISTRIBUTION",
+            "CUE_POINT",
+            "DROP_FOLDER",
+            "DROP_FOLDER_FILE",
+            "METADATA",
+            "ENTRY",
+            "CATEGORY",
+            "ASSET",
+            "FLAVORASSET",
+            "THUMBASSET",
+            "KUSER",
+            "ACCESSCONTROL",
+            "BATCHJOB",
+            "BULKUPLOADRESULT",
+            "CATEGORYKUSER",
+            "CONVERSIONPROFILE2",
+            "FLAVORPARAMS",
+            "FLAVORPARAMSCONVERSIONPROFILE",
+            "FLAVORPARAMSOUTPUT",
+            "GENERICSYNDICATIONFEED",
+            "KUSERTOUSERROLE",
+            "PARTNER",
+            "PERMISSION",
+            "PERMISSIONITEM",
+            "PERMISSIONTOPERMISSIONITEM",
+            "SCHEDULER",
+            "SCHEDULERCONFIG",
+            "SCHEDULERSTATUS",
+            "SCHEDULERWORKER",
+            "STORAGEPROFILE",
+            "SYNDICATIONFEED",
+            "THUMBPARAMS",
+            "THUMBPARAMSOUTPUT",
+            "UPLOADTOKEN",
+            "USERLOGINDATA",
+            "USERROLE",
+            "WIDGET",
+            "CATEGORYENTRY"
+          ],
           "type": "string"
         },
         "eventType": {
@@ -11337,6 +13833,22 @@
             "11",
             "12",
             "13"
+          ],
+          "enumLabels": [
+            "INTEGRATION_JOB_CLOSED",
+            "BATCH_JOB_STATUS",
+            "OBJECT_ADDED",
+            "OBJECT_CHANGED",
+            "OBJECT_COPIED",
+            "OBJECT_CREATED",
+            "OBJECT_DATA_CHANGED",
+            "OBJECT_DELETED",
+            "OBJECT_ERASED",
+            "OBJECT_READY_FOR_REPLACMENT",
+            "OBJECT_SAVED",
+            "OBJECT_UPDATED",
+            "OBJECT_REPLACED",
+            "OBJECT_READY_FOR_INDEX"
           ],
           "type": "string"
         },
@@ -11361,6 +13873,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ACTIVE",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -11374,6 +13891,13 @@
             "businessProcessNotification.BusinessProcessStart",
             "emailNotification.Email",
             "httpNotification.Http"
+          ],
+          "enumLabels": [
+            "BPM_ABORT",
+            "BPM_SIGNAL",
+            "BPM_START",
+            "EMAIL",
+            "HTTP"
           ],
           "type": "string"
         },
@@ -11421,6 +13945,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ACTIVE",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -11439,6 +13968,13 @@
             "businessProcessNotification.BusinessProcessStart",
             "emailNotification.Email",
             "httpNotification.Http"
+          ],
+          "enumLabels": [
+            "BPM_ABORT",
+            "BPM_SIGNAL",
+            "BPM_START",
+            "EMAIL",
+            "HTTP"
           ],
           "type": "string"
         },
@@ -11513,6 +14049,17 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CODE_CUE_POINT",
+            "THUMB_CUE_POINT",
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "PARTNER",
+            "DYNAMIC_OBJECT"
+          ],
           "type": "string"
         },
         "metadataProfileId": {
@@ -11533,6 +14080,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "APPEND",
+            "REPLACE"
           ],
           "type": "integer"
         },
@@ -11564,6 +14115,10 @@
             "InterCall",
             "YouTube"
           ],
+          "enumLabels": [
+            "INTERCALL",
+            "YOUTUBE"
+          ],
           "type": "string"
         }
       }
@@ -11586,6 +14141,10 @@
           "enum": [
             "InterCall",
             "YouTube"
+          ],
+          "enumLabels": [
+            "INTERCALL",
+            "YOUTUBE"
           ],
           "type": "string"
         },
@@ -11643,6 +14202,14 @@
             4,
             5,
             6
+          ],
+          "enumLabels": [
+            "LOCK_CATEGORY",
+            "CATEGORY",
+            "CATEGORY_ENTRY",
+            "ENTRY",
+            "CATEGORY_USER",
+            "USER"
           ],
           "type": "integer"
         },
@@ -11770,6 +14337,9 @@
           "enum": [
             "2"
           ],
+          "enumLabels": [
+            "UI_CONF"
+          ],
           "type": "string"
         },
         "fileExt": {
@@ -11796,6 +14366,13 @@
             "2",
             "3",
             "4"
+          ],
+          "enumLabels": [
+            "PENDING",
+            "UPLOADING",
+            "READY",
+            "DELETED",
+            "ERROR"
           ],
           "readOnly": true,
           "type": "string"
@@ -11831,6 +14408,9 @@
           "enum": [
             "2"
           ],
+          "enumLabels": [
+            "UI_CONF"
+          ],
           "type": "string"
         },
         "idEqual": {
@@ -11855,6 +14435,13 @@
             "2",
             "3",
             "4"
+          ],
+          "enumLabels": [
+            "PENDING",
+            "UPLOADING",
+            "READY",
+            "DELETED",
+            "ERROR"
           ],
           "type": "string"
         },
@@ -11931,6 +14518,23 @@
             "8",
             "9"
           ],
+          "enumLabels": [
+            "DISTRIBUTION_PROFILE",
+            "ENTRY_DISTRIBUTION",
+            "GENERIC_DISTRIBUTION_ACTION",
+            "EMAIL_NOTIFICATION_TEMPLATE",
+            "HTTP_NOTIFICATION_TEMPLATE",
+            "ENTRY",
+            "UICONF",
+            "BATCHJOB",
+            "ASSET",
+            "FLAVOR_ASSET",
+            "METADATA",
+            "METADATA_PROFILE",
+            "SYNDICATION_FEED",
+            "CONVERSION_PROFILE",
+            "FILE_ASSET"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -11951,6 +14555,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "FILE",
+            "LINK",
+            "URL"
           ],
           "readOnly": true,
           "type": "integer"
@@ -12002,6 +14611,13 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "ERROR",
+            "PENDING",
+            "READY",
+            "DELETED",
+            "PURGED"
           ],
           "readOnly": true,
           "type": "integer"
@@ -12058,6 +14674,23 @@
             "8",
             "9"
           ],
+          "enumLabels": [
+            "DISTRIBUTION_PROFILE",
+            "ENTRY_DISTRIBUTION",
+            "GENERIC_DISTRIBUTION_ACTION",
+            "EMAIL_NOTIFICATION_TEMPLATE",
+            "HTTP_NOTIFICATION_TEMPLATE",
+            "ENTRY",
+            "UICONF",
+            "BATCHJOB",
+            "ASSET",
+            "FLAVOR_ASSET",
+            "METADATA",
+            "METADATA_PROFILE",
+            "SYNDICATION_FEED",
+            "CONVERSION_PROFILE",
+            "FILE_ASSET"
+          ],
           "type": "string"
         },
         "fileObjectTypeIn": {
@@ -12074,6 +14707,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "FILE",
+            "LINK",
+            "URL"
           ],
           "type": "integer"
         },
@@ -12120,6 +14758,13 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "ERROR",
+            "PENDING",
+            "READY",
+            "DELETED",
+            "PURGED"
           ],
           "type": "integer"
         },
@@ -12174,6 +14819,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         }
@@ -12336,6 +14986,19 @@
             8,
             9
           ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "CONVERTING",
+            "READY",
+            "DELETED",
+            "NOT_APPLICABLE",
+            "TEMP",
+            "WAIT_FOR_CONVERT",
+            "IMPORTING",
+            "VALIDATING",
+            "EXPORTING"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -12378,6 +15041,19 @@
             7,
             8,
             9
+          ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "CONVERTING",
+            "READY",
+            "DELETED",
+            "NOT_APPLICABLE",
+            "TEMP",
+            "WAIT_FOR_CONVERT",
+            "IMPORTING",
+            "VALIDATING",
+            "EXPORTING"
           ],
           "type": "integer"
         },
@@ -12476,6 +15152,20 @@
             "wma",
             "wmapro"
           ],
+          "enumLabels": [
+            "NONE",
+            "AAC",
+            "AACHE",
+            "AC3",
+            "AMRNB",
+            "COPY",
+            "MP3",
+            "MPEG2",
+            "PCM",
+            "VORBIS",
+            "WMA",
+            "WMAPRO"
+          ],
           "type": "string"
         },
         "audioSampleRate": {
@@ -12536,6 +15226,36 @@
             "wma",
             "wmv",
             "wvm"
+          ],
+          "enumLabels": [
+            "_3GP",
+            "APPLEHTTP",
+            "AVI",
+            "BMP",
+            "COPY",
+            "FLV",
+            "HLS",
+            "ISMV",
+            "JPG",
+            "M2TS",
+            "M4V",
+            "MKV",
+            "MOV",
+            "MP3",
+            "MP4",
+            "MPEG",
+            "MPEGTS",
+            "MXF",
+            "OGG",
+            "OGV",
+            "PDF",
+            "PNG",
+            "SWF",
+            "WAV",
+            "WEBM",
+            "WMA",
+            "WMV",
+            "WVM"
           ],
           "type": "string"
         },
@@ -12622,6 +15342,32 @@
             "wmv3",
             "wvc1a"
           ],
+          "enumLabels": [
+            "NONE",
+            "APCH",
+            "APCN",
+            "APCO",
+            "APCS",
+            "COPY",
+            "DNXHD",
+            "DV",
+            "FLV",
+            "H263",
+            "H264",
+            "H264B",
+            "H264H",
+            "H264M",
+            "H265",
+            "MPEG2",
+            "MPEG4",
+            "THEORA",
+            "VP6",
+            "VP8",
+            "VP9",
+            "WMV2",
+            "WMV3",
+            "WVC1A"
+          ],
           "type": "string"
         },
         "videoConstantBitrate": {
@@ -12674,6 +15420,36 @@
             "wma",
             "wmv",
             "wvm"
+          ],
+          "enumLabels": [
+            "_3GP",
+            "APPLEHTTP",
+            "AVI",
+            "BMP",
+            "COPY",
+            "FLV",
+            "HLS",
+            "ISMV",
+            "JPG",
+            "M2TS",
+            "M4V",
+            "MKV",
+            "MOV",
+            "MP3",
+            "MP4",
+            "MPEG",
+            "MPEGTS",
+            "MXF",
+            "OGG",
+            "OGV",
+            "PDF",
+            "PNG",
+            "SWF",
+            "WAV",
+            "WEBM",
+            "WMA",
+            "WMV",
+            "WVM"
           ],
           "type": "string"
         }
@@ -12836,6 +15612,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "XSL",
+            "XPATH",
+            "REGEX"
+          ],
           "type": "integer"
         },
         "xml": {
@@ -12897,6 +15678,14 @@
             4,
             5,
             10
+          ],
+          "enumLabels": [
+            "FTP",
+            "SCP",
+            "SFTP",
+            "HTTP",
+            "HTTPS",
+            "ASPERA"
           ],
           "type": "integer"
         },
@@ -12983,6 +15772,10 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -13002,6 +15795,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "SUBMIT",
+            "UPDATE",
+            "DELETE",
+            "FETCH_REPORT"
           ],
           "type": "integer"
         },
@@ -13041,6 +15840,14 @@
             5,
             10
           ],
+          "enumLabels": [
+            "FTP",
+            "SCP",
+            "SFTP",
+            "HTTP",
+            "HTTPS",
+            "ASPERA"
+          ],
           "type": "integer"
         },
         "remotePassword": {
@@ -13058,6 +15865,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "XSL",
+            "XPATH",
+            "REGEX"
+          ],
           "type": "integer"
         },
         "resultsTransformer": {
@@ -13071,6 +15883,10 @@
           "enum": [
             2,
             3
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "readOnly": true,
           "type": "integer"
@@ -13096,6 +15912,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "SUBMIT",
+            "UPDATE",
+            "DELETE",
+            "FETCH_REPORT"
           ],
           "type": "integer"
         },
@@ -13179,6 +16001,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "isDefaultIn": {
@@ -13194,6 +16021,10 @@
           "enum": [
             2,
             3
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -13319,6 +16150,9 @@
           "enum": [
             "1"
           ],
+          "enumLabels": [
+            "KALTURA"
+          ],
           "type": "string"
         }
       }
@@ -13351,6 +16185,10 @@
           "enum": [
             "No",
             "Yes"
+          ],
+          "enumLabels": [
+            "NO",
+            "YES"
           ],
           "type": "string"
         }
@@ -13394,6 +16232,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -13431,6 +16273,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -13530,6 +16376,51 @@
             "36",
             "37"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CAPTION_ASSET",
+            "CODE_CUE_POINT",
+            "DISTRIBUTION_PROFILE",
+            "ENTRY_DISTRIBUTION",
+            "CUE_POINT",
+            "DROP_FOLDER",
+            "DROP_FOLDER_FILE",
+            "METADATA",
+            "ENTRY",
+            "CATEGORY",
+            "ASSET",
+            "FLAVORASSET",
+            "THUMBASSET",
+            "KUSER",
+            "ACCESSCONTROL",
+            "BATCHJOB",
+            "BULKUPLOADRESULT",
+            "CATEGORYKUSER",
+            "CONVERSIONPROFILE2",
+            "FLAVORPARAMS",
+            "FLAVORPARAMSCONVERSIONPROFILE",
+            "FLAVORPARAMSOUTPUT",
+            "GENERICSYNDICATIONFEED",
+            "KUSERTOUSERROLE",
+            "PARTNER",
+            "PERMISSION",
+            "PERMISSIONITEM",
+            "PERMISSIONTOPERMISSIONITEM",
+            "SCHEDULER",
+            "SCHEDULERCONFIG",
+            "SCHEDULERSTATUS",
+            "SCHEDULERWORKER",
+            "STORAGEPROFILE",
+            "SYNDICATIONFEED",
+            "THUMBPARAMS",
+            "THUMBPARAMSOUTPUT",
+            "UPLOADTOKEN",
+            "USERLOGINDATA",
+            "USERROLE",
+            "WIDGET",
+            "CATEGORYENTRY"
+          ],
           "type": "string"
         },
         "eventType": {
@@ -13549,6 +16440,22 @@
             "11",
             "12",
             "13"
+          ],
+          "enumLabels": [
+            "INTEGRATION_JOB_CLOSED",
+            "BATCH_JOB_STATUS",
+            "OBJECT_ADDED",
+            "OBJECT_CHANGED",
+            "OBJECT_COPIED",
+            "OBJECT_CREATED",
+            "OBJECT_DATA_CHANGED",
+            "OBJECT_DELETED",
+            "OBJECT_ERASED",
+            "OBJECT_READY_FOR_REPLACMENT",
+            "OBJECT_SAVED",
+            "OBJECT_UPDATED",
+            "OBJECT_REPLACED",
+            "OBJECT_READY_FOR_INDEX"
           ],
           "type": "string"
         },
@@ -13613,6 +16520,14 @@
             4,
             8
           ],
+          "enumLabels": [
+            "ANYSAFE",
+            "ANY",
+            "BASIC",
+            "DIGEST",
+            "GSSNEGOTIATE",
+            "NTLM"
+          ],
           "type": "integer"
         },
         "connectTimeout": {
@@ -13637,6 +16552,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+          ],
           "type": "integer"
         },
         "password": {
@@ -13658,6 +16579,11 @@
         "sslCertificateType": {
           "description": "The format of the certificate.",
           "enum": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
+          "enumLabels": [
             "DER",
             "ENG",
             "PEM"
@@ -13687,6 +16613,11 @@
             "ENG",
             "PEM"
           ],
+          "enumLabels": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
           "type": "string"
         },
         "sslVersion": {
@@ -13694,6 +16625,10 @@
           "enum": [
             2,
             3
+          ],
+          "enumLabels": [
+            "V2",
+            "V3"
           ],
           "type": "integer"
         },
@@ -13738,6 +16673,15 @@
             8,
             9
           ],
+          "enumLabels": [
+            "RESPONSE_TYPE_JSON",
+            "RESPONSE_TYPE_XML",
+            "RESPONSE_TYPE_PHP",
+            "RESPONSE_TYPE_PHP_ARRAY",
+            "RESPONSE_TYPE_HTML",
+            "RESPONSE_TYPE_MRSS",
+            "RESPONSE_TYPE_JSONP"
+          ],
           "type": "integer"
         },
         "ignoreNull": {
@@ -13764,6 +16708,14 @@
             4,
             8
           ],
+          "enumLabels": [
+            "ANYSAFE",
+            "ANY",
+            "BASIC",
+            "DIGEST",
+            "GSSNEGOTIATE",
+            "NTLM"
+          ],
           "type": "integer"
         },
         "connectTimeout": {
@@ -13787,6 +16739,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+          ],
           "type": "integer"
         },
         "password": {
@@ -13804,6 +16762,11 @@
         "sslCertificateType": {
           "description": "The format of the certificate.",
           "enum": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
+          "enumLabels": [
             "DER",
             "ENG",
             "PEM"
@@ -13833,6 +16796,11 @@
             "ENG",
             "PEM"
           ],
+          "enumLabels": [
+            "DER",
+            "ENG",
+            "PEM"
+          ],
           "type": "string"
         },
         "sslVersion": {
@@ -13840,6 +16808,10 @@
           "enum": [
             2,
             3
+          ],
+          "enumLabels": [
+            "V2",
+            "V3"
           ],
           "type": "integer"
         },
@@ -13888,6 +16860,11 @@
             "clean",
             "no",
             "yes"
+          ],
+          "enumLabels": [
+            "CLEAN",
+            "NO",
+            "YES"
           ],
           "type": "string"
         },
@@ -13961,6 +16938,75 @@
             "Technology/Software How-To",
             "Technology/Tech News"
           ],
+          "enumLabels": [
+            "ARTS",
+            "ARTS_DESIGN",
+            "ARTS_FASHION_BEAUTY",
+            "ARTS_FOOD",
+            "ARTS_LITERATURE",
+            "ARTS_PERFORMING_ARTS",
+            "ARTS_VISUAL_ARTS",
+            "BUSINESS",
+            "BUSINESS_BUSINESS_NEWS",
+            "BUSINESS_CAREERS",
+            "BUSINESS_INVESTING",
+            "BUSINESS_MANAGEMENT_MARKETING",
+            "BUSINESS_SHOPPING",
+            "COMEDY",
+            "EDUCATION",
+            "EDUCATION_TECHNOLOGY",
+            "EDUCATION_HIGHER_EDUCATION",
+            "EDUCATION_K_12",
+            "EDUCATION_LANGUAGE_COURSES",
+            "EDUCATION_TRAINING",
+            "GAMES_HOBBIES",
+            "GAMES_HOBBIES_AUTOMOTIVE",
+            "GAMES_HOBBIES_AVIATION",
+            "GAMES_HOBBIES_HOBBIES",
+            "GAMES_HOBBIES_OTHER_GAMES",
+            "GAMES_HOBBIES_VIDEO_GAMES",
+            "GOVERNMENT_ORGANIZATIONS",
+            "GOVERNMENT_ORGANIZATIONS_LOCAL",
+            "GOVERNMENT_ORGANIZATIONS_NATIONAL",
+            "GOVERNMENT_ORGANIZATIONS_NON_PROFIT",
+            "GOVERNMENT_ORGANIZATIONS_REGIONAL",
+            "HEALTH",
+            "HEALTH_ALTERNATIVE_HEALTH",
+            "HEALTH_FITNESS_NUTRITION",
+            "HEALTH_SELF_HELP",
+            "HEALTH_SEXUALITY",
+            "KIDS_FAMILY",
+            "MUSIC",
+            "NEWS_POLITICS",
+            "RELIGION_SPIRITUALITY",
+            "RELIGION_SPIRITUALITY_BUDDHISM",
+            "RELIGION_SPIRITUALITY_CHRISTIANITY",
+            "RELIGION_SPIRITUALITY_HINDUISM",
+            "RELIGION_SPIRITUALITY_ISLAM",
+            "RELIGION_SPIRITUALITY_JUDAISM",
+            "RELIGION_SPIRITUALITY_OTHER",
+            "RELIGION_SPIRITUALITY_SPIRITUALITY",
+            "SCIENCE_MEDICINE",
+            "SCIENCE_MEDICINE_MEDICINE",
+            "SCIENCE_MEDICINE_NATURAL_SCIENCES",
+            "SCIENCE_MEDICINE_SOCIAL_SCIENCES",
+            "SOCIETY_CULTURE",
+            "SOCIETY_CULTURE_HISTORY",
+            "SOCIETY_CULTURE_PERSONAL_JOURNALS",
+            "SOCIETY_CULTURE_PHILOSOPHY",
+            "SOCIETY_CULTURE_PLACES_TRAVEL",
+            "SPORTS_RECREATION",
+            "SPORTS_RECREATION_AMATEUR",
+            "SPORTS_RECREATION_COLLEGE_HIGH_SCHOOL",
+            "SPORTS_RECREATION_OUTDOOR",
+            "SPORTS_RECREATION_PROFESSIONAL",
+            "TV_FILM",
+            "TECHNOLOGY",
+            "TECHNOLOGY_GADGETS",
+            "TECHNOLOGY_PODCASTING",
+            "TECHNOLOGY_SOFTWARE_HOW_TO",
+            "TECHNOLOGY_TECH_NEWS"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -13970,6 +17016,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -14238,6 +17289,7 @@
         },
         "providerType": {
           "enum": [],
+          "enumLabels": [],
           "type": "string"
         },
         "triggerData": {
@@ -14246,6 +17298,9 @@
         "triggerType": {
           "enum": [
             "bpmEventNotificationIntegration.BpmEventNotification"
+          ],
+          "enumLabels": [
+            "BPM_EVENT_NOTIFICATION"
           ],
           "type": "string"
         }
@@ -14294,6 +17349,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "RESTRICT_LIST",
+            "ALLOW_LIST"
           ],
           "type": "integer"
         }
@@ -14401,6 +17460,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "RESTRICT_LIST",
+            "ALLOW_LIST"
+          ],
           "type": "integer"
         }
       }
@@ -14466,6 +17529,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         }
@@ -14551,6 +17619,10 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -14570,12 +17642,21 @@
             "3",
             "4"
           ],
+          "enumLabels": [
+            "CHANNEL_RELATIVE",
+            "ABSOLUTE_TIME",
+            "SEGMENT_START_RELATIVE",
+            "SEGMENT_END_RELATIVE"
+          ],
           "type": "string"
         },
         "type": {
           "description": "Segment could be associated with the main stream, as additional stream or as overlay",
           "enum": [
             "1"
+          ],
+          "enumLabels": [
+            "VIDEO_AND_AUDIO"
           ],
           "type": "string"
         },
@@ -14616,6 +17697,10 @@
           "enum": [
             "2",
             "3"
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DELETED"
           ],
           "type": "string"
         },
@@ -14673,6 +17758,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED"
+          ],
           "type": "integer"
         },
         "dvrWindow": {
@@ -14715,6 +17804,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED"
+          ],
           "type": "integer"
         },
         "recordStatus": {
@@ -14723,6 +17816,11 @@
             0,
             1,
             2
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "APPENDED",
+            "PER_SESSION"
           ],
           "type": "integer"
         },
@@ -14758,6 +17856,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "isRecordedEntryIdEmpty": {
@@ -14765,6 +17868,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         }
@@ -14778,6 +17886,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         }
@@ -14885,6 +17998,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "orderBy": {
@@ -14893,6 +18011,12 @@
             "-audience",
             "-eventTime",
             "-plays"
+          ],
+          "enumLabels": [
+            "NAME_ASC",
+            "AUDIENCE_DESC",
+            "EVENT_TIME_DESC",
+            "PLAYS_DESC"
           ],
           "type": "string"
         },
@@ -14957,6 +18081,20 @@
             "rtsp",
             "sl"
           ],
+          "enumLabels": [
+            "APPLE_HTTP",
+            "AUTO",
+            "AKAMAI_HD",
+            "AKAMAI_HDS",
+            "HDS",
+            "HLS",
+            "HTTP",
+            "MPEG_DASH",
+            "MULTICAST_SL",
+            "RTMP",
+            "RTSP",
+            "SILVER_LIGHT"
+          ],
           "type": "string"
         },
         "entryId": {
@@ -14971,6 +18109,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "LIVE",
+            "DVR"
           ],
           "type": "integer"
         },
@@ -15071,6 +18213,20 @@
             "rtmp",
             "rtsp",
             "sl"
+          ],
+          "enumLabels": [
+            "APPLE_HTTP",
+            "AUTO",
+            "AKAMAI_HD",
+            "AKAMAI_HDS",
+            "HDS",
+            "HLS",
+            "HTTP",
+            "MPEG_DASH",
+            "MULTICAST_SL",
+            "RTMP",
+            "RTSP",
+            "SILVER_LIGHT"
           ],
           "type": "string"
         },
@@ -15394,6 +18550,151 @@
             "zh",
             "zu"
           ],
+          "enumLabels": [
+            "AA",
+            "AB",
+            "AF",
+            "AM",
+            "AR",
+            "AS_",
+            "AY",
+            "AZ",
+            "BA",
+            "BE",
+            "BG",
+            "BH",
+            "BI",
+            "BN",
+            "BO",
+            "BR",
+            "CA",
+            "CO",
+            "CS",
+            "CY",
+            "DA",
+            "DE",
+            "DZ",
+            "EL",
+            "EN",
+            "EO",
+            "ES",
+            "ET",
+            "EU",
+            "FA",
+            "FI",
+            "FJ",
+            "FO",
+            "FR",
+            "FY",
+            "GA",
+            "GD",
+            "GL",
+            "GN",
+            "GU",
+            "GV",
+            "HA",
+            "HE",
+            "HI",
+            "HR",
+            "HU",
+            "HY",
+            "IA",
+            "ID",
+            "IE",
+            "IK",
+            "IN",
+            "IS",
+            "IT",
+            "IU",
+            "IW",
+            "JA",
+            "JI",
+            "JV",
+            "KA",
+            "KK",
+            "KL",
+            "KM",
+            "KN",
+            "KO",
+            "KS",
+            "KU",
+            "KY",
+            "LA",
+            "LI",
+            "LN",
+            "LO",
+            "LT",
+            "LV",
+            "MG",
+            "MI",
+            "MK",
+            "ML",
+            "MN",
+            "MO",
+            "MR",
+            "MS",
+            "MT",
+            "MY",
+            "NA",
+            "NE",
+            "NL",
+            "NO",
+            "OC",
+            "OM",
+            "OR_",
+            "PA",
+            "PL",
+            "PS",
+            "PT",
+            "QU",
+            "RM",
+            "RN",
+            "RO",
+            "RU",
+            "RW",
+            "SA",
+            "SD",
+            "SG",
+            "SH",
+            "SI",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SQ",
+            "SR",
+            "SS",
+            "ST",
+            "SU",
+            "SV",
+            "SW",
+            "TA",
+            "TE",
+            "TG",
+            "TH",
+            "TI",
+            "TK",
+            "TL",
+            "TN",
+            "TO",
+            "TR",
+            "TS",
+            "TT",
+            "TW",
+            "UG",
+            "UK",
+            "UR",
+            "UZ",
+            "VI",
+            "VO",
+            "WO",
+            "XH",
+            "YI",
+            "YO",
+            "ZH",
+            "ZU"
+          ],
           "type": "string"
         },
         "mailPriority": {
@@ -15444,6 +18745,50 @@
             "131",
             "132"
           ],
+          "enumLabels": [
+            "MAIL_TYPE_KALTURA_NEWSLETTER",
+            "MAIL_TYPE_ADDED_TO_FAVORITES",
+            "MAIL_TYPE_ADDED_TO_CLIP_FAVORITES",
+            "MAIL_TYPE_NEW_COMMENT_IN_PROFILE",
+            "MAIL_TYPE_CLIP_ADDED_YOUR_KALTURA",
+            "MAIL_TYPE_VIDEO_ADDED",
+            "MAIL_TYPE_ROUGHCUT_CREATED",
+            "MAIL_TYPE_ADDED_KALTURA_TO_YOUR_FAVORITES",
+            "MAIL_TYPE_NEW_COMMENT_IN_KALTURA",
+            "MAIL_TYPE_CLIP_ADDED",
+            "MAIL_TYPE_VIDEO_CREATED",
+            "MAIL_TYPE_ADDED_KALTURA_TO_HIS_FAVORITES",
+            "MAIL_TYPE_NEW_COMMENT_IN_KALTURA_YOU_CONTRIBUTED",
+            "MAIL_TYPE_CLIP_CONTRIBUTED",
+            "MAIL_TYPE_ROUGHCUT_CREATED_SUBSCRIBED",
+            "MAIL_TYPE_ADDED_KALTURA_TO_HIS_FAVORITES_SUBSCRIBED",
+            "MAIL_TYPE_NEW_COMMENT_IN_KALTURA_YOU_SUBSCRIBED",
+            "MAIL_TYPE_REGISTER_CONFIRM",
+            "MAIL_TYPE_PASSWORD_RESET",
+            "MAIL_TYPE_LOGIN_MAIL_RESET",
+            "MAIL_TYPE_REGISTER_CONFIRM_VIDEO_SERVICE",
+            "MAIL_TYPE_VIDEO_READY",
+            "MAIL_TYPE_VIDEO_IS_READY",
+            "MAIL_TYPE_BULK_DOWNLOAD_READY",
+            "MAIL_TYPE_BULKUPLOAD_FINISHED",
+            "MAIL_TYPE_BULKUPLOAD_FAILED",
+            "MAIL_TYPE_BULKUPLOAD_ABORTED",
+            "MAIL_TYPE_NOTIFY_ERR",
+            "MAIL_TYPE_ACCOUNT_UPGRADE_CONFIRM",
+            "MAIL_TYPE_VIDEO_SERVICE_NOTICE",
+            "MAIL_TYPE_VIDEO_SERVICE_NOTICE_LIMIT_REACHED",
+            "MAIL_TYPE_VIDEO_SERVICE_NOTICE_ACCOUNT_LOCKED",
+            "MAIL_TYPE_VIDEO_SERVICE_NOTICE_ACCOUNT_DELETED",
+            "MAIL_TYPE_VIDEO_SERVICE_NOTICE_UPGRADE_OFFER",
+            "MAIL_TYPE_ACCOUNT_REACTIVE_CONFIRM",
+            "MAIL_TYPE_SYSTEM_USER_RESET_PASSWORD",
+            "MAIL_TYPE_SYSTEM_USER_RESET_PASSWORD_SUCCESS",
+            "MAIL_TYPE_SYSTEM_USER_NEW_PASSWORD",
+            "MAIL_TYPE_SYSTEM_USER_CREDENTIALS_SAVED",
+            "MAIL_TYPE_LIVE_REPORT_EXPORT_SUCCESS",
+            "MAIL_TYPE_LIVE_REPORT_EXPORT_FAILURE",
+            "MAIL_TYPE_LIVE_REPORT_EXPORT_ABORT"
+          ],
           "type": "string"
         },
         "minSendDate": {
@@ -15468,6 +18813,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "PENDING",
+            "SENT",
+            "ERROR",
+            "QUEUED"
           ],
           "type": "integer"
         },
@@ -15563,6 +18914,15 @@
             203,
             204
           ],
+          "enumLabels": [
+            "VIDEO",
+            "IMAGE",
+            "AUDIO",
+            "LIVE_STREAM_FLASH",
+            "LIVE_STREAM_WINDOWS_MEDIA",
+            "LIVE_STREAM_REAL_MEDIA",
+            "LIVE_STREAM_QUICKTIME"
+          ],
           "type": "integer"
         },
         "searchProviderId": {
@@ -15589,6 +18949,24 @@
             28,
             100
           ],
+          "enumLabels": [
+            "FLICKR",
+            "YOUTUBE",
+            "MYSPACE",
+            "PHOTOBUCKET",
+            "JAMENDO",
+            "CCMIXTER",
+            "NYPL",
+            "CURRENT",
+            "MEDIA_COMMONS",
+            "KALTURA",
+            "KALTURA_USER_CLIPS",
+            "ARCHIVE_ORG",
+            "KALTURA_PARTNER",
+            "METACAFE",
+            "SEARCH_PROXY",
+            "PARTNER_SPECIFIC"
+          ],
           "type": "integer"
         },
         "sourceType": {
@@ -15608,6 +18986,22 @@
             "34",
             "35",
             "42"
+          ],
+          "enumLabels": [
+            "LIMELIGHT_LIVE",
+            "VELOCIX_LIVE",
+            "FILE",
+            "WEBCAM",
+            "URL",
+            "SEARCH_PROVIDER",
+            "AKAMAI_LIVE",
+            "MANUAL_LIVE_STREAM",
+            "AKAMAI_UNIVERSAL_LIVE",
+            "LIVE_STREAM",
+            "LIVE_CHANNEL",
+            "RECORDED_LIVE",
+            "CLIP",
+            "LIVE_STREAM_ONTEXTDATA_CAPTIONS"
           ],
           "type": "string"
         }
@@ -15643,6 +19037,15 @@
             203,
             204
           ],
+          "enumLabels": [
+            "VIDEO",
+            "IMAGE",
+            "AUDIO",
+            "LIVE_STREAM_FLASH",
+            "LIVE_STREAM_WINDOWS_MEDIA",
+            "LIVE_STREAM_REAL_MEDIA",
+            "LIVE_STREAM_QUICKTIME"
+          ],
           "type": "integer"
         },
         "mediaTypeIn": {
@@ -15665,6 +19068,22 @@
             "35",
             "42"
           ],
+          "enumLabels": [
+            "LIMELIGHT_LIVE",
+            "VELOCIX_LIVE",
+            "FILE",
+            "WEBCAM",
+            "URL",
+            "SEARCH_PROVIDER",
+            "AKAMAI_LIVE",
+            "MANUAL_LIVE_STREAM",
+            "AKAMAI_UNIVERSAL_LIVE",
+            "LIVE_STREAM",
+            "LIVE_CHANNEL",
+            "RECORDED_LIVE",
+            "CLIP",
+            "LIVE_STREAM_ONTEXTDATA_CAPTIONS"
+          ],
           "type": "string"
         },
         "sourceTypeIn": {
@@ -15686,6 +19105,22 @@
             "34",
             "35",
             "42"
+          ],
+          "enumLabels": [
+            "LIMELIGHT_LIVE",
+            "VELOCIX_LIVE",
+            "FILE",
+            "WEBCAM",
+            "URL",
+            "SEARCH_PROVIDER",
+            "AKAMAI_LIVE",
+            "MANUAL_LIVE_STREAM",
+            "AKAMAI_UNIVERSAL_LIVE",
+            "LIVE_STREAM",
+            "LIVE_CHANNEL",
+            "RECORDED_LIVE",
+            "CLIP",
+            "LIVE_STREAM_ONTEXTDATA_CAPTIONS"
           ],
           "type": "string"
         },
@@ -15783,6 +19218,10 @@
             1,
             2
           ],
+          "enumLabels": [
+            "CBR",
+            "VBR"
+          ],
           "type": "integer"
         },
         "audioChannels": {
@@ -15870,6 +19309,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "CBR",
+            "VBR"
           ],
           "type": "integer"
         },
@@ -16043,6 +19486,17 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CODE_CUE_POINT",
+            "THUMB_CUE_POINT",
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "PARTNER",
+            "DYNAMIC_OBJECT"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -16067,6 +19521,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "VALID",
+            "INVALID",
+            "DELETED"
           ],
           "readOnly": true,
           "type": "integer"
@@ -16112,6 +19571,17 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CODE_CUE_POINT",
+            "THUMB_CUE_POINT",
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "PARTNER",
+            "DYNAMIC_OBJECT"
+          ],
           "type": "string"
         },
         "metadataProfileIdEqual": {
@@ -16140,6 +19610,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "VALID",
+            "INVALID",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -16225,6 +19700,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "API",
+            "KMC",
+            "APP"
+          ],
           "type": "integer"
         },
         "createdAt": {
@@ -16250,6 +19730,17 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CODE_CUE_POINT",
+            "THUMB_CUE_POINT",
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "PARTNER",
+            "DYNAMIC_OBJECT"
+          ],
           "type": "string"
         },
         "name": {
@@ -16264,6 +19755,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DEPRECATED",
+            "TRANSFORMING"
           ],
           "readOnly": true,
           "type": "integer"
@@ -16307,6 +19803,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "API",
+            "KMC",
+            "APP"
+          ],
           "type": "integer"
         },
         "createModeIn": {
@@ -16317,6 +19818,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "API",
+            "KMC",
+            "APP"
           ],
           "type": "integer"
         },
@@ -16344,6 +19850,17 @@
             "4",
             "5"
           ],
+          "enumLabels": [
+            "AD_CUE_POINT",
+            "ANNOTATION",
+            "CODE_CUE_POINT",
+            "THUMB_CUE_POINT",
+            "ENTRY",
+            "CATEGORY",
+            "USER",
+            "PARTNER",
+            "DYNAMIC_OBJECT"
+          ],
           "type": "string"
         },
         "metadataObjectTypeIn": {
@@ -16360,6 +19877,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "DEPRECATED",
+            "TRANSFORMING"
           ],
           "type": "integer"
         },
@@ -16488,6 +20010,10 @@
             1,
             2
           ],
+          "enumLabels": [
+            "SIMPLE",
+            "ADVANCED"
+          ],
           "type": "integer"
         },
         "hasRealThumbnail": {
@@ -16551,6 +20077,14 @@
             5,
             6
           ],
+          "enumLabels": [
+            "SEXUAL_CONTENT",
+            "VIOLENT_REPULSIVE",
+            "HARMFUL_DANGEROUS",
+            "SPAM_COMMERCIALS",
+            "COPYRIGHT",
+            "TERMS_OF_USE_VIOLATION"
+          ],
           "type": "integer"
         },
         "flaggedEntryId": {
@@ -16572,6 +20106,10 @@
             "2",
             "3"
           ],
+          "enumLabels": [
+            "ENTRY",
+            "USER"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -16584,6 +20122,10 @@
           "enum": [
             "1",
             "2"
+          ],
+          "enumLabels": [
+            "PENDING",
+            "MODERATED"
           ],
           "readOnly": true,
           "type": "string"
@@ -16628,6 +20170,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "ADD",
+            "REMOVE"
           ],
           "type": "integer"
         },
@@ -16705,6 +20251,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "ENTRY",
+            "KSHOW",
+            "USER",
+            "BATCH_JOB"
+          ],
           "type": "integer"
         },
         "objectId": {
@@ -16720,6 +20272,15 @@
             6,
             7
           ],
+          "enumLabels": [
+            "PENDING",
+            "SENT",
+            "ERROR",
+            "SHOULD_RESEND",
+            "ERROR_RESENDING",
+            "SENT_SYNCH",
+            "QUEUED"
+          ],
           "type": "integer"
         },
         "type": {
@@ -16733,6 +20294,17 @@
             7,
             21,
             26
+          ],
+          "enumLabels": [
+            "ENTRY_ADD",
+            "ENTR_UPDATE_PERMISSIONS",
+            "ENTRY_DELETE",
+            "ENTRY_BLOCK",
+            "ENTRY_UPDATE",
+            "ENTRY_UPDATE_THUMBNAIL",
+            "ENTRY_UPDATE_MODERATION",
+            "USER_ADD",
+            "USER_BANNED"
           ],
           "type": "integer"
         },
@@ -16807,6 +20379,17 @@
             "4",
             "5",
             "6"
+          ],
+          "enumLabels": [
+            "DISTRIBUTE",
+            "DISPATCH_EVENT_NOTIFICATION",
+            "EXECUTE_METADATA_XSLT",
+            "DELETE_ENTRY",
+            "MODIFY_CATEGORIES",
+            "DELETE_ENTRY_FLAVORS",
+            "CONVERT_ENTRY_FLAVORS",
+            "DELETE_LOCAL_CONTENT",
+            "STORAGE_EXPORT"
           ],
           "readOnly": true,
           "type": "string"
@@ -16921,6 +20504,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NON_COMMERCIAL_USE",
+            "COMMERCIAL_USE"
+          ],
           "type": "integer"
         },
         "contentCategories": {
@@ -17027,6 +20614,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "PUBLISHER",
+            "VAR_GROUP",
+            "GROUP",
+            "TEMPLATE"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -17063,6 +20656,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DELETED",
+            "ACTIVE",
+            "BLOCKED",
+            "FULL_BLOCK"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -17083,6 +20682,19 @@
             107,
             108,
             109
+          ],
+          "enumLabels": [
+            "KMC",
+            "WIKI",
+            "WORDPRESS",
+            "DRUPAL",
+            "DEKIWIKI",
+            "MOODLE",
+            "COMMUNITY_EDITION",
+            "JOOMLA",
+            "BLACKBOARD",
+            "SAKAI",
+            "ADMIN_CONSOLE"
           ],
           "type": "integer"
         },
@@ -17130,6 +20742,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "PUBLISHER",
+            "VAR_GROUP",
+            "GROUP",
+            "TEMPLATE"
+          ],
           "type": "integer"
         },
         "partnerNameDescriptionWebsiteAdminNameAdminEmailLike": {
@@ -17150,6 +20768,12 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DELETED",
+            "ACTIVE",
+            "BLOCKED",
+            "FULL_BLOCK"
           ],
           "type": "integer"
         },
@@ -17373,6 +20997,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "BLOCKED",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "tags": {
@@ -17384,6 +21013,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "NORMAL",
+            "SPECIAL_FEATURE",
+            "PLUGIN",
+            "PARTNER_GROUP"
           ],
           "readOnly": true,
           "type": "integer"
@@ -17444,6 +21079,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "BLOCKED",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -17461,6 +21101,12 @@
             2,
             3,
             4
+          ],
+          "enumLabels": [
+            "NORMAL",
+            "SPECIAL_FEATURE",
+            "PLUGIN",
+            "PARTNER_GROUP"
           ],
           "type": "integer"
         },
@@ -17507,6 +21153,10 @@
             "kApiActionPermissionItem",
             "kApiParameterPermissionItem"
           ],
+          "enumLabels": [
+            "API_ACTION_ITEM",
+            "API_PARAMETER_ITEM"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -17552,6 +21202,10 @@
           "enum": [
             "kApiActionPermissionItem",
             "kApiParameterPermissionItem"
+          ],
+          "enumLabels": [
+            "API_ACTION_ITEM",
+            "API_PARAMETER_ITEM"
           ],
           "type": "string"
         },
@@ -17619,6 +21273,13 @@
             "C3FD11C6-F8B7-4D20-B008-1DB17D61F2DA",
             "D783A191-E083-4BAF-B2DA-E69F910B3772"
           ],
+          "enumLabels": [
+            "EXPLICIT_ANALOG_TV",
+            "BEST_EFFORT_EXPLICIT_ANALOG_TV",
+            "IMAGE_CONSTRAINT_VIDEO",
+            "AGC_AND_COLOR_STRIPE",
+            "IMAGE_CONSTRAINT_MONITOR"
+          ],
           "type": "string"
         }
       }
@@ -17655,6 +21316,20 @@
             "E6785609-64CC-4bfa-B82D-6B619733B746",
             "EC930B7D-1F2D-4682-A38B-8AB977721D0D"
           ],
+          "enumLabels": [
+            "CSS",
+            "PRINTER",
+            "DEVICE",
+            "CLIPBOARD",
+            "SDC",
+            "SDC_PREVIEW",
+            "AACS",
+            "HELIX",
+            "CPRM",
+            "PC",
+            "SDC_LIMITED",
+            "ORANGE_BOOK_CD"
+          ],
           "type": "string"
         }
       }
@@ -17685,6 +21360,9 @@
           "description": "The type of the play enabler",
           "enum": [
             "6D5CFA59-C250-4426-930E-FAC72C8FCFA6"
+          ],
+          "enumLabels": [
+            "SCMS"
           ],
           "type": "string"
         }
@@ -17724,6 +21402,15 @@
             "B621D91F-EDCC-4035-8D4B-DC71760D43E9",
             "D685030B-0F4F-43A6-BBAD-356F1EA0049A"
           ],
+          "enumLabels": [
+            "HELIX",
+            "HDCP_WIVU",
+            "AIRPLAY",
+            "UNKNOWN",
+            "HDCP_MIRACAST",
+            "UNKNOWN_520",
+            "DTCP"
+          ],
           "type": "string"
         }
       }
@@ -17742,6 +21429,11 @@
             150,
             200
           ],
+          "enumLabels": [
+            "MIN_100",
+            "MIN_150",
+            "MIN_200"
+          ],
           "type": "integer"
         },
         "analogVideoOutputProtectionList": {
@@ -17758,12 +21450,23 @@
             250,
             300
           ],
+          "enumLabels": [
+            "MIN_100",
+            "MIN_150",
+            "MIN_200",
+            "MIN_250",
+            "MIN_300"
+          ],
           "type": "integer"
         },
         "compressedDigitalVideoOPL": {
           "enum": [
             400,
             500
+          ],
+          "enumLabels": [
+            "MIN_400",
+            "MIN_500"
           ],
           "type": "integer"
         },
@@ -17790,6 +21493,13 @@
             250,
             300
           ],
+          "enumLabels": [
+            "MIN_100",
+            "MIN_150",
+            "MIN_200",
+            "MIN_250",
+            "MIN_300"
+          ],
           "type": "integer"
         },
         "uncompressedDigitalVideoOPL": {
@@ -17798,6 +21508,12 @@
             250,
             270,
             300
+          ],
+          "enumLabels": [
+            "MIN_100",
+            "MIN_250",
+            "MIN_270",
+            "MIN_300"
           ],
           "type": "integer"
         }
@@ -17823,12 +21539,21 @@
             2,
             3
           ],
+          "enumLabels": [
+            "FIXED_FROM_EXPIRATION",
+            "ENTRY_SCHEDULING_END",
+            "NONE"
+          ],
           "type": "integer"
         },
         "minSecurityLevel": {
           "enum": [
             150,
             2000
+          ],
+          "enumLabels": [
+            "NON_COMMERCIAL_QUALITY",
+            "COMMERCIAL_QUALITY"
           ],
           "type": "integer"
         },
@@ -17913,6 +21638,12 @@
             "medium",
             "notavailable",
             "short"
+          ],
+          "enumLabels": [
+            "LONG",
+            "MEDIUM",
+            "NOT_AVAILABLE",
+            "SHORT"
           ],
           "readOnly": true,
           "type": "string"
@@ -18062,6 +21793,11 @@
             3,
             10,
             101
+          ],
+          "enumLabels": [
+            "STATIC_LIST",
+            "DYNAMIC",
+            "EXTERNAL"
           ],
           "type": "integer"
         },
@@ -18456,6 +22192,10 @@
             "days",
             "months"
           ],
+          "enumLabels": [
+            "DAYS",
+            "MONTHS"
+          ],
           "type": "string"
         },
         "keywords": {
@@ -18582,6 +22322,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -18621,6 +22366,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -18741,6 +22491,13 @@
             "3",
             "4"
           ],
+          "enumLabels": [
+            "DRM_POLICY",
+            "BLOCK",
+            "PREVIEW",
+            "LIMIT_FLAVORS",
+            "ADD_TO_STORAGE"
+          ],
           "readOnly": true,
           "type": "string"
         }
@@ -18797,6 +22554,9 @@
           "enum": [
             "1"
           ],
+          "enumLabels": [
+            "ENTRY"
+          ],
           "type": "string"
         },
         "objectTasks": {
@@ -18816,6 +22576,13 @@
             3,
             4,
             5
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ACTIVE",
+            "DELETED",
+            "SUSPENDED",
+            "DRY_RUN_ONLY"
           ],
           "type": "integer"
         },
@@ -18867,6 +22634,13 @@
             3,
             4,
             5
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ACTIVE",
+            "DELETED",
+            "SUSPENDED",
+            "DRY_RUN_ONLY"
           ],
           "type": "integer"
         },
@@ -19073,6 +22847,15 @@
             6,
             7
           ],
+          "enumLabels": [
+            "RUNNING_BATCHES_COUNT",
+            "RUNNING_BATCHES_CPU",
+            "RUNNING_BATCHES_MEMORY",
+            "RUNNING_BATCHES_NETWORK",
+            "RUNNING_BATCHES_DISC_IO",
+            "RUNNING_BATCHES_DISC_SPACE",
+            "RUNNING_BATCHES_IS_RUNNING"
+          ],
           "type": "integer"
         },
         "value": {
@@ -19145,6 +22928,62 @@
             "38",
             "39",
             "40"
+          ],
+          "enumLabels": [
+            "PARSE_CAPTION_ASSET",
+            "DISTRIBUTION_DELETE",
+            "DISTRIBUTION_DISABLE",
+            "DISTRIBUTION_ENABLE",
+            "DISTRIBUTION_FETCH_REPORT",
+            "CONVERT",
+            "DISTRIBUTION_SUBMIT",
+            "DISTRIBUTION_SYNC",
+            "DISTRIBUTION_UPDATE",
+            "DROP_FOLDER_CONTENT_PROCESSOR",
+            "DROP_FOLDER_WATCHER",
+            "EVENT_NOTIFICATION_HANDLER",
+            "INTEGRATION",
+            "SCHEDULED_TASK",
+            "INDEX_TAGS",
+            "TAG_RESOLVE",
+            "VIRUS_SCAN",
+            "WIDEVINE_REPOSITORY_SYNC",
+            "IMPORT",
+            "DELETE",
+            "FLATTEN",
+            "BULKUPLOAD",
+            "DVDCREATOR",
+            "DOWNLOAD",
+            "OOCONVERT",
+            "CONVERT_PROFILE",
+            "POSTCONVERT",
+            "EXTRACT_MEDIA",
+            "MAIL",
+            "NOTIFICATION",
+            "CLEANUP",
+            "SCHEDULER_HELPER",
+            "BULKDOWNLOAD",
+            "DB_CLEANUP",
+            "PROVISION_PROVIDE",
+            "CONVERT_COLLECTION",
+            "STORAGE_EXPORT",
+            "PROVISION_DELETE",
+            "STORAGE_DELETE",
+            "EMAIL_INGESTION",
+            "METADATA_IMPORT",
+            "METADATA_TRANSFORM",
+            "FILESYNC_IMPORT",
+            "CAPTURE_THUMB",
+            "DELETE_FILE",
+            "INDEX",
+            "MOVE_CATEGORY_ENTRIES",
+            "COPY",
+            "CONCAT",
+            "CONVERT_LIVE_SEGMENT",
+            "COPY_PARTNER",
+            "VALIDATE_LIVE_MEDIA_SERVERS",
+            "SYNC_CATEGORY_PRIVACY_CONTEXT",
+            "LIVE_REPORT_EXPORT"
           ],
           "type": "string"
         }
@@ -19266,6 +23105,62 @@
             "39",
             "40"
           ],
+          "enumLabels": [
+            "PARSE_CAPTION_ASSET",
+            "DISTRIBUTION_DELETE",
+            "DISTRIBUTION_DISABLE",
+            "DISTRIBUTION_ENABLE",
+            "DISTRIBUTION_FETCH_REPORT",
+            "CONVERT",
+            "DISTRIBUTION_SUBMIT",
+            "DISTRIBUTION_SYNC",
+            "DISTRIBUTION_UPDATE",
+            "DROP_FOLDER_CONTENT_PROCESSOR",
+            "DROP_FOLDER_WATCHER",
+            "EVENT_NOTIFICATION_HANDLER",
+            "INTEGRATION",
+            "SCHEDULED_TASK",
+            "INDEX_TAGS",
+            "TAG_RESOLVE",
+            "VIRUS_SCAN",
+            "WIDEVINE_REPOSITORY_SYNC",
+            "IMPORT",
+            "DELETE",
+            "FLATTEN",
+            "BULKUPLOAD",
+            "DVDCREATOR",
+            "DOWNLOAD",
+            "OOCONVERT",
+            "CONVERT_PROFILE",
+            "POSTCONVERT",
+            "EXTRACT_MEDIA",
+            "MAIL",
+            "NOTIFICATION",
+            "CLEANUP",
+            "SCHEDULER_HELPER",
+            "BULKDOWNLOAD",
+            "DB_CLEANUP",
+            "PROVISION_PROVIDE",
+            "CONVERT_COLLECTION",
+            "STORAGE_EXPORT",
+            "PROVISION_DELETE",
+            "STORAGE_DELETE",
+            "EMAIL_INGESTION",
+            "METADATA_IMPORT",
+            "METADATA_TRANSFORM",
+            "FILESYNC_IMPORT",
+            "CAPTURE_THUMB",
+            "DELETE_FILE",
+            "INDEX",
+            "MOVE_CATEGORY_ENTRIES",
+            "COPY",
+            "CONCAT",
+            "CONVERT_LIVE_SEGMENT",
+            "COPY_PARTNER",
+            "VALIDATE_LIVE_MEDIA_SERVERS",
+            "SYNC_CATEGORY_PRIVACY_CONTEXT",
+            "LIVE_REPORT_EXPORT"
+          ],
           "type": "string"
         },
         "typeName": {
@@ -19344,6 +23239,15 @@
             203,
             204
           ],
+          "enumLabels": [
+            "VIDEO",
+            "IMAGE",
+            "AUDIO",
+            "LIVE_STREAM_FLASH",
+            "LIVE_STREAM_WINDOWS_MEDIA",
+            "LIVE_STREAM_REAL_MEDIA",
+            "LIVE_STREAM_QUICKTIME"
+          ],
           "type": "integer"
         },
         "searchSource": {
@@ -19364,6 +23268,24 @@
             24,
             28,
             100
+          ],
+          "enumLabels": [
+            "FLICKR",
+            "YOUTUBE",
+            "MYSPACE",
+            "PHOTOBUCKET",
+            "JAMENDO",
+            "CCMIXTER",
+            "NYPL",
+            "CURRENT",
+            "MEDIA_COMMONS",
+            "KALTURA",
+            "KALTURA_USER_CLIPS",
+            "ARCHIVE_ORG",
+            "KALTURA_PARTNER",
+            "METACAFE",
+            "SEARCH_PROXY",
+            "PARTNER_SPECIFIC"
           ],
           "type": "integer"
         }
@@ -19401,6 +23323,13 @@
             "3",
             "4",
             "5"
+          ],
+          "enumLabels": [
+            "EQUAL",
+            "GREATER_THAN",
+            "GREATER_THAN_OR_EQUAL",
+            "LESS_THAN",
+            "LESS_THAN_OR_EQUAL"
           ],
           "type": "string"
         }
@@ -19444,6 +23373,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "SEARCH_AND",
+            "SEARCH_OR"
           ],
           "type": "integer"
         }
@@ -19491,6 +23424,25 @@
             13,
             14,
             15
+          ],
+          "enumLabels": [
+            "UNKNOWN",
+            "NONE",
+            "COPYRIGHTED",
+            "PUBLIC_DOMAIN",
+            "CREATIVECOMMONS_ATTRIBUTION",
+            "CREATIVECOMMONS_ATTRIBUTION_SHARE_ALIKE",
+            "CREATIVECOMMONS_ATTRIBUTION_NO_DERIVATIVES",
+            "CREATIVECOMMONS_ATTRIBUTION_NON_COMMERCIAL",
+            "CREATIVECOMMONS_ATTRIBUTION_NON_COMMERCIAL_SHARE_ALIKE",
+            "CREATIVECOMMONS_ATTRIBUTION_NON_COMMERCIAL_NO_DERIVATIVES",
+            "GFDL",
+            "GPL",
+            "AFFERO_GPL",
+            "LGPL",
+            "BSD",
+            "APACHE",
+            "MOZILLA"
           ],
           "type": "integer"
         },
@@ -19563,6 +23515,10 @@
           "enum": [
             0,
             2
+          ],
+          "enumLabels": [
+            "USER",
+            "ADMIN"
           ],
           "readOnly": true,
           "type": "integer"
@@ -19639,6 +23595,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -19690,6 +23651,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -19767,6 +23733,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "RESTRICT_SITE_LIST",
+            "ALLOW_SITE_LIST"
           ],
           "type": "integer"
         }
@@ -19974,12 +23944,58 @@
             39,
             40
           ],
+          "enumLabels": [
+            "WIDGET_LOADED",
+            "MEDIA_LOADED",
+            "PLAY",
+            "PLAY_REACHED_25",
+            "PLAY_REACHED_50",
+            "PLAY_REACHED_75",
+            "PLAY_REACHED_100",
+            "OPEN_EDIT",
+            "OPEN_VIRAL",
+            "OPEN_DOWNLOAD",
+            "OPEN_REPORT",
+            "BUFFER_START",
+            "BUFFER_END",
+            "OPEN_FULL_SCREEN",
+            "CLOSE_FULL_SCREEN",
+            "REPLAY",
+            "SEEK",
+            "OPEN_UPLOAD",
+            "SAVE_PUBLISH",
+            "CLOSE_EDITOR",
+            "PRE_BUMPER_PLAYED",
+            "POST_BUMPER_PLAYED",
+            "BUMPER_CLICKED",
+            "PREROLL_STARTED",
+            "MIDROLL_STARTED",
+            "POSTROLL_STARTED",
+            "OVERLAY_STARTED",
+            "PREROLL_CLICKED",
+            "MIDROLL_CLICKED",
+            "POSTROLL_CLICKED",
+            "OVERLAY_CLICKED",
+            "PREROLL_25",
+            "PREROLL_50",
+            "PREROLL_75",
+            "MIDROLL_25",
+            "MIDROLL_50",
+            "MIDROLL_75",
+            "POSTROLL_25",
+            "POSTROLL_50",
+            "POSTROLL_75"
+          ],
           "type": "integer"
         },
         "featureType": {
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "NONE",
+            "RELATED"
           ],
           "type": "integer"
         },
@@ -20113,6 +24129,72 @@
             1087,
             1088,
             1089
+          ],
+          "enumLabels": [
+            "CONTENT_PAGE_VIEW",
+            "CONTENT_ADD_PLAYLIST",
+            "CONTENT_EDIT_PLAYLIST",
+            "CONTENT_DELETE_PLAYLIST",
+            "CONTENT_EDIT_ENTRY",
+            "CONTENT_CHANGE_THUMBNAIL",
+            "CONTENT_ADD_TAGS",
+            "CONTENT_REMOVE_TAGS",
+            "CONTENT_ADD_ADMIN_TAGS",
+            "CONTENT_REMOVE_ADMIN_TAGS",
+            "CONTENT_DOWNLOAD",
+            "CONTENT_APPROVE_MODERATION",
+            "CONTENT_REJECT_MODERATION",
+            "CONTENT_BULK_UPLOAD",
+            "CONTENT_ADMIN_KCW_UPLOAD",
+            "ACCOUNT_CHANGE_PARTNER_INFO",
+            "ACCOUNT_CHANGE_LOGIN_INFO",
+            "ACCOUNT_CONTACT_US_USAGE",
+            "ACCOUNT_UPDATE_SERVER_SETTINGS",
+            "ACCOUNT_ACCOUNT_OVERVIEW",
+            "ACCOUNT_ACCESS_CONTROL",
+            "ACCOUNT_TRANSCODING_SETTINGS",
+            "ACCOUNT_ACCOUNT_UPGRADE",
+            "ACCOUNT_SAVE_SERVER_SETTINGS",
+            "ACCOUNT_ACCESS_CONTROL_DELETE",
+            "ACCOUNT_SAVE_TRANSCODING_SETTINGS",
+            "LOGIN",
+            "DASHBOARD_IMPORT_CONTENT",
+            "DASHBOARD_UPDATE_CONTENT",
+            "DASHBOARD_ACCOUNT_CONTACT_US",
+            "DASHBOARD_VIEW_REPORTS",
+            "DASHBOARD_EMBED_PLAYER",
+            "DASHBOARD_EMBED_PLAYLIST",
+            "DASHBOARD_CUSTOMIZE_PLAYERS",
+            "APP_STUDIO_NEW_PLAYER_SINGLE_VIDEO",
+            "APP_STUDIO_NEW_PLAYER_PLAYLIST",
+            "APP_STUDIO_NEW_PLAYER_MULTI_TAB_PLAYLIST",
+            "APP_STUDIO_EDIT_PLAYER_SINGLE_VIDEO",
+            "APP_STUDIO_EDIT_PLAYER_PLAYLIST",
+            "APP_STUDIO_EDIT_PLAYER_MULTI_TAB_PLAYLIST",
+            "APP_STUDIO_DUPLICATE_PLAYER",
+            "CONTENT_CONTENT_GO_TO_PAGE",
+            "CONTENT_DELETE_ITEM",
+            "CONTENT_DELETE_MIX",
+            "REPORTS_AND_ANALYTICS_BANDWIDTH_USAGE_TAB",
+            "REPORTS_AND_ANALYTICS_CONTENT_REPORTS_TAB",
+            "REPORTS_AND_ANALYTICS_USERS_AND_COMMUNITY_REPORTS_TAB",
+            "REPORTS_AND_ANALYTICS_TOP_CONTRIBUTORS",
+            "REPORTS_AND_ANALYTICS_MAP_OVERLAYS",
+            "REPORTS_AND_ANALYTICS_TOP_SYNDICATIONS",
+            "REPORTS_AND_ANALYTICS_TOP_CONTENT",
+            "REPORTS_AND_ANALYTICS_CONTENT_DROPOFF",
+            "REPORTS_AND_ANALYTICS_CONTENT_INTERACTIONS",
+            "REPORTS_AND_ANALYTICS_CONTENT_CONTRIBUTIONS",
+            "REPORTS_AND_ANALYTICS_VIDEO_DRILL_DOWN",
+            "REPORTS_AND_ANALYTICS_CONTENT_DRILL_DOWN_INTERACTION",
+            "REPORTS_AND_ANALYTICS_CONTENT_CONTRIBUTIONS_DRILLDOWN",
+            "REPORTS_AND_ANALYTICS_VIDEO_DRILL_DOWN_DROPOFF",
+            "REPORTS_AND_ANALYTICS_MAP_OVERLAYS_DRILLDOWN",
+            "REPORTS_AND_ANALYTICS_TOP_SYNDICATIONS_DRILL_DOWN",
+            "REPORTS_AND_ANALYTICS_BANDWIDTH_USAGE_VIEW_MONTHLY",
+            "REPORTS_AND_ANALYTICS_BANDWIDTH_USAGE_VIEW_YEARLY",
+            "CONTENT_ENTRY_DRILLDOWN",
+            "CONTENT_OPEN_PREVIEW_AND_EMBED"
           ],
           "type": "integer"
         },
@@ -20258,6 +24340,10 @@
             1,
             2
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "BLOCKED"
+          ],
           "type": "integer"
         },
         "desciption": {
@@ -20311,6 +24397,15 @@
             "6",
             "7"
           ],
+          "enumLabels": [
+            "KONTIKI",
+            "KALTURA_DC",
+            "FTP",
+            "SCP",
+            "SFTP",
+            "S3",
+            "LOCAL"
+          ],
           "type": "string"
         },
         "publicKey": {
@@ -20320,6 +24415,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "NO_IMPACT",
+            "REQUIRED"
           ],
           "type": "integer"
         },
@@ -20334,6 +24433,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "AUTOMATIC",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -20401,6 +24505,15 @@
             "6",
             "7"
           ],
+          "enumLabels": [
+            "KONTIKI",
+            "KALTURA_DC",
+            "FTP",
+            "SCP",
+            "SFTP",
+            "S3",
+            "LOCAL"
+          ],
           "type": "string"
         },
         "protocolIn": {
@@ -20411,6 +24524,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "AUTOMATIC",
+            "MANUAL"
           ],
           "type": "integer"
         },
@@ -20688,6 +24806,10 @@
             "1",
             "2"
           ],
+          "enumLabels": [
+            "ENTRY",
+            "CATEGORY"
+          ],
           "readOnly": true,
           "type": "string"
         },
@@ -20715,6 +24837,10 @@
           "enum": [
             "1",
             "2"
+          ],
+          "enumLabels": [
+            "ENTRY",
+            "CATEGORY"
           ],
           "type": "string"
         },
@@ -20766,6 +24892,15 @@
             7,
             9
           ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "CAPTURING",
+            "READY",
+            "DELETED",
+            "IMPORTING",
+            "EXPORTING"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -20797,6 +24932,15 @@
             3,
             7,
             9
+          ],
+          "enumLabels": [
+            "ERROR",
+            "QUEUED",
+            "CAPTURING",
+            "READY",
+            "DELETED",
+            "IMPORTING",
+            "EXPORTING"
           ],
           "type": "integer"
         },
@@ -20863,6 +25007,10 @@
             1,
             2
           ],
+          "enumLabels": [
+            "SLIDE",
+            "CHAPTER"
+          ],
           "type": "integer"
         },
         "title": {
@@ -20891,6 +25039,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "SLIDE",
+            "CHAPTER"
           ],
           "type": "integer"
         },
@@ -20940,6 +25092,13 @@
             4,
             5
           ],
+          "enumLabels": [
+            "RESIZE",
+            "RESIZE_WITH_PADDING",
+            "CROP",
+            "CROP_FROM_TOP",
+            "RESIZE_WITH_FORCE"
+          ],
           "type": "integer"
         },
         "cropWidth": {
@@ -20986,6 +25145,36 @@
             "wma",
             "wmv",
             "wvm"
+          ],
+          "enumLabels": [
+            "_3GP",
+            "APPLEHTTP",
+            "AVI",
+            "BMP",
+            "COPY",
+            "FLV",
+            "HLS",
+            "ISMV",
+            "JPG",
+            "M2TS",
+            "M4V",
+            "MKV",
+            "MOV",
+            "MP3",
+            "MP4",
+            "MPEG",
+            "MPEGTS",
+            "MXF",
+            "OGG",
+            "OGV",
+            "PDF",
+            "PNG",
+            "SWF",
+            "WAV",
+            "WEBM",
+            "WMA",
+            "WMV",
+            "WVM"
           ],
           "type": "string"
         },
@@ -21059,6 +25248,36 @@
             "wma",
             "wmv",
             "wvm"
+          ],
+          "enumLabels": [
+            "_3GP",
+            "APPLEHTTP",
+            "AVI",
+            "BMP",
+            "COPY",
+            "FLV",
+            "HLS",
+            "ISMV",
+            "JPG",
+            "M2TS",
+            "M4V",
+            "MKV",
+            "MOV",
+            "MP3",
+            "MP4",
+            "MPEG",
+            "MPEGTS",
+            "MXF",
+            "OGG",
+            "OGV",
+            "PDF",
+            "PNG",
+            "SWF",
+            "WAV",
+            "WEBM",
+            "WMA",
+            "WMV",
+            "WVM"
           ],
           "type": "string"
         }
@@ -21266,6 +25485,23 @@
             "Video Games",
             "Vlogs &amp; People"
           ],
+          "enumLabels": [
+            "ANIMALS_AND_PETS",
+            "ARTS_AND_ANIMATION",
+            "AUTOS",
+            "COMEDY",
+            "COMMERCIALS_PROMOTIONAL",
+            "ENTERTAINMENT",
+            "FAMILY_AND_KIDS",
+            "HOW_TO_INSTRUCTIONAL_DIY",
+            "MUSIC",
+            "NEWS_AND_BLOGS",
+            "SCIENCE_AND_TECHNOLOGY",
+            "SPORTS",
+            "TRAVEL_AND_PLACES",
+            "VIDEO_GAMES",
+            "VLOGS_PEOPLE"
+          ],
           "readOnly": true,
           "type": "string"
         }
@@ -21318,6 +25554,10 @@
             2,
             3
           ],
+          "enumLabels": [
+            "WIZARD",
+            "ADVANCED"
+          ],
           "type": "integer"
         },
         "description": {
@@ -21363,6 +25603,29 @@
             19,
             20,
             21
+          ],
+          "enumLabels": [
+            "PLAYER",
+            "CONTRIBUTION_WIZARD",
+            "SIMPLE_EDITOR",
+            "ADVANCED_EDITOR",
+            "PLAYLIST",
+            "APP_STUDIO",
+            "KRECORD",
+            "PLAYER_V3",
+            "KMC_ACCOUNT",
+            "KMC_ANALYTICS",
+            "KMC_CONTENT",
+            "KMC_DASHBOARD",
+            "KMC_LOGIN",
+            "PLAYER_SL",
+            "CLIENTSIDE_ENCODER",
+            "KMC_GENERAL",
+            "KMC_ROLES_AND_PERMISSIONS",
+            "CLIPPER",
+            "KSR",
+            "KUPLOAD",
+            "WEBCASTING"
           ],
           "type": "integer"
         },
@@ -21423,6 +25686,10 @@
             2,
             3
           ],
+          "enumLabels": [
+            "WIZARD",
+            "ADVANCED"
+          ],
           "type": "integer"
         },
         "creationModeIn": {
@@ -21460,6 +25727,29 @@
             19,
             20,
             21
+          ],
+          "enumLabels": [
+            "PLAYER",
+            "CONTRIBUTION_WIZARD",
+            "SIMPLE_EDITOR",
+            "ADVANCED_EDITOR",
+            "PLAYLIST",
+            "APP_STUDIO",
+            "KRECORD",
+            "PLAYER_V3",
+            "KMC_ACCOUNT",
+            "KMC_ANALYTICS",
+            "KMC_CONTENT",
+            "KMC_DASHBOARD",
+            "KMC_LOGIN",
+            "PLAYER_SL",
+            "CLIENTSIDE_ENCODER",
+            "KMC_GENERAL",
+            "KMC_ROLES_AND_PERMISSIONS",
+            "CLIPPER",
+            "KSR",
+            "KUPLOAD",
+            "WEBCASTING"
           ],
           "type": "integer"
         },
@@ -21562,6 +25852,29 @@
             20,
             21
           ],
+          "enumLabels": [
+            "PLAYER",
+            "CONTRIBUTION_WIZARD",
+            "SIMPLE_EDITOR",
+            "ADVANCED_EDITOR",
+            "PLAYLIST",
+            "APP_STUDIO",
+            "KRECORD",
+            "PLAYER_V3",
+            "KMC_ACCOUNT",
+            "KMC_ANALYTICS",
+            "KMC_CONTENT",
+            "KMC_DASHBOARD",
+            "KMC_LOGIN",
+            "PLAYER_SL",
+            "CLIENTSIDE_ENCODER",
+            "KMC_GENERAL",
+            "KMC_ROLES_AND_PERMISSIONS",
+            "CLIPPER",
+            "KSR",
+            "KUPLOAD",
+            "WEBCASTING"
+          ],
           "type": "integer"
         },
         "versions": {
@@ -21580,6 +25893,11 @@
             0,
             1,
             2
+          ],
+          "enumLabels": [
+            "NO_ERROR",
+            "GENERAL_ERROR",
+            "PARTIAL_UPLOAD"
           ],
           "type": "integer"
         },
@@ -21630,6 +25948,14 @@
             4,
             5
           ],
+          "enumLabels": [
+            "PENDING",
+            "PARTIAL_UPLOAD",
+            "FULL_UPLOAD",
+            "CLOSED",
+            "TIMED_OUT",
+            "DELETED"
+          ],
           "readOnly": true,
           "type": "integer"
         },
@@ -21678,6 +26004,14 @@
             3,
             4,
             5
+          ],
+          "enumLabels": [
+            "PENDING",
+            "PARTIAL_UPLOAD",
+            "FULL_UPLOAD",
+            "CLOSED",
+            "TIMED_OUT",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -22028,6 +26362,11 @@
             1,
             2
           ],
+          "enumLabels": [
+            "UNKNOWN",
+            "MALE",
+            "FEMALE"
+          ],
           "type": "integer"
         },
         "id": {
@@ -22192,6 +26531,151 @@
             "zh",
             "zu"
           ],
+          "enumLabels": [
+            "AA",
+            "AB",
+            "AF",
+            "AM",
+            "AR",
+            "AS_",
+            "AY",
+            "AZ",
+            "BA",
+            "BE",
+            "BG",
+            "BH",
+            "BI",
+            "BN",
+            "BO",
+            "BR",
+            "CA",
+            "CO",
+            "CS",
+            "CY",
+            "DA",
+            "DE",
+            "DZ",
+            "EL",
+            "EN",
+            "EO",
+            "ES",
+            "ET",
+            "EU",
+            "FA",
+            "FI",
+            "FJ",
+            "FO",
+            "FR",
+            "FY",
+            "GA",
+            "GD",
+            "GL",
+            "GN",
+            "GU",
+            "GV",
+            "HA",
+            "HE",
+            "HI",
+            "HR",
+            "HU",
+            "HY",
+            "IA",
+            "ID",
+            "IE",
+            "IK",
+            "IN",
+            "IS",
+            "IT",
+            "IU",
+            "IW",
+            "JA",
+            "JI",
+            "JV",
+            "KA",
+            "KK",
+            "KL",
+            "KM",
+            "KN",
+            "KO",
+            "KS",
+            "KU",
+            "KY",
+            "LA",
+            "LI",
+            "LN",
+            "LO",
+            "LT",
+            "LV",
+            "MG",
+            "MI",
+            "MK",
+            "ML",
+            "MN",
+            "MO",
+            "MR",
+            "MS",
+            "MT",
+            "MY",
+            "NA",
+            "NE",
+            "NL",
+            "NO",
+            "OC",
+            "OM",
+            "OR_",
+            "PA",
+            "PL",
+            "PS",
+            "PT",
+            "QU",
+            "RM",
+            "RN",
+            "RO",
+            "RU",
+            "RW",
+            "SA",
+            "SD",
+            "SG",
+            "SH",
+            "SI",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SQ",
+            "SR",
+            "SS",
+            "ST",
+            "SU",
+            "SV",
+            "SW",
+            "TA",
+            "TE",
+            "TG",
+            "TH",
+            "TI",
+            "TK",
+            "TL",
+            "TN",
+            "TO",
+            "TR",
+            "TS",
+            "TT",
+            "TW",
+            "UG",
+            "UK",
+            "UR",
+            "UZ",
+            "VI",
+            "VO",
+            "WO",
+            "XH",
+            "YI",
+            "YO",
+            "ZH",
+            "ZU"
+          ],
           "type": "string"
         },
         "lastLoginTime": {
@@ -22235,6 +26719,11 @@
             1,
             2
           ],
+          "enumLabels": [
+            "BLOCKED",
+            "ACTIVE",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "statusUpdatedAt": {
@@ -22255,6 +26744,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "USER",
+            "GROUP"
           ],
           "type": "integer"
         },
@@ -22304,6 +26797,10 @@
             0,
             1
           ],
+          "enumLabels": [
+            "RESTRICT_LIST",
+            "ALLOW_LIST"
+          ],
           "type": "integer"
         }
       }
@@ -22337,6 +26834,11 @@
             0,
             1
           ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
+          ],
           "type": "integer"
         },
         "lastNameStartsWith": {
@@ -22357,6 +26859,11 @@
             1,
             2
           ],
+          "enumLabels": [
+            "BLOCKED",
+            "ACTIVE",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "statusIn": {
@@ -22372,6 +26879,10 @@
           "enum": [
             0,
             1
+          ],
+          "enumLabels": [
+            "USER",
+            "GROUP"
           ],
           "type": "integer"
         },
@@ -22414,6 +26925,11 @@
             -1,
             0,
             1
+          ],
+          "enumLabels": [
+            "NULL_VALUE",
+            "FALSE_VALUE",
+            "TRUE_VALUE"
           ],
           "type": "integer"
         },
@@ -22531,6 +27047,11 @@
             2,
             3
           ],
+          "enumLabels": [
+            "ACTIVE",
+            "BLOCKED",
+            "DELETED"
+          ],
           "type": "integer"
         },
         "systemName": {
@@ -22585,6 +27106,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "ACTIVE",
+            "BLOCKED",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -22674,6 +27200,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "PUBLISHER",
+            "VAR_GROUP",
+            "GROUP",
+            "TEMPLATE"
+          ],
           "type": "integer"
         },
         "groupTypeIn": {
@@ -22748,6 +27280,12 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DELETED",
+            "ACTIVE",
+            "BLOCKED",
+            "FULL_BLOCK"
           ],
           "type": "integer"
         },
@@ -22834,6 +27372,12 @@
             3,
             4
           ],
+          "enumLabels": [
+            "SCAN_ERROR",
+            "FILE_IS_CLEAN",
+            "FILE_WAS_CLEANED",
+            "FILE_INFECTED"
+          ],
           "type": "integer"
         },
         "srcFilePath": {
@@ -22845,6 +27389,12 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "NONE",
+            "DELETE",
+            "CLEAN_NONE",
+            "CLEAN_DELETE"
           ],
           "type": "integer"
         }
@@ -22860,6 +27410,12 @@
             2,
             3
           ],
+          "enumLabels": [
+            "NONE",
+            "DELETE",
+            "CLEAN_NONE",
+            "CLEAN_DELETE"
+          ],
           "type": "integer"
         },
         "createdAt": {
@@ -22872,6 +27428,12 @@
             "symantecScanEngine.SymantecScanDirectEngine",
             "symantecScanEngine.SymantecScanEngine",
             "symantecScanEngine.SymantecScanJavaEngine"
+          ],
+          "enumLabels": [
+            "CLAMAV_SCAN_ENGINE",
+            "SYMANTEC_SCAN_DIRECT_ENGINE",
+            "SYMANTEC_SCAN_ENGINE",
+            "SYMANTEC_SCAN_JAVA_ENGINE"
           ],
           "type": "string"
         },
@@ -22894,6 +27456,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -22924,6 +27491,12 @@
             "symantecScanEngine.SymantecScanEngine",
             "symantecScanEngine.SymantecScanJavaEngine"
           ],
+          "enumLabels": [
+            "CLAMAV_SCAN_ENGINE",
+            "SYMANTEC_SCAN_DIRECT_ENGINE",
+            "SYMANTEC_SCAN_ENGINE",
+            "SYMANTEC_SCAN_JAVA_ENGINE"
+          ],
           "type": "string"
         },
         "engineTypeIn": {
@@ -22952,6 +27525,11 @@
             1,
             2,
             3
+          ],
+          "enumLabels": [
+            "DISABLED",
+            "ENABLED",
+            "DELETED"
           ],
           "type": "integer"
         },
@@ -23277,6 +27855,9 @@
           "enum": [
             0
           ],
+          "enumLabels": [
+            "MODIFY"
+          ],
           "type": "integer"
         },
         "wvAssetIds": {
@@ -23329,6 +27910,10 @@
           "enum": [
             1,
             2
+          ],
+          "enumLabels": [
+            "NONE",
+            "TIMEHASH"
           ],
           "type": "integer"
         },
@@ -23432,6 +28017,10 @@
             "adult",
             "nonadult"
           ],
+          "enumLabels": [
+            "ADULT",
+            "NON_ADULT"
+          ],
           "type": "string"
         },
         "category": {
@@ -23456,6 +28045,28 @@
             "Sports",
             "Transportation",
             "Travel"
+          ],
+          "enumLabels": [
+            "ACTION",
+            "ANIMALS",
+            "ART_AND_ANIMATION",
+            "COMMERCIALS",
+            "ENTERTAINMENT_AND_TV",
+            "FAMILY",
+            "FOOD",
+            "FUNNY_VIDEOS",
+            "GAMES",
+            "HEALTH_AND_BEAUTY",
+            "HOW_TO",
+            "MOVIES_AND_SHORTS",
+            "MUSIC",
+            "NEWS_AND_POLITICS",
+            "PEOPLE_AND_VLOGS",
+            "PRODUCTS_AND_TECH",
+            "SCIENCE_AND_ENVIRONMENT",
+            "SPORTS",
+            "TRANSPORTATION",
+            "TRAVEL"
           ],
           "readOnly": true,
           "type": "string"
