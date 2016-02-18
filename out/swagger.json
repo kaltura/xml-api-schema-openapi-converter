@@ -70415,18 +70415,6 @@
       "in": "query",
       "name": "ks",
       "type": "apiKey"
-    },
-    "partnerId": {
-      "description": "Your Partner ID",
-      "in": "query",
-      "name": "partnerId",
-      "type": "apiKey"
-    },
-    "secret": {
-      "description": "Your API secret",
-      "in": "query",
-      "name": "secret",
-      "type": "apiKey"
     }
   },
   "swagger": "2.0",
