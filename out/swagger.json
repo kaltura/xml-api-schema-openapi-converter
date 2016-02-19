@@ -67,6 +67,7 @@
       }
     },
     "KalturaAccessControlBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -238,6 +239,7 @@
       }
     },
     "KalturaAccessControlProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -367,6 +369,7 @@
       }
     },
     "KalturaActivitiBusinessProcessServerBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBusinessProcessServerFilter"
@@ -434,6 +437,7 @@
       }
     },
     "KalturaAdCuePointBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCuePointFilter"
@@ -501,6 +505,7 @@
       "properties": {}
     },
     "KalturaAdminUserBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaUserFilter"
@@ -659,6 +664,7 @@
       }
     },
     "KalturaAmazonS3StorageProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaStorageProfileFilter"
@@ -745,6 +751,7 @@
       }
     },
     "KalturaAnnotationBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCuePointFilter"
@@ -836,6 +843,7 @@
       }
     },
     "KalturaApiActionPermissionItemBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaPermissionItemFilter"
@@ -896,6 +904,7 @@
       }
     },
     "KalturaApiParameterPermissionItemBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaPermissionItemFilter"
@@ -980,6 +989,7 @@
       }
     },
     "KalturaAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -1041,6 +1051,7 @@
       }
     },
     "KalturaAssetDistributionCondition": {
+      "abstract": true,
       "description": "Abstract class for asset distribution condition\n ",
       "properties": {}
     },
@@ -1168,6 +1179,7 @@
       }
     },
     "KalturaAssetParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -1298,6 +1310,7 @@
       }
     },
     "KalturaAssetParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetParamsFilter"
@@ -1432,6 +1445,7 @@
       }
     },
     "KalturaAttachmentAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetFilter"
@@ -1773,6 +1787,7 @@
       }
     },
     "KalturaAuditTrailBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -2163,6 +2178,7 @@
       "properties": {}
     },
     "KalturaAuditTrailInfo": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
@@ -2513,6 +2529,7 @@
       }
     },
     "KalturaBaseEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -2957,14 +2974,17 @@
       }
     },
     "KalturaBaseResponseProfile": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
     "KalturaBaseRestriction": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
     "KalturaBaseSyndicationFeed": {
+      "abstract": true,
       "description": "",
       "properties": {
         "addToDefaultConversionProfile": {
@@ -3079,6 +3099,7 @@
       }
     },
     "KalturaBaseSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -3439,6 +3460,7 @@
       }
     },
     "KalturaBatchJobBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -3780,6 +3802,7 @@
       }
     },
     "KalturaBooleanField": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBooleanValue"
@@ -3845,6 +3868,7 @@
       }
     },
     "KalturaBulkServiceData": {
+      "abstract": true,
       "description": "This class represents object-specific data passed to the \n bulk upload job.\n ",
       "properties": {}
     },
@@ -3999,6 +4023,7 @@
       }
     },
     "KalturaBulkUploadBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -4287,6 +4312,7 @@
       }
     },
     "KalturaBulkUploadObjectData": {
+      "abstract": true,
       "description": "This class represents object-specific data passed to the \n bulk upload job.\n ",
       "properties": {}
     },
@@ -4648,6 +4674,7 @@
       "properties": {}
     },
     "KalturaBusinessProcessAbortNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBusinessProcessNotificationTemplateFilter"
@@ -4702,6 +4729,7 @@
       }
     },
     "KalturaBusinessProcessNotificationTemplate": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaEventNotificationTemplate"
@@ -4724,6 +4752,7 @@
       }
     },
     "KalturaBusinessProcessNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaEventNotificationTemplateFilter"
@@ -4742,6 +4771,7 @@
       "properties": {}
     },
     "KalturaBusinessProcessServer": {
+      "abstract": true,
       "description": "",
       "properties": {
         "createdAt": {
@@ -4800,6 +4830,7 @@
       }
     },
     "KalturaBusinessProcessServerBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -4924,6 +4955,7 @@
       }
     },
     "KalturaBusinessProcessSignalNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBusinessProcessNotificationTemplateFilter"
@@ -4956,6 +4988,7 @@
       }
     },
     "KalturaBusinessProcessStartNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBusinessProcessNotificationTemplateFilter"
@@ -5666,6 +5699,7 @@
       }
     },
     "KalturaCaptionAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetFilter"
@@ -6466,6 +6500,7 @@
       }
     },
     "KalturaCaptionParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetParamsFilter"
@@ -6853,6 +6888,7 @@
       }
     },
     "KalturaCategoryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -7099,6 +7135,7 @@
       }
     },
     "KalturaCategoryEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -7353,6 +7390,7 @@
       }
     },
     "KalturaCategoryUserBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -7624,6 +7662,7 @@
       }
     },
     "KalturaCodeCuePointBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCuePointFilter"
@@ -7679,6 +7718,7 @@
       "properties": {}
     },
     "KalturaCompareCondition": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCondition"
@@ -7777,6 +7817,7 @@
       }
     },
     "KalturaCondition": {
+      "abstract": true,
       "description": "",
       "properties": {
         "description": {
@@ -7831,6 +7872,7 @@
       }
     },
     "KalturaConfigurableDistributionJobProviderData": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionJobProviderData"
@@ -7844,6 +7886,7 @@
       }
     },
     "KalturaConfigurableDistributionProfile": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionProfile"
@@ -7866,6 +7909,7 @@
       }
     },
     "KalturaConfigurableDistributionProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionProfileFilter"
@@ -7972,6 +8016,7 @@
       }
     },
     "KalturaContentResource": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaResource"
@@ -7981,6 +8026,7 @@
       "properties": {}
     },
     "KalturaContext": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
@@ -8133,6 +8179,7 @@
       }
     },
     "KalturaControlPanelCommandBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -8494,6 +8541,7 @@
       }
     },
     "KalturaConversionProfileAssetParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -8588,6 +8636,7 @@
       }
     },
     "KalturaConversionProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -9003,6 +9052,7 @@
       }
     },
     "KalturaCuePoint": {
+      "abstract": true,
       "description": "",
       "properties": {
         "createdAt": {
@@ -9099,6 +9149,7 @@
       }
     },
     "KalturaCuePointBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -9258,6 +9309,7 @@
       }
     },
     "KalturaDataCenterContentResource": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaContentResource"
@@ -9285,6 +9337,7 @@
       }
     },
     "KalturaDataEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseEntryFilter"
@@ -9629,6 +9682,7 @@
       }
     },
     "KalturaDeliveryProfileAkamaiAppleHttpManifestBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -9661,6 +9715,7 @@
       }
     },
     "KalturaDeliveryProfileAkamaiHdsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -9693,6 +9748,7 @@
       }
     },
     "KalturaDeliveryProfileAkamaiHttpBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -9711,6 +9767,7 @@
       "properties": {}
     },
     "KalturaDeliveryProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -9840,6 +9897,7 @@
       }
     },
     "KalturaDeliveryProfileGenericAppleHttpBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -9875,6 +9933,7 @@
       }
     },
     "KalturaDeliveryProfileGenericHdsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -9906,6 +9965,7 @@
       }
     },
     "KalturaDeliveryProfileGenericHttpBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -9941,6 +10001,7 @@
       }
     },
     "KalturaDeliveryProfileGenericRtmpBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileRtmpFilter"
@@ -9972,6 +10033,7 @@
       }
     },
     "KalturaDeliveryProfileGenericSilverLightBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -10022,6 +10084,7 @@
       }
     },
     "KalturaDeliveryProfileLiveAppleHttpBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -10058,6 +10121,7 @@
       }
     },
     "KalturaDeliveryProfileRtmpBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDeliveryProfileFilter"
@@ -10383,10 +10447,12 @@
       }
     },
     "KalturaDistributionJobProviderData": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
     "KalturaDistributionProfile": {
+      "abstract": true,
       "description": "",
       "properties": {
         "autoCreateFlavors": {
@@ -10606,6 +10672,7 @@
       }
     },
     "KalturaDistributionProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -10675,6 +10742,7 @@
       }
     },
     "KalturaDistributionProvider": {
+      "abstract": true,
       "description": "",
       "properties": {
         "availabilityUpdateEnabled": {
@@ -10772,6 +10840,7 @@
       }
     },
     "KalturaDistributionProviderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -10920,6 +10989,7 @@
       "properties": {}
     },
     "KalturaDistributionValidationError": {
+      "abstract": true,
       "description": "",
       "properties": {
         "action": {
@@ -11103,6 +11173,7 @@
       }
     },
     "KalturaDocumentEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseEntryFilter"
@@ -11153,6 +11224,7 @@
       "properties": {}
     },
     "KalturaDocumentFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -11180,6 +11252,7 @@
       "properties": {}
     },
     "KalturaDocumentFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsOutputFilter"
@@ -11214,6 +11287,7 @@
       }
     },
     "KalturaDrmDeviceBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -11350,6 +11424,7 @@
       }
     },
     "KalturaDrmPolicyBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -11497,6 +11572,7 @@
       }
     },
     "KalturaDrmProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -11732,6 +11808,7 @@
       }
     },
     "KalturaDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -12129,6 +12206,7 @@
       }
     },
     "KalturaDropFolderFileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -12307,6 +12385,7 @@
       "properties": {}
     },
     "KalturaDropFolderFileHandlerConfig": {
+      "abstract": true,
       "description": "",
       "properties": {
         "handlerType": {
@@ -12604,6 +12683,7 @@
       }
     },
     "KalturaEmailNotificationRecipientJobData": {
+      "abstract": true,
       "description": "Abstract class representing the final output recipients going into the batch mechanism\n ",
       "properties": {
         "providerType": {
@@ -12623,6 +12703,7 @@
       }
     },
     "KalturaEmailNotificationRecipientProvider": {
+      "abstract": true,
       "description": "Abstract core class  which provides the recipients (to, CC, BCC) for an email notification\n ",
       "properties": {}
     },
@@ -12741,6 +12822,7 @@
       }
     },
     "KalturaEmailNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaEventNotificationTemplateFilter"
@@ -13218,6 +13300,7 @@
       }
     },
     "KalturaEntryDistributionBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -13489,6 +13572,7 @@
       }
     },
     "KalturaEventCuePointBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCuePointFilter"
@@ -13914,6 +13998,7 @@
       }
     },
     "KalturaEventNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -14124,6 +14209,7 @@
       }
     },
     "KalturaExternalMediaEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaMediaEntryFilter"
@@ -14391,6 +14477,7 @@
       }
     },
     "KalturaFileAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -14637,6 +14724,7 @@
       }
     },
     "KalturaFileSyncBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -14897,6 +14985,7 @@
       }
     },
     "KalturaFilter": {
+      "abstract": true,
       "description": "",
       "properties": {
         "advancedSearch": {
@@ -15015,6 +15104,7 @@
       }
     },
     "KalturaFlavorAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetFilter"
@@ -15383,6 +15473,7 @@
       }
     },
     "KalturaFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetParamsFilter"
@@ -15509,6 +15600,7 @@
       }
     },
     "KalturaFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -15578,6 +15670,7 @@
       }
     },
     "KalturaFtpDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRemoteDropFolderFilter"
@@ -15701,6 +15794,7 @@
       }
     },
     "KalturaGenericDistributionProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionProfileFilter"
@@ -15899,6 +15993,7 @@
       }
     },
     "KalturaGenericDistributionProviderActionBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -15976,6 +16071,7 @@
       }
     },
     "KalturaGenericDistributionProviderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionProviderFilter"
@@ -16083,6 +16179,7 @@
       }
     },
     "KalturaGenericSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseSyndicationFeedFilter"
@@ -16120,6 +16217,7 @@
       }
     },
     "KalturaGenericXsltSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaGenericSyndicationFeedFilter"
@@ -16195,6 +16293,7 @@
       }
     },
     "KalturaGoogleVideoSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseSyndicationFeedFilter"
@@ -16250,6 +16349,7 @@
       }
     },
     "KalturaGroupUserBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -16477,6 +16577,7 @@
       }
     },
     "KalturaHttpNotificationData": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
@@ -16830,6 +16931,7 @@
       }
     },
     "KalturaHttpNotificationTemplateBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaEventNotificationTemplateFilter"
@@ -17054,6 +17156,7 @@
       }
     },
     "KalturaITunesSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseSyndicationFeedFilter"
@@ -17097,6 +17200,7 @@
       }
     },
     "KalturaImageFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -17140,6 +17244,7 @@
       }
     },
     "KalturaImageFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsOutputFilter"
@@ -17252,6 +17357,7 @@
       }
     },
     "KalturaIntegerField": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaIntegerValue"
@@ -17307,10 +17413,12 @@
       }
     },
     "KalturaIntegrationJobProviderData": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
     "KalturaIntegrationJobTriggerData": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
@@ -17425,6 +17533,7 @@
       }
     },
     "KalturaKontikiStorageProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaStorageProfileFilter"
@@ -17494,6 +17603,7 @@
       }
     },
     "KalturaLiveAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorAssetFilter"
@@ -17540,6 +17650,7 @@
       }
     },
     "KalturaLiveChannelBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaLiveEntryFilter"
@@ -17668,6 +17779,7 @@
       }
     },
     "KalturaLiveChannelSegmentBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -17741,6 +17853,7 @@
       }
     },
     "KalturaLiveEntry": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaMediaEntry"
@@ -17834,6 +17947,7 @@
       }
     },
     "KalturaLiveEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaMediaEntryFilter"
@@ -17911,6 +18025,7 @@
       }
     },
     "KalturaLiveParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -18159,6 +18274,7 @@
       "properties": {}
     },
     "KalturaLiveStreamAdminEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaLiveStreamEntryFilter"
@@ -18312,6 +18428,7 @@
       }
     },
     "KalturaLiveStreamEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaLiveEntryFilter"
@@ -18831,6 +18948,7 @@
       }
     },
     "KalturaMatchCondition": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCondition"
@@ -19008,6 +19126,7 @@
       }
     },
     "KalturaMediaEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaPlayableEntryFilter"
@@ -19161,6 +19280,7 @@
       "properties": {}
     },
     "KalturaMediaFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -19188,6 +19308,7 @@
       "properties": {}
     },
     "KalturaMediaFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsOutputFilter"
@@ -19354,6 +19475,7 @@
       }
     },
     "KalturaMediaInfoBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -19438,6 +19560,7 @@
       }
     },
     "KalturaMediaServerBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -19545,6 +19668,7 @@
       }
     },
     "KalturaMetadataBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -19790,6 +19914,7 @@
       }
     },
     "KalturaMetadataProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -20024,6 +20149,7 @@
       }
     },
     "KalturaMixEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaPlayableEntryFilter"
@@ -20317,6 +20443,7 @@
       }
     },
     "KalturaObject": {
+      "abstract": true,
       "description": "",
       "properties": {
         "relatedObjects": {
@@ -20338,6 +20465,7 @@
       "properties": {}
     },
     "KalturaObjectIdentifier": {
+      "abstract": true,
       "description": "Configuration for extended item in the Kaltura MRSS feeds\n ",
       "properties": {
         "extendedFeatures": {
@@ -20363,6 +20491,7 @@
       }
     },
     "KalturaObjectTask": {
+      "abstract": true,
       "description": "",
       "properties": {
         "stopProcessingOnError": {
@@ -20397,6 +20526,7 @@
       }
     },
     "KalturaOperationAttributes": {
+      "abstract": true,
       "description": "Base class to all operation attributes types\n ",
       "properties": {}
     },
@@ -20707,6 +20837,7 @@
       }
     },
     "KalturaPartnerBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -20910,6 +21041,7 @@
       }
     },
     "KalturaPdfFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -20941,6 +21073,7 @@
       }
     },
     "KalturaPdfFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsOutputFilter"
@@ -21030,6 +21163,7 @@
       }
     },
     "KalturaPermissionBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -21131,6 +21265,7 @@
       "properties": {}
     },
     "KalturaPermissionItem": {
+      "abstract": true,
       "description": "",
       "properties": {
         "createdAt": {
@@ -21167,6 +21302,7 @@
       }
     },
     "KalturaPermissionItemBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -21566,6 +21702,7 @@
       }
     },
     "KalturaPlayReadyPolicyBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDrmPolicyFilter"
@@ -21597,6 +21734,7 @@
       }
     },
     "KalturaPlayReadyProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDrmProfileFilter"
@@ -21615,6 +21753,7 @@
       "properties": {}
     },
     "KalturaPlayReadyRight": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
@@ -21680,6 +21819,7 @@
       }
     },
     "KalturaPlayableEntryBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseEntryFilter"
@@ -21818,6 +21958,7 @@
       }
     },
     "KalturaPlaylistBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseEntryFilter"
@@ -21951,6 +22092,7 @@
       }
     },
     "KalturaRegexCondition": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaMatchCondition"
@@ -21960,6 +22102,7 @@
       "properties": {}
     },
     "KalturaRelatedFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -21969,6 +22112,7 @@
       "properties": {}
     },
     "KalturaRemoteDropFolder": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDropFolder"
@@ -21978,6 +22122,7 @@
       "properties": {}
     },
     "KalturaRemoteDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDropFolderFilter"
@@ -22095,6 +22240,7 @@
       }
     },
     "KalturaReportBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -22291,6 +22437,7 @@
       }
     },
     "KalturaResource": {
+      "abstract": true,
       "description": "Used to ingest entry object, as single resource or list of resources accompanied by asset params ids.\n ",
       "properties": {}
     },
@@ -22342,6 +22489,7 @@
       }
     },
     "KalturaResponseProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -22480,6 +22628,7 @@
       }
     },
     "KalturaRuleAction": {
+      "abstract": true,
       "description": "",
       "properties": {
         "type": {
@@ -22596,6 +22745,7 @@
       }
     },
     "KalturaScheduledTaskProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -23199,6 +23349,7 @@
       "properties": {}
     },
     "KalturaScpDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaSshDropFolderFilter"
@@ -23352,6 +23503,7 @@
       }
     },
     "KalturaSearchItem": {
+      "abstract": true,
       "description": "",
       "properties": {}
     },
@@ -23548,6 +23700,7 @@
       "properties": {}
     },
     "KalturaSftpDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaSshDropFolderFilter"
@@ -23615,6 +23768,7 @@
       }
     },
     "KalturaShortLinkBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -23763,6 +23917,7 @@
       }
     },
     "KalturaSshDropFolder": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRemoteDropFolder"
@@ -23794,6 +23949,7 @@
       }
     },
     "KalturaSshDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRemoteDropFolderFilter"
@@ -24470,6 +24626,7 @@
       }
     },
     "KalturaStorageProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -24583,6 +24740,7 @@
       }
     },
     "KalturaStringField": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaStringValue"
@@ -24635,6 +24793,7 @@
       }
     },
     "KalturaSwfFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -24669,6 +24828,7 @@
       }
     },
     "KalturaSwfFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsOutputFilter"
@@ -24726,6 +24886,7 @@
       }
     },
     "KalturaSyndicationDistributionProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionProfileFilter"
@@ -24753,6 +24914,7 @@
       "properties": {}
     },
     "KalturaSyndicationDistributionProviderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDistributionProviderFilter"
@@ -24916,6 +25078,7 @@
       }
     },
     "KalturaThumbAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetFilter"
@@ -25019,6 +25182,7 @@
       }
     },
     "KalturaThumbCuePointBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaCuePointFilter"
@@ -25211,6 +25375,7 @@
       }
     },
     "KalturaThumbParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaAssetParamsFilter"
@@ -25334,6 +25499,7 @@
       }
     },
     "KalturaThumbParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaThumbParamsFilter"
@@ -25417,6 +25583,7 @@
       }
     },
     "KalturaTimedThumbAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaThumbAssetFilter"
@@ -25508,6 +25675,7 @@
       }
     },
     "KalturaTubeMogulSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseSyndicationFeedFilter"
@@ -25668,6 +25836,7 @@
       }
     },
     "KalturaUiConfBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -25977,6 +26146,7 @@
       }
     },
     "KalturaUploadTokenBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -26806,6 +26976,7 @@
       }
     },
     "KalturaUserBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -26980,6 +27151,7 @@
       }
     },
     "KalturaUserLoginDataBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -27067,6 +27239,7 @@
       }
     },
     "KalturaUserRoleBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaRelatedFilter"
@@ -27177,6 +27350,7 @@
       }
     },
     "KalturaValue": {
+      "abstract": true,
       "description": "A representation to return an array of values\n ",
       "properties": {
         "description": {
@@ -27471,6 +27645,7 @@
       }
     },
     "KalturaVirusScanProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -27612,6 +27787,7 @@
       }
     },
     "KalturaWebexDropFolderBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDropFolderFilter"
@@ -27662,6 +27838,7 @@
       }
     },
     "KalturaWebexDropFolderFileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDropFolderFileFilter"
@@ -27711,6 +27888,7 @@
       }
     },
     "KalturaWidevineFlavorAssetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorAssetFilter"
@@ -27738,6 +27916,7 @@
       "properties": {}
     },
     "KalturaWidevineFlavorParamsBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsFilter"
@@ -27774,6 +27953,7 @@
       }
     },
     "KalturaWidevineFlavorParamsOutputBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFlavorParamsOutputFilter"
@@ -27820,6 +28000,7 @@
       }
     },
     "KalturaWidevineProfileBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaDrmProfileFilter"
@@ -27934,6 +28115,7 @@
       }
     },
     "KalturaWidgetBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaFilter"
@@ -28082,6 +28264,7 @@
       }
     },
     "KalturaYahooSyndicationFeedBaseFilter": {
+      "abstract": true,
       "allOf": [
         {
           "$ref": "#/definitions/KalturaBaseSyndicationFeedFilter"
@@ -29039,6 +29222,17 @@
             "in": "query",
             "name": "annotation[systemName]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -29938,6 +30132,17 @@
             "in": "query",
             "name": "annotation[systemName]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -30459,6 +30664,20 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaUrlResource",
+              "KalturaDataCenterContentResource",
+              "KalturaAssetResource",
+              "KalturaEntryResource",
+              "KalturaFileSyncResource",
+              "KalturaOperationResource",
+              "KalturaRemoteStorageResources",
+              "KalturaStringResource"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -31547,6 +31766,15 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaContentResource",
+              "KalturaAssetParamsResourceContainer",
+              "KalturaAssetsParamsResourceContainers"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -34038,6 +34266,15 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaContentResource",
+              "KalturaAssetParamsResourceContainer",
+              "KalturaAssetsParamsResourceContainers"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The conversion profile id to be used on the entry",
             "in": "query",
             "name": "conversionProfileId",
@@ -35272,6 +35509,13 @@
             "in": "query",
             "name": "businessProcessServer[description]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaActivitiBusinessProcessServer"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -35558,6 +35802,13 @@
             "in": "query",
             "name": "businessProcessServer[description]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaActivitiBusinessProcessServer"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -36556,6 +36807,20 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaUrlResource",
+              "KalturaDataCenterContentResource",
+              "KalturaAssetResource",
+              "KalturaEntryResource",
+              "KalturaFileSyncResource",
+              "KalturaOperationResource",
+              "KalturaRemoteStorageResources",
+              "KalturaStringResource"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -41168,6 +41433,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaBulkServiceFilterData"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -42450,6 +42722,15 @@
             "in": "query",
             "name": "distributionProfile[recommendedDcForExecute]",
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaConfigurableDistributionProfile",
+              "KalturaGenericDistributionProfile",
+              "KalturaSyndicationDistributionProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -43034,6 +43315,15 @@
             "in": "query",
             "name": "distributionProfile[recommendedDcForExecute]",
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaConfigurableDistributionProfile",
+              "KalturaGenericDistributionProfile",
+              "KalturaSyndicationDistributionProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -46431,6 +46721,17 @@
             "in": "query",
             "name": "cuePoint[systemName]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -47330,6 +47631,17 @@
             "in": "query",
             "name": "cuePoint[systemName]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -50257,6 +50569,15 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaContentResource",
+              "KalturaAssetParamsResourceContainer",
+              "KalturaAssetsParamsResourceContainers"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The conversion profile id to be used on the entry",
             "in": "query",
             "name": "conversionProfileId",
@@ -51823,6 +52144,15 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaContentResource",
+              "KalturaAssetParamsResourceContainer",
+              "KalturaAssetsParamsResourceContainers"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The conversion profile id to be used on the entry",
@@ -57240,6 +57570,20 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaUrlResource",
+              "KalturaDataCenterContentResource",
+              "KalturaAssetResource",
+              "KalturaEntryResource",
+              "KalturaFileSyncResource",
+              "KalturaOperationResource",
+              "KalturaRemoteStorageResources",
+              "KalturaStringResource"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -58129,6 +58473,20 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaUrlResource",
+              "KalturaDataCenterContentResource",
+              "KalturaAssetResource",
+              "KalturaEntryResource",
+              "KalturaFileSyncResource",
+              "KalturaOperationResource",
+              "KalturaRemoteStorageResources",
+              "KalturaStringResource"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -60086,6 +60444,16 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaDropFolderFileResource",
+              "KalturaServerFileResource",
+              "KalturaUploadedFileTokenResource",
+              "KalturaWebcamTokenResource"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "in seconds",
             "in": "query",
             "name": "duration",
@@ -61922,6 +62290,16 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaDropFolderFileResource",
+              "KalturaServerFileResource",
+              "KalturaUploadedFileTokenResource",
+              "KalturaWebcamTokenResource"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "in seconds",
             "in": "query",
             "name": "duration",
@@ -62994,6 +63372,15 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaContentResource",
+              "KalturaAssetParamsResourceContainer",
+              "KalturaAssetsParamsResourceContainers"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -65399,6 +65786,15 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaContentResource",
+              "KalturaAssetParamsResourceContainer",
+              "KalturaAssetsParamsResourceContainers"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The conversion profile id to be used on the entry",
@@ -69900,6 +70296,14 @@
             "in": "query",
             "name": "permissionItem[tags]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaApiActionPermissionItem",
+              "KalturaApiParameterPermissionItem"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -70146,6 +70550,14 @@
             "in": "query",
             "name": "permissionItem[tags]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaApiActionPermissionItem",
+              "KalturaApiParameterPermissionItem"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -70788,6 +71200,13 @@
             "name": "detailed",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaEntryContext"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -76309,6 +76728,17 @@
             "in": "query",
             "name": "syndicationFeed[privacyContext]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaGenericSyndicationFeed",
+              "KalturaGoogleVideoSyndicationFeed",
+              "KalturaITunesSyndicationFeed",
+              "KalturaTubeMogulSyndicationFeed",
+              "KalturaYahooSyndicationFeed"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -76662,6 +77092,17 @@
             "in": "query",
             "name": "syndicationFeed[privacyContext]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaGenericSyndicationFeed",
+              "KalturaGoogleVideoSyndicationFeed",
+              "KalturaITunesSyndicationFeed",
+              "KalturaTubeMogulSyndicationFeed",
+              "KalturaYahooSyndicationFeed"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
@@ -78490,6 +78931,20 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaUrlResource",
+              "KalturaDataCenterContentResource",
+              "KalturaAssetResource",
+              "KalturaEntryResource",
+              "KalturaFileSyncResource",
+              "KalturaOperationResource",
+              "KalturaRemoteStorageResources",
+              "KalturaStringResource"
+            ],
+            "in": "query",
+            "name": "subclass"
           }
         ],
         "responses": {
