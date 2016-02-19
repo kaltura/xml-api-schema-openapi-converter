@@ -29150,6 +29150,17 @@
           },
           {
             "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "adCuePoint.Ad",
               "annotation.Annotation",
               "codeCuePoint.Code",
@@ -29222,17 +29233,6 @@
             "in": "query",
             "name": "annotation[systemName]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaAnnotation",
-              "KalturaAdCuePoint",
-              "KalturaCodeCuePoint",
-              "KalturaEventCuePoint",
-              "KalturaThumbCuePoint"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -29303,6 +29303,17 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAdCuePointBaseFilter",
+              "KalturaAnnotationBaseFilter",
+              "KalturaCodeCuePointBaseFilter",
+              "KalturaEventCuePointBaseFilter",
+              "KalturaThumbCuePointBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -29599,6 +29610,17 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAdCuePointBaseFilter",
+              "KalturaAnnotationBaseFilter",
+              "KalturaCodeCuePointBaseFilter",
+              "KalturaEventCuePointBaseFilter",
+              "KalturaThumbCuePointBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[freeText]",
             "type": "string"
@@ -29825,6 +29847,17 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAdCuePointBaseFilter",
+              "KalturaAnnotationBaseFilter",
+              "KalturaCodeCuePointBaseFilter",
+              "KalturaEventCuePointBaseFilter",
+              "KalturaThumbCuePointBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -30060,6 +30093,17 @@
           },
           {
             "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "adCuePoint.Ad",
               "annotation.Annotation",
               "codeCuePoint.Code",
@@ -30132,17 +30176,6 @@
             "in": "query",
             "name": "annotation[systemName]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaAnnotation",
-              "KalturaAdCuePoint",
-              "KalturaCodeCuePoint",
-              "KalturaEventCuePoint",
-              "KalturaThumbCuePoint"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -30486,6 +30519,16 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAttachmentAssetBaseFilter",
+              "KalturaCaptionAssetBaseFilter",
+              "KalturaFlavorAssetBaseFilter",
+              "KalturaThumbAssetBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -31495,6 +31538,16 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaDataEntry",
+              "KalturaDocumentEntry",
+              "KalturaPlayableEntry",
+              "KalturaPlaylist"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Entry name (Min 1 chars)",
             "in": "query",
             "name": "entry[name]",
@@ -31810,6 +31863,16 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaDataEntry",
+              "KalturaDocumentEntry",
+              "KalturaPlayableEntry",
+              "KalturaPlaylist"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "Entry name (Min 1 chars)",
@@ -32210,6 +32273,16 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaPlayableEntryBaseFilter",
+              "KalturaDataEntryBaseFilter",
+              "KalturaDocumentEntryBaseFilter",
+              "KalturaPlaylistBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -33253,6 +33326,16 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaPlayableEntryBaseFilter",
+              "KalturaDataEntryBaseFilter",
+              "KalturaDocumentEntryBaseFilter",
+              "KalturaPlaylistBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[freeText]",
             "type": "string"
@@ -34020,6 +34103,16 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaDataEntry",
+              "KalturaDocumentEntry",
+              "KalturaPlayableEntry",
+              "KalturaPlaylist"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "Entry name (Min 1 chars)",
@@ -35496,6 +35589,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaActivitiBusinessProcessServer"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "businessProcessServer[name]",
             "type": "string"
@@ -35509,13 +35609,6 @@
             "in": "query",
             "name": "businessProcessServer[description]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaActivitiBusinessProcessServer"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -35632,6 +35725,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaActivitiBusinessProcessServerBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -35789,6 +35889,13 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaActivitiBusinessProcessServer"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "businessProcessServer[name]",
             "type": "string"
@@ -35802,13 +35909,6 @@
             "in": "query",
             "name": "businessProcessServer[description]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaActivitiBusinessProcessServer"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -36484,6 +36584,16 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAttachmentAssetBaseFilter",
+              "KalturaCaptionAssetBaseFilter",
+              "KalturaFlavorAssetBaseFilter",
+              "KalturaThumbAssetBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -38311,6 +38421,16 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaPlayableEntryBaseFilter",
+              "KalturaDataEntryBaseFilter",
+              "KalturaDocumentEntryBaseFilter",
+              "KalturaPlaylistBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "entryFilter[freeText]",
             "type": "string"
@@ -39284,6 +39404,16 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaPlayableEntryBaseFilter",
+              "KalturaDataEntryBaseFilter",
+              "KalturaDocumentEntryBaseFilter",
+              "KalturaPlaylistBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -40491,6 +40621,15 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaBulkUploadCsvJobData",
+              "KalturaBulkUploadFilterJobData",
+              "KalturaBulkUploadXmlJobData"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
@@ -41907,6 +42046,15 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaBulkUploadCsvJobData",
+              "KalturaBulkUploadFilterJobData",
+              "KalturaBulkUploadXmlJobData"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
             "in": "query",
             "name": "bulkUploadData[fileName]",
@@ -42502,6 +42650,15 @@
           },
           {
             "enum": [
+              "KalturaConfigurableDistributionProfile",
+              "KalturaGenericDistributionProfile",
+              "KalturaSyndicationDistributionProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "attUverseDistribution.ATT_UVERSE",
               "avnDistribution.AVN",
               "comcastMrssDistribution.COMCAST_MRSS",
@@ -42722,15 +42879,6 @@
             "in": "query",
             "name": "distributionProfile[recommendedDcForExecute]",
             "type": "integer"
-          },
-          {
-            "enum": [
-              "KalturaConfigurableDistributionProfile",
-              "KalturaGenericDistributionProfile",
-              "KalturaSyndicationDistributionProfile"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -42849,6 +42997,15 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaConfigurableDistributionProfileBaseFilter",
+              "KalturaGenericDistributionProfileBaseFilter",
+              "KalturaSyndicationDistributionProfileBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -42944,6 +43101,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaVarConsolePartnerFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -43095,6 +43259,15 @@
           },
           {
             "enum": [
+              "KalturaConfigurableDistributionProfile",
+              "KalturaGenericDistributionProfile",
+              "KalturaSyndicationDistributionProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "attUverseDistribution.ATT_UVERSE",
               "avnDistribution.AVN",
               "comcastMrssDistribution.COMCAST_MRSS",
@@ -43315,15 +43488,6 @@
             "in": "query",
             "name": "distributionProfile[recommendedDcForExecute]",
             "type": "integer"
-          },
-          {
-            "enum": [
-              "KalturaConfigurableDistributionProfile",
-              "KalturaGenericDistributionProfile",
-              "KalturaSyndicationDistributionProfile"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -43418,6 +43582,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaGenericDistributionProviderBaseFilter",
+              "KalturaSyndicationDistributionProviderBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "enum": [
@@ -46649,6 +46821,17 @@
           },
           {
             "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "adCuePoint.Ad",
               "annotation.Annotation",
               "codeCuePoint.Code",
@@ -46721,17 +46904,6 @@
             "in": "query",
             "name": "cuePoint[systemName]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaAnnotation",
-              "KalturaAdCuePoint",
-              "KalturaCodeCuePoint",
-              "KalturaEventCuePoint",
-              "KalturaThumbCuePoint"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -46802,6 +46974,17 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAdCuePointBaseFilter",
+              "KalturaAnnotationBaseFilter",
+              "KalturaCodeCuePointBaseFilter",
+              "KalturaEventCuePointBaseFilter",
+              "KalturaThumbCuePointBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -47098,6 +47281,17 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAdCuePointBaseFilter",
+              "KalturaAnnotationBaseFilter",
+              "KalturaCodeCuePointBaseFilter",
+              "KalturaEventCuePointBaseFilter",
+              "KalturaThumbCuePointBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[freeText]",
             "type": "string"
@@ -47324,6 +47518,17 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAdCuePointBaseFilter",
+              "KalturaAnnotationBaseFilter",
+              "KalturaCodeCuePointBaseFilter",
+              "KalturaEventCuePointBaseFilter",
+              "KalturaThumbCuePointBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -47559,6 +47764,17 @@
           },
           {
             "enum": [
+              "KalturaAnnotation",
+              "KalturaAdCuePoint",
+              "KalturaCodeCuePoint",
+              "KalturaEventCuePoint",
+              "KalturaThumbCuePoint"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "adCuePoint.Ad",
               "annotation.Annotation",
               "codeCuePoint.Code",
@@ -47631,17 +47847,6 @@
             "in": "query",
             "name": "cuePoint[systemName]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaAnnotation",
-              "KalturaAdCuePoint",
-              "KalturaCodeCuePoint",
-              "KalturaEventCuePoint",
-              "KalturaThumbCuePoint"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -48372,6 +48577,21 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaDeliveryProfileAkamaiAppleHttpManifest",
+              "KalturaDeliveryProfileAkamaiHds",
+              "KalturaDeliveryProfileAkamaiHttp",
+              "KalturaDeliveryProfileGenericAppleHttp",
+              "KalturaDeliveryProfileGenericHds",
+              "KalturaDeliveryProfileGenericHttp",
+              "KalturaDeliveryProfileGenericSilverLight",
+              "KalturaDeliveryProfileLiveAppleHttp",
+              "KalturaDeliveryProfileRtmp"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The name of the Delivery",
             "in": "query",
             "name": "delivery[name]",
@@ -48686,6 +48906,21 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaDeliveryProfileAkamaiAppleHttpManifestBaseFilter",
+              "KalturaDeliveryProfileAkamaiHdsBaseFilter",
+              "KalturaDeliveryProfileAkamaiHttpBaseFilter",
+              "KalturaDeliveryProfileGenericAppleHttpBaseFilter",
+              "KalturaDeliveryProfileGenericHdsBaseFilter",
+              "KalturaDeliveryProfileGenericHttpBaseFilter",
+              "KalturaDeliveryProfileGenericSilverLightBaseFilter",
+              "KalturaDeliveryProfileLiveAppleHttpBaseFilter",
+              "KalturaDeliveryProfileRtmpBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -48843,6 +49078,21 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaDeliveryProfileAkamaiAppleHttpManifest",
+              "KalturaDeliveryProfileAkamaiHds",
+              "KalturaDeliveryProfileAkamaiHttp",
+              "KalturaDeliveryProfileGenericAppleHttp",
+              "KalturaDeliveryProfileGenericHds",
+              "KalturaDeliveryProfileGenericHttp",
+              "KalturaDeliveryProfileGenericSilverLight",
+              "KalturaDeliveryProfileLiveAppleHttp",
+              "KalturaDeliveryProfileRtmp"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The name of the Delivery",
@@ -52229,6 +52479,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaPlayReadyPolicy"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "drmPolicy[partnerId]",
             "type": "integer"
@@ -52445,6 +52702,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaPlayReadyPolicyBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[partnerIdEqual]",
             "type": "integer"
@@ -52577,6 +52841,13 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaPlayReadyPolicy"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "drmPolicy[partnerId]",
             "type": "integer"
@@ -52707,6 +52978,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaPlayReadyProfile",
+              "KalturaWidevineProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -52929,6 +53208,14 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaPlayReadyProfileBaseFilter",
+              "KalturaWidevineProfileBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -53044,6 +53331,14 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaPlayReadyProfile",
+              "KalturaWidevineProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "drmProfile[partnerId]",
             "type": "integer"
@@ -53128,6 +53423,15 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaFeedDropFolder",
+              "KalturaRemoteDropFolder",
+              "KalturaWebexDropFolder"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -53439,6 +53743,14 @@
           },
           {
             "enum": [
+              "KalturaRemoteDropFolderBaseFilter",
+              "KalturaWebexDropFolderBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               -1,
               0,
               1
@@ -53706,6 +54018,15 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaFeedDropFolder",
+              "KalturaRemoteDropFolder",
+              "KalturaWebexDropFolder"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "dropFolder[partnerId]",
             "type": "integer"
@@ -53928,6 +54249,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaFeedDropFolderFile",
+              "KalturaWebexDropFolderFile"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -54215,6 +54544,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaWebexDropFolderFileBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -54480,6 +54816,14 @@
             "name": "dropFolderFileId",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaFeedDropFolderFile",
+              "KalturaWebexDropFolderFile"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -54831,6 +55175,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The media type of the entry",
@@ -55269,6 +55621,15 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaBusinessProcessNotificationTemplate",
+              "KalturaEmailNotificationTemplate",
+              "KalturaHttpNotificationTemplate"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "eventNotificationTemplate[name]",
             "type": "string"
@@ -55504,6 +55865,15 @@
             "name": "id",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaBusinessProcessNotificationTemplate",
+              "KalturaEmailNotificationTemplate",
+              "KalturaHttpNotificationTemplate"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -55956,6 +56326,15 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaBusinessProcessNotificationTemplateBaseFilter",
+              "KalturaEmailNotificationTemplateBaseFilter",
+              "KalturaHttpNotificationTemplateBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -56097,6 +56476,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaVarConsolePartnerFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -56236,6 +56622,15 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaBusinessProcessNotificationTemplateBaseFilter",
+              "KalturaEmailNotificationTemplateBaseFilter",
+              "KalturaHttpNotificationTemplateBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -56384,6 +56779,15 @@
             "name": "id",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaBusinessProcessNotificationTemplate",
+              "KalturaEmailNotificationTemplate",
+              "KalturaHttpNotificationTemplate"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -57701,6 +58105,14 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaLiveAsset",
+              "KalturaWidevineFlavorAsset"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The Flavor Params used to create this Flavor Asset",
             "in": "query",
             "name": "flavorAsset[flavorParamsId]",
@@ -58258,6 +58670,16 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAttachmentAssetBaseFilter",
+              "KalturaCaptionAssetBaseFilter",
+              "KalturaFlavorAssetBaseFilter",
+              "KalturaThumbAssetBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "string"
@@ -58531,6 +58953,14 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaLiveAsset",
+              "KalturaWidevineFlavorAsset"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The Flavor Params used to create this Flavor Asset",
             "in": "query",
             "name": "flavorAsset[flavorParamsId]",
@@ -58600,6 +59030,20 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaFlavorParamsOutput",
+              "KalturaDocumentFlavorParams",
+              "KalturaImageFlavorParams",
+              "KalturaLiveParams",
+              "KalturaMediaFlavorParams",
+              "KalturaPdfFlavorParams",
+              "KalturaSwfFlavorParams",
+              "KalturaWidevineFlavorParams"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The video codec of the Flavor Params",
@@ -59154,6 +59598,20 @@
           },
           {
             "enum": [
+              "KalturaDocumentFlavorParamsBaseFilter",
+              "KalturaFlavorParamsOutputBaseFilter",
+              "KalturaImageFlavorParamsBaseFilter",
+              "KalturaLiveParamsBaseFilter",
+              "KalturaMediaFlavorParamsBaseFilter",
+              "KalturaPdfFlavorParamsBaseFilter",
+              "KalturaSwfFlavorParamsBaseFilter",
+              "KalturaWidevineFlavorParamsBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "3gp",
               "applehttp",
               "avi",
@@ -59270,6 +59728,20 @@
             "name": "id",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaFlavorParamsOutput",
+              "KalturaDocumentFlavorParams",
+              "KalturaImageFlavorParams",
+              "KalturaLiveParams",
+              "KalturaMediaFlavorParams",
+              "KalturaPdfFlavorParams",
+              "KalturaSwfFlavorParams",
+              "KalturaWidevineFlavorParams"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The video codec of the Flavor Params",
@@ -59743,6 +60215,18 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaDocumentFlavorParamsOutputBaseFilter",
+              "KalturaImageFlavorParamsOutputBaseFilter",
+              "KalturaMediaFlavorParamsOutputBaseFilter",
+              "KalturaPdfFlavorParamsOutputBaseFilter",
+              "KalturaSwfFlavorParamsOutputBaseFilter",
+              "KalturaWidevineFlavorParamsOutputBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -61896,6 +62380,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaLiveStreamAdminEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "liveStreamEntry[bitrates]",
             "type": "array"
@@ -62613,6 +63104,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaLiveStreamAdminEntryBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The number of objects to retrieve. (Default is 30, maximum page size is 500).",
             "in": "query",
             "name": "pager[pageSize]",
@@ -62877,6 +63375,13 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaLiveStreamAdminEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -63198,6 +63703,14 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The media type of the entry",
             "enum": [
               1,
@@ -63425,6 +63938,14 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The media type of the entry",
             "enum": [
               1,
@@ -63608,6 +64129,14 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The media type of the entry",
             "enum": [
               1,
@@ -63775,6 +64304,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The media type of the entry",
@@ -63951,6 +64488,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The media type of the entry",
@@ -64295,6 +64840,14 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The media type of the entry",
             "enum": [
               1,
@@ -64469,6 +65022,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The media type of the entry",
@@ -64774,6 +65335,15 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaBulkUploadCsvJobData",
+              "KalturaBulkUploadFilterJobData",
+              "KalturaBulkUploadXmlJobData"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
             "in": "query",
             "name": "bulkUploadData[fileName]",
@@ -64923,6 +65493,15 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaMediaEntryFilterForPlaylist",
+              "KalturaExternalMediaEntryBaseFilter",
+              "KalturaLiveEntryBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "enum": [
@@ -65288,6 +65867,15 @@
           },
           {
             "enum": [
+              "KalturaMediaEntryFilterForPlaylist",
+              "KalturaExternalMediaEntryBaseFilter",
+              "KalturaLiveEntryBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               1,
               2,
               5,
@@ -65610,6 +66198,14 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaExternalMediaEntry",
+              "KalturaLiveEntry"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "The media type of the entry",
@@ -68148,6 +68744,15 @@
           },
           {
             "enum": [
+              "KalturaMediaEntryFilterForPlaylist",
+              "KalturaExternalMediaEntryBaseFilter",
+              "KalturaLiveEntryBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               1,
               2,
               5,
@@ -68670,6 +69275,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaVarConsolePartnerFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -69028,6 +69640,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaVarConsolePartnerFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -69202,6 +69821,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaVarConsolePartnerFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -70293,17 +70919,17 @@
             "x_df_default": 1
           },
           {
-            "in": "query",
-            "name": "permissionItem[tags]",
-            "type": "string"
-          },
-          {
             "enum": [
               "KalturaApiActionPermissionItem",
               "KalturaApiParameterPermissionItem"
             ],
             "in": "query",
             "name": "subclass"
+          },
+          {
+            "in": "query",
+            "name": "permissionItem[tags]",
+            "type": "string"
           }
         ],
         "responses": {
@@ -70423,6 +71049,14 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaApiActionPermissionItemBaseFilter",
+              "KalturaApiParameterPermissionItemBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -70547,17 +71181,17 @@
             "type": "integer"
           },
           {
-            "in": "query",
-            "name": "permissionItem[tags]",
-            "type": "string"
-          },
-          {
             "enum": [
               "KalturaApiActionPermissionItem",
               "KalturaApiParameterPermissionItem"
             ],
             "in": "query",
             "name": "subclass"
+          },
+          {
+            "in": "query",
+            "name": "permissionItem[tags]",
+            "type": "string"
           }
         ],
         "responses": {
@@ -72122,6 +72756,13 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaEndUserReportInputFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Search keywords to filter objects",
             "in": "query",
             "name": "reportInputFilter[keywords]",
@@ -72371,6 +73012,13 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaEndUserReportInputFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Search keywords to filter objects",
             "in": "query",
             "name": "reportInputFilter[keywords]",
@@ -72540,6 +73188,13 @@
             "name": "reportType",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaEndUserReportInputFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "Search keywords to filter objects",
@@ -72728,6 +73383,13 @@
             "type": "integer"
           },
           {
+            "enum": [
+              "KalturaEndUserReportInputFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Search keywords to filter objects",
             "in": "query",
             "name": "reportInputFilter[keywords]",
@@ -72914,6 +73576,13 @@
             "name": "reportType",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaEndUserReportInputFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "Search keywords to filter objects",
@@ -74372,6 +75041,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaSearchResult"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -75942,6 +76618,14 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAmazonS3StorageProfile",
+              "KalturaKontikiStorageProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "storageProfile[name]",
             "type": "string"
@@ -76202,6 +76886,14 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAmazonS3StorageProfileBaseFilter",
+              "KalturaKontikiStorageProfileBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "integer"
@@ -76352,6 +77044,14 @@
             "name": "storageProfileId",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaAmazonS3StorageProfile",
+              "KalturaKontikiStorageProfile"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -76628,6 +77328,17 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaGenericSyndicationFeed",
+              "KalturaGoogleVideoSyndicationFeed",
+              "KalturaITunesSyndicationFeed",
+              "KalturaTubeMogulSyndicationFeed",
+              "KalturaYahooSyndicationFeed"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "link a playlist that will set what content the feed will include\n\t if empty, all content will be included in feed",
             "in": "query",
             "name": "syndicationFeed[playlistId]",
@@ -76728,17 +77439,6 @@
             "in": "query",
             "name": "syndicationFeed[privacyContext]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaGenericSyndicationFeed",
-              "KalturaGoogleVideoSyndicationFeed",
-              "KalturaITunesSyndicationFeed",
-              "KalturaTubeMogulSyndicationFeed",
-              "KalturaYahooSyndicationFeed"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -76899,6 +77599,17 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaGenericSyndicationFeedBaseFilter",
+              "KalturaGoogleVideoSyndicationFeedBaseFilter",
+              "KalturaITunesSyndicationFeedBaseFilter",
+              "KalturaTubeMogulSyndicationFeedBaseFilter",
+              "KalturaYahooSyndicationFeedBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The number of objects to retrieve. (Default is 30, maximum page size is 500).",
             "in": "query",
             "name": "pager[pageSize]",
@@ -76990,6 +77701,17 @@
             "name": "id",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaGenericSyndicationFeed",
+              "KalturaGoogleVideoSyndicationFeed",
+              "KalturaITunesSyndicationFeed",
+              "KalturaTubeMogulSyndicationFeed",
+              "KalturaYahooSyndicationFeed"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "link a playlist that will set what content the feed will include\n\t if empty, all content will be included in feed",
@@ -77092,17 +77814,6 @@
             "in": "query",
             "name": "syndicationFeed[privacyContext]",
             "type": "string"
-          },
-          {
-            "enum": [
-              "KalturaGenericSyndicationFeed",
-              "KalturaGoogleVideoSyndicationFeed",
-              "KalturaITunesSyndicationFeed",
-              "KalturaTubeMogulSyndicationFeed",
-              "KalturaYahooSyndicationFeed"
-            ],
-            "in": "query",
-            "name": "subclass"
           }
         ],
         "responses": {
@@ -77449,6 +78160,13 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaTimedThumbAsset"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The Flavor Params used to create this Flavor Asset",
             "in": "query",
             "name": "thumbAsset[thumbParamsId]",
@@ -77655,6 +78373,13 @@
             "name": "entryId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaThumbParamsOutput"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "enum": [
@@ -78119,6 +78844,13 @@
           },
           {
             "enum": [
+              "KalturaThumbParamsOutput"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               1,
               2,
               3,
@@ -78383,6 +79115,16 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAttachmentAssetBaseFilter",
+              "KalturaCaptionAssetBaseFilter",
+              "KalturaFlavorAssetBaseFilter",
+              "KalturaThumbAssetBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "filter[idEqual]",
             "type": "string"
@@ -78569,6 +79311,13 @@
             "name": "version",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaThumbParamsOutput"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "enum": [
@@ -78989,6 +79738,13 @@
             "type": "string"
           },
           {
+            "enum": [
+              "KalturaTimedThumbAsset"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "The Flavor Params used to create this Flavor Asset",
             "in": "query",
             "name": "thumbAsset[thumbParamsId]",
@@ -79058,6 +79814,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaThumbParamsOutput"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "enum": [
@@ -79449,6 +80212,13 @@
           },
           {
             "enum": [
+              "KalturaThumbParamsOutputBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
+            "enum": [
               "3gp",
               "applehttp",
               "avi",
@@ -79565,6 +80335,13 @@
             "name": "id",
             "required": false,
             "type": "integer"
+          },
+          {
+            "enum": [
+              "KalturaThumbParamsOutput"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "enum": [
@@ -81221,6 +81998,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaAdminUser"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "user[id]",
             "type": "string"
@@ -81711,6 +82495,15 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaBulkUploadCsvJobData",
+              "KalturaBulkUploadFilterJobData",
+              "KalturaBulkUploadXmlJobData"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
             "in": "query",
             "name": "bulkUploadData[fileName]",
@@ -82080,6 +82873,13 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
+          },
+          {
+            "enum": [
+              "KalturaAdminUserBaseFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -82562,6 +83362,13 @@
             "name": "userId",
             "required": false,
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaAdminUser"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "in": "query",
@@ -83553,6 +84360,13 @@
             "x_df_default": 1
           },
           {
+            "enum": [
+              "KalturaVarConsolePartnerFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
+          },
+          {
             "in": "query",
             "name": "partnerFilter[idEqual]",
             "type": "integer"
@@ -83645,6 +84459,13 @@
             "in": "query",
             "name": "partnerFilter[partnerNameDescriptionWebsiteAdminNameAdminEmailLike]",
             "type": "string"
+          },
+          {
+            "enum": [
+              "KalturaEndUserReportInputFilter"
+            ],
+            "in": "query",
+            "name": "subclass"
           },
           {
             "description": "Search keywords to filter objects",
