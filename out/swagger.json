@@ -9074,6 +9074,7 @@
             "EVENT",
             "THUMB"
           ],
+          "readOnly": true,
           "type": "string"
         },
         "entryId": {
@@ -12397,6 +12398,7 @@
             "XML",
             "CONTENT"
           ],
+          "readOnly": true,
           "type": "string"
         }
       }
@@ -12698,6 +12700,7 @@
             "CATEGORY",
             "USER"
           ],
+          "readOnly": true,
           "type": "string"
         }
       }
@@ -29160,25 +29163,6 @@
             "name": "subclass"
           },
           {
-            "enum": [
-              "adCuePoint.Ad",
-              "annotation.Annotation",
-              "codeCuePoint.Code",
-              "eventCuePoint.Event",
-              "thumbCuePoint.Thumb"
-            ],
-            "enumLabels": [
-              "AD",
-              "ANNOTATION",
-              "CODE",
-              "EVENT",
-              "THUMB"
-            ],
-            "in": "query",
-            "name": "annotation[cuePointType]",
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "annotation[entryId]",
             "type": "string"
@@ -30101,25 +30085,6 @@
             ],
             "in": "query",
             "name": "subclass"
-          },
-          {
-            "enum": [
-              "adCuePoint.Ad",
-              "annotation.Annotation",
-              "codeCuePoint.Code",
-              "eventCuePoint.Event",
-              "thumbCuePoint.Thumb"
-            ],
-            "enumLabels": [
-              "AD",
-              "ANNOTATION",
-              "CODE",
-              "EVENT",
-              "THUMB"
-            ],
-            "in": "query",
-            "name": "annotation[cuePointType]",
-            "type": "string"
           },
           {
             "in": "query",
@@ -31596,34 +31561,6 @@
             "type": "string"
           },
           {
-            "description": "The type of the entry, this is auto filled by the derived entry object",
-            "enum": [
-              "-1",
-              "externalMedia.externalMedia",
-              "1",
-              "2",
-              "5",
-              "6",
-              "7",
-              "8",
-              "10"
-            ],
-            "enumLabels": [
-              "AUTOMATIC",
-              "EXTERNAL_MEDIA",
-              "MEDIA_CLIP",
-              "MIX",
-              "PLAYLIST",
-              "DATA",
-              "LIVE_STREAM",
-              "LIVE_CHANNEL",
-              "DOCUMENT"
-            ],
-            "in": "query",
-            "name": "entry[type]",
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "entry[groupId]",
             "type": "integer"
@@ -31920,34 +31857,6 @@
             "description": "Comma separated list of ids of categories to which this entry belongs. Only categories that don't have entitlement (privacy context) are listed, to retrieve the full list of categories, use the categoryEntry.list action.",
             "in": "query",
             "name": "entry[categoriesIds]",
-            "type": "string"
-          },
-          {
-            "description": "The type of the entry, this is auto filled by the derived entry object",
-            "enum": [
-              "-1",
-              "externalMedia.externalMedia",
-              "1",
-              "2",
-              "5",
-              "6",
-              "7",
-              "8",
-              "10"
-            ],
-            "enumLabels": [
-              "AUTOMATIC",
-              "EXTERNAL_MEDIA",
-              "MEDIA_CLIP",
-              "MIX",
-              "PLAYLIST",
-              "DATA",
-              "LIVE_STREAM",
-              "LIVE_CHANNEL",
-              "DOCUMENT"
-            ],
-            "in": "query",
-            "name": "entry[type]",
             "type": "string"
           },
           {
@@ -34160,34 +34069,6 @@
             "description": "Comma separated list of ids of categories to which this entry belongs. Only categories that don't have entitlement (privacy context) are listed, to retrieve the full list of categories, use the categoryEntry.list action.",
             "in": "query",
             "name": "baseEntry[categoriesIds]",
-            "type": "string"
-          },
-          {
-            "description": "The type of the entry, this is auto filled by the derived entry object",
-            "enum": [
-              "-1",
-              "externalMedia.externalMedia",
-              "1",
-              "2",
-              "5",
-              "6",
-              "7",
-              "8",
-              "10"
-            ],
-            "enumLabels": [
-              "AUTOMATIC",
-              "EXTERNAL_MEDIA",
-              "MEDIA_CLIP",
-              "MIX",
-              "PLAYLIST",
-              "DATA",
-              "LIVE_STREAM",
-              "LIVE_CHANNEL",
-              "DOCUMENT"
-            ],
-            "in": "query",
-            "name": "baseEntry[type]",
             "type": "string"
           },
           {
@@ -46831,25 +46712,6 @@
             "name": "subclass"
           },
           {
-            "enum": [
-              "adCuePoint.Ad",
-              "annotation.Annotation",
-              "codeCuePoint.Code",
-              "eventCuePoint.Event",
-              "thumbCuePoint.Thumb"
-            ],
-            "enumLabels": [
-              "AD",
-              "ANNOTATION",
-              "CODE",
-              "EVENT",
-              "THUMB"
-            ],
-            "in": "query",
-            "name": "cuePoint[cuePointType]",
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "cuePoint[entryId]",
             "type": "string"
@@ -47774,25 +47636,6 @@
             "name": "subclass"
           },
           {
-            "enum": [
-              "adCuePoint.Ad",
-              "annotation.Annotation",
-              "codeCuePoint.Code",
-              "eventCuePoint.Event",
-              "thumbCuePoint.Thumb"
-            ],
-            "enumLabels": [
-              "AD",
-              "ANNOTATION",
-              "CODE",
-              "EVENT",
-              "THUMB"
-            ],
-            "in": "query",
-            "name": "cuePoint[cuePointType]",
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "cuePoint[entryId]",
             "type": "string"
@@ -48598,108 +48441,6 @@
             "type": "string"
           },
           {
-            "description": "Delivery type",
-            "enum": [
-              "edgeCast.EDGE_CAST_HTTP",
-              "edgeCast.EDGE_CAST_RTMP",
-              "kontiki.KONTIKI_HTTP",
-              "uplynk.UPLYNK_HTTP",
-              "uplynk.UPLYNK_RTMP",
-              "velocix.VELOCIX_HDS",
-              "velocix.VELOCIX_HLS",
-              "1",
-              "3",
-              "4",
-              "5",
-              "6",
-              "7",
-              "10",
-              "11",
-              "12",
-              "13",
-              "14",
-              "15",
-              "16",
-              "17",
-              "21",
-              "23",
-              "24",
-              "25",
-              "26",
-              "27",
-              "28",
-              "31",
-              "34",
-              "35",
-              "44",
-              "45",
-              "51",
-              "53",
-              "54",
-              "55",
-              "61",
-              "63",
-              "67",
-              "68",
-              "1001",
-              "1002",
-              "1003",
-              "1005",
-              "1013"
-            ],
-            "enumLabels": [
-              "EDGE_CAST_HTTP",
-              "EDGE_CAST_RTMP",
-              "KONTIKI_HTTP",
-              "UPLYNK_HTTP",
-              "UPLYNK_RTMP",
-              "VELOCIX_HDS",
-              "VELOCIX_HLS",
-              "APPLE_HTTP",
-              "HDS",
-              "HTTP",
-              "RTMP",
-              "RTSP",
-              "SILVER_LIGHT",
-              "AKAMAI_HLS_DIRECT",
-              "AKAMAI_HLS_MANIFEST",
-              "AKAMAI_HD",
-              "AKAMAI_HDS",
-              "AKAMAI_HTTP",
-              "AKAMAI_RTMP",
-              "AKAMAI_RTSP",
-              "AKAMAI_SS",
-              "GENERIC_HLS",
-              "GENERIC_HDS",
-              "GENERIC_HTTP",
-              "GENERIC_HLS_MANIFEST",
-              "GENERIC_HDS_MANIFEST",
-              "GENERIC_SS",
-              "GENERIC_RTMP",
-              "LEVEL3_HLS",
-              "LEVEL3_HTTP",
-              "LEVEL3_RTMP",
-              "LIMELIGHT_HTTP",
-              "LIMELIGHT_RTMP",
-              "LOCAL_PATH_APPLE_HTTP",
-              "LOCAL_PATH_HDS",
-              "LOCAL_PATH_HTTP",
-              "LOCAL_PATH_RTMP",
-              "VOD_PACKAGER_HLS",
-              "VOD_PACKAGER_HDS",
-              "VOD_PACKAGER_MSS",
-              "VOD_PACKAGER_DASH",
-              "LIVE_HLS",
-              "LIVE_HDS",
-              "LIVE_DASH",
-              "LIVE_RTMP",
-              "LIVE_AKAMAI_HDS"
-            ],
-            "in": "query",
-            "name": "delivery[type]",
-            "type": "string"
-          },
-          {
             "description": "System name of the delivery",
             "in": "query",
             "name": "delivery[systemName]",
@@ -49098,108 +48839,6 @@
             "description": "The name of the Delivery",
             "in": "query",
             "name": "delivery[name]",
-            "type": "string"
-          },
-          {
-            "description": "Delivery type",
-            "enum": [
-              "edgeCast.EDGE_CAST_HTTP",
-              "edgeCast.EDGE_CAST_RTMP",
-              "kontiki.KONTIKI_HTTP",
-              "uplynk.UPLYNK_HTTP",
-              "uplynk.UPLYNK_RTMP",
-              "velocix.VELOCIX_HDS",
-              "velocix.VELOCIX_HLS",
-              "1",
-              "3",
-              "4",
-              "5",
-              "6",
-              "7",
-              "10",
-              "11",
-              "12",
-              "13",
-              "14",
-              "15",
-              "16",
-              "17",
-              "21",
-              "23",
-              "24",
-              "25",
-              "26",
-              "27",
-              "28",
-              "31",
-              "34",
-              "35",
-              "44",
-              "45",
-              "51",
-              "53",
-              "54",
-              "55",
-              "61",
-              "63",
-              "67",
-              "68",
-              "1001",
-              "1002",
-              "1003",
-              "1005",
-              "1013"
-            ],
-            "enumLabels": [
-              "EDGE_CAST_HTTP",
-              "EDGE_CAST_RTMP",
-              "KONTIKI_HTTP",
-              "UPLYNK_HTTP",
-              "UPLYNK_RTMP",
-              "VELOCIX_HDS",
-              "VELOCIX_HLS",
-              "APPLE_HTTP",
-              "HDS",
-              "HTTP",
-              "RTMP",
-              "RTSP",
-              "SILVER_LIGHT",
-              "AKAMAI_HLS_DIRECT",
-              "AKAMAI_HLS_MANIFEST",
-              "AKAMAI_HD",
-              "AKAMAI_HDS",
-              "AKAMAI_HTTP",
-              "AKAMAI_RTMP",
-              "AKAMAI_RTSP",
-              "AKAMAI_SS",
-              "GENERIC_HLS",
-              "GENERIC_HDS",
-              "GENERIC_HTTP",
-              "GENERIC_HLS_MANIFEST",
-              "GENERIC_HDS_MANIFEST",
-              "GENERIC_SS",
-              "GENERIC_RTMP",
-              "LEVEL3_HLS",
-              "LEVEL3_HTTP",
-              "LEVEL3_RTMP",
-              "LIMELIGHT_HTTP",
-              "LIMELIGHT_RTMP",
-              "LOCAL_PATH_APPLE_HTTP",
-              "LOCAL_PATH_HDS",
-              "LOCAL_PATH_HTTP",
-              "LOCAL_PATH_RTMP",
-              "VOD_PACKAGER_HLS",
-              "VOD_PACKAGER_HDS",
-              "VOD_PACKAGER_MSS",
-              "VOD_PACKAGER_DASH",
-              "LIVE_HLS",
-              "LIVE_HDS",
-              "LIVE_DASH",
-              "LIVE_RTMP",
-              "LIVE_AKAMAI_HDS"
-            ],
-            "in": "query",
-            "name": "delivery[type]",
             "type": "string"
           },
           {
@@ -53450,29 +53089,6 @@
           },
           {
             "enum": [
-              "FeedDropFolder.FEED",
-              "WebexDropFolder.WEBEX",
-              "1",
-              "2",
-              "3",
-              "4",
-              "6"
-            ],
-            "enumLabels": [
-              "FEED",
-              "WEBEX",
-              "LOCAL",
-              "FTP",
-              "SCP",
-              "SFTP",
-              "S3"
-            ],
-            "in": "query",
-            "name": "dropFolder[type]",
-            "type": "string"
-          },
-          {
-            "enum": [
               0,
               1,
               2,
@@ -54039,29 +53655,6 @@
           {
             "in": "query",
             "name": "dropFolder[description]",
-            "type": "string"
-          },
-          {
-            "enum": [
-              "FeedDropFolder.FEED",
-              "WebexDropFolder.WEBEX",
-              "1",
-              "2",
-              "3",
-              "4",
-              "6"
-            ],
-            "enumLabels": [
-              "FEED",
-              "WEBEX",
-              "LOCAL",
-              "FTP",
-              "SCP",
-              "SFTP",
-              "S3"
-            ],
-            "in": "query",
-            "name": "dropFolder[type]",
             "type": "string"
           },
           {
@@ -55645,25 +55238,6 @@
             "type": "string"
           },
           {
-            "enum": [
-              "businessProcessNotification.BusinessProcessAbort",
-              "businessProcessNotification.BusinessProcessSignal",
-              "businessProcessNotification.BusinessProcessStart",
-              "emailNotification.Email",
-              "httpNotification.Http"
-            ],
-            "enumLabels": [
-              "BPM_ABORT",
-              "BPM_SIGNAL",
-              "BPM_START",
-              "EMAIL",
-              "HTTP"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[type]",
-            "type": "string"
-          },
-          {
             "description": "Define that the template could be dispatched manually from the API",
             "in": "query",
             "name": "eventNotificationTemplate[manualDispatchEnabled]",
@@ -55888,25 +55462,6 @@
           {
             "in": "query",
             "name": "eventNotificationTemplate[description]",
-            "type": "string"
-          },
-          {
-            "enum": [
-              "businessProcessNotification.BusinessProcessAbort",
-              "businessProcessNotification.BusinessProcessSignal",
-              "businessProcessNotification.BusinessProcessStart",
-              "emailNotification.Email",
-              "httpNotification.Http"
-            ],
-            "enumLabels": [
-              "BPM_ABORT",
-              "BPM_SIGNAL",
-              "BPM_START",
-              "EMAIL",
-              "HTTP"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[type]",
             "type": "string"
           },
           {
@@ -56802,25 +56357,6 @@
           {
             "in": "query",
             "name": "eventNotificationTemplate[description]",
-            "type": "string"
-          },
-          {
-            "enum": [
-              "businessProcessNotification.BusinessProcessAbort",
-              "businessProcessNotification.BusinessProcessSignal",
-              "businessProcessNotification.BusinessProcessStart",
-              "emailNotification.Email",
-              "httpNotification.Http"
-            ],
-            "enumLabels": [
-              "BPM_ABORT",
-              "BPM_SIGNAL",
-              "BPM_START",
-              "EMAIL",
-              "HTTP"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[type]",
             "type": "string"
           },
           {
@@ -77351,28 +76887,6 @@
             "type": "string"
           },
           {
-            "description": "feed type",
-            "enum": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6
-            ],
-            "enumLabels": [
-              "GOOGLE_VIDEO",
-              "YAHOO",
-              "ITUNES",
-              "TUBE_MOGUL",
-              "KALTURA",
-              "KALTURA_XSLT"
-            ],
-            "in": "query",
-            "name": "syndicationFeed[type]",
-            "type": "integer"
-          },
-          {
             "description": "Base URL for each video, on the partners site\n\t This is required by all syndication types.",
             "in": "query",
             "name": "syndicationFeed[landingPage]",
@@ -77724,28 +77238,6 @@
             "in": "query",
             "name": "syndicationFeed[name]",
             "type": "string"
-          },
-          {
-            "description": "feed type",
-            "enum": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6
-            ],
-            "enumLabels": [
-              "GOOGLE_VIDEO",
-              "YAHOO",
-              "ITUNES",
-              "TUBE_MOGUL",
-              "KALTURA",
-              "KALTURA_XSLT"
-            ],
-            "in": "query",
-            "name": "syndicationFeed[type]",
-            "type": "integer"
           },
           {
             "description": "Base URL for each video, on the partners site\n\t This is required by all syndication types.",
@@ -82010,19 +81502,6 @@
             "type": "string"
           },
           {
-            "enum": [
-              0,
-              1
-            ],
-            "enumLabels": [
-              "USER",
-              "GROUP"
-            ],
-            "in": "query",
-            "name": "user[type]",
-            "type": "integer"
-          },
-          {
             "in": "query",
             "name": "user[screenName]",
             "type": "string"
@@ -83374,19 +82853,6 @@
             "in": "query",
             "name": "user[id]",
             "type": "string"
-          },
-          {
-            "enum": [
-              0,
-              1
-            ],
-            "enumLabels": [
-              "USER",
-              "GROUP"
-            ],
-            "in": "query",
-            "name": "user[type]",
-            "type": "integer"
           },
           {
             "in": "query",
