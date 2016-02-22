@@ -30815,7 +30815,7 @@
   "info": {
     "description": "The Kaltura API",
     "title": "Kaltura",
-    "version": "3"
+    "version": "3.3.0"
   },
   "paths": {
     "/service/accesscontrol/action/add": {
