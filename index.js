@@ -1,1 +1,1 @@
-module.exports = require('./out/swagger.json');
+module.exports = {swagger: require('./out/swagger.json')};
