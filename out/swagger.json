@@ -29702,7 +29702,7 @@
               "KalturaUiConfAdminBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -30304,7 +30304,7 @@
               "KalturaThumbCuePoint"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "annotation[objectType]"
           },
           {
             "in": "query",
@@ -30746,7 +30746,7 @@
               "KalturaThumbCuePointBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -31521,7 +31521,7 @@
               "KalturaThumbCuePointBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -32230,7 +32230,7 @@
               "KalturaThumbCuePointBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -32943,7 +32943,7 @@
               "KalturaThumbCuePoint"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "annotation[objectType]"
           },
           {
             "in": "query",
@@ -34005,7 +34005,7 @@
               "KalturaThumbAssetBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -34491,7 +34491,7 @@
               "KalturaStringResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "contentResource[objectType]"
           },
           {
             "description": "Remote URL, FTP, HTTP or HTTPS",
@@ -34772,7 +34772,7 @@
               "KalturaPlaylist"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "entry[objectType]"
           },
           {
             "description": "Entry name (Min 1 chars)",
@@ -35119,7 +35119,7 @@
               "KalturaAssetsParamsResourceContainers"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "in": "query",
@@ -35191,7 +35191,7 @@
               "KalturaPlaylist"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "entry[objectType]"
           },
           {
             "description": "Entry name (Min 1 chars)",
@@ -35666,7 +35666,7 @@
               "KalturaPlaylistBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -36826,7 +36826,7 @@
               "KalturaPlaylistBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -37714,7 +37714,7 @@
               "KalturaPlaylist"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "baseEntry[objectType]"
           },
           {
             "description": "Entry name (Min 1 chars)",
@@ -38032,7 +38032,7 @@
               "KalturaAssetsParamsResourceContainers"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "in": "query",
@@ -39457,7 +39457,7 @@
               "KalturaThumbAssetBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -40088,7 +40088,7 @@
               "KalturaStringResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "contentResource[objectType]"
           },
           {
             "description": "Remote URL, FTP, HTTP or HTTPS",
@@ -41730,7 +41730,7 @@
               "KalturaPlaylistBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "entryFilter[objectType]"
           },
           {
             "in": "query",
@@ -42826,7 +42826,7 @@
               "KalturaPlaylistBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "entryFilter[objectType]"
           },
           {
             "in": "query",
@@ -44153,7 +44153,7 @@
               "KalturaBulkUploadXmlJobData"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "bulkUploadData[objectType]"
           },
           {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
@@ -45127,7 +45127,7 @@
               "KalturaBulkServiceFilterData"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "bulkUploadData[objectType]"
           },
           {
             "in": "query",
@@ -45617,7 +45617,7 @@
               "KalturaBulkUploadXmlJobData"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "bulkUploadData[objectType]"
           },
           {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
@@ -46245,7 +46245,7 @@
               "KalturaSyndicationDistributionProfile"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "distributionProfile[objectType]"
           },
           {
             "enum": [
@@ -46627,7 +46627,7 @@
               "KalturaSyndicationDistributionProfileBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -46732,7 +46732,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -46949,7 +46949,7 @@
               "KalturaSyndicationDistributionProfile"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "distributionProfile[objectType]"
           },
           {
             "enum": [
@@ -47308,7 +47308,7 @@
               "KalturaSyndicationDistributionProviderBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -50619,7 +50619,7 @@
               "KalturaThumbCuePoint"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "cuePoint[objectType]"
           },
           {
             "in": "query",
@@ -51061,7 +51061,7 @@
               "KalturaThumbCuePointBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -51836,7 +51836,7 @@
               "KalturaThumbCuePointBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -52545,7 +52545,7 @@
               "KalturaThumbCuePointBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -53258,7 +53258,7 @@
               "KalturaThumbCuePoint"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "cuePoint[objectType]"
           },
           {
             "in": "query",
@@ -54348,7 +54348,7 @@
               "KalturaDeliveryProfileRtmp"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "delivery[objectType]"
           },
           {
             "description": "The name of the Delivery",
@@ -54721,7 +54721,7 @@
               "KalturaDeliveryProfileRtmpBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -54897,7 +54897,7 @@
               "KalturaDeliveryProfileRtmp"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "delivery[objectType]"
           },
           {
             "description": "The name of the Delivery",
@@ -56650,7 +56650,7 @@
               "KalturaAssetsParamsResourceContainers"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "in": "query",
@@ -58230,7 +58230,7 @@
               "KalturaAssetsParamsResourceContainers"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "in": "query",
@@ -58339,7 +58339,7 @@
               "KalturaRemoteDropFolder"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "dropFolder[objectType]"
           },
           {
             "in": "query",
@@ -58648,7 +58648,7 @@
               "KalturaRemoteDropFolderBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -58922,7 +58922,7 @@
               "KalturaRemoteDropFolder"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "dropFolder[objectType]"
           },
           {
             "in": "query",
@@ -59147,7 +59147,7 @@
               "KalturaFeedDropFolderFile"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "dropFolderFile[objectType]"
           },
           {
             "in": "query",
@@ -59726,7 +59726,7 @@
               "KalturaFeedDropFolderFile"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "dropFolderFile[objectType]"
           },
           {
             "in": "query",
@@ -60561,7 +60561,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -61153,7 +61153,7 @@
               "KalturaHttpNotificationTemplate"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "eventNotificationTemplate[objectType]"
           },
           {
             "in": "query",
@@ -61759,7 +61759,7 @@
               "KalturaHttpNotificationTemplate"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "eventNotificationTemplate[objectType]"
           },
           {
             "in": "query",
@@ -62578,7 +62578,7 @@
               "KalturaHttpNotificationTemplateBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -62721,7 +62721,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -62930,7 +62930,7 @@
               "KalturaHttpNotificationTemplateBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -63080,7 +63080,7 @@
               "KalturaHttpNotificationTemplate"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "eventNotificationTemplate[objectType]"
           },
           {
             "in": "query",
@@ -64637,7 +64637,7 @@
               "KalturaStringResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "contentResource[objectType]"
           },
           {
             "description": "Remote URL, FTP, HTTP or HTTPS",
@@ -64895,7 +64895,7 @@
               "KalturaLiveAsset"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "flavorAsset[objectType]"
           },
           {
             "description": "The Flavor Params used to create this Flavor Asset",
@@ -65480,7 +65480,7 @@
               "KalturaThumbAssetBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -66005,7 +66005,7 @@
               "KalturaStringResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "contentResource[objectType]"
           },
           {
             "description": "Remote URL, FTP, HTTP or HTTPS",
@@ -66190,7 +66190,7 @@
               "KalturaLiveAsset"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "flavorAsset[objectType]"
           },
           {
             "description": "The Flavor Params used to create this Flavor Asset",
@@ -66292,7 +66292,7 @@
               "KalturaSwfFlavorParams"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "flavorParams[objectType]"
           },
           {
             "description": "The video codec of the Flavor Params",
@@ -66992,7 +66992,7 @@
               "KalturaSwfFlavorParamsBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -67162,7 +67162,7 @@
               "KalturaSwfFlavorParams"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "flavorParams[objectType]"
           },
           {
             "description": "The video codec of the Flavor Params",
@@ -67782,7 +67782,7 @@
               "KalturaSwfFlavorParamsOutputBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -68466,7 +68466,7 @@
               "KalturaWebcamTokenResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "description": "Id of the drop folder file object",
@@ -69957,7 +69957,7 @@
               "KalturaLiveStreamAdminEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "liveStreamEntry[objectType]"
           },
           {
             "in": "query",
@@ -70363,7 +70363,7 @@
               "KalturaWebcamTokenResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "description": "Id of the drop folder file object",
@@ -70725,7 +70725,7 @@
               "KalturaLiveStreamAdminEntryBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "description": "The number of objects to retrieve. (Default is 30, maximum page size is 500).",
@@ -71000,7 +71000,7 @@
               "KalturaLiveStreamAdminEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "liveStreamEntry[objectType]"
           },
           {
             "in": "query",
@@ -71327,7 +71327,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "entry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -71660,7 +71660,7 @@
               "KalturaAssetsParamsResourceContainers"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "in": "query",
@@ -71737,7 +71737,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -72076,7 +72076,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -72401,7 +72401,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -72733,7 +72733,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -73231,7 +73231,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -73563,7 +73563,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -74023,7 +74023,7 @@
               "KalturaBulkUploadXmlJobData"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "bulkUploadData[objectType]"
           },
           {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
@@ -74208,7 +74208,7 @@
               "KalturaLiveEntryBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -74628,7 +74628,7 @@
               "KalturaLiveEntryBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -75010,7 +75010,7 @@
               "KalturaLiveEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "mediaEntry[objectType]"
           },
           {
             "description": "The media type of the entry",
@@ -75343,7 +75343,7 @@
               "KalturaAssetsParamsResourceContainers"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "resource[objectType]"
           },
           {
             "in": "query",
@@ -77744,7 +77744,7 @@
               "KalturaLiveEntryBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -78324,7 +78324,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -78750,7 +78750,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -78994,7 +78994,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "partnerFilter[objectType]"
           },
           {
             "in": "query",
@@ -80151,7 +80151,7 @@
               "KalturaApiParameterPermissionItem"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "permissionItem[objectType]"
           },
           {
             "in": "query",
@@ -80340,7 +80340,7 @@
               "KalturaApiParameterPermissionItemBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -80470,7 +80470,7 @@
               "KalturaApiParameterPermissionItem"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "permissionItem[objectType]"
           },
           {
             "in": "query",
@@ -81169,7 +81169,7 @@
               "KalturaEntryContext"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "playlistContext[objectType]"
           },
           {
             "description": "The entry ID in the context of which the playlist should be built",
@@ -82239,7 +82239,7 @@
               "KalturaEndUserReportInputFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "reportInputFilter[objectType]"
           },
           {
             "description": "Search keywords to filter objects",
@@ -82535,7 +82535,7 @@
               "KalturaEndUserReportInputFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "reportInputFilter[objectType]"
           },
           {
             "description": "Search keywords to filter objects",
@@ -82753,7 +82753,7 @@
               "KalturaEndUserReportInputFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "reportInputFilter[objectType]"
           },
           {
             "description": "Search keywords to filter objects",
@@ -82986,7 +82986,7 @@
               "KalturaEndUserReportInputFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "reportInputFilter[objectType]"
           },
           {
             "description": "Search keywords to filter objects",
@@ -83221,7 +83221,7 @@
               "KalturaEndUserReportInputFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "reportInputFilter[objectType]"
           },
           {
             "description": "Search keywords to filter objects",
@@ -84794,7 +84794,7 @@
               "KalturaSearchResult"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "search[objectType]"
           },
           {
             "in": "query",
@@ -86507,7 +86507,7 @@
               "KalturaKontikiStorageProfile"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "storageProfile[objectType]"
           },
           {
             "in": "query",
@@ -86814,7 +86814,7 @@
               "KalturaKontikiStorageProfileBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -86974,7 +86974,7 @@
               "KalturaKontikiStorageProfile"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "storageProfile[objectType]"
           },
           {
             "in": "query",
@@ -87298,7 +87298,7 @@
               "KalturaYahooSyndicationFeed"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "syndicationFeed[objectType]"
           },
           {
             "description": "link a playlist that will set what content the feed will include\n\t if empty, all content will be included in feed",
@@ -87729,7 +87729,7 @@
               "KalturaYahooSyndicationFeedBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "description": "The number of objects to retrieve. (Default is 30, maximum page size is 500).",
@@ -87833,7 +87833,7 @@
               "KalturaYahooSyndicationFeed"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "syndicationFeed[objectType]"
           },
           {
             "description": "link a playlist that will set what content the feed will include\n\t if empty, all content will be included in feed",
@@ -88556,7 +88556,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "partnerFilter[objectType]"
           },
           {
             "in": "query",
@@ -88792,7 +88792,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -90043,7 +90043,7 @@
               "KalturaTimedThumbAsset"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbAsset[objectType]"
           },
           {
             "description": "The Flavor Params used to create this Flavor Asset",
@@ -90268,7 +90268,7 @@
               "KalturaThumbParamsOutput"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbParams[objectType]"
           },
           {
             "enum": [
@@ -90781,7 +90781,7 @@
               "KalturaThumbParamsOutput"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbParams[objectType]"
           },
           {
             "enum": [
@@ -91101,7 +91101,7 @@
               "KalturaThumbAssetBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -91590,7 +91590,7 @@
               "KalturaThumbParamsOutput"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbParams[objectType]"
           },
           {
             "enum": [
@@ -92011,7 +92011,7 @@
               "KalturaStringResource"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "contentResource[objectType]"
           },
           {
             "description": "Remote URL, FTP, HTTP or HTTPS",
@@ -92196,7 +92196,7 @@
               "KalturaTimedThumbAsset"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbAsset[objectType]"
           },
           {
             "description": "The Flavor Params used to create this Flavor Asset",
@@ -92284,7 +92284,7 @@
               "KalturaThumbParamsOutput"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbParams[objectType]"
           },
           {
             "enum": [
@@ -92724,7 +92724,7 @@
               "KalturaThumbParamsOutputBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -92888,7 +92888,7 @@
               "KalturaThumbParamsOutput"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "thumbParams[objectType]"
           },
           {
             "enum": [
@@ -93317,7 +93317,7 @@
               "KalturaUiConfAdmin"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "uiConf[objectType]"
           },
           {
             "description": "Name of the uiConf, this is not a primary key",
@@ -93663,7 +93663,7 @@
               "KalturaUiConfAdminBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -93871,7 +93871,7 @@
               "KalturaUiConfAdminBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -94086,7 +94086,7 @@
               "KalturaUiConfAdmin"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "uiConf[objectType]"
           },
           {
             "description": "Name of the uiConf, this is not a primary key",
@@ -94640,7 +94640,7 @@
               "KalturaAdminUser"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "user[objectType]"
           },
           {
             "in": "query",
@@ -95128,7 +95128,7 @@
               "KalturaBulkUploadXmlJobData"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "bulkUploadData[objectType]"
           },
           {
             "description": "Friendly name of the file, used to be recognized later in the logs.",
@@ -95531,7 +95531,7 @@
               "KalturaAdminUserBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "in": "query",
@@ -96020,7 +96020,7 @@
               "KalturaAdminUser"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "user[objectType]"
           },
           {
             "in": "query",
@@ -96580,7 +96580,7 @@
               "KalturaQuizUserEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "userEntry[objectType]"
           },
           {
             "in": "query",
@@ -96716,7 +96716,7 @@
               "KalturaQuizUserEntryBaseFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "filter[objectType]"
           },
           {
             "enum": [
@@ -96925,7 +96925,7 @@
               "KalturaQuizUserEntry"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "userEntry[objectType]"
           },
           {
             "in": "query",
@@ -97400,7 +97400,7 @@
               "KalturaVarConsolePartnerFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "partnerFilter[objectType]"
           },
           {
             "in": "query",
@@ -97561,7 +97561,7 @@
               "KalturaEndUserReportInputFilter"
             ],
             "in": "query",
-            "name": "objectType"
+            "name": "usageFilter[objectType]"
           },
           {
             "description": "Search keywords to filter objects",
