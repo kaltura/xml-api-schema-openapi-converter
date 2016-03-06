@@ -37768,33 +37768,6 @@
           },
           {
             "in": "query",
-            "name": "contentResource[resource]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            }
-          },
-          {
-            "in": "query",
-            "name": "contentResource[operationAttributes]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "array"
-          },
-          {
-            "description": "ID of alternative asset params to be used instead of the system default flavor params",
-            "in": "query",
-            "name": "contentResource[assetParamsId]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "contentResource[resources]",
             "showCondition": {
               "name": "contentResource[objectType]",
@@ -38649,24 +38622,6 @@
             ],
             "in": "query",
             "name": "resource[objectType]"
-          },
-          {
-            "in": "query",
-            "name": "resource[resource]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            }
-          },
-          {
-            "description": "The asset params to associate with the reaource",
-            "in": "query",
-            "name": "resource[assetParamsId]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -41604,24 +41559,6 @@
           },
           {
             "in": "query",
-            "name": "resource[resource]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            }
-          },
-          {
-            "description": "The asset params to associate with the reaource",
-            "in": "query",
-            "name": "resource[assetParamsId]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            },
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "resource[resources]",
             "showCondition": {
               "name": "resource[objectType]",
@@ -43783,33 +43720,6 @@
               "value": "KalturaFileSyncResource"
             },
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "contentResource[resource]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            }
-          },
-          {
-            "in": "query",
-            "name": "contentResource[operationAttributes]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "array"
-          },
-          {
-            "description": "ID of alternative asset params to be used instead of the system default flavor params",
-            "in": "query",
-            "name": "contentResource[assetParamsId]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -47823,22 +47733,6 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[objectData]"
-          },
-          {
-            "description": "Recipients of the email for bulk upload success/failure",
-            "in": "query",
-            "name": "bulkUploadData[emailRecipients]",
-            "type": "string"
-          },
-          {
-            "description": "Number of objects that finished on error status",
-            "in": "query",
-            "name": "bulkUploadData[numOfErrorObjects]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "bulkUploadData[columns]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
@@ -47848,19 +47742,12 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[filter]",
+            "name": "bulkUploadData[filter][orderBy]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
               "value": "KalturaBulkUploadFilterJobData"
-            }
-          },
-          {
-            "in": "query",
-            "name": "bulkUploadData[templateObject]",
-            "showCondition": {
-              "name": "bulkUploadData[objectType]",
-              "value": "KalturaBulkUploadFilterJobData"
-            }
+            },
+            "type": "string"
           }
         ],
         "responses": {
@@ -48801,19 +48688,12 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[filter]",
+            "name": "bulkUploadData[filter][orderBy]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
               "value": "KalturaBulkServiceFilterData"
-            }
-          },
-          {
-            "in": "query",
-            "name": "bulkUploadData[templateObject]",
-            "showCondition": {
-              "name": "bulkUploadData[objectType]",
-              "value": "KalturaBulkServiceFilterData"
-            }
+            },
+            "type": "string"
           }
         ],
         "responses": {
@@ -49305,22 +49185,6 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[objectData]"
-          },
-          {
-            "description": "Recipients of the email for bulk upload success/failure",
-            "in": "query",
-            "name": "bulkUploadData[emailRecipients]",
-            "type": "string"
-          },
-          {
-            "description": "Number of objects that finished on error status",
-            "in": "query",
-            "name": "bulkUploadData[numOfErrorObjects]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "bulkUploadData[columns]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
@@ -49330,19 +49194,12 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[filter]",
+            "name": "bulkUploadData[filter][orderBy]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
               "value": "KalturaBulkUploadFilterJobData"
-            }
-          },
-          {
-            "in": "query",
-            "name": "bulkUploadData[templateObject]",
-            "showCondition": {
-              "name": "bulkUploadData[objectType]",
-              "value": "KalturaBulkUploadFilterJobData"
-            }
+            },
+            "type": "string"
           }
         ],
         "responses": {
@@ -50144,40 +50001,33 @@
             "type": "integer"
           },
           {
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              10
+            ],
+            "enumLabels": [
+              "FTP",
+              "SCP",
+              "SFTP",
+              "HTTP",
+              "HTTPS",
+              "ASPERA"
+            ],
             "in": "query",
-            "name": "distributionProfile[submitAction]",
+            "name": "distributionProfile[submitAction][protocol]",
             "showCondition": {
               "name": "distributionProfile[objectType]",
               "value": "KalturaGenericDistributionProfile"
-            }
+            },
+            "type": "integer"
           },
           {
             "in": "query",
-            "name": "distributionProfile[updateAction]",
-            "showCondition": {
-              "name": "distributionProfile[objectType]",
-              "value": "KalturaGenericDistributionProfile"
-            }
-          },
-          {
-            "in": "query",
-            "name": "distributionProfile[deleteAction]",
-            "showCondition": {
-              "name": "distributionProfile[objectType]",
-              "value": "KalturaGenericDistributionProfile"
-            }
-          },
-          {
-            "in": "query",
-            "name": "distributionProfile[fetchReportAction]",
-            "showCondition": {
-              "name": "distributionProfile[objectType]",
-              "value": "KalturaGenericDistributionProfile"
-            }
-          },
-          {
-            "in": "query",
-            "name": "distributionProfile[updateRequiredEntryFields]",
+            "name": "distributionProfile[submitAction][serverUrl]",
             "showCondition": {
               "name": "distributionProfile[objectType]",
               "value": "KalturaGenericDistributionProfile"
@@ -50186,7 +50036,52 @@
           },
           {
             "in": "query",
-            "name": "distributionProfile[updateRequiredMetadataXPaths]",
+            "name": "distributionProfile[submitAction][serverPath]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][username]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][password]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][ftpPassiveMode]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][httpFieldName]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][httpFileName]",
             "showCondition": {
               "name": "distributionProfile[objectType]",
               "value": "KalturaGenericDistributionProfile"
@@ -50870,40 +50765,33 @@
             "type": "integer"
           },
           {
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              10
+            ],
+            "enumLabels": [
+              "FTP",
+              "SCP",
+              "SFTP",
+              "HTTP",
+              "HTTPS",
+              "ASPERA"
+            ],
             "in": "query",
-            "name": "distributionProfile[submitAction]",
+            "name": "distributionProfile[submitAction][protocol]",
             "showCondition": {
               "name": "distributionProfile[objectType]",
               "value": "KalturaGenericDistributionProfile"
-            }
+            },
+            "type": "integer"
           },
           {
             "in": "query",
-            "name": "distributionProfile[updateAction]",
-            "showCondition": {
-              "name": "distributionProfile[objectType]",
-              "value": "KalturaGenericDistributionProfile"
-            }
-          },
-          {
-            "in": "query",
-            "name": "distributionProfile[deleteAction]",
-            "showCondition": {
-              "name": "distributionProfile[objectType]",
-              "value": "KalturaGenericDistributionProfile"
-            }
-          },
-          {
-            "in": "query",
-            "name": "distributionProfile[fetchReportAction]",
-            "showCondition": {
-              "name": "distributionProfile[objectType]",
-              "value": "KalturaGenericDistributionProfile"
-            }
-          },
-          {
-            "in": "query",
-            "name": "distributionProfile[updateRequiredEntryFields]",
+            "name": "distributionProfile[submitAction][serverUrl]",
             "showCondition": {
               "name": "distributionProfile[objectType]",
               "value": "KalturaGenericDistributionProfile"
@@ -50912,7 +50800,52 @@
           },
           {
             "in": "query",
-            "name": "distributionProfile[updateRequiredMetadataXPaths]",
+            "name": "distributionProfile[submitAction][serverPath]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][username]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][password]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][ftpPassiveMode]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][httpFieldName]",
+            "showCondition": {
+              "name": "distributionProfile[objectType]",
+              "value": "KalturaGenericDistributionProfile"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "distributionProfile[submitAction][httpFileName]",
             "showCondition": {
               "name": "distributionProfile[objectType]",
               "value": "KalturaGenericDistributionProfile"
@@ -53576,46 +53509,28 @@
             "type": "integer"
           },
           {
+            "description": "Crop left point",
             "in": "query",
-            "name": "conversionProfile[cropDimensions]"
-          },
-          {
-            "description": "Clipping start position (in miliseconds)",
-            "in": "query",
-            "name": "conversionProfile[clipStart]",
+            "name": "conversionProfile[cropDimensions][left]",
             "type": "integer"
           },
           {
-            "description": "Clipping duration (in miliseconds)",
+            "description": "Crop top point",
             "in": "query",
-            "name": "conversionProfile[clipDuration]",
+            "name": "conversionProfile[cropDimensions][top]",
             "type": "integer"
           },
           {
-            "description": "XSL to transform ingestion MRSS XML",
+            "description": "Crop width",
             "in": "query",
-            "name": "conversionProfile[xslTransformation]",
-            "type": "string"
-          },
-          {
-            "description": "ID of default storage profile to be used for linked net-storage file syncs",
-            "in": "query",
-            "name": "conversionProfile[storageProfileId]",
+            "name": "conversionProfile[cropDimensions][width]",
             "type": "integer"
           },
           {
-            "description": "Media parser type to be used for extract media",
-            "enum": [
-              "0",
-              "1"
-            ],
-            "enumLabels": [
-              "MEDIAINFO",
-              "FFMPEG"
-            ],
+            "description": "Crop height",
             "in": "query",
-            "name": "conversionProfile[mediaParserType]",
-            "type": "string"
+            "name": "conversionProfile[cropDimensions][height]",
+            "type": "integer"
           }
         ],
         "responses": {
@@ -54049,46 +53964,28 @@
             "type": "integer"
           },
           {
+            "description": "Crop left point",
             "in": "query",
-            "name": "conversionProfile[cropDimensions]"
-          },
-          {
-            "description": "Clipping start position (in miliseconds)",
-            "in": "query",
-            "name": "conversionProfile[clipStart]",
+            "name": "conversionProfile[cropDimensions][left]",
             "type": "integer"
           },
           {
-            "description": "Clipping duration (in miliseconds)",
+            "description": "Crop top point",
             "in": "query",
-            "name": "conversionProfile[clipDuration]",
+            "name": "conversionProfile[cropDimensions][top]",
             "type": "integer"
           },
           {
-            "description": "XSL to transform ingestion MRSS XML",
+            "description": "Crop width",
             "in": "query",
-            "name": "conversionProfile[xslTransformation]",
-            "type": "string"
-          },
-          {
-            "description": "ID of default storage profile to be used for linked net-storage file syncs",
-            "in": "query",
-            "name": "conversionProfile[storageProfileId]",
+            "name": "conversionProfile[cropDimensions][width]",
             "type": "integer"
           },
           {
-            "description": "Media parser type to be used for extract media",
-            "enum": [
-              "0",
-              "1"
-            ],
-            "enumLabels": [
-              "MEDIAINFO",
-              "FFMPEG"
-            ],
+            "description": "Crop height",
             "in": "query",
-            "name": "conversionProfile[mediaParserType]",
-            "type": "string"
+            "name": "conversionProfile[cropDimensions][height]",
+            "type": "integer"
           }
         ],
         "responses": {
@@ -54125,14 +54022,6 @@
             "name": "format",
             "type": "integer",
             "x_df_default": 1
-          },
-          {
-            "in": "query",
-            "name": "filter[conversionProfileIdFilter]"
-          },
-          {
-            "in": "query",
-            "name": "filter[assetParamsIdFilter]"
           },
           {
             "in": "query",
@@ -58316,29 +58205,15 @@
             "type": "integer"
           },
           {
+            "description": "The hosts that are recognized",
             "in": "query",
-            "name": "delivery[recognizer]"
-          },
-          {
-            "in": "query",
-            "name": "delivery[tokenizer]"
-          },
-          {
-            "description": "Comma separated list of supported media protocols. f.i. rtmpe",
-            "in": "query",
-            "name": "delivery[mediaProtocols]",
+            "name": "delivery[recognizer][hosts]",
             "type": "string"
           },
           {
-            "description": "priority used for ordering similar delivery profiles",
+            "description": "The URI prefix we use for security",
             "in": "query",
-            "name": "delivery[priority]",
-            "type": "integer"
-          },
-          {
-            "description": "Extra query string parameters that should be added to the url",
-            "in": "query",
-            "name": "delivery[extraParams]",
+            "name": "delivery[recognizer][uriPrefix]",
             "type": "string"
           },
           {
@@ -58875,29 +58750,15 @@
             "type": "integer"
           },
           {
+            "description": "The hosts that are recognized",
             "in": "query",
-            "name": "delivery[recognizer]"
-          },
-          {
-            "in": "query",
-            "name": "delivery[tokenizer]"
-          },
-          {
-            "description": "Comma separated list of supported media protocols. f.i. rtmpe",
-            "in": "query",
-            "name": "delivery[mediaProtocols]",
+            "name": "delivery[recognizer][hosts]",
             "type": "string"
           },
           {
-            "description": "priority used for ordering similar delivery profiles",
+            "description": "The URI prefix we use for security",
             "in": "query",
-            "name": "delivery[priority]",
-            "type": "integer"
-          },
-          {
-            "description": "Extra query string parameters that should be added to the url",
-            "in": "query",
-            "name": "delivery[extraParams]",
+            "name": "delivery[recognizer][uriPrefix]",
             "type": "string"
           },
           {
@@ -60574,24 +60435,6 @@
           },
           {
             "in": "query",
-            "name": "resource[resource]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            }
-          },
-          {
-            "description": "The asset params to associate with the reaource",
-            "in": "query",
-            "name": "resource[assetParamsId]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            },
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "resource[resources]",
             "showCondition": {
               "name": "resource[objectType]",
@@ -62169,24 +62012,6 @@
           },
           {
             "in": "query",
-            "name": "resource[resource]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            }
-          },
-          {
-            "description": "The asset params to associate with the reaource",
-            "in": "query",
-            "name": "resource[assetParamsId]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            },
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "resource[resources]",
             "showCondition": {
               "name": "resource[objectType]",
@@ -62371,81 +62196,6 @@
           },
           {
             "in": "query",
-            "name": "dropFolder[fileHandlerConfig]"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[tags]",
-            "type": "string"
-          },
-          {
-            "enum": [
-              "1",
-              "2",
-              "3",
-              "4",
-              "5",
-              "6"
-            ],
-            "enumLabels": [
-              "ERROR_CONNECT",
-              "ERROR_AUTENTICATE",
-              "ERROR_GET_PHISICAL_FILE_LIST",
-              "ERROR_GET_DB_FILE_LIST",
-              "DROP_FOLDER_APP_ERROR",
-              "CONTENT_MATCH_POLICY_UNDEFINED"
-            ],
-            "in": "query",
-            "name": "dropFolder[errorCode]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[errorDescription]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[ignoreFileNamePatterns]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[lastAccessedAt]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[incremental]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[lastFileTimestamp]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[metadataProfileId]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[categoriesMetadataFieldName]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[enforceEntitlement]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[shouldValidateKS]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
             "name": "dropFolder[itemHandlingLimit]",
             "showCondition": {
               "name": "dropFolder[objectType]",
@@ -62455,11 +62205,84 @@
           },
           {
             "in": "query",
-            "name": "dropFolder[feedItemInfo]",
+            "name": "dropFolder[feedItemInfo][itemXPath]",
             "showCondition": {
               "name": "dropFolder[objectType]",
               "value": "KalturaFeedDropFolder"
-            }
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemPublishDateXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemUniqueIdentifierXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentFileSizeXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentUrlXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentBitrateXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemHashXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentXpath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][contentBitrateAttributeName]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
           }
         ],
         "responses": {
@@ -62959,81 +62782,6 @@
           },
           {
             "in": "query",
-            "name": "dropFolder[fileHandlerConfig]"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[tags]",
-            "type": "string"
-          },
-          {
-            "enum": [
-              "1",
-              "2",
-              "3",
-              "4",
-              "5",
-              "6"
-            ],
-            "enumLabels": [
-              "ERROR_CONNECT",
-              "ERROR_AUTENTICATE",
-              "ERROR_GET_PHISICAL_FILE_LIST",
-              "ERROR_GET_DB_FILE_LIST",
-              "DROP_FOLDER_APP_ERROR",
-              "CONTENT_MATCH_POLICY_UNDEFINED"
-            ],
-            "in": "query",
-            "name": "dropFolder[errorCode]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[errorDescription]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[ignoreFileNamePatterns]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[lastAccessedAt]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[incremental]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[lastFileTimestamp]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[metadataProfileId]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[categoriesMetadataFieldName]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[enforceEntitlement]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "dropFolder[shouldValidateKS]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
             "name": "dropFolder[itemHandlingLimit]",
             "showCondition": {
               "name": "dropFolder[objectType]",
@@ -63043,11 +62791,84 @@
           },
           {
             "in": "query",
-            "name": "dropFolder[feedItemInfo]",
+            "name": "dropFolder[feedItemInfo][itemXPath]",
             "showCondition": {
               "name": "dropFolder[objectType]",
               "value": "KalturaFeedDropFolder"
-            }
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemPublishDateXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemUniqueIdentifierXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentFileSizeXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentUrlXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentBitrateXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemHashXPath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][itemContentXpath]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dropFolder[feedItemInfo][contentBitrateAttributeName]",
+            "showCondition": {
+              "name": "dropFolder[objectType]",
+              "value": "KalturaFeedDropFolder"
+            },
+            "type": "string"
           }
         ],
         "responses": {
@@ -64340,27 +64161,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -64919,97 +64731,6 @@
             "type": "string"
           },
           {
-            "in": "query",
-            "name": "eventNotificationTemplate[to]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[cc]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[bcc]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[replyTo]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "description": "Define the email priority",
-            "enum": [
-              1,
-              3,
-              5
-            ],
-            "enumLabels": [
-              "HIGH",
-              "NORMAL",
-              "LOW"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[priority]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "Email address that a reading confirmation will be sent",
-            "in": "query",
-            "name": "eventNotificationTemplate[confirmReadingTo]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Hostname to use in Message-Id and Received headers and as default HELLO string. \n\t If empty, the value returned by SERVER_NAME is used or 'localhost.localdomain'.",
-            "in": "query",
-            "name": "eventNotificationTemplate[hostname]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Sets the message ID to be used in the Message-Id header.\n\t If empty, a unique id will be generated.",
-            "in": "query",
-            "name": "eventNotificationTemplate[messageID]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[customHeaders]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "array"
-          },
-          {
             "description": "Remote server URL",
             "in": "query",
             "name": "eventNotificationTemplate[url]",
@@ -65040,207 +64761,6 @@
               "value": "KalturaHttpNotificationTemplate"
             },
             "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[data]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            }
-          },
-          {
-            "description": "The maximum number of seconds to allow cURL functions to execute.",
-            "in": "query",
-            "name": "eventNotificationTemplate[timeout]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "The number of seconds to wait while trying to connect.\n\t Must be larger than zero.",
-            "in": "query",
-            "name": "eventNotificationTemplate[connectTimeout]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "A username to use for the connection.",
-            "in": "query",
-            "name": "eventNotificationTemplate[username]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "A password to use for the connection.",
-            "in": "query",
-            "name": "eventNotificationTemplate[password]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The HTTP authentication method to use.",
-            "enum": [
-              -18,
-              -17,
-              1,
-              2,
-              4,
-              8
-            ],
-            "enumLabels": [
-              "ANYSAFE",
-              "ANY",
-              "BASIC",
-              "DIGEST",
-              "GSSNEGOTIATE",
-              "NTLM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[authenticationMethod]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "The SSL version (2 or 3) to use.\n\t By default PHP will try to determine this itself, although in some cases this must be set manually.",
-            "enum": [
-              2,
-              3
-            ],
-            "enumLabels": [
-              "V2",
-              "V3"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslVersion]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "SSL certificate to verify the peer with.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificate]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The format of the certificate.",
-            "enum": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "enumLabels": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificateType]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The password required to use the certificate.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificatePassword]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The identifier for the crypto engine of the private SSL key specified in ssl key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslEngine]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The identifier for the crypto engine used for asymmetric crypto operations.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslEngineDefault]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The key type of the private SSL key specified in ssl key - PEM / DER / ENG.",
-            "enum": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "enumLabels": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKeyType]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Private SSL key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKey]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The secret password needed to use the private SSL key specified in ssl key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKeyPassword]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[customHeaders]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "array"
           }
         ],
         "responses": {
@@ -65530,97 +65050,6 @@
             "type": "string"
           },
           {
-            "in": "query",
-            "name": "eventNotificationTemplate[to]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[cc]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[bcc]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[replyTo]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "description": "Define the email priority",
-            "enum": [
-              1,
-              3,
-              5
-            ],
-            "enumLabels": [
-              "HIGH",
-              "NORMAL",
-              "LOW"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[priority]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "Email address that a reading confirmation will be sent",
-            "in": "query",
-            "name": "eventNotificationTemplate[confirmReadingTo]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Hostname to use in Message-Id and Received headers and as default HELLO string. \n\t If empty, the value returned by SERVER_NAME is used or 'localhost.localdomain'.",
-            "in": "query",
-            "name": "eventNotificationTemplate[hostname]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Sets the message ID to be used in the Message-Id header.\n\t If empty, a unique id will be generated.",
-            "in": "query",
-            "name": "eventNotificationTemplate[messageID]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[customHeaders]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "array"
-          },
-          {
             "description": "Remote server URL",
             "in": "query",
             "name": "eventNotificationTemplate[url]",
@@ -65651,207 +65080,6 @@
               "value": "KalturaHttpNotificationTemplate"
             },
             "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[data]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            }
-          },
-          {
-            "description": "The maximum number of seconds to allow cURL functions to execute.",
-            "in": "query",
-            "name": "eventNotificationTemplate[timeout]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "The number of seconds to wait while trying to connect.\n\t Must be larger than zero.",
-            "in": "query",
-            "name": "eventNotificationTemplate[connectTimeout]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "A username to use for the connection.",
-            "in": "query",
-            "name": "eventNotificationTemplate[username]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "A password to use for the connection.",
-            "in": "query",
-            "name": "eventNotificationTemplate[password]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The HTTP authentication method to use.",
-            "enum": [
-              -18,
-              -17,
-              1,
-              2,
-              4,
-              8
-            ],
-            "enumLabels": [
-              "ANYSAFE",
-              "ANY",
-              "BASIC",
-              "DIGEST",
-              "GSSNEGOTIATE",
-              "NTLM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[authenticationMethod]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "The SSL version (2 or 3) to use.\n\t By default PHP will try to determine this itself, although in some cases this must be set manually.",
-            "enum": [
-              2,
-              3
-            ],
-            "enumLabels": [
-              "V2",
-              "V3"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslVersion]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "SSL certificate to verify the peer with.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificate]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The format of the certificate.",
-            "enum": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "enumLabels": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificateType]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The password required to use the certificate.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificatePassword]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The identifier for the crypto engine of the private SSL key specified in ssl key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslEngine]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The identifier for the crypto engine used for asymmetric crypto operations.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslEngineDefault]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The key type of the private SSL key specified in ssl key - PEM / DER / ENG.",
-            "enum": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "enumLabels": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKeyType]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Private SSL key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKey]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The secret password needed to use the private SSL key specified in ssl key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKeyPassword]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[customHeaders]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "array"
           }
         ],
         "responses": {
@@ -66871,97 +66099,6 @@
             "type": "string"
           },
           {
-            "in": "query",
-            "name": "eventNotificationTemplate[to]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[cc]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[bcc]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[replyTo]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            }
-          },
-          {
-            "description": "Define the email priority",
-            "enum": [
-              1,
-              3,
-              5
-            ],
-            "enumLabels": [
-              "HIGH",
-              "NORMAL",
-              "LOW"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[priority]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "Email address that a reading confirmation will be sent",
-            "in": "query",
-            "name": "eventNotificationTemplate[confirmReadingTo]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Hostname to use in Message-Id and Received headers and as default HELLO string. \n\t If empty, the value returned by SERVER_NAME is used or 'localhost.localdomain'.",
-            "in": "query",
-            "name": "eventNotificationTemplate[hostname]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Sets the message ID to be used in the Message-Id header.\n\t If empty, a unique id will be generated.",
-            "in": "query",
-            "name": "eventNotificationTemplate[messageID]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[customHeaders]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaEmailNotificationTemplate"
-            },
-            "type": "array"
-          },
-          {
             "description": "Remote server URL",
             "in": "query",
             "name": "eventNotificationTemplate[url]",
@@ -66992,207 +66129,6 @@
               "value": "KalturaHttpNotificationTemplate"
             },
             "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[data]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            }
-          },
-          {
-            "description": "The maximum number of seconds to allow cURL functions to execute.",
-            "in": "query",
-            "name": "eventNotificationTemplate[timeout]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "The number of seconds to wait while trying to connect.\n\t Must be larger than zero.",
-            "in": "query",
-            "name": "eventNotificationTemplate[connectTimeout]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "A username to use for the connection.",
-            "in": "query",
-            "name": "eventNotificationTemplate[username]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "A password to use for the connection.",
-            "in": "query",
-            "name": "eventNotificationTemplate[password]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The HTTP authentication method to use.",
-            "enum": [
-              -18,
-              -17,
-              1,
-              2,
-              4,
-              8
-            ],
-            "enumLabels": [
-              "ANYSAFE",
-              "ANY",
-              "BASIC",
-              "DIGEST",
-              "GSSNEGOTIATE",
-              "NTLM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[authenticationMethod]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "The SSL version (2 or 3) to use.\n\t By default PHP will try to determine this itself, although in some cases this must be set manually.",
-            "enum": [
-              2,
-              3
-            ],
-            "enumLabels": [
-              "V2",
-              "V3"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslVersion]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "integer"
-          },
-          {
-            "description": "SSL certificate to verify the peer with.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificate]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The format of the certificate.",
-            "enum": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "enumLabels": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificateType]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The password required to use the certificate.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslCertificatePassword]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The identifier for the crypto engine of the private SSL key specified in ssl key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslEngine]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The identifier for the crypto engine used for asymmetric crypto operations.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslEngineDefault]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The key type of the private SSL key specified in ssl key - PEM / DER / ENG.",
-            "enum": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "enumLabels": [
-              "DER",
-              "ENG",
-              "PEM"
-            ],
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKeyType]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "Private SSL key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKey]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "description": "The secret password needed to use the private SSL key specified in ssl key.",
-            "in": "query",
-            "name": "eventNotificationTemplate[sslKeyPassword]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "eventNotificationTemplate[customHeaders]",
-            "showCondition": {
-              "name": "eventNotificationTemplate[objectType]",
-              "value": "KalturaHttpNotificationTemplate"
-            },
-            "type": "array"
           }
         ],
         "responses": {
@@ -68297,33 +67233,6 @@
               "value": "KalturaFileSyncResource"
             },
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "contentResource[resource]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            }
-          },
-          {
-            "in": "query",
-            "name": "contentResource[operationAttributes]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "array"
-          },
-          {
-            "description": "ID of alternative asset params to be used instead of the system default flavor params",
-            "in": "query",
-            "name": "contentResource[assetParamsId]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -69682,33 +68591,6 @@
               "value": "KalturaFileSyncResource"
             },
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "contentResource[resource]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            }
-          },
-          {
-            "in": "query",
-            "name": "contentResource[operationAttributes]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "array"
-          },
-          {
-            "description": "ID of alternative asset params to be used instead of the system default flavor params",
-            "in": "query",
-            "name": "contentResource[assetParamsId]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -71670,25 +70552,6 @@
             "type": "string"
           },
           {
-            "in": "query",
-            "name": "data[providerData]"
-          },
-          {
-            "enum": [
-              "1"
-            ],
-            "enumLabels": [
-              "MANUAL"
-            ],
-            "in": "query",
-            "name": "data[triggerType]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "data[triggerData]"
-          },
-          {
             "description": "",
             "enum": [
               "contentDistribution.EntryDistribution",
@@ -72215,23 +71078,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "liveChannel[recordingOptions]"
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "liveChannel[liveStatus]",
+            "name": "liveChannel[recordingOptions][shouldCopyEntitlement]",
             "type": "integer"
           }
         ],
@@ -72838,23 +71696,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "liveChannel[recordingOptions]"
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "liveChannel[liveStatus]",
+            "name": "liveChannel[recordingOptions][shouldCopyEntitlement]",
             "type": "integer"
           }
         ],
@@ -74003,23 +72856,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "liveStreamEntry[recordingOptions]"
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "liveStreamEntry[liveStatus]",
+            "name": "liveStreamEntry[recordingOptions][shouldCopyEntitlement]",
             "type": "integer"
           },
           {
@@ -75091,23 +73939,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "liveStreamEntry[recordingOptions]"
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "liveStreamEntry[liveStatus]",
+            "name": "liveStreamEntry[recordingOptions][shouldCopyEntitlement]",
             "type": "integer"
           }
         ],
@@ -75562,27 +74405,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "entry[recordingOptions]",
-            "showCondition": {
-              "name": "entry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "entry[liveStatus]",
+            "name": "entry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "entry[objectType]",
               "value": "KalturaLiveEntry"
@@ -75640,24 +74474,6 @@
             ],
             "in": "query",
             "name": "resource[objectType]"
-          },
-          {
-            "in": "query",
-            "name": "resource[resource]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            }
-          },
-          {
-            "description": "The asset params to associate with the reaource",
-            "in": "query",
-            "name": "resource[assetParamsId]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -75994,27 +74810,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -76354,27 +75161,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -76700,27 +75498,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -77053,27 +75842,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -77572,27 +76352,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -77925,27 +76696,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -78142,22 +76904,6 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[objectData]"
-          },
-          {
-            "description": "Recipients of the email for bulk upload success/failure",
-            "in": "query",
-            "name": "bulkUploadData[emailRecipients]",
-            "type": "string"
-          },
-          {
-            "description": "Number of objects that finished on error status",
-            "in": "query",
-            "name": "bulkUploadData[numOfErrorObjects]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "bulkUploadData[columns]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
@@ -78167,19 +76913,12 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[filter]",
+            "name": "bulkUploadData[filter][orderBy]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
               "value": "KalturaBulkUploadFilterJobData"
-            }
-          },
-          {
-            "in": "query",
-            "name": "bulkUploadData[templateObject]",
-            "showCondition": {
-              "name": "bulkUploadData[objectType]",
-              "value": "KalturaBulkUploadFilterJobData"
-            }
+            },
+            "type": "string"
           },
           {
             "description": "Selected profile id for all bulk entries",
@@ -79415,27 +78154,18 @@
             "type": "number"
           },
           {
-            "in": "query",
-            "name": "mediaEntry[recordingOptions]",
-            "showCondition": {
-              "name": "mediaEntry[objectType]",
-              "value": "KalturaLiveEntry"
-            }
-          },
-          {
-            "description": "the status of the entry of type LiveEntryStatus",
             "enum": [
+              -1,
               0,
-              1,
-              2
+              1
             ],
             "enumLabels": [
-              "STOPPED",
-              "PLAYABLE",
-              "BROADCASTING"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "mediaEntry[liveStatus]",
+            "name": "mediaEntry[recordingOptions][shouldCopyEntitlement]",
             "showCondition": {
               "name": "mediaEntry[objectType]",
               "value": "KalturaLiveEntry"
@@ -79493,24 +78223,6 @@
             ],
             "in": "query",
             "name": "resource[objectType]"
-          },
-          {
-            "in": "query",
-            "name": "resource[resource]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            }
-          },
-          {
-            "description": "The asset params to associate with the reaource",
-            "in": "query",
-            "name": "resource[assetParamsId]",
-            "showCondition": {
-              "name": "resource[objectType]",
-              "value": "KalturaAssetParamsResourceContainer"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -87827,24 +86539,6 @@
             "in": "query",
             "name": "addResponseProfile[fields]",
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "addResponseProfile[filter]"
-          },
-          {
-            "in": "query",
-            "name": "addResponseProfile[pager]"
-          },
-          {
-            "in": "query",
-            "name": "addResponseProfile[relatedProfiles]",
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "name": "addResponseProfile[mappings]",
-            "type": "array"
           }
         ],
         "responses": {
@@ -87919,24 +86613,6 @@
             "in": "query",
             "name": "profile[fields]",
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "profile[filter]"
-          },
-          {
-            "in": "query",
-            "name": "profile[pager]"
-          },
-          {
-            "in": "query",
-            "name": "profile[relatedProfiles]",
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "name": "profile[mappings]",
-            "type": "array"
           }
         ],
         "responses": {
@@ -88275,24 +86951,6 @@
             "in": "query",
             "name": "updateResponseProfile[fields]",
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "updateResponseProfile[filter]"
-          },
-          {
-            "in": "query",
-            "name": "updateResponseProfile[pager]"
-          },
-          {
-            "in": "query",
-            "name": "updateResponseProfile[relatedProfiles]",
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "name": "updateResponseProfile[mappings]",
-            "type": "array"
           }
         ],
         "responses": {
@@ -88438,23 +87096,8 @@
           },
           {
             "in": "query",
-            "name": "scheduledTaskProfile[objectFilter]"
-          },
-          {
-            "in": "query",
-            "name": "scheduledTaskProfile[objectTasks]",
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "name": "scheduledTaskProfile[lastExecutionStartedAt]",
-            "type": "integer"
-          },
-          {
-            "description": "The maximum number of result count allowed to be processed by this profile per execution",
-            "in": "query",
-            "name": "scheduledTaskProfile[maxTotalCountAllowed]",
-            "type": "integer"
+            "name": "scheduledTaskProfile[objectFilter][orderBy]",
+            "type": "string"
           }
         ],
         "responses": {
@@ -88852,23 +87495,8 @@
           },
           {
             "in": "query",
-            "name": "scheduledTaskProfile[objectFilter]"
-          },
-          {
-            "in": "query",
-            "name": "scheduledTaskProfile[objectTasks]",
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "name": "scheduledTaskProfile[lastExecutionStartedAt]",
-            "type": "integer"
-          },
-          {
-            "description": "The maximum number of result count allowed to be processed by this profile per execution",
-            "in": "query",
-            "name": "scheduledTaskProfile[maxTotalCountAllowed]",
-            "type": "integer"
+            "name": "scheduledTaskProfile[objectFilter][orderBy]",
+            "type": "string"
           }
         ],
         "responses": {
@@ -93947,10 +92575,6 @@
             "type": "string"
           },
           {
-            "in": "query",
-            "name": "usageFilter[advancedSearch]"
-          },
-          {
             "description": "The number of objects to retrieve. (Default is 30, maximum page size is 500).",
             "in": "query",
             "name": "pager[pageSize]",
@@ -94631,363 +93255,40 @@
           },
           {
             "in": "query",
-            "name": "configuration[autoModerateEntryFilter]"
-          },
-          {
-            "in": "query",
-            "name": "configuration[logoutUrl]",
+            "name": "configuration[autoModerateEntryFilter][freeText]",
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "configuration[defaultEntitlementEnforcement]",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "configuration[cacheFlavorVersion]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "configuration[apiAccessControlId]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "configuration[defaultDeliveryType]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "configuration[defaultEmbedCodeType]",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "configuration[customDeliveryTypes]",
-            "type": "array"
-          },
-          {
-            "in": "query",
-            "name": "configuration[restrictEntryByMetadata]",
-            "type": "boolean"
           },
           {
             "enum": [
-              "aa",
-              "ab",
-              "af",
-              "am",
-              "ar",
-              "as",
-              "ay",
-              "az",
-              "ba",
-              "be",
-              "bg",
-              "bh",
-              "bi",
-              "bn",
-              "bo",
-              "br",
-              "ca",
-              "co",
-              "cs",
-              "cy",
-              "da",
-              "de",
-              "dz",
-              "el",
-              "en",
-              "en_gb",
-              "en_us",
-              "eo",
-              "es",
-              "et",
-              "eu",
-              "fa",
-              "fi",
-              "fj",
-              "fo",
-              "fr",
-              "fy",
-              "ga",
-              "gd",
-              "gl",
-              "gn",
-              "gu",
-              "gv",
-              "ha",
-              "he",
-              "hi",
-              "hr",
-              "hu",
-              "hy",
-              "ia",
-              "id",
-              "ie",
-              "ik",
-              "in",
-              "is",
-              "it",
-              "iu",
-              "iw",
-              "ja",
-              "ji",
-              "jv",
-              "ka",
-              "kk",
-              "kl",
-              "km",
-              "kn",
-              "ko",
-              "ks",
-              "ku",
-              "ky",
-              "la",
-              "li",
-              "ln",
-              "lo",
-              "lt",
-              "lv",
-              "mg",
-              "mi",
-              "mk",
-              "ml",
-              "mn",
-              "mo",
-              "mr",
-              "ms",
-              "mt",
-              "multilingual",
-              "my",
-              "na",
-              "ne",
-              "nl",
-              "no",
-              "oc",
-              "om",
-              "or",
-              "pa",
-              "pl",
-              "ps",
-              "pt",
-              "qu",
-              "rm",
-              "rn",
-              "ro",
-              "ru",
-              "rw",
-              "sa",
-              "sd",
-              "sg",
-              "sh",
-              "si",
-              "sk",
-              "sl",
-              "sm",
-              "sn",
-              "so",
-              "sq",
-              "sr",
-              "ss",
-              "st",
-              "su",
-              "sv",
-              "sw",
-              "ta",
-              "te",
-              "tg",
-              "th",
-              "ti",
-              "tk",
-              "tl",
-              "tn",
-              "to",
-              "tr",
-              "ts",
-              "tt",
-              "tw",
-              "ug",
-              "uk",
-              "ur",
-              "uz",
-              "vi",
-              "vo",
-              "wo",
-              "xh",
-              "yi",
-              "yo",
-              "zh",
-              "zu"
+              -1,
+              0,
+              1
             ],
             "enumLabels": [
-              "AA",
-              "AB",
-              "AF",
-              "AM",
-              "AR",
-              "AS_",
-              "AY",
-              "AZ",
-              "BA",
-              "BE",
-              "BG",
-              "BH",
-              "BI",
-              "BN",
-              "BO",
-              "BR",
-              "CA",
-              "CO",
-              "CS",
-              "CY",
-              "DA",
-              "DE",
-              "DZ",
-              "EL",
-              "EN",
-              "EN_GB",
-              "EN_US",
-              "EO",
-              "ES",
-              "ET",
-              "EU",
-              "FA",
-              "FI",
-              "FJ",
-              "FO",
-              "FR",
-              "FY",
-              "GA",
-              "GD",
-              "GL",
-              "GN",
-              "GU",
-              "GV",
-              "HA",
-              "HE",
-              "HI",
-              "HR",
-              "HU",
-              "HY",
-              "IA",
-              "ID",
-              "IE",
-              "IK",
-              "IN",
-              "IS",
-              "IT",
-              "IU",
-              "IW",
-              "JA",
-              "JI",
-              "JV",
-              "KA",
-              "KK",
-              "KL",
-              "KM",
-              "KN",
-              "KO",
-              "KS",
-              "KU",
-              "KY",
-              "LA",
-              "LI",
-              "LN",
-              "LO",
-              "LT",
-              "LV",
-              "MG",
-              "MI",
-              "MK",
-              "ML",
-              "MN",
-              "MO",
-              "MR",
-              "MS",
-              "MT",
-              "MU",
-              "MY",
-              "NA",
-              "NE",
-              "NL",
-              "NO",
-              "OC",
-              "OM",
-              "OR_",
-              "PA",
-              "PL",
-              "PS",
-              "PT",
-              "QU",
-              "RM",
-              "RN",
-              "RO",
-              "RU",
-              "RW",
-              "SA",
-              "SD",
-              "SG",
-              "SH",
-              "SI",
-              "SK",
-              "SL",
-              "SM",
-              "SN",
-              "SO",
-              "SQ",
-              "SR",
-              "SS",
-              "ST",
-              "SU",
-              "SV",
-              "SW",
-              "TA",
-              "TE",
-              "TG",
-              "TH",
-              "TI",
-              "TK",
-              "TL",
-              "TN",
-              "TO",
-              "TR",
-              "TS",
-              "TT",
-              "TW",
-              "UG",
-              "UK",
-              "UR",
-              "UZ",
-              "VI",
-              "VO",
-              "WO",
-              "XH",
-              "YI",
-              "YO",
-              "ZH",
-              "ZU"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "configuration[language]",
-            "type": "string"
+            "name": "configuration[autoModerateEntryFilter][isRoot]",
+            "type": "integer"
           },
           {
             "in": "query",
-            "name": "configuration[audioThumbEntryId]",
+            "name": "configuration[autoModerateEntryFilter][categoriesFullNameIn]",
             "type": "string"
           },
           {
+            "description": "All entries within this categoy or in child categories",
             "in": "query",
-            "name": "configuration[liveThumbEntryId]",
+            "name": "configuration[autoModerateEntryFilter][categoryAncestorIdIn]",
             "type": "string"
           },
           {
+            "description": "The id of the original entry",
             "in": "query",
-            "name": "configuration[timeAlignedRenditions]",
-            "type": "boolean"
+            "name": "configuration[autoModerateEntryFilter][redirectFromEntryId]",
+            "type": "string"
           }
         ],
         "responses": {
@@ -95212,10 +93513,6 @@
             "in": "query",
             "name": "tagFilter[orderBy]",
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "tagFilter[advancedSearch]"
           },
           {
             "description": "The number of objects to retrieve. (Default is 30, maximum page size is 500).",
@@ -97351,33 +95648,6 @@
               "value": "KalturaFileSyncResource"
             },
             "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "contentResource[resource]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            }
-          },
-          {
-            "in": "query",
-            "name": "contentResource[operationAttributes]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "array"
-          },
-          {
-            "description": "ID of alternative asset params to be used instead of the system default flavor params",
-            "in": "query",
-            "name": "contentResource[assetParamsId]",
-            "showCondition": {
-              "name": "contentResource[objectType]",
-              "value": "KalturaOperationResource"
-            },
-            "type": "integer"
           },
           {
             "in": "query",
@@ -100417,22 +98687,6 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[objectData]"
-          },
-          {
-            "description": "Recipients of the email for bulk upload success/failure",
-            "in": "query",
-            "name": "bulkUploadData[emailRecipients]",
-            "type": "string"
-          },
-          {
-            "description": "Number of objects that finished on error status",
-            "in": "query",
-            "name": "bulkUploadData[numOfErrorObjects]",
-            "type": "integer"
-          },
-          {
-            "in": "query",
             "name": "bulkUploadData[columns]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
@@ -100442,19 +98696,12 @@
           },
           {
             "in": "query",
-            "name": "bulkUploadData[filter]",
+            "name": "bulkUploadData[filter][orderBy]",
             "showCondition": {
               "name": "bulkUploadData[objectType]",
               "value": "KalturaBulkUploadFilterJobData"
-            }
-          },
-          {
-            "in": "query",
-            "name": "bulkUploadData[templateObject]",
-            "showCondition": {
-              "name": "bulkUploadData[objectType]",
-              "value": "KalturaBulkUploadFilterJobData"
-            }
+            },
+            "type": "string"
           }
         ],
         "responses": {
@@ -103138,24 +101385,40 @@
           },
           {
             "in": "query",
-            "name": "virusScanProfile[entryFilter]"
+            "name": "virusScanProfile[entryFilter][freeText]",
+            "type": "string"
           },
           {
             "enum": [
+              -1,
               0,
-              1,
-              2,
-              3
+              1
             ],
             "enumLabels": [
-              "NONE",
-              "DELETE",
-              "CLEAN_NONE",
-              "CLEAN_DELETE"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "virusScanProfile[actionIfInfected]",
+            "name": "virusScanProfile[entryFilter][isRoot]",
             "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "virusScanProfile[entryFilter][categoriesFullNameIn]",
+            "type": "string"
+          },
+          {
+            "description": "All entries within this categoy or in child categories",
+            "in": "query",
+            "name": "virusScanProfile[entryFilter][categoryAncestorIdIn]",
+            "type": "string"
+          },
+          {
+            "description": "The id of the original entry",
+            "in": "query",
+            "name": "virusScanProfile[entryFilter][redirectFromEntryId]",
+            "type": "string"
           }
         ],
         "responses": {
@@ -103500,24 +101763,40 @@
           },
           {
             "in": "query",
-            "name": "virusScanProfile[entryFilter]"
+            "name": "virusScanProfile[entryFilter][freeText]",
+            "type": "string"
           },
           {
             "enum": [
+              -1,
               0,
-              1,
-              2,
-              3
+              1
             ],
             "enumLabels": [
-              "NONE",
-              "DELETE",
-              "CLEAN_NONE",
-              "CLEAN_DELETE"
+              "NULL_VALUE",
+              "FALSE_VALUE",
+              "TRUE_VALUE"
             ],
             "in": "query",
-            "name": "virusScanProfile[actionIfInfected]",
+            "name": "virusScanProfile[entryFilter][isRoot]",
             "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "virusScanProfile[entryFilter][categoriesFullNameIn]",
+            "type": "string"
+          },
+          {
+            "description": "All entries within this categoy or in child categories",
+            "in": "query",
+            "name": "virusScanProfile[entryFilter][categoryAncestorIdIn]",
+            "type": "string"
+          },
+          {
+            "description": "The id of the original entry",
+            "in": "query",
+            "name": "virusScanProfile[entryFilter][redirectFromEntryId]",
+            "type": "string"
           }
         ],
         "responses": {
