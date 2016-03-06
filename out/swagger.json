@@ -30821,6 +30821,7 @@
     "/service/accesscontrol/action/add": {
       "get": {
         "description": "Add new Access Control Profile\n\t ",
+        "operationId": "accessControl.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -30895,6 +30896,7 @@
     "/service/accesscontrol/action/delete": {
       "get": {
         "description": "Delete Access Control Profile by id\n\t ",
+        "operationId": "accessControl.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -30934,6 +30936,7 @@
     "/service/accesscontrol/action/get": {
       "get": {
         "description": "Get Access Control Profile by id\n\t ",
+        "operationId": "accessControl.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -30976,6 +30979,7 @@
     "/service/accesscontrol/action/list": {
       "get": {
         "description": "List Access Control Profiles by filter and pager\n\t ",
+        "operationId": "accessControl.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31053,6 +31057,7 @@
     "/service/accesscontrol/action/update": {
       "get": {
         "description": "Update Access Control Profile by id\n\t ",
+        "operationId": "accessControl.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31134,6 +31139,7 @@
     "/service/accesscontrolprofile/action/add": {
       "get": {
         "description": "Add new access control profile\n\t ",
+        "operationId": "accessControlProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31208,6 +31214,7 @@
     "/service/accesscontrolprofile/action/delete": {
       "get": {
         "description": "Delete access control profile by id\n\t ",
+        "operationId": "accessControlProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31247,6 +31254,7 @@
     "/service/accesscontrolprofile/action/get": {
       "get": {
         "description": "Get access control profile by id\n\t ",
+        "operationId": "accessControlProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31289,6 +31297,7 @@
     "/service/accesscontrolprofile/action/list": {
       "get": {
         "description": "List access control profiles by filter and pager\n\t ",
+        "operationId": "accessControlProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31376,6 +31385,7 @@
     "/service/accesscontrolprofile/action/update": {
       "get": {
         "description": "Update access control profile by id\n\t ",
+        "operationId": "accessControlProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31457,6 +31467,7 @@
     "/service/adminconsole_entryadmin/action/get": {
       "get": {
         "description": "Get base entry by ID with no filters.\n\t ",
+        "operationId": "entryAdmin.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31506,6 +31517,7 @@
     "/service/adminconsole_entryadmin/action/getByFlavorId": {
       "get": {
         "description": "Get base entry by flavor ID with no filters.\n\t ",
+        "operationId": "entryAdmin.getByFlavorId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31555,6 +31567,7 @@
     "/service/adminconsole_entryadmin/action/getTracks": {
       "get": {
         "description": "Get base entry by ID with no filters.\n\t ",
+        "operationId": "entryAdmin.getTracks",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31597,6 +31610,7 @@
     "/service/adminconsole_entryadmin/action/restoreDeletedEntry": {
       "get": {
         "description": "Restore deleted entry.\n\t ",
+        "operationId": "entryAdmin.restoreDeletedEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31639,6 +31653,7 @@
     "/service/adminconsole_reportadmin/action/add": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31704,6 +31719,7 @@
     "/service/adminconsole_reportadmin/action/delete": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31743,6 +31759,7 @@
     "/service/adminconsole_reportadmin/action/executeDebug": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.executeDebug",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31785,6 +31802,7 @@
     "/service/adminconsole_reportadmin/action/get": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31827,6 +31845,7 @@
     "/service/adminconsole_reportadmin/action/getCsvUrl": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.getCsvUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31873,6 +31892,7 @@
     "/service/adminconsole_reportadmin/action/getParameters": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.getParameters",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31912,6 +31932,7 @@
     "/service/adminconsole_reportadmin/action/list": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -31989,6 +32010,7 @@
     "/service/adminconsole_reportadmin/action/update": {
       "get": {
         "description": "",
+        "operationId": "reportAdmin.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32061,6 +32083,7 @@
     "/service/adminconsole_uiconfadmin/action/add": {
       "get": {
         "description": "Adds new UIConf with no partner limitation\n\t ",
+        "operationId": "uiConfAdmin.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32241,6 +32264,7 @@
     "/service/adminconsole_uiconfadmin/action/delete": {
       "get": {
         "description": "Delete an existing UIConf with no partner limitation\n\t ",
+        "operationId": "uiConfAdmin.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32280,6 +32304,7 @@
     "/service/adminconsole_uiconfadmin/action/get": {
       "get": {
         "description": "Retrieve a UIConf by id with no partner limitation\n\t ",
+        "operationId": "uiConfAdmin.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32322,6 +32347,7 @@
     "/service/adminconsole_uiconfadmin/action/list": {
       "get": {
         "description": "Retrieve a list of available UIConfs  with no partner limitation\n\t ",
+        "operationId": "uiConfAdmin.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32530,6 +32556,7 @@
     "/service/adminconsole_uiconfadmin/action/update": {
       "get": {
         "description": "Update an existing UIConf with no partner limitation\n\t ",
+        "operationId": "uiConfAdmin.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32717,6 +32744,7 @@
     "/service/adminuser/action/login": {
       "get": {
         "description": "Get an admin session using admin email and password (Used for login to the KMC application)\n\t ",
+        "operationId": "adminUser.login",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32770,6 +32798,7 @@
     "/service/adminuser/action/resetPassword": {
       "get": {
         "description": "Reset admin user password and send it to the users email address\n\t ",
+        "operationId": "adminUser.resetPassword",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32809,6 +32838,7 @@
     "/service/adminuser/action/setInitialPassword": {
       "get": {
         "description": "Set initial users password\n\t ",
+        "operationId": "adminUser.setInitialPassword",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32855,6 +32885,7 @@
     "/service/adminuser/action/updatePassword": {
       "get": {
         "description": "Update admin user password and email\n\t ",
+        "operationId": "adminUser.updatePassword",
         "parameters": [
           {
             "description": "The format of the response",
@@ -32918,6 +32949,7 @@
     "/service/annotation_annotation/action/add": {
       "get": {
         "description": "Allows you to add an annotation object associated with an entry\n\t ",
+        "operationId": "annotation.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -33326,6 +33358,7 @@
     "/service/annotation_annotation/action/addFromBulk": {
       "get": {
         "description": "Allows you to add multiple cue points objects by uploading XML that contains multiple cue point definitions\n\t ",
+        "operationId": "annotation.addFromBulk",
         "parameters": [
           {
             "description": "The format of the response",
@@ -33361,6 +33394,7 @@
     "/service/annotation_annotation/action/count": {
       "get": {
         "description": "count cue point objects by filter\n\t ",
+        "operationId": "annotation.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -34091,6 +34125,7 @@
     "/service/annotation_annotation/action/delete": {
       "get": {
         "description": "delete cue point by id, and delete all children cue points\n\t ",
+        "operationId": "annotation.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -34130,6 +34165,7 @@
     "/service/annotation_annotation/action/get": {
       "get": {
         "description": "Retrieve an CuePoint object by id\n\t ",
+        "operationId": "annotation.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -34172,6 +34208,7 @@
     "/service/annotation_annotation/action/list": {
       "get": {
         "description": "List annotation objects by filter and pager\n\t",
+        "operationId": "annotation.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -34917,6 +34954,7 @@
     "/service/annotation_annotation/action/serveBulk": {
       "get": {
         "description": "Download multiple cue points objects as XML definitions\n\t ",
+        "operationId": "annotation.serveBulk",
         "parameters": [
           {
             "description": "The format of the response",
@@ -35659,6 +35697,7 @@
     "/service/annotation_annotation/action/update": {
       "get": {
         "description": "Update annotation by id\n\t ",
+        "operationId": "annotation.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36074,6 +36113,7 @@
     "/service/apptoken/action/add": {
       "get": {
         "description": "Add new application authentication token\n\t ",
+        "operationId": "appToken.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36164,6 +36204,7 @@
     "/service/apptoken/action/delete": {
       "get": {
         "description": "Delete application authentication token by id\n\t ",
+        "operationId": "appToken.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36203,6 +36244,7 @@
     "/service/apptoken/action/get": {
       "get": {
         "description": "Get application authentication token by id\n\t ",
+        "operationId": "appToken.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36245,6 +36287,7 @@
     "/service/apptoken/action/list": {
       "get": {
         "description": "List application authentication tokens by filter and pager\n\t ",
+        "operationId": "appToken.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36322,6 +36365,7 @@
     "/service/apptoken/action/startSession": {
       "get": {
         "description": "Starts a new KS (kaltura Session) based on application authentication token id\n\t ",
+        "operationId": "appToken.startSession",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36400,6 +36444,7 @@
     "/service/apptoken/action/update": {
       "get": {
         "description": "Update application authentication token by id\n\t ",
+        "operationId": "appToken.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36497,6 +36542,7 @@
     "/service/attachment_attachmentasset/action/add": {
       "get": {
         "description": "Add attachment asset\n     ",
+        "operationId": "attachmentAsset.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36940,6 +36986,7 @@
     "/service/attachment_attachmentasset/action/delete": {
       "get": {
         "description": "",
+        "operationId": "attachmentAsset.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -36979,6 +37026,7 @@
     "/service/attachment_attachmentasset/action/get": {
       "get": {
         "description": "",
+        "operationId": "attachmentAsset.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -37021,6 +37069,7 @@
     "/service/attachment_attachmentasset/action/getRemotePaths": {
       "get": {
         "description": "Get remote storage existing paths for the asset\n\t ",
+        "operationId": "attachmentAsset.getRemotePaths",
         "parameters": [
           {
             "description": "The format of the response",
@@ -37063,6 +37112,7 @@
     "/service/attachment_attachmentasset/action/getUrl": {
       "get": {
         "description": "Get download URL for the asset\n\t ",
+        "operationId": "attachmentAsset.getUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -37109,6 +37159,7 @@
     "/service/attachment_attachmentasset/action/list": {
       "get": {
         "description": "List attachment Assets by filter and pager\n\t ",
+        "operationId": "attachmentAsset.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -37545,6 +37596,7 @@
     "/service/attachment_attachmentasset/action/serve": {
       "get": {
         "description": "Serves attachment by its id\n\t ",
+        "operationId": "attachmentAsset.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -37584,6 +37636,7 @@
     "/service/attachment_attachmentasset/action/setContent": {
       "get": {
         "description": "Update content of attachment asset\n     ",
+        "operationId": "attachmentAsset.setContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -37776,6 +37829,7 @@
     "/service/attachment_attachmentasset/action/update": {
       "get": {
         "description": "Update attachment asset\n     ",
+        "operationId": "attachmentAsset.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -38219,6 +38273,7 @@
     "/service/baseentry/action/add": {
       "get": {
         "description": "Generic add entry, should be used when the uploaded entry type is not known.\n     ",
+        "operationId": "baseEntry.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -38560,6 +38615,7 @@
     "/service/baseentry/action/addContent": {
       "get": {
         "description": "Attach content resource to entry in status NO_MEDIA\n     ",
+        "operationId": "baseEntry.addContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -38638,6 +38694,7 @@
     "/service/baseentry/action/addFromUploadedFile": {
       "get": {
         "description": "Generic add entry using an uploaded file, should be used when the uploaded entry type is not known.\n     ",
+        "operationId": "baseEntry.addFromUploadedFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -38986,6 +39043,7 @@
     "/service/baseentry/action/anonymousRank": {
       "get": {
         "description": "Anonymously rank an entry, no validation is done on duplicate rankings.\n\t ",
+        "operationId": "baseEntry.anonymousRank",
         "parameters": [
           {
             "description": "The format of the response",
@@ -39032,6 +39090,7 @@
     "/service/baseentry/action/approve": {
       "get": {
         "description": "Approve the entry and mark the pending flags (if any) as moderated (this will make the entry playable).\n\t ",
+        "operationId": "baseEntry.approve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -39071,6 +39130,7 @@
     "/service/baseentry/action/clone": {
       "get": {
         "description": "Clone an entry with optional attributes to apply to the clone\n\t ",
+        "operationId": "baseEntry.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -39113,6 +39173,7 @@
     "/service/baseentry/action/count": {
       "get": {
         "description": "Count base entries by filter.\n\t ",
+        "operationId": "baseEntry.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -39842,6 +39903,7 @@
     "/service/baseentry/action/delete": {
       "get": {
         "description": "Delete an entry.\n\t ",
+        "operationId": "baseEntry.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -39881,6 +39943,7 @@
     "/service/baseentry/action/export": {
       "get": {
         "description": "",
+        "operationId": "baseEntry.export",
         "parameters": [
           {
             "description": "The format of the response",
@@ -39930,6 +39993,7 @@
     "/service/baseentry/action/flag": {
       "get": {
         "description": "Flag inappropriate entry for moderation.\n\t ",
+        "operationId": "baseEntry.flag",
         "parameters": [
           {
             "description": "The format of the response",
@@ -40001,6 +40065,7 @@
     "/service/baseentry/action/get": {
       "get": {
         "description": "Get base entry by ID.\n\t ",
+        "operationId": "baseEntry.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -40050,6 +40115,7 @@
     "/service/baseentry/action/getByIds": {
       "get": {
         "description": "Get an array of KalturaBaseEntry objects by a comma-separated list of ids.\n\t ",
+        "operationId": "baseEntry.getByIds",
         "parameters": [
           {
             "description": "The format of the response",
@@ -40089,6 +40155,7 @@
     "/service/baseentry/action/getContextData": {
       "get": {
         "description": "This action delivers entry-related data, based on the user's context: access control, restriction, playback format and storage information.\n\t ",
+        "operationId": "baseEntry.getContextData",
         "parameters": [
           {
             "description": "The format of the response",
@@ -40195,6 +40262,7 @@
     "/service/baseentry/action/getRemotePaths": {
       "get": {
         "description": "Get remote storage existing paths for the asset.\n     ",
+        "operationId": "baseEntry.getRemotePaths",
         "parameters": [
           {
             "description": "The format of the response",
@@ -40237,6 +40305,7 @@
     "/service/baseentry/action/index": {
       "get": {
         "description": "Index an entry by id.\n\t ",
+        "operationId": "baseEntry.index",
         "parameters": [
           {
             "description": "The format of the response",
@@ -40283,6 +40352,7 @@
     "/service/baseentry/action/list": {
       "get": {
         "description": "List base entries by filter with paging support.\n\t ",
+        "operationId": "baseEntry.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41027,6 +41097,7 @@
     "/service/baseentry/action/listByReferenceId": {
       "get": {
         "description": "List base entries by filter according to reference id\n\t ",
+        "operationId": "baseEntry.listByReferenceId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41081,6 +41152,7 @@
     "/service/baseentry/action/listFlags": {
       "get": {
         "description": "List all pending flags for the entry.\n\t ",
+        "operationId": "baseEntry.listFlags",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41135,6 +41207,7 @@
     "/service/baseentry/action/reject": {
       "get": {
         "description": "Reject the entry and mark the pending flags (if any) as moderated (this will make the entry non-playable).\n\t ",
+        "operationId": "baseEntry.reject",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41174,6 +41247,7 @@
     "/service/baseentry/action/update": {
       "get": {
         "description": "Update base entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "baseEntry.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41493,6 +41567,7 @@
     "/service/baseentry/action/updateContent": {
       "get": {
         "description": "Update the content resource associated with the entry.\n\t ",
+        "operationId": "baseEntry.updateContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41584,6 +41659,7 @@
     "/service/baseentry/action/updateThumbnailFromSourceEntry": {
       "get": {
         "description": "Update entry thumbnail from a different entry by a specified time offset (in seconds).\n\t ",
+        "operationId": "baseEntry.updateThumbnailFromSourceEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41640,6 +41716,7 @@
     "/service/baseentry/action/updateThumbnailFromUrl": {
       "get": {
         "description": "Update entry thumbnail using url.\n\t ",
+        "operationId": "baseEntry.updateThumbnailFromUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41689,6 +41766,7 @@
     "/service/baseentry/action/updateThumbnailJpeg": {
       "get": {
         "description": "Update entry thumbnail using a raw jpeg file.\n\t ",
+        "operationId": "baseEntry.updateThumbnailJpeg",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41731,6 +41809,7 @@
     "/service/baseentry/action/upload": {
       "get": {
         "description": "Upload a file to Kaltura, that can be used to create an entry.\n\t ",
+        "operationId": "baseEntry.upload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41763,6 +41842,7 @@
     "/service/bulkupload/action/abort": {
       "get": {
         "description": "Aborts the bulk upload and all its child jobs\n\t ",
+        "operationId": "bulkUpload.abort",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41805,6 +41885,7 @@
     "/service/bulkupload/action/add": {
       "get": {
         "description": "Add new bulk upload batch job\n\t Conversion profile id can be specified in the API or in the CSV file, the one in the CSV file will be stronger.\n\t If no conversion profile was specified, partner's default will be used\n\t ",
+        "operationId": "bulkUpload.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41880,6 +41961,7 @@
     "/service/bulkupload/action/get": {
       "get": {
         "description": "Get bulk upload batch job by id\n\t ",
+        "operationId": "bulkUpload.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41922,6 +42004,7 @@
     "/service/bulkupload/action/list": {
       "get": {
         "description": "List bulk upload batch jobs\n\t ",
+        "operationId": "bulkUpload.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -41969,6 +42052,7 @@
     "/service/bulkupload/action/serve": {
       "get": {
         "description": "serve action returan the original file.\n\t ",
+        "operationId": "bulkUpload.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42008,6 +42092,7 @@
     "/service/bulkupload/action/serveLog": {
       "get": {
         "description": "serveLog action returan the original file.\n\t ",
+        "operationId": "bulkUpload.serveLog",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42047,6 +42132,7 @@
     "/service/bulkupload_bulk/action/abort": {
       "get": {
         "description": "Aborts the bulk upload and all its child jobs\n\t ",
+        "operationId": "bulk.abort",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42089,6 +42175,7 @@
     "/service/bulkupload_bulk/action/get": {
       "get": {
         "description": "Get bulk upload batch job by id\n\t ",
+        "operationId": "bulk.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42131,6 +42218,7 @@
     "/service/bulkupload_bulk/action/list": {
       "get": {
         "description": "List bulk upload batch jobs\n\t ",
+        "operationId": "bulk.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42257,6 +42345,7 @@
     "/service/bulkupload_bulk/action/serve": {
       "get": {
         "description": "serve action returns the original file.\n\t ",
+        "operationId": "bulk.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42296,6 +42385,7 @@
     "/service/bulkupload_bulk/action/serveLog": {
       "get": {
         "description": "serveLog action returns the log file for the bulk-upload job.\n\t ",
+        "operationId": "bulk.serveLog",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42335,6 +42425,7 @@
     "/service/caption_captionasset/action/add": {
       "get": {
         "description": "Add caption asset\n     ",
+        "operationId": "captionAsset.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42765,6 +42856,7 @@
     "/service/caption_captionasset/action/delete": {
       "get": {
         "description": "",
+        "operationId": "captionAsset.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42804,6 +42896,7 @@
     "/service/caption_captionasset/action/get": {
       "get": {
         "description": "",
+        "operationId": "captionAsset.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42846,6 +42939,7 @@
     "/service/caption_captionasset/action/getRemotePaths": {
       "get": {
         "description": "Get remote storage existing paths for the asset\n\t ",
+        "operationId": "captionAsset.getRemotePaths",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42888,6 +42982,7 @@
     "/service/caption_captionasset/action/getUrl": {
       "get": {
         "description": "Get download URL for the asset\n\t ",
+        "operationId": "captionAsset.getUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -42934,6 +43029,7 @@
     "/service/caption_captionasset/action/list": {
       "get": {
         "description": "List caption Assets by filter and pager\n\t ",
+        "operationId": "captionAsset.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -43370,6 +43466,7 @@
     "/service/caption_captionasset/action/serve": {
       "get": {
         "description": "Serves caption by its id\n\t ",
+        "operationId": "captionAsset.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -43409,6 +43506,7 @@
     "/service/caption_captionasset/action/serveByEntryId": {
       "get": {
         "description": "Serves caption by entry id and thumnail params id\n\t ",
+        "operationId": "captionAsset.serveByEntryId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -43455,6 +43553,7 @@
     "/service/caption_captionasset/action/serveWebVTT": {
       "get": {
         "description": "Serves caption by its id converting it to segmented WebVTT\n\t ",
+        "operationId": "captionAsset.serveWebVTT",
         "parameters": [
           {
             "description": "The format of the response",
@@ -43515,6 +43614,7 @@
     "/service/caption_captionasset/action/setAsDefault": {
       "get": {
         "description": "Markss the caption as default and removes that mark from all other caption assets of the entry.\n\t ",
+        "operationId": "captionAsset.setAsDefault",
         "parameters": [
           {
             "description": "The format of the response",
@@ -43554,6 +43654,7 @@
     "/service/caption_captionasset/action/setContent": {
       "get": {
         "description": "Update content of caption asset\n     ",
+        "operationId": "captionAsset.setContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -43746,6 +43847,7 @@
     "/service/caption_captionasset/action/update": {
       "get": {
         "description": "Update caption asset\n     ",
+        "operationId": "captionAsset.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -44176,6 +44278,7 @@
     "/service/caption_captionparams/action/add": {
       "get": {
         "description": "Add new Caption Params\n\t ",
+        "operationId": "captionParams.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -44623,6 +44726,7 @@
     "/service/caption_captionparams/action/delete": {
       "get": {
         "description": "Delete Caption Params by ID\n\t ",
+        "operationId": "captionParams.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -44662,6 +44766,7 @@
     "/service/caption_captionparams/action/get": {
       "get": {
         "description": "Get Caption Params by ID\n\t ",
+        "operationId": "captionParams.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -44704,6 +44809,7 @@
     "/service/caption_captionparams/action/list": {
       "get": {
         "description": "List Caption Params by filter with paging support (By default - all system default params will be listed too)\n\t ",
+        "operationId": "captionParams.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -44771,6 +44877,7 @@
     "/service/caption_captionparams/action/update": {
       "get": {
         "description": "Update Caption Params by ID\n\t ",
+        "operationId": "captionParams.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -45225,6 +45332,7 @@
     "/service/captionsearch_captionassetitem/action/search": {
       "get": {
         "description": "Search caption asset items by filter, pager and free text\n\t ",
+        "operationId": "captionAssetItem.search",
         "parameters": [
           {
             "description": "The format of the response",
@@ -46335,6 +46443,7 @@
     "/service/captionsearch_captionassetitem/action/searchEntries": {
       "get": {
         "description": "Search caption asset items by filter, pager and free text\n\t ",
+        "operationId": "captionAssetItem.searchEntries",
         "parameters": [
           {
             "description": "The format of the response",
@@ -47445,6 +47554,7 @@
     "/service/category/action/add": {
       "get": {
         "description": "Add new Category\n\t ",
+        "operationId": "category.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -47677,6 +47787,7 @@
     "/service/category/action/addFromBulkUpload": {
       "get": {
         "description": "",
+        "operationId": "category.addFromBulkUpload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -47768,6 +47879,7 @@
     "/service/category/action/delete": {
       "get": {
         "description": "Delete a Category\n\t ",
+        "operationId": "category.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -47824,6 +47936,7 @@
     "/service/category/action/get": {
       "get": {
         "description": "Get Category by id\n\t ",
+        "operationId": "category.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -47866,6 +47979,7 @@
     "/service/category/action/index": {
       "get": {
         "description": "Index Category by id\n\t ",
+        "operationId": "category.index",
         "parameters": [
           {
             "description": "The format of the response",
@@ -47912,6 +48026,7 @@
     "/service/category/action/list": {
       "get": {
         "description": "List all categories\n\t ",
+        "operationId": "category.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48241,6 +48356,7 @@
     "/service/category/action/move": {
       "get": {
         "description": "Move categories that belong to the same parent category to a target categroy - enabled only for ks with disable entitlement\n\t ",
+        "operationId": "category.move",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48290,6 +48406,7 @@
     "/service/category/action/unlockCategories": {
       "get": {
         "description": "Unlock categories\n\t ",
+        "operationId": "category.unlockCategories",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48322,6 +48439,7 @@
     "/service/category/action/update": {
       "get": {
         "description": "Update Category\n\t ",
+        "operationId": "category.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48561,6 +48679,7 @@
     "/service/categoryentry/action/activate": {
       "get": {
         "description": "activate CategoryEntry when it is pending moderation\n\t ",
+        "operationId": "categoryEntry.activate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48607,6 +48726,7 @@
     "/service/categoryentry/action/add": {
       "get": {
         "description": "Add new CategoryEntry\n\t ",
+        "operationId": "categoryEntry.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48653,6 +48773,7 @@
     "/service/categoryentry/action/addFromBulkUpload": {
       "get": {
         "description": "",
+        "operationId": "categoryEntry.addFromBulkUpload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48711,6 +48832,7 @@
     "/service/categoryentry/action/delete": {
       "get": {
         "description": "Delete CategoryEntry\n\t ",
+        "operationId": "categoryEntry.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48757,6 +48879,7 @@
     "/service/categoryentry/action/index": {
       "get": {
         "description": "Index CategoryEntry by Id\n\t ",
+        "operationId": "categoryEntry.index",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48810,6 +48933,7 @@
     "/service/categoryentry/action/list": {
       "get": {
         "description": "List all categoryEntry\n\t ",
+        "operationId": "categoryEntry.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48914,6 +49038,7 @@
     "/service/categoryentry/action/reject": {
       "get": {
         "description": "activate CategoryEntry when it is pending moderation\n\t ",
+        "operationId": "categoryEntry.reject",
         "parameters": [
           {
             "description": "The format of the response",
@@ -48960,6 +49085,7 @@
     "/service/categoryentry/action/syncPrivacyContext": {
       "get": {
         "description": "update privacy context from the category\n\t ",
+        "operationId": "categoryEntry.syncPrivacyContext",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49006,6 +49132,7 @@
     "/service/categoryuser/action/activate": {
       "get": {
         "description": "activate CategoryUser\n\t ",
+        "operationId": "categoryUser.activate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49055,6 +49182,7 @@
     "/service/categoryuser/action/add": {
       "get": {
         "description": "Add new CategoryUser\n\t ",
+        "operationId": "categoryUser.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49141,6 +49269,7 @@
     "/service/categoryuser/action/addFromBulkUpload": {
       "get": {
         "description": "",
+        "operationId": "categoryUser.addFromBulkUpload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49232,6 +49361,7 @@
     "/service/categoryuser/action/copyFromCategory": {
       "get": {
         "description": "Copy all memeber from parent category\n\t ",
+        "operationId": "categoryUser.copyFromCategory",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49271,6 +49401,7 @@
     "/service/categoryuser/action/deactivate": {
       "get": {
         "description": "reject CategoryUser\n\t ",
+        "operationId": "categoryUser.deactivate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49320,6 +49451,7 @@
     "/service/categoryuser/action/delete": {
       "get": {
         "description": "Delete a CategoryUser\n\t ",
+        "operationId": "categoryUser.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49366,6 +49498,7 @@
     "/service/categoryuser/action/get": {
       "get": {
         "description": "Get CategoryUser by id\n\t ",
+        "operationId": "categoryUser.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49415,6 +49548,7 @@
     "/service/categoryuser/action/index": {
       "get": {
         "description": "Index CategoryUser by userid and category id\n\t ",
+        "operationId": "categoryUser.index",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49468,6 +49602,7 @@
     "/service/categoryuser/action/list": {
       "get": {
         "description": "List all categories\n\t ",
+        "operationId": "categoryUser.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49662,6 +49797,7 @@
     "/service/categoryuser/action/update": {
       "get": {
         "description": "Update CategoryUser by id\n\t ",
+        "operationId": "categoryUser.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -49769,6 +49905,7 @@
     "/service/contentdistribution_distributionprofile/action/add": {
       "get": {
         "description": "Add new Distribution Profile\n\t ",
+        "operationId": "distributionProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50082,6 +50219,7 @@
     "/service/contentdistribution_distributionprofile/action/delete": {
       "get": {
         "description": "Delete Distribution Profile by id\n\t ",
+        "operationId": "distributionProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50121,6 +50259,7 @@
     "/service/contentdistribution_distributionprofile/action/get": {
       "get": {
         "description": "Get Distribution Profile by id\n\t ",
+        "operationId": "distributionProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50163,6 +50302,7 @@
     "/service/contentdistribution_distributionprofile/action/list": {
       "get": {
         "description": "List all distribution providers\n\t ",
+        "operationId": "distributionProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50269,6 +50409,7 @@
     "/service/contentdistribution_distributionprofile/action/listByPartner": {
       "get": {
         "description": "",
+        "operationId": "distributionProfile.listByPartner",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50483,6 +50624,7 @@
     "/service/contentdistribution_distributionprofile/action/update": {
       "get": {
         "description": "Update Distribution Profile by id\n\t ",
+        "operationId": "distributionProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50803,6 +50945,7 @@
     "/service/contentdistribution_distributionprofile/action/updateStatus": {
       "get": {
         "description": "Update Distribution Profile status by id\n\t ",
+        "operationId": "distributionProfile.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -50862,6 +51005,7 @@
     "/service/contentdistribution_distributionprovider/action/list": {
       "get": {
         "description": "List all distribution providers\n\t ",
+        "operationId": "distributionProvider.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51067,6 +51211,7 @@
     "/service/contentdistribution_entrydistribution/action/add": {
       "get": {
         "description": "Add new Entry Distribution\n\t ",
+        "operationId": "entryDistribution.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51147,6 +51292,7 @@
     "/service/contentdistribution_entrydistribution/action/delete": {
       "get": {
         "description": "Delete Entry Distribution by id\n\t ",
+        "operationId": "entryDistribution.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51186,6 +51332,7 @@
     "/service/contentdistribution_entrydistribution/action/get": {
       "get": {
         "description": "Get Entry Distribution by id\n\t ",
+        "operationId": "entryDistribution.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51228,6 +51375,7 @@
     "/service/contentdistribution_entrydistribution/action/list": {
       "get": {
         "description": "List all distribution providers\n\t ",
+        "operationId": "entryDistribution.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51421,6 +51569,7 @@
     "/service/contentdistribution_entrydistribution/action/retrySubmit": {
       "get": {
         "description": "Retries last submit action\n\t ",
+        "operationId": "entryDistribution.retrySubmit",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51463,6 +51612,7 @@
     "/service/contentdistribution_entrydistribution/action/serveReturnedData": {
       "get": {
         "description": "Serves entry distribution returned data\n\t ",
+        "operationId": "entryDistribution.serveReturnedData",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51521,6 +51671,7 @@
     "/service/contentdistribution_entrydistribution/action/serveSentData": {
       "get": {
         "description": "Serves entry distribution sent data\n\t ",
+        "operationId": "entryDistribution.serveSentData",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51579,6 +51730,7 @@
     "/service/contentdistribution_entrydistribution/action/submitAdd": {
       "get": {
         "description": "Submits Entry Distribution to the remote destination\n\t ",
+        "operationId": "entryDistribution.submitAdd",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51628,6 +51780,7 @@
     "/service/contentdistribution_entrydistribution/action/submitDelete": {
       "get": {
         "description": "Deletes Entry Distribution from the remote destination\n\t ",
+        "operationId": "entryDistribution.submitDelete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51670,6 +51823,7 @@
     "/service/contentdistribution_entrydistribution/action/submitFetchReport": {
       "get": {
         "description": "Submits Entry Distribution report request\n\t ",
+        "operationId": "entryDistribution.submitFetchReport",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51712,6 +51866,7 @@
     "/service/contentdistribution_entrydistribution/action/submitUpdate": {
       "get": {
         "description": "Submits Entry Distribution changes to the remote destination\n\t ",
+        "operationId": "entryDistribution.submitUpdate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51754,6 +51909,7 @@
     "/service/contentdistribution_entrydistribution/action/update": {
       "get": {
         "description": "Update Entry Distribution by id\n\t ",
+        "operationId": "entryDistribution.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51841,6 +51997,7 @@
     "/service/contentdistribution_entrydistribution/action/validate": {
       "get": {
         "description": "Validates Entry Distribution by id for submission\n\t ",
+        "operationId": "entryDistribution.validate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51883,6 +52040,7 @@
     "/service/contentdistribution_genericdistributionprovider/action/add": {
       "get": {
         "description": "Add new Generic Distribution Provider\n\t ",
+        "operationId": "genericDistributionProvider.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -51993,6 +52151,7 @@
     "/service/contentdistribution_genericdistributionprovider/action/delete": {
       "get": {
         "description": "Delete Generic Distribution Provider by id\n\t ",
+        "operationId": "genericDistributionProvider.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52032,6 +52191,7 @@
     "/service/contentdistribution_genericdistributionprovider/action/get": {
       "get": {
         "description": "Get Generic Distribution Provider by id\n\t ",
+        "operationId": "genericDistributionProvider.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52074,6 +52234,7 @@
     "/service/contentdistribution_genericdistributionprovider/action/list": {
       "get": {
         "description": "List all distribution providers\n\t ",
+        "operationId": "genericDistributionProvider.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52199,6 +52360,7 @@
     "/service/contentdistribution_genericdistributionprovider/action/update": {
       "get": {
         "description": "Update Generic Distribution Provider by id\n\t ",
+        "operationId": "genericDistributionProvider.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52316,6 +52478,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/add": {
       "get": {
         "description": "Add new Generic Distribution Provider Action\n\t ",
+        "operationId": "genericDistributionProviderAction.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52439,6 +52602,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/addMrssTransform": {
       "get": {
         "description": "Add MRSS transform file to generic distribution provider action\n\t ",
+        "operationId": "genericDistributionProviderAction.addMrssTransform",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52488,6 +52652,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/addMrssTransformFromFile": {
       "get": {
         "description": "Add MRSS transform file to generic distribution provider action\n\t ",
+        "operationId": "genericDistributionProviderAction.addMrssTransformFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52530,6 +52695,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/addMrssValidate": {
       "get": {
         "description": "Add MRSS validate file to generic distribution provider action\n\t ",
+        "operationId": "genericDistributionProviderAction.addMrssValidate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52579,6 +52745,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/addMrssValidateFromFile": {
       "get": {
         "description": "Add MRSS validate file to generic distribution provider action\n\t ",
+        "operationId": "genericDistributionProviderAction.addMrssValidateFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52621,6 +52788,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/addResultsTransform": {
       "get": {
         "description": "Add results transform file to generic distribution provider action\n\t ",
+        "operationId": "genericDistributionProviderAction.addResultsTransform",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52670,6 +52838,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/addResultsTransformFromFile": {
       "get": {
         "description": "Add MRSS transform file to generic distribution provider action\n\t ",
+        "operationId": "genericDistributionProviderAction.addResultsTransformFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52712,6 +52881,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/delete": {
       "get": {
         "description": "Delete Generic Distribution Provider Action by id\n\t ",
+        "operationId": "genericDistributionProviderAction.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52751,6 +52921,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/deleteByProviderId": {
       "get": {
         "description": "Delete Generic Distribution Provider Action by provider id\n\t ",
+        "operationId": "genericDistributionProviderAction.deleteByProviderId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52809,6 +52980,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/get": {
       "get": {
         "description": "Get Generic Distribution Provider Action by id\n\t ",
+        "operationId": "genericDistributionProviderAction.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52851,6 +53023,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/getByProviderId": {
       "get": {
         "description": "Get Generic Distribution Provider Action by provider id\n\t ",
+        "operationId": "genericDistributionProviderAction.getByProviderId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -52912,6 +53085,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/list": {
       "get": {
         "description": "List all distribution providers\n\t ",
+        "operationId": "genericDistributionProviderAction.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53021,6 +53195,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/update": {
       "get": {
         "description": "Update Generic Distribution Provider Action by id\n\t ",
+        "operationId": "genericDistributionProviderAction.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53151,6 +53326,7 @@
     "/service/contentdistribution_genericdistributionprovideraction/action/updateByProviderId": {
       "get": {
         "description": "Update Generic Distribution Provider Action by provider id\n\t ",
+        "operationId": "genericDistributionProviderAction.updateByProviderId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53300,6 +53476,7 @@
     "/service/conversionprofile/action/add": {
       "get": {
         "description": "Add new Conversion Profile\n\t ",
+        "operationId": "conversionProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53457,6 +53634,7 @@
     "/service/conversionprofile/action/delete": {
       "get": {
         "description": "Delete Conversion Profile by ID\n\t ",
+        "operationId": "conversionProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53496,6 +53674,7 @@
     "/service/conversionprofile/action/get": {
       "get": {
         "description": "Get Conversion Profile by ID\n\t ",
+        "operationId": "conversionProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53538,6 +53717,7 @@
     "/service/conversionprofile/action/getDefault": {
       "get": {
         "description": "Get the partner's default conversion profile\n\t ",
+        "operationId": "conversionProfile.getDefault",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53588,6 +53768,7 @@
     "/service/conversionprofile/action/list": {
       "get": {
         "description": "List Conversion Profiles by filter with paging support\n\t ",
+        "operationId": "conversionProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53718,6 +53899,7 @@
     "/service/conversionprofile/action/setAsDefault": {
       "get": {
         "description": "Set Conversion Profile to be the partner default\n\t ",
+        "operationId": "conversionProfile.setAsDefault",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53760,6 +53942,7 @@
     "/service/conversionprofile/action/update": {
       "get": {
         "description": "Update Conversion Profile by ID\n\t ",
+        "operationId": "conversionProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -53924,6 +54107,7 @@
     "/service/conversionprofileassetparams/action/list": {
       "get": {
         "description": "Lists asset parmas of conversion profile by ID\n\t ",
+        "operationId": "conversionProfileAssetParams.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -54051,6 +54235,7 @@
     "/service/conversionprofileassetparams/action/update": {
       "get": {
         "description": "Update asset parmas of conversion profile by ID\n\t ",
+        "operationId": "conversionProfileAssetParams.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -54170,6 +54355,7 @@
     "/service/cuepoint_cuepoint/action/add": {
       "get": {
         "description": "Allows you to add an cue point object associated with an entry\n\t ",
+        "operationId": "cuePoint.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -54578,6 +54764,7 @@
     "/service/cuepoint_cuepoint/action/addFromBulk": {
       "get": {
         "description": "Allows you to add multiple cue points objects by uploading XML that contains multiple cue point definitions\n\t ",
+        "operationId": "cuePoint.addFromBulk",
         "parameters": [
           {
             "description": "The format of the response",
@@ -54613,6 +54800,7 @@
     "/service/cuepoint_cuepoint/action/count": {
       "get": {
         "description": "count cue point objects by filter\n\t ",
+        "operationId": "cuePoint.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -55343,6 +55531,7 @@
     "/service/cuepoint_cuepoint/action/delete": {
       "get": {
         "description": "delete cue point by id, and delete all children cue points\n\t ",
+        "operationId": "cuePoint.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -55382,6 +55571,7 @@
     "/service/cuepoint_cuepoint/action/get": {
       "get": {
         "description": "Retrieve an CuePoint object by id\n\t ",
+        "operationId": "cuePoint.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -55424,6 +55614,7 @@
     "/service/cuepoint_cuepoint/action/list": {
       "get": {
         "description": "List cue point objects by filter and pager\n\t ",
+        "operationId": "cuePoint.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -56169,6 +56360,7 @@
     "/service/cuepoint_cuepoint/action/serveBulk": {
       "get": {
         "description": "Download multiple cue points objects as XML definitions\n\t ",
+        "operationId": "cuePoint.serveBulk",
         "parameters": [
           {
             "description": "The format of the response",
@@ -56911,6 +57103,7 @@
     "/service/cuepoint_cuepoint/action/update": {
       "get": {
         "description": "Update cue point by id \n\t ",
+        "operationId": "cuePoint.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -57326,6 +57519,7 @@
     "/service/data/action/add": {
       "get": {
         "description": "Adds a new data entry\n\t ",
+        "operationId": "data.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -57569,6 +57763,7 @@
     "/service/data/action/delete": {
       "get": {
         "description": "Delete a data entry.\n\t ",
+        "operationId": "data.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -57608,6 +57803,7 @@
     "/service/data/action/get": {
       "get": {
         "description": "Get data entry by ID.\n\t ",
+        "operationId": "data.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -57657,6 +57853,7 @@
     "/service/data/action/list": {
       "get": {
         "description": "List data entries by filter with paging support.\n\t ",
+        "operationId": "data.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -57704,6 +57901,7 @@
     "/service/data/action/serve": {
       "get": {
         "description": "serve action returan the file from dataContent field.\n\t ",
+        "operationId": "data.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -57757,6 +57955,7 @@
     "/service/data/action/update": {
       "get": {
         "description": "Update data entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "data.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -58007,6 +58206,7 @@
     "/service/deliveryprofile/action/add": {
       "get": {
         "description": "Add new delivery.\n\t ",
+        "operationId": "deliveryProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -58302,6 +58502,7 @@
     "/service/deliveryprofile/action/clone": {
       "get": {
         "description": "Add delivery based on existing delivery.\n\tMust provide valid sourceDeliveryId\n\t",
+        "operationId": "deliveryProfile.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -58344,6 +58545,7 @@
     "/service/deliveryprofile/action/get": {
       "get": {
         "description": "Get delivery by id\n\t",
+        "operationId": "deliveryProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -58386,6 +58588,7 @@
     "/service/deliveryprofile/action/list": {
       "get": {
         "description": "Retrieve a list of available delivery depends on the filter given\n\t",
+        "operationId": "deliveryProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -58555,6 +58758,7 @@
     "/service/deliveryprofile/action/update": {
       "get": {
         "description": "Update exisiting delivery\n\t ",
+        "operationId": "deliveryProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -58857,6 +59061,7 @@
     "/service/document/action/addFromEntry": {
       "get": {
         "description": "Copy entry into new entry\n\t ",
+        "operationId": "document.addFromEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59118,6 +59323,7 @@
     "/service/document/action/addFromFlavorAsset": {
       "get": {
         "description": "Copy flavor asset into new entry\n\t ",
+        "operationId": "document.addFromFlavorAsset",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59372,6 +59578,7 @@
     "/service/document/action/addFromUploadedFile": {
       "get": {
         "description": "Add new document entry after the specific document file was uploaded and the upload token id exists\n\t ",
+        "operationId": "document.addFromUploadedFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59626,6 +59833,7 @@
     "/service/document/action/approveReplace": {
       "get": {
         "description": "Approves document replacement\n\t ",
+        "operationId": "document.approveReplace",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59668,6 +59876,7 @@
     "/service/document/action/cancelReplace": {
       "get": {
         "description": "Cancels document replacement\n\t ",
+        "operationId": "document.cancelReplace",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59710,6 +59919,7 @@
     "/service/document/action/convert": {
       "get": {
         "description": "Convert entry\n\t ",
+        "operationId": "document.convert",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59756,6 +59966,7 @@
     "/service/document/action/convertPptToSwf": {
       "get": {
         "description": "This will queue a batch job for converting the document file to swf\n\t Returns the URL where the new swf will be available \n\t ",
+        "operationId": "document.convertPptToSwf",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59795,6 +60006,7 @@
     "/service/document/action/delete": {
       "get": {
         "description": "Delete a document entry.\n\t ",
+        "operationId": "document.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59834,6 +60046,7 @@
     "/service/document/action/get": {
       "get": {
         "description": "Get document entry by ID.\n\t ",
+        "operationId": "document.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59883,6 +60096,7 @@
     "/service/document/action/list": {
       "get": {
         "description": "List document entries by filter with paging support.\n\t ",
+        "operationId": "document.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -59960,6 +60174,7 @@
     "/service/document/action/serve": {
       "get": {
         "description": "Serves the file content\n\t ",
+        "operationId": "document.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60013,6 +60228,7 @@
     "/service/document/action/serveByFlavorParamsId": {
       "get": {
         "description": "Serves the file content\n\t ",
+        "operationId": "document.serveByFlavorParamsId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60066,6 +60282,7 @@
     "/service/document/action/update": {
       "get": {
         "description": "Update document entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "document.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60320,6 +60537,7 @@
     "/service/document/action/updateContent": {
       "get": {
         "description": "Replace content associated with the given document entry.\n\t ",
+        "operationId": "document.updateContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60405,6 +60623,7 @@
     "/service/document/action/upload": {
       "get": {
         "description": "Upload a document file to Kaltura, then the file can be used to create a document entry. \n\t ",
+        "operationId": "document.upload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60437,6 +60656,7 @@
     "/service/document_documents/action/addFromEntry": {
       "get": {
         "description": "Copy entry into new entry\n\t ",
+        "operationId": "documents.addFromEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60698,6 +60918,7 @@
     "/service/document_documents/action/addFromFlavorAsset": {
       "get": {
         "description": "Copy flavor asset into new entry\n\t ",
+        "operationId": "documents.addFromFlavorAsset",
         "parameters": [
           {
             "description": "The format of the response",
@@ -60952,6 +61173,7 @@
     "/service/document_documents/action/addFromUploadedFile": {
       "get": {
         "description": "Add new document entry after the specific document file was uploaded and the upload token id exists\n\t ",
+        "operationId": "documents.addFromUploadedFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61206,6 +61428,7 @@
     "/service/document_documents/action/approveReplace": {
       "get": {
         "description": "Approves document replacement\n\t ",
+        "operationId": "documents.approveReplace",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61248,6 +61471,7 @@
     "/service/document_documents/action/cancelReplace": {
       "get": {
         "description": "Cancels document replacement\n\t ",
+        "operationId": "documents.cancelReplace",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61290,6 +61514,7 @@
     "/service/document_documents/action/convert": {
       "get": {
         "description": "Convert entry\n\t ",
+        "operationId": "documents.convert",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61336,6 +61561,7 @@
     "/service/document_documents/action/convertPptToSwf": {
       "get": {
         "description": "This will queue a batch job for converting the document file to swf\n\t Returns the URL where the new swf will be available \n\t ",
+        "operationId": "documents.convertPptToSwf",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61375,6 +61601,7 @@
     "/service/document_documents/action/delete": {
       "get": {
         "description": "Delete a document entry.\n\t ",
+        "operationId": "documents.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61414,6 +61641,7 @@
     "/service/document_documents/action/get": {
       "get": {
         "description": "Get document entry by ID.\n\t ",
+        "operationId": "documents.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61463,6 +61691,7 @@
     "/service/document_documents/action/list": {
       "get": {
         "description": "List document entries by filter with paging support.\n\t ",
+        "operationId": "documents.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61540,6 +61769,7 @@
     "/service/document_documents/action/serve": {
       "get": {
         "description": "Serves the file content\n\t ",
+        "operationId": "documents.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61593,6 +61823,7 @@
     "/service/document_documents/action/serveByFlavorParamsId": {
       "get": {
         "description": "Serves the file content\n\t ",
+        "operationId": "documents.serveByFlavorParamsId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61646,6 +61877,7 @@
     "/service/document_documents/action/update": {
       "get": {
         "description": "Update document entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "documents.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61900,6 +62132,7 @@
     "/service/document_documents/action/updateContent": {
       "get": {
         "description": "Replace content associated with the given document entry.\n\t ",
+        "operationId": "documents.updateContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -61985,6 +62218,7 @@
     "/service/document_documents/action/upload": {
       "get": {
         "description": "Upload a document file to Kaltura, then the file can be used to create a document entry. \n\t ",
+        "operationId": "documents.upload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -62017,6 +62251,7 @@
     "/service/dropfolder_dropfolder/action/add": {
       "get": {
         "description": "Allows you to add a new KalturaDropFolder object\n\t ",
+        "operationId": "dropFolder.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -62243,6 +62478,7 @@
     "/service/dropfolder_dropfolder/action/delete": {
       "get": {
         "description": "Mark the KalturaDropFolder object as deleted\n\t ",
+        "operationId": "dropFolder.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -62285,6 +62521,7 @@
     "/service/dropfolder_dropfolder/action/get": {
       "get": {
         "description": "Retrieve a KalturaDropFolder object by ID\n\t ",
+        "operationId": "dropFolder.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -62327,6 +62564,7 @@
     "/service/dropfolder_dropfolder/action/list": {
       "get": {
         "description": "List KalturaDropFolder objects\n\t ",
+        "operationId": "dropFolder.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -62594,6 +62832,7 @@
     "/service/dropfolder_dropfolder/action/update": {
       "get": {
         "description": "Update an existing KalturaDropFolder object\n\t ",
+        "operationId": "dropFolder.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -62827,6 +63066,7 @@
     "/service/dropfolder_dropfolderfile/action/add": {
       "get": {
         "description": "Allows you to add a new KalturaDropFolderFile object\n\t ",
+        "operationId": "dropFolderFile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63013,6 +63253,7 @@
     "/service/dropfolder_dropfolderfile/action/delete": {
       "get": {
         "description": "Mark the KalturaDropFolderFile object as deleted\n\t ",
+        "operationId": "dropFolderFile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63055,6 +63296,7 @@
     "/service/dropfolder_dropfolderfile/action/get": {
       "get": {
         "description": "Retrieve a KalturaDropFolderFile object by ID\n\t ",
+        "operationId": "dropFolderFile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63097,6 +63339,7 @@
     "/service/dropfolder_dropfolderfile/action/ignore": {
       "get": {
         "description": "Set the KalturaDropFolderFile status to ignore (KalturaDropFolderFileStatus::IGNORE)\n\t ",
+        "operationId": "dropFolderFile.ignore",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63139,6 +63382,7 @@
     "/service/dropfolder_dropfolderfile/action/list": {
       "get": {
         "description": "List KalturaDropFolderFile objects\n\t ",
+        "operationId": "dropFolderFile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63406,6 +63650,7 @@
     "/service/dropfolder_dropfolderfile/action/update": {
       "get": {
         "description": "Update an existing KalturaDropFolderFile object\n\t ",
+        "operationId": "dropFolderFile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63599,6 +63844,7 @@
     "/service/dropfolder_dropfolderfile/action/updateStatus": {
       "get": {
         "description": "Update status of KalturaDropFolderFile\n\t ",
+        "operationId": "dropFolderFile.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63682,6 +63928,7 @@
     "/service/emailingestionprofile/action/add": {
       "get": {
         "description": "EmailIngestionProfile Add action allows you to add a EmailIngestionProfile to Kaltura DB\n\t ",
+        "operationId": "EmailIngestionProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -63791,6 +64038,7 @@
     "/service/emailingestionprofile/action/addMediaEntry": {
       "get": {
         "description": "add KalturaMediaEntry from email ingestion\n\t ",
+        "operationId": "EmailIngestionProfile.addMediaEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -64164,6 +64412,7 @@
     "/service/emailingestionprofile/action/delete": {
       "get": {
         "description": "Delete an existing EmailIngestionProfile\n\t ",
+        "operationId": "EmailIngestionProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -64203,6 +64452,7 @@
     "/service/emailingestionprofile/action/get": {
       "get": {
         "description": "Retrieve a EmailIngestionProfile by id\n\t ",
+        "operationId": "EmailIngestionProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -64245,6 +64495,7 @@
     "/service/emailingestionprofile/action/getByEmailAddress": {
       "get": {
         "description": "Retrieve a EmailIngestionProfile by email address\n\t ",
+        "operationId": "EmailIngestionProfile.getByEmailAddress",
         "parameters": [
           {
             "description": "The format of the response",
@@ -64287,6 +64538,7 @@
     "/service/emailingestionprofile/action/update": {
       "get": {
         "description": "Update an existing EmailIngestionProfile\n\t ",
+        "operationId": "EmailIngestionProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -64403,6 +64655,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/add": {
       "get": {
         "description": "This action allows for the creation of new backend event types in the system. This action requires access to the Kaltura server Admin Console. If you're looking to register to existing event types, please use the clone action instead.\n\t ",
+        "operationId": "eventNotificationTemplate.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -65006,6 +65259,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/clone": {
       "get": {
         "description": "This action allows registering to various backend event. Use this action to create notifications that will react to events such as new video was uploaded or metadata field was updated. To see the list of available event types, call the listTemplates action.\n\t ",
+        "operationId": "eventNotificationTemplate.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -65616,6 +65870,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/delete": {
       "get": {
         "description": "Delete an event notification template object\n\t ",
+        "operationId": "eventNotificationTemplate.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -65655,6 +65910,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/dispatch": {
       "get": {
         "description": "Dispatch event notification object by id\n\t ",
+        "operationId": "eventNotificationTemplate.dispatch",
         "parameters": [
           {
             "description": "The format of the response",
@@ -65798,6 +66054,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/get": {
       "get": {
         "description": "Retrieve an event notification template object by id\n\t ",
+        "operationId": "eventNotificationTemplate.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -65840,6 +66097,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/list": {
       "get": {
         "description": "list event notification template objects\n\t ",
+        "operationId": "eventNotificationTemplate.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -65983,6 +66241,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/listByPartner": {
       "get": {
         "description": "",
+        "operationId": "eventNotificationTemplate.listByPartner",
         "parameters": [
           {
             "description": "The format of the response",
@@ -66197,6 +66456,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/listTemplates": {
       "get": {
         "description": "Action lists the template partner event notification templates.\n\t ",
+        "operationId": "eventNotificationTemplate.listTemplates",
         "parameters": [
           {
             "description": "The format of the response",
@@ -66340,6 +66600,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/update": {
       "get": {
         "description": "Update an existing event notification template object\n\t ",
+        "operationId": "eventNotificationTemplate.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -66950,6 +67211,7 @@
     "/service/eventnotification_eventnotificationtemplate/action/updateStatus": {
       "get": {
         "description": "Update event notification template status by id\n\t ",
+        "operationId": "eventNotificationTemplate.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67009,6 +67271,7 @@
     "/service/externalmedia_externalmedia/action/add": {
       "get": {
         "description": "Add external media entry\n\t ",
+        "operationId": "externalMedia.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67184,6 +67447,7 @@
     "/service/externalmedia_externalmedia/action/count": {
       "get": {
         "description": "Count media entries by filter.\n\t ",
+        "operationId": "externalMedia.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67244,6 +67508,7 @@
     "/service/externalmedia_externalmedia/action/delete": {
       "get": {
         "description": "Delete a external media entry.\n\t ",
+        "operationId": "externalMedia.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67283,6 +67548,7 @@
     "/service/externalmedia_externalmedia/action/get": {
       "get": {
         "description": "Get external media entry by ID.\n\t ",
+        "operationId": "externalMedia.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67325,6 +67591,7 @@
     "/service/externalmedia_externalmedia/action/list": {
       "get": {
         "description": "List media entries by filter with paging support.\n\t ",
+        "operationId": "externalMedia.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67400,6 +67667,7 @@
     "/service/externalmedia_externalmedia/action/update": {
       "get": {
         "description": "Update external media entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "externalMedia.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67582,6 +67850,7 @@
     "/service/fileasset/action/add": {
       "get": {
         "description": "Add new file asset\n\t ",
+        "operationId": "fileAsset.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67648,6 +67917,7 @@
     "/service/fileasset/action/delete": {
       "get": {
         "description": "Delete file asset by id\n\t ",
+        "operationId": "fileAsset.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67687,6 +67957,7 @@
     "/service/fileasset/action/get": {
       "get": {
         "description": "Get file asset by id\n\t ",
+        "operationId": "fileAsset.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67729,6 +68000,7 @@
     "/service/fileasset/action/list": {
       "get": {
         "description": "List file assets by filter and pager\n\t ",
+        "operationId": "fileAsset.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67856,6 +68128,7 @@
     "/service/fileasset/action/serve": {
       "get": {
         "description": "Serve file asset by id\n\t ",
+        "operationId": "fileAsset.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -67895,6 +68168,7 @@
     "/service/fileasset/action/setContent": {
       "get": {
         "description": "Set content of file asset\n     ",
+        "operationId": "fileAsset.setContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68087,6 +68361,7 @@
     "/service/fileasset/action/update": {
       "get": {
         "description": "Update file asset by id\n\t ",
+        "operationId": "fileAsset.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68160,6 +68435,7 @@
     "/service/flavorasset/action/add": {
       "get": {
         "description": "Add flavor asset\n     ",
+        "operationId": "flavorAsset.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68263,6 +68539,7 @@
     "/service/flavorasset/action/convert": {
       "get": {
         "description": "Add and convert new Flavor Asset for Entry with specific Flavor Params\n\t ",
+        "operationId": "flavorAsset.convert",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68316,6 +68593,7 @@
     "/service/flavorasset/action/delete": {
       "get": {
         "description": "Delete Flavor Asset by ID\n\t ",
+        "operationId": "flavorAsset.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68355,6 +68633,7 @@
     "/service/flavorasset/action/deleteLocalContent": {
       "get": {
         "description": "delete all local file syncs for this asset\n\t ",
+        "operationId": "flavorAsset.deleteLocalContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68394,6 +68673,7 @@
     "/service/flavorasset/action/export": {
       "get": {
         "description": "manually export an asset\n\t ",
+        "operationId": "flavorAsset.export",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68443,6 +68723,7 @@
     "/service/flavorasset/action/get": {
       "get": {
         "description": "Get Flavor Asset by ID\n\t ",
+        "operationId": "flavorAsset.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68485,6 +68766,7 @@
     "/service/flavorasset/action/getByEntryId": {
       "get": {
         "description": "Get Flavor Assets for Entry\n\t ",
+        "operationId": "flavorAsset.getByEntryId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68524,6 +68806,7 @@
     "/service/flavorasset/action/getDownloadUrl": {
       "get": {
         "description": "Get download URL for the Flavor Asset\n\t ",
+        "operationId": "flavorAsset.getDownloadUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68570,6 +68853,7 @@
     "/service/flavorasset/action/getFlavorAssetsWithParams": {
       "get": {
         "description": "Get Flavor Asset with the relevant Flavor Params (Flavor Params can exist without Flavor Asset & vice versa)\n\t ",
+        "operationId": "flavorAsset.getFlavorAssetsWithParams",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68609,6 +68893,7 @@
     "/service/flavorasset/action/getRemotePaths": {
       "get": {
         "description": "Get remote storage existing paths for the asset\n\t ",
+        "operationId": "flavorAsset.getRemotePaths",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68651,6 +68936,7 @@
     "/service/flavorasset/action/getUrl": {
       "get": {
         "description": "Get download URL for the asset\n\t ",
+        "operationId": "flavorAsset.getUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68710,6 +68996,7 @@
     "/service/flavorasset/action/getWebPlayableByEntryId": {
       "get": {
         "description": "Get web playable Flavor Assets for Entry\n\t ",
+        "operationId": "flavorAsset.getWebPlayableByEntryId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -68749,6 +69036,7 @@
     "/service/flavorasset/action/list": {
       "get": {
         "description": "List Flavor Assets by filter and pager\n\t ",
+        "operationId": "flavorAsset.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -69185,6 +69473,7 @@
     "/service/flavorasset/action/reconvert": {
       "get": {
         "description": "Reconvert Flavor Asset by ID\n\t ",
+        "operationId": "flavorAsset.reconvert",
         "parameters": [
           {
             "description": "The format of the response",
@@ -69224,6 +69513,7 @@
     "/service/flavorasset/action/setAsSource": {
       "get": {
         "description": "Set a given flavor as the original flavor\n\t ",
+        "operationId": "flavorAsset.setAsSource",
         "parameters": [
           {
             "description": "The format of the response",
@@ -69263,6 +69553,7 @@
     "/service/flavorasset/action/setContent": {
       "get": {
         "description": "Update content of flavor asset\n     ",
+        "operationId": "flavorAsset.setContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -69455,6 +69746,7 @@
     "/service/flavorasset/action/update": {
       "get": {
         "description": "Update flavor asset\n     ",
+        "operationId": "flavorAsset.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -69558,6 +69850,7 @@
     "/service/flavorparams/action/add": {
       "get": {
         "description": "Add new Flavor Params\n\t ",
+        "operationId": "flavorParams.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -70143,6 +70436,7 @@
     "/service/flavorparams/action/delete": {
       "get": {
         "description": "Delete Flavor Params by ID\n\t ",
+        "operationId": "flavorParams.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -70182,6 +70476,7 @@
     "/service/flavorparams/action/get": {
       "get": {
         "description": "Get Flavor Params by ID\n\t ",
+        "operationId": "flavorParams.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -70224,6 +70519,7 @@
     "/service/flavorparams/action/getByConversionProfileId": {
       "get": {
         "description": "Get Flavor Params by Conversion Profile ID\n\t ",
+        "operationId": "flavorParams.getByConversionProfileId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -70263,6 +70559,7 @@
     "/service/flavorparams/action/list": {
       "get": {
         "description": "List Flavor Params by filter with paging support (By default - all system default params will be listed too)\n\t ",
+        "operationId": "flavorParams.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -70426,6 +70723,7 @@
     "/service/flavorparams/action/update": {
       "get": {
         "description": "Update Flavor Params by ID\n\t ",
+        "operationId": "flavorParams.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71018,6 +71316,7 @@
     "/service/flavorparamsoutput/action/get": {
       "get": {
         "description": "Get flavor params output object by ID\n\t ",
+        "operationId": "flavorParamsOutput.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71060,6 +71359,7 @@
     "/service/flavorparamsoutput/action/list": {
       "get": {
         "description": "List flavor params output objects by filter and pager\n\t ",
+        "operationId": "flavorParamsOutput.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71138,6 +71438,7 @@
     "/service/groupuser/action/add": {
       "get": {
         "description": "Add new GroupUser\n\t ",
+        "operationId": "groupUser.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71183,6 +71484,7 @@
     "/service/groupuser/action/delete": {
       "get": {
         "description": "delete by userId and groupId\n\t ",
+        "operationId": "groupUser.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71229,6 +71531,7 @@
     "/service/groupuser/action/list": {
       "get": {
         "description": "List all GroupUsers\n\t ",
+        "operationId": "groupUser.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71334,6 +71637,7 @@
     "/service/integration_integration/action/dispatch": {
       "get": {
         "description": "Dispatch integration task\n\t ",
+        "operationId": "integration.dispatch",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71434,6 +71738,7 @@
     "/service/integration_integration/action/notify": {
       "get": {
         "description": "",
+        "operationId": "integration.notify",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71473,6 +71778,7 @@
     "/service/kalturainternaltools_kalturainternaltoolssystemhelper/action/fromSecureString": {
       "get": {
         "description": "KS from Secure String\n\t ",
+        "operationId": "kalturaInternalToolsSystemHelper.fromSecureString",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71515,6 +71821,7 @@
     "/service/kalturainternaltools_kalturainternaltoolssystemhelper/action/getRemoteAddress": {
       "get": {
         "description": "",
+        "operationId": "kalturaInternalToolsSystemHelper.getRemoteAddress",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71547,6 +71854,7 @@
     "/service/kalturainternaltools_kalturainternaltoolssystemhelper/action/iptocountry": {
       "get": {
         "description": "from ip to country\n\t ",
+        "operationId": "kalturaInternalToolsSystemHelper.iptocountry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71586,6 +71894,7 @@
     "/service/like_like/action/checkLikeExists": {
       "get": {
         "description": "",
+        "operationId": "like.checkLikeExists",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71632,6 +71941,7 @@
     "/service/like_like/action/like": {
       "get": {
         "description": "",
+        "operationId": "like.like",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71671,6 +71981,7 @@
     "/service/like_like/action/list": {
       "get": {
         "description": "",
+        "operationId": "like.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71738,6 +72049,7 @@
     "/service/like_like/action/unlike": {
       "get": {
         "description": "",
+        "operationId": "like.unlike",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71777,6 +72089,7 @@
     "/service/livechannel/action/add": {
       "get": {
         "description": "Adds new live channel.\n\t ",
+        "operationId": "liveChannel.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -71938,6 +72251,7 @@
     "/service/livechannel/action/appendRecording": {
       "get": {
         "description": "Append recorded video to live entry\n\t ",
+        "operationId": "liveChannel.appendRecording",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72066,6 +72380,7 @@
     "/service/livechannel/action/delete": {
       "get": {
         "description": "Delete a live channel.\n\t ",
+        "operationId": "liveChannel.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72105,6 +72420,7 @@
     "/service/livechannel/action/get": {
       "get": {
         "description": "Get live channel by ID.\n\t ",
+        "operationId": "liveChannel.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72147,6 +72463,7 @@
     "/service/livechannel/action/isLive": {
       "get": {
         "description": "Delivering the status of a live channel (on-air/offline)\n\t ",
+        "operationId": "liveChannel.isLive",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72186,6 +72503,7 @@
     "/service/livechannel/action/list": {
       "get": {
         "description": "List live channels by filter with paging support.\n\t ",
+        "operationId": "liveChannel.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72233,6 +72551,7 @@
     "/service/livechannel/action/registerMediaServer": {
       "get": {
         "description": "Register media server to live entry\n\t ",
+        "operationId": "liveChannel.registerMediaServer",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72321,6 +72640,7 @@
     "/service/livechannel/action/unregisterMediaServer": {
       "get": {
         "description": "Unregister media server from live entry\n\t ",
+        "operationId": "liveChannel.unregisterMediaServer",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72385,6 +72705,7 @@
     "/service/livechannel/action/update": {
       "get": {
         "description": "Update live channel. Only the properties that were set will be updated.\n\t ",
+        "operationId": "liveChannel.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72553,6 +72874,7 @@
     "/service/livechannel/action/validateRegisteredMediaServers": {
       "get": {
         "description": "Validates all registered media servers\n\t ",
+        "operationId": "liveChannel.validateRegisteredMediaServers",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72592,6 +72914,7 @@
     "/service/livechannelsegment/action/add": {
       "get": {
         "description": "Add new live channel segment\n\t ",
+        "operationId": "liveChannelSegment.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72705,6 +73028,7 @@
     "/service/livechannelsegment/action/delete": {
       "get": {
         "description": "Delete live channel segment by id\n\t ",
+        "operationId": "liveChannelSegment.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72744,6 +73068,7 @@
     "/service/livechannelsegment/action/get": {
       "get": {
         "description": "Get live channel segment by id\n\t ",
+        "operationId": "liveChannelSegment.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72786,6 +73111,7 @@
     "/service/livechannelsegment/action/list": {
       "get": {
         "description": "List live channel segments by filter and pager\n\t ",
+        "operationId": "liveChannelSegment.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -72891,6 +73217,7 @@
     "/service/livechannelsegment/action/update": {
       "get": {
         "description": "Update live channel segment by id\n\t ",
+        "operationId": "liveChannelSegment.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73011,6 +73338,7 @@
     "/service/livereports/action/exportToCsv": {
       "get": {
         "description": "",
+        "operationId": "liveReports.exportToCsv",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73095,6 +73423,7 @@
     "/service/livereports/action/getEvents": {
       "get": {
         "description": "",
+        "operationId": "liveReports.getEvents",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73207,6 +73536,7 @@
     "/service/livereports/action/getReport": {
       "get": {
         "description": "",
+        "operationId": "liveReports.getReport",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73322,6 +73652,7 @@
     "/service/livereports/action/serveReport": {
       "get": {
         "description": "Will serve a requested report\n\t ",
+        "operationId": "liveReports.serveReport",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73361,6 +73692,7 @@
     "/service/livestats/action/collect": {
       "get": {
         "description": "Will write to the event log a single line representing the event\n\t KalturaStatsEvent $event\n\t ",
+        "operationId": "liveStats.collect",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73494,6 +73826,7 @@
     "/service/livestream/action/add": {
       "get": {
         "description": "Adds new live stream entry.\n\t The entry will be queued for provision.\n\t ",
+        "operationId": "liveStream.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73743,6 +74076,7 @@
     "/service/livestream/action/addLiveStreamPushPublishConfiguration": {
       "get": {
         "description": "Add new pushPublish configuration to entry\n\t ",
+        "operationId": "liveStream.addLiveStreamPushPublishConfiguration",
         "parameters": [
           {
             "description": "The format of the response",
@@ -73884,6 +74218,7 @@
     "/service/livestream/action/appendRecording": {
       "get": {
         "description": "Append recorded video to live entry\n\t ",
+        "operationId": "liveStream.appendRecording",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74012,6 +74347,7 @@
     "/service/livestream/action/authenticate": {
       "get": {
         "description": "Authenticate live-stream entry against stream token and partner limitations\n\t ",
+        "operationId": "liveStream.authenticate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74061,6 +74397,7 @@
     "/service/livestream/action/createPeriodicSyncPoints": {
       "get": {
         "description": "Creates perioding metadata sync-point events on a live stream\n\t ",
+        "operationId": "liveStream.createPeriodicSyncPoints",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74114,6 +74451,7 @@
     "/service/livestream/action/delete": {
       "get": {
         "description": "Delete a live stream entry.\n\t ",
+        "operationId": "liveStream.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74153,6 +74491,7 @@
     "/service/livestream/action/get": {
       "get": {
         "description": "Get live stream entry by ID.\n\t ",
+        "operationId": "liveStream.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74202,6 +74541,7 @@
     "/service/livestream/action/isLive": {
       "get": {
         "description": "Delivering the status of a live stream (on-air/offline) if it is possible\n\t ",
+        "operationId": "liveStream.isLive",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74278,6 +74618,7 @@
     "/service/livestream/action/list": {
       "get": {
         "description": "List live stream entries by filter with paging support.\n\t ",
+        "operationId": "liveStream.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74332,6 +74673,7 @@
     "/service/livestream/action/registerMediaServer": {
       "get": {
         "description": "Register media server to live entry\n\t ",
+        "operationId": "liveStream.registerMediaServer",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74420,6 +74762,7 @@
     "/service/livestream/action/removeLiveStreamPushPublishConfiguration": {
       "get": {
         "description": "Remove push publish configuration from entry\n\t ",
+        "operationId": "liveStream.removeLiveStreamPushPublishConfiguration",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74499,6 +74842,7 @@
     "/service/livestream/action/unregisterMediaServer": {
       "get": {
         "description": "Unregister media server from live entry\n\t ",
+        "operationId": "liveStream.unregisterMediaServer",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74563,6 +74907,7 @@
     "/service/livestream/action/update": {
       "get": {
         "description": "Update live stream entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "liveStream.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74782,6 +75127,7 @@
     "/service/livestream/action/updateOfflineThumbnailFromUrl": {
       "get": {
         "description": "Update entry thumbnail using url\n\t ",
+        "operationId": "liveStream.updateOfflineThumbnailFromUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74831,6 +75177,7 @@
     "/service/livestream/action/updateOfflineThumbnailJpeg": {
       "get": {
         "description": "Update live stream entry thumbnail using a raw jpeg file\n\t ",
+        "operationId": "liveStream.updateOfflineThumbnailJpeg",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74873,6 +75220,7 @@
     "/service/livestream/action/validateRegisteredMediaServers": {
       "get": {
         "description": "Validates all registered media servers\n\t ",
+        "operationId": "liveStream.validateRegisteredMediaServers",
         "parameters": [
           {
             "description": "The format of the response",
@@ -74912,6 +75260,7 @@
     "/service/media/action/add": {
       "get": {
         "description": "Add entry\n     ",
+        "operationId": "media.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -75257,6 +75606,7 @@
     "/service/media/action/addContent": {
       "get": {
         "description": "Add content to media entry which is not yet associated with content (therefore is in status NO_CONTENT).\n     If the requirement is to replace the entry's associated content, use action updateContent.\n     ",
+        "operationId": "media.addContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -75335,6 +75685,7 @@
     "/service/media/action/addFromEntry": {
       "get": {
         "description": "Copy entry into new entry\n\t ",
+        "operationId": "media.addFromEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -75694,6 +76045,7 @@
     "/service/media/action/addFromFlavorAsset": {
       "get": {
         "description": "Copy flavor asset into new entry\n\t ",
+        "operationId": "media.addFromFlavorAsset",
         "parameters": [
           {
             "description": "The format of the response",
@@ -76046,6 +76398,7 @@
     "/service/media/action/addFromRecordedWebcam": {
       "get": {
         "description": "Add new entry after the file was recored on the server and the token id exists\n\t ",
+        "operationId": "media.addFromRecordedWebcam",
         "parameters": [
           {
             "description": "The format of the response",
@@ -76398,6 +76751,7 @@
     "/service/media/action/addFromSearchResult": {
       "get": {
         "description": "Adds new media entry by importing the media file from a search provider.\n\t This action should be used with the search service result.\n\t ",
+        "operationId": "media.addFromSearchResult",
         "parameters": [
           {
             "description": "The format of the response",
@@ -76916,6 +77270,7 @@
     "/service/media/action/addFromUploadedFile": {
       "get": {
         "description": "Add new entry after the specific media file was uploaded and the upload token id exists\n\t ",
+        "operationId": "media.addFromUploadedFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77268,6 +77623,7 @@
     "/service/media/action/addFromUrl": {
       "get": {
         "description": "Adds new media entry by importing an HTTP or FTP URL.\n\t The entry will be queued for import and then for conversion.\n\t ",
+        "operationId": "media.addFromUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77620,6 +77976,7 @@
     "/service/media/action/anonymousRank": {
       "get": {
         "description": "Anonymously rank a media entry, no validation is done on duplicate rankings\n\t ",
+        "operationId": "media.anonymousRank",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77666,6 +78023,7 @@
     "/service/media/action/approve": {
       "get": {
         "description": "Approve the media entry and mark the pending flags (if any) as moderated (this will make the entry playable)\n\t ",
+        "operationId": "media.approve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77705,6 +78063,7 @@
     "/service/media/action/approveReplace": {
       "get": {
         "description": "Approves media replacement\n\t ",
+        "operationId": "media.approveReplace",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77747,6 +78106,7 @@
     "/service/media/action/bulkUploadAdd": {
       "get": {
         "description": "Add new bulk upload batch job\n\t Conversion profile id can be specified in the API or in the CSV file, the one in the CSV file will be stronger.\n\t If no conversion profile was specified, partner's default will be used\n\t ",
+        "operationId": "media.bulkUploadAdd",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77844,6 +78204,7 @@
     "/service/media/action/cancelReplace": {
       "get": {
         "description": "Cancels media replacement\n\t ",
+        "operationId": "media.cancelReplace",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77886,6 +78247,7 @@
     "/service/media/action/convert": {
       "get": {
         "description": "Convert entry\n\t ",
+        "operationId": "media.convert",
         "parameters": [
           {
             "description": "The format of the response",
@@ -77932,6 +78294,7 @@
     "/service/media/action/count": {
       "get": {
         "description": "Count media entries by filter.\n\t ",
+        "operationId": "media.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78154,6 +78517,7 @@
     "/service/media/action/delete": {
       "get": {
         "description": "Delete a media entry.\n\t ",
+        "operationId": "media.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78193,6 +78557,7 @@
     "/service/media/action/flag": {
       "get": {
         "description": "Flag inappropriate media entry for moderation\n\t ",
+        "operationId": "media.flag",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78264,6 +78629,7 @@
     "/service/media/action/get": {
       "get": {
         "description": "Get media entry by ID.\n\t ",
+        "operationId": "media.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78313,6 +78679,7 @@
     "/service/media/action/getMrss": {
       "get": {
         "description": "Get MRSS by entry id\n     XML will return as an escaped string\n     ",
+        "operationId": "media.getMrss",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78359,6 +78726,7 @@
     "/service/media/action/list": {
       "get": {
         "description": "List media entries by filter with paging support.\n\t ",
+        "operationId": "media.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78596,6 +78964,7 @@
     "/service/media/action/listFlags": {
       "get": {
         "description": "List all pending flags for the media entry\n\t ",
+        "operationId": "media.listFlags",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78650,6 +79019,7 @@
     "/service/media/action/reject": {
       "get": {
         "description": "Reject the media entry and mark the pending flags (if any) as moderated (this will make the entry non playable)\n\t ",
+        "operationId": "media.reject",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78689,6 +79059,7 @@
     "/service/media/action/requestConversion": {
       "get": {
         "description": "Request a new conversion job, this can be used to convert the media entry to a different format\n\t ",
+        "operationId": "media.requestConversion",
         "parameters": [
           {
             "description": "The format of the response",
@@ -78735,6 +79106,7 @@
     "/service/media/action/update": {
       "get": {
         "description": "Update media entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "media.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79087,6 +79459,7 @@
     "/service/media/action/updateContent": {
       "get": {
         "description": "Replace content associated with the media entry.\n\t ",
+        "operationId": "media.updateContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79178,6 +79551,7 @@
     "/service/media/action/updateThumbnail": {
       "get": {
         "description": "Update media entry thumbnail by a specified time offset (In seconds)\n\t If flavor params id not specified, source flavor will be used by default\n\t ",
+        "operationId": "media.updateThumbnail",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79234,6 +79608,7 @@
     "/service/media/action/updateThumbnailFromSourceEntry": {
       "get": {
         "description": "Update media entry thumbnail from a different entry by a specified time offset (In seconds)\n\t If flavor params id not specified, source flavor will be used by default\n\t ",
+        "operationId": "media.updateThumbnailFromSourceEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79297,6 +79672,7 @@
     "/service/media/action/updateThumbnailFromUrl": {
       "get": {
         "description": "Update entry thumbnail using url\n\t ",
+        "operationId": "media.updateThumbnailFromUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79346,6 +79722,7 @@
     "/service/media/action/updateThumbnailJpeg": {
       "get": {
         "description": "Update media entry thumbnail using a raw jpeg file\n\t ",
+        "operationId": "media.updateThumbnailJpeg",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79388,6 +79765,7 @@
     "/service/media/action/upload": {
       "get": {
         "description": "Upload a media file to Kaltura, then the file can be used to create a media entry.\n\t ",
+        "operationId": "media.upload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79420,6 +79798,7 @@
     "/service/mediainfo/action/list": {
       "get": {
         "description": "List media info objects by filter and pager\n\t ",
+        "operationId": "mediaInfo.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79472,6 +79851,7 @@
     "/service/metadata_metadata/action/add": {
       "get": {
         "description": "Allows you to add a metadata object and metadata content associated with Kaltura object\n\t ",
+        "operationId": "metadata.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79557,6 +79937,7 @@
     "/service/metadata_metadata/action/addFromBulk": {
       "get": {
         "description": "Allows you to add a metadata xml data from remote URL.\n\t Enables different permissions than addFromUrl action.\n\t ",
+        "operationId": "metadata.addFromBulk",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79642,6 +80023,7 @@
     "/service/metadata_metadata/action/addFromFile": {
       "get": {
         "description": "Allows you to add a metadata object and metadata file associated with Kaltura object\n\t ",
+        "operationId": "metadata.addFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79720,6 +80102,7 @@
     "/service/metadata_metadata/action/addFromUrl": {
       "get": {
         "description": "Allows you to add a metadata xml data from remote URL\n\t ",
+        "operationId": "metadata.addFromUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79805,6 +80188,7 @@
     "/service/metadata_metadata/action/delete": {
       "get": {
         "description": "Delete an existing metadata\n\t ",
+        "operationId": "metadata.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79844,6 +80228,7 @@
     "/service/metadata_metadata/action/get": {
       "get": {
         "description": "Retrieve a metadata object by id\n\t ",
+        "operationId": "metadata.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79886,6 +80271,7 @@
     "/service/metadata_metadata/action/index": {
       "get": {
         "description": "Index metadata by id, will also index the related object\n\t ",
+        "operationId": "metadata.index",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79932,6 +80318,7 @@
     "/service/metadata_metadata/action/invalidate": {
       "get": {
         "description": "Mark existing metadata as invalid\n\t Used by batch metadata transform\n\t ",
+        "operationId": "metadata.invalidate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -79978,6 +80365,7 @@
     "/service/metadata_metadata/action/list": {
       "get": {
         "description": "List metadata objects by filter and pager\n\t ",
+        "operationId": "metadata.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80143,6 +80531,7 @@
     "/service/metadata_metadata/action/serve": {
       "get": {
         "description": "Serves metadata XML file\n\t ",
+        "operationId": "metadata.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80182,6 +80571,7 @@
     "/service/metadata_metadata/action/update": {
       "get": {
         "description": "Update an existing metadata object with new XML content\n\t ",
+        "operationId": "metadata.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80238,6 +80628,7 @@
     "/service/metadata_metadata/action/updateFromFile": {
       "get": {
         "description": "Update an existing metadata object with new XML file\n\t ",
+        "operationId": "metadata.updateFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80280,6 +80671,7 @@
     "/service/metadata_metadata/action/updateFromXSL": {
       "get": {
         "description": "Action transforms current metadata object XML using a provided XSL.\n\t ",
+        "operationId": "metadata.updateFromXSL",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80322,6 +80714,7 @@
     "/service/metadata_metadataprofile/action/add": {
       "get": {
         "description": "Allows you to add a metadata profile object and metadata profile content associated with Kaltura object type\n\t ",
+        "operationId": "metadataProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80433,6 +80826,7 @@
     "/service/metadata_metadataprofile/action/addFromFile": {
       "get": {
         "description": "Allows you to add a metadata profile object and metadata profile file associated with Kaltura object type\n\t ",
+        "operationId": "metadataProfile.addFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80530,6 +80924,7 @@
     "/service/metadata_metadataprofile/action/delete": {
       "get": {
         "description": "Delete an existing metadata profile\n\t ",
+        "operationId": "metadataProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80569,6 +80964,7 @@
     "/service/metadata_metadataprofile/action/get": {
       "get": {
         "description": "Retrieve a metadata profile object by id\n\t ",
+        "operationId": "metadataProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80611,6 +81007,7 @@
     "/service/metadata_metadataprofile/action/list": {
       "get": {
         "description": "List metadata profile objects by filter and pager\n\t ",
+        "operationId": "metadataProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80800,6 +81197,7 @@
     "/service/metadata_metadataprofile/action/listFields": {
       "get": {
         "description": "List metadata profile fields by metadata profile id\n\t ",
+        "operationId": "metadataProfile.listFields",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80842,6 +81240,7 @@
     "/service/metadata_metadataprofile/action/revert": {
       "get": {
         "description": "Update an existing metadata object definition file\n\t ",
+        "operationId": "metadataProfile.revert",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80891,6 +81290,7 @@
     "/service/metadata_metadataprofile/action/serve": {
       "get": {
         "description": "Serves metadata profile XSD file\n\t ",
+        "operationId": "metadataProfile.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80930,6 +81330,7 @@
     "/service/metadata_metadataprofile/action/serveView": {
       "get": {
         "description": "Serves metadata profile view file\n\t ",
+        "operationId": "metadataProfile.serveView",
         "parameters": [
           {
             "description": "The format of the response",
@@ -80969,6 +81370,7 @@
     "/service/metadata_metadataprofile/action/update": {
       "get": {
         "description": "Update an existing metadata object\n\t ",
+        "operationId": "metadataProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81087,6 +81489,7 @@
     "/service/metadata_metadataprofile/action/updateDefinitionFromFile": {
       "get": {
         "description": "Update an existing metadata object definition file\n\t ",
+        "operationId": "metadataProfile.updateDefinitionFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81129,6 +81532,7 @@
     "/service/metadata_metadataprofile/action/updateTransformationFromFile": {
       "get": {
         "description": "Update an existing metadata object xslt file\n\t ",
+        "operationId": "metadataProfile.updateTransformationFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81171,6 +81575,7 @@
     "/service/metadata_metadataprofile/action/updateViewsFromFile": {
       "get": {
         "description": "Update an existing metadata object views file\n\t ",
+        "operationId": "metadataProfile.updateViewsFromFile",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81213,6 +81618,7 @@
     "/service/mixing/action/add": {
       "get": {
         "description": "Adds a new mix.\n\t If the dataContent is null, a default timeline will be created.\n\t ",
+        "operationId": "mixing.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81274,6 +81680,7 @@
     "/service/mixing/action/anonymousRank": {
       "get": {
         "description": "Anonymously rank a mix entry, no validation is done on duplicate rankings\n\t ",
+        "operationId": "mixing.anonymousRank",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81320,6 +81727,7 @@
     "/service/mixing/action/appendMediaEntry": {
       "get": {
         "description": "Appends a media entry to a the end of the mix timeline, this will save the mix timeline as a new version.\n\t ",
+        "operationId": "mixing.appendMediaEntry",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81369,6 +81777,7 @@
     "/service/mixing/action/clone": {
       "get": {
         "description": "Clones an existing mix.\n\t ",
+        "operationId": "mixing.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81411,6 +81820,7 @@
     "/service/mixing/action/count": {
       "get": {
         "description": "Count mix entries by filter.\n\t ",
+        "operationId": "mixing.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81633,6 +82043,7 @@
     "/service/mixing/action/delete": {
       "get": {
         "description": "Delete a mix entry.\n\t ",
+        "operationId": "mixing.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81672,6 +82083,7 @@
     "/service/mixing/action/get": {
       "get": {
         "description": "Get mix entry by id.\n\t ",
+        "operationId": "mixing.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81721,6 +82133,7 @@
     "/service/mixing/action/getMixesByMediaId": {
       "get": {
         "description": "Get the mixes in which the media entry is included\n\t ",
+        "operationId": "mixing.getMixesByMediaId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81760,6 +82173,7 @@
     "/service/mixing/action/getReadyMediaEntries": {
       "get": {
         "description": "Get all ready media entries that exist in the given mix id\n\t ",
+        "operationId": "mixing.getReadyMediaEntries",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81806,6 +82220,7 @@
     "/service/mixing/action/list": {
       "get": {
         "description": "List entries by filter with paging support.\n\t Return parameter is an array of mix entries.\n\t ",
+        "operationId": "mixing.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81853,6 +82268,7 @@
     "/service/mixing/action/update": {
       "get": {
         "description": "Update mix entry. Only the properties that were set will be updated.\n\t ",
+        "operationId": "mixing.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81921,6 +82337,7 @@
     "/service/notification/action/getClientNotification": {
       "get": {
         "description": "Return the notifications for a specific entry id and type\n\t ",
+        "operationId": "notification.getClientNotification",
         "parameters": [
           {
             "description": "The format of the response",
@@ -81992,6 +82409,7 @@
     "/service/partner/action/count": {
       "get": {
         "description": "Count partner's existing sub-publishers (count includes the partner itself).\n\t ",
+        "operationId": "partner.count",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82191,6 +82609,7 @@
     "/service/partner/action/get": {
       "get": {
         "description": "Retrieve partner object by Id\n\t ",
+        "operationId": "partner.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82233,6 +82652,7 @@
     "/service/partner/action/getInfo": {
       "get": {
         "description": "Retrieve all info attributed to the partner\n\t This action expects no parameters. It returns information for the current KS partnerId.\n\t ",
+        "operationId": "partner.getInfo",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82268,6 +82688,7 @@
     "/service/partner/action/getSecrets": {
       "get": {
         "description": "Retrieve partner secret and admin secret\n\t ",
+        "operationId": "partner.getSecrets",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82324,6 +82745,7 @@
     "/service/partner/action/getStatistics": {
       "get": {
         "description": "Get usage statistics for a partner\n\t Calculation is done according to partner's package\n\t ",
+        "operationId": "partner.getStatistics",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82359,6 +82781,7 @@
     "/service/partner/action/getUsage": {
       "get": {
         "description": "Get usage statistics for a partner\n\t Calculation is done according to partner's package\n\t Additional data returned is a graph points of streaming usage in a timeframe\n\t The resolution can be \"days\" or \"months\"\n\t ",
+        "operationId": "partner.getUsage",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82423,6 +82846,7 @@
     "/service/partner/action/list": {
       "get": {
         "description": "List partners by filter with paging support\n\t Current implementation will only list the sub partners of the partner initiating the api call (using the current KS).\n\t This action is only partially implemented to support listing sub partners of a VAR partner.\n\t ",
+        "operationId": "partner.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82637,6 +83061,7 @@
     "/service/partner/action/listFeatureStatus": {
       "get": {
         "description": "List partner's current processes' statuses\n\t ",
+        "operationId": "partner.listFeatureStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82672,6 +83097,7 @@
     "/service/partner/action/listPartnersForUser": {
       "get": {
         "description": "Retrieve a list of partner objects which the current user is allowed to access.\n\t ",
+        "operationId": "partner.listPartnersForUser",
         "parameters": [
           {
             "description": "The format of the response",
@@ -82886,6 +83312,7 @@
     "/service/partner/action/register": {
       "get": {
         "description": "Create a new Partner object\n\t ",
+        "operationId": "partner.register",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83136,6 +83563,7 @@
     "/service/partner/action/update": {
       "get": {
         "description": "Update details and settings of an existing partner\n\t ",
+        "operationId": "partner.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83372,6 +83800,7 @@
     "/service/permission/action/add": {
       "get": {
         "description": "Adds a new permission object to the account.\n\t ",
+        "operationId": "permission.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83457,6 +83886,7 @@
     "/service/permission/action/delete": {
       "get": {
         "description": "Deletes an existing permission object.\n\t ",
+        "operationId": "permission.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83499,6 +83929,7 @@
     "/service/permission/action/get": {
       "get": {
         "description": "Retrieves a permission object using its ID.\n\t ",
+        "operationId": "permission.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83541,6 +83972,7 @@
     "/service/permission/action/getCurrentPermissions": {
       "get": {
         "description": "Retrieves a list of permissions that apply to the current KS.\n\t ",
+        "operationId": "permission.getCurrentPermissions",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83573,6 +84005,7 @@
     "/service/permission/action/list": {
       "get": {
         "description": "Lists permission objects that are associated with an account.\n\t Blocked permissions are listed unless you use a filter to exclude them.\n\t Blocked permissions are listed unless you use a filter to exclude them.\n\t ",
+        "operationId": "permission.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83742,6 +84175,7 @@
     "/service/permission/action/update": {
       "get": {
         "description": "Updates an existing permission object.\n\t ",
+        "operationId": "permission.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83834,6 +84268,7 @@
     "/service/permissionitem/action/add": {
       "get": {
         "description": "Adds a new permission item object to the account.\n\t This action is available only to Kaltura system administrators.\n\t ",
+        "operationId": "permissionItem.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83939,6 +84374,7 @@
     "/service/permissionitem/action/delete": {
       "get": {
         "description": "Deletes an existing permission item object.\n\t This action is available only to Kaltura system administrators.\n\t ",
+        "operationId": "permissionItem.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -83981,6 +84417,7 @@
     "/service/permissionitem/action/get": {
       "get": {
         "description": "Retrieves a permission item object using its ID.\n\t ",
+        "operationId": "permissionItem.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84023,6 +84460,7 @@
     "/service/permissionitem/action/list": {
       "get": {
         "description": "Lists permission item objects that are associated with an account.\n\t ",
+        "operationId": "permissionItem.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84146,6 +84584,7 @@
     "/service/permissionitem/action/update": {
       "get": {
         "description": "Updates an existing permission item object.\n\t This action is available only to Kaltura system administrators.\n\t ",
+        "operationId": "permissionItem.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84258,6 +84697,7 @@
     "/service/playlist/action/add": {
       "get": {
         "description": "Add new playlist\n\t Note that all entries used in a playlist will become public and may appear in KalturaNetwork\n\t ",
+        "operationId": "playlist.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84529,6 +84969,7 @@
     "/service/playlist/action/clone": {
       "get": {
         "description": "Clone an existing playlist\n\t ",
+        "operationId": "playlist.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84800,6 +85241,7 @@
     "/service/playlist/action/delete": {
       "get": {
         "description": "Delete existing playlist\n\t ",
+        "operationId": "playlist.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84839,6 +85281,7 @@
     "/service/playlist/action/execute": {
       "get": {
         "description": "Retrieve playlist for playing purpose\n\t ",
+        "operationId": "playlist.execute",
         "parameters": [
           {
             "description": "The format of the response",
@@ -84939,6 +85382,7 @@
     "/service/playlist/action/executeFromContent": {
       "get": {
         "description": "Retrieve playlist for playing purpose, based on content\n\t ",
+        "operationId": "playlist.executeFromContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85014,6 +85458,7 @@
     "/service/playlist/action/executeFromFilters": {
       "get": {
         "description": "Revrieve playlist for playing purpose, based on media entry filters\n\t ",
+        "operationId": "playlist.executeFromFilters",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85072,6 +85517,7 @@
     "/service/playlist/action/get": {
       "get": {
         "description": "Retrieve a playlist\n\t ",
+        "operationId": "playlist.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85121,6 +85567,7 @@
     "/service/playlist/action/getStatsFromContent": {
       "get": {
         "description": "Retrieve playlist statistics\n\t ",
+        "operationId": "playlist.getStatsFromContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85180,6 +85627,7 @@
     "/service/playlist/action/list": {
       "get": {
         "description": "List available playlists\n\t ",
+        "operationId": "playlist.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85227,6 +85675,7 @@
     "/service/playlist/action/update": {
       "get": {
         "description": "Update existing playlist\n\t Note - you cannot change playlist type. updated playlist must be of the same type.\n\t ",
+        "operationId": "playlist.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85505,6 +85954,7 @@
     "/service/quiz_quiz/action/add": {
       "get": {
         "description": "Allows to add a quiz to an entry\n\t ",
+        "operationId": "quiz.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85642,6 +86092,7 @@
     "/service/quiz_quiz/action/get": {
       "get": {
         "description": "Allows to get a quiz\n\t ",
+        "operationId": "quiz.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85684,6 +86135,7 @@
     "/service/quiz_quiz/action/getUrl": {
       "get": {
         "description": "sends a with an api request for pdf from quiz object\n\t ",
+        "operationId": "quiz.getUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85736,6 +86188,7 @@
     "/service/quiz_quiz/action/list": {
       "get": {
         "description": "List quiz objects by filter and pager\n\t ",
+        "operationId": "quiz.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85795,6 +86248,7 @@
     "/service/quiz_quiz/action/serve": {
       "get": {
         "description": "creates a pdf from quiz object\n\t The Output type defines the file format in which the quiz will be generated\n\t Currently only PDF files are supported\n\t ",
+        "operationId": "quiz.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85847,6 +86301,7 @@
     "/service/quiz_quiz/action/update": {
       "get": {
         "description": "Allows to update a quiz\n\t ",
+        "operationId": "quiz.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -85984,6 +86439,7 @@
     "/service/report/action/execute": {
       "get": {
         "description": "",
+        "operationId": "report.execute",
         "parameters": [
           {
             "description": "The format of the response",
@@ -86026,6 +86482,7 @@
     "/service/report/action/getBaseTotal": {
       "get": {
         "description": "report getBaseTotal action allows to get a the total base for storage reports  \n\t ",
+        "operationId": "report.getBaseTotal",
         "parameters": [
           {
             "description": "The format of the response",
@@ -86243,6 +86700,7 @@
     "/service/report/action/getCsv": {
       "get": {
         "description": "",
+        "operationId": "report.getCsv",
         "parameters": [
           {
             "description": "The format of the response",
@@ -86282,6 +86740,7 @@
     "/service/report/action/getCsvFromStringParams": {
       "get": {
         "description": "Returns report CSV file executed by string params with the following convention: param1=value1;param2=value2 \n\t ",
+        "operationId": "report.getCsvFromStringParams",
         "parameters": [
           {
             "description": "The format of the response",
@@ -86328,6 +86787,7 @@
     "/service/report/action/getGraphs": {
       "get": {
         "description": "report getGraphs action allows to get a graph data for a specific report. \n\t ",
+        "operationId": "report.getGraphs",
         "parameters": [
           {
             "description": "The format of the response",
@@ -86552,6 +87012,7 @@
     "/service/report/action/getTable": {
       "get": {
         "description": "report getTable action allows to get a graph data for a specific report. \n\t ",
+        "operationId": "report.getTable",
         "parameters": [
           {
             "description": "The format of the response",
@@ -86791,6 +87252,7 @@
     "/service/report/action/getTotal": {
       "get": {
         "description": "report getTotal action allows to get a graph data for a specific report. \n\t ",
+        "operationId": "report.getTotal",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87011,6 +87473,7 @@
     "/service/report/action/getUrlForReportAsCsv": {
       "get": {
         "description": "will create a Csv file for the given report and return the URL to access it\n\t ",
+        "operationId": "report.getUrlForReportAsCsv",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87275,6 +87738,7 @@
     "/service/report/action/serve": {
       "get": {
         "description": "Will serve a requested report\n\t ",
+        "operationId": "report.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87314,6 +87778,7 @@
     "/service/responseprofile/action/add": {
       "get": {
         "description": "Add new response profile\n\t ",
+        "operationId": "responseProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87398,6 +87863,7 @@
     "/service/responseprofile/action/clone": {
       "get": {
         "description": "Clone an existing response profile\n\t ",
+        "operationId": "responseProfile.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87489,6 +87955,7 @@
     "/service/responseprofile/action/delete": {
       "get": {
         "description": "Delete response profile by id\n\t ",
+        "operationId": "responseProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87528,6 +87995,7 @@
     "/service/responseprofile/action/get": {
       "get": {
         "description": "Get response profile by id\n\t ",
+        "operationId": "responseProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87570,6 +88038,7 @@
     "/service/responseprofile/action/list": {
       "get": {
         "description": "List response profiles by filter and pager\n\t ",
+        "operationId": "responseProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87677,6 +88146,7 @@
     "/service/responseprofile/action/recalculate": {
       "get": {
         "description": "Recalculate response profile cached objects\n\t ",
+        "operationId": "responseProfile.recalculate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87749,6 +88219,7 @@
     "/service/responseprofile/action/update": {
       "get": {
         "description": "Update response profile by id\n\t ",
+        "operationId": "responseProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87840,6 +88311,7 @@
     "/service/responseprofile/action/updateStatus": {
       "get": {
         "description": "Update response profile status by id\n\t ",
+        "operationId": "responseProfile.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -87899,6 +88371,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/add": {
       "get": {
         "description": "Add a new scheduled task profile\n\t ",
+        "operationId": "scheduledTaskProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88000,6 +88473,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/delete": {
       "get": {
         "description": "Delete a scheduled task profile\n\t ",
+        "operationId": "scheduledTaskProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88039,6 +88513,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/get": {
       "get": {
         "description": "Retrieve a scheduled task profile by id\n\t ",
+        "operationId": "scheduledTaskProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88081,6 +88556,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/getDryRunResults": {
       "get": {
         "description": "",
+        "operationId": "scheduledTaskProfile.getDryRunResults",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88123,6 +88599,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/list": {
       "get": {
         "description": "List scheduled task profiles\n\t ",
+        "operationId": "scheduledTaskProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88254,6 +88731,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/requestDryRun": {
       "get": {
         "description": "",
+        "operationId": "scheduledTaskProfile.requestDryRun",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88300,6 +88778,7 @@
     "/service/scheduledtask_scheduledtaskprofile/action/update": {
       "get": {
         "description": "Update an existing scheduled task profile\n\t ",
+        "operationId": "scheduledTaskProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88408,6 +88887,7 @@
     "/service/schema/action/serve": {
       "get": {
         "description": "Serves the requested XSD according to the type and name. \n\t ",
+        "operationId": "schema.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88463,6 +88943,7 @@
     "/service/search/action/externalLogin": {
       "get": {
         "description": "",
+        "operationId": "search.externalLogin",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88555,6 +89036,7 @@
     "/service/search/action/getMediaInfo": {
       "get": {
         "description": "Retrieve extra information about media found in search action\n\t Some providers return only part of the fields needed to create entry from, use this action to get the rest of the fields.\n\t ",
+        "operationId": "search.getMediaInfo",
         "parameters": [
           {
             "description": "The format of the response",
@@ -88763,6 +89245,7 @@
     "/service/search/action/search": {
       "get": {
         "description": "Search for media in one of the supported media providers\n\t ",
+        "operationId": "search.search",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89034,6 +89517,7 @@
     "/service/search/action/searchUrl": {
       "get": {
         "description": "Search for media given a specific URL\n\t Kaltura supports a searchURL action on some of the media providers.\n\t This action will return a KalturaSearchResult object based on a given URL (assuming the media provider is supported)\n\t ",
+        "operationId": "search.searchUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89101,6 +89585,7 @@
     "/service/servernode/action/add": {
       "get": {
         "description": "Adds a server node to the Kaltura DB.\n\t ",
+        "operationId": "serverNode.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89188,6 +89673,7 @@
     "/service/servernode/action/delete": {
       "get": {
         "description": "delete server node by id\n\t ",
+        "operationId": "serverNode.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89227,6 +89713,7 @@
     "/service/servernode/action/disable": {
       "get": {
         "description": "Disable server node by id\n\t ",
+        "operationId": "serverNode.disable",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89269,6 +89756,7 @@
     "/service/servernode/action/enable": {
       "get": {
         "description": "Enable server node by id\n\t ",
+        "operationId": "serverNode.enable",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89311,6 +89799,7 @@
     "/service/servernode/action/get": {
       "get": {
         "description": "Get server node by id\n\t ",
+        "operationId": "serverNode.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89353,6 +89842,7 @@
     "/service/servernode/action/list": {
       "get": {
         "description": "",
+        "operationId": "serverNode.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89584,6 +90074,7 @@
     "/service/servernode/action/reportStatus": {
       "get": {
         "description": "Update server node status\n\t ",
+        "operationId": "serverNode.reportStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89678,6 +90169,7 @@
     "/service/servernode/action/update": {
       "get": {
         "description": "Update server node by id \n\t ",
+        "operationId": "serverNode.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89772,6 +90264,7 @@
     "/service/session/action/end": {
       "get": {
         "description": "End a session with the Kaltura server, making the current KS invalid.\n\t ",
+        "operationId": "session.end",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89804,6 +90297,7 @@
     "/service/session/action/get": {
       "get": {
         "description": "Parse session key and return its info\n\t ",
+        "operationId": "session.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89846,6 +90340,7 @@
     "/service/session/action/impersonate": {
       "get": {
         "description": "Start an impersonated session with Kaltura's server.\n\t The result KS is the session key that you should pass to all services that requires a ticket.\n\t ",
+        "operationId": "session.impersonate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -89935,6 +90430,7 @@
     "/service/session/action/impersonateByKs": {
       "get": {
         "description": "Start an impersonated session with Kaltura's server.\n\t The result KS info contains the session key that you should pass to all services that requires a ticket.\n\t Type, expiry and privileges won't be changed if they're not set\n\t ",
+        "operationId": "session.impersonateByKs",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90006,6 +90502,7 @@
     "/service/session/action/start": {
       "get": {
         "description": "Start a session with Kaltura's server.\n\t The result KS is the session key that you should pass to all services that requires a ticket.\n\t ",
+        "operationId": "session.start",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90088,6 +90585,7 @@
     "/service/session/action/startWidgetSession": {
       "get": {
         "description": "Start a session for Kaltura's flash widgets\n\t ",
+        "operationId": "session.startWidgetSession",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90137,6 +90635,7 @@
     "/service/shortlink_shortlink/action/add": {
       "get": {
         "description": "Allows you to add a short link object\n\t ",
+        "operationId": "shortLink.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90212,6 +90711,7 @@
     "/service/shortlink_shortlink/action/delete": {
       "get": {
         "description": "Mark the short link as deleted\n\t ",
+        "operationId": "shortLink.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90254,6 +90754,7 @@
     "/service/shortlink_shortlink/action/get": {
       "get": {
         "description": "Retrieve an short link object by id\n\t ",
+        "operationId": "shortLink.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90296,6 +90797,7 @@
     "/service/shortlink_shortlink/action/goto": {
       "get": {
         "description": "Serves short link\n\t ",
+        "operationId": "shortLink.goto",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90342,6 +90844,7 @@
     "/service/shortlink_shortlink/action/list": {
       "get": {
         "description": "List short link objects by filter and pager\n\t ",
+        "operationId": "shortLink.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90479,6 +90982,7 @@
     "/service/shortlink_shortlink/action/update": {
       "get": {
         "description": "Update exisitng short link\n\t ",
+        "operationId": "shortLink.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90561,6 +91065,7 @@
     "/service/stats/action/collect": {
       "get": {
         "description": "Will write to the event log a single line representing the event\n\t client version - will help interprete the line structure. different client versions might have slightly different data/data formats in the line\nevent_id - number is the row number in yuval's excel\ndatetime - same format as MySql's datetime - can change and should reflect the time zone\nsession id - can be some big random number or guid\npartner id\nentry id\nunique viewer\nwidget id\nui_conf id\nuid - the puser id as set by the ppartner\ncurrent point - in milliseconds\nduration - milliseconds\nuser ip\nprocess duration - in milliseconds\ncontrol id\nseek\nnew point\nreferrer\n\t\n\t\n\t KalturaStatsEvent $event\n\t ",
+        "operationId": "stats.collect",
         "parameters": [
           {
             "description": "The format of the response",
@@ -90803,6 +91308,7 @@
     "/service/stats/action/kmcCollect": {
       "get": {
         "description": "Will collect the kmcEvent sent form the KMC client\n\t // this will actually be an empty function because all events will be sent using GET and will anyway be logged in the apache log\n\t ",
+        "operationId": "stats.kmcCollect",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91020,6 +91526,7 @@
     "/service/stats/action/reportError": {
       "get": {
         "description": "Use this action to report errors to the kaltura server.\n\t ",
+        "operationId": "stats.reportError",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91066,6 +91573,7 @@
     "/service/stats/action/reportKceError": {
       "get": {
         "description": "",
+        "operationId": "stats.reportKceError",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91146,6 +91654,7 @@
     "/service/storageprofile/action/add": {
       "get": {
         "description": "Adds a storage profile to the Kaltura DB.\n\t ",
+        "operationId": "storageProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91411,6 +91920,7 @@
     "/service/storageprofile/action/get": {
       "get": {
         "description": "Get storage profile by id\n\t ",
+        "operationId": "storageProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91453,6 +91963,7 @@
     "/service/storageprofile/action/list": {
       "get": {
         "description": "",
+        "operationId": "storageProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91606,6 +92117,7 @@
     "/service/storageprofile/action/update": {
       "get": {
         "description": "Update storage profile by id \n\t ",
+        "operationId": "storageProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91878,6 +92390,7 @@
     "/service/storageprofile/action/updateStatus": {
       "get": {
         "description": "",
+        "operationId": "storageProfile.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -91934,6 +92447,7 @@
     "/service/syndicationfeed/action/add": {
       "get": {
         "description": "Add new Syndication Feed\n\t ",
+        "operationId": "syndicationFeed.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92247,6 +92761,7 @@
     "/service/syndicationfeed/action/delete": {
       "get": {
         "description": "Delete Syndication Feed by ID\n\t ",
+        "operationId": "syndicationFeed.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92286,6 +92801,7 @@
     "/service/syndicationfeed/action/get": {
       "get": {
         "description": "Get Syndication Feed by ID\n\t ",
+        "operationId": "syndicationFeed.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92328,6 +92844,7 @@
     "/service/syndicationfeed/action/getEntryCount": {
       "get": {
         "description": "get entry count for a syndication feed\n\t ",
+        "operationId": "syndicationFeed.getEntryCount",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92370,6 +92887,7 @@
     "/service/syndicationfeed/action/list": {
       "get": {
         "description": "List Syndication Feeds by filter with paging support\n\t ",
+        "operationId": "syndicationFeed.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92428,6 +92946,7 @@
     "/service/syndicationfeed/action/requestConversion": {
       "get": {
         "description": "request conversion for all entries that doesnt have the required flavor param\n\t returns a comma-separated ids of conversion jobs\n\t ",
+        "operationId": "syndicationFeed.requestConversion",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92467,6 +92986,7 @@
     "/service/syndicationfeed/action/update": {
       "get": {
         "description": "Update Syndication Feed by ID\n\t ",
+        "operationId": "syndicationFeed.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92787,6 +93307,7 @@
     "/service/system/action/getTime": {
       "get": {
         "description": "",
+        "operationId": "system.getTime",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92819,6 +93340,7 @@
     "/service/system/action/getVersion": {
       "get": {
         "description": "",
+        "operationId": "system.getVersion",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92851,6 +93373,7 @@
     "/service/system/action/ping": {
       "get": {
         "description": "",
+        "operationId": "system.ping",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92883,6 +93406,7 @@
     "/service/system/action/pingDatabase": {
       "get": {
         "description": "",
+        "operationId": "system.pingDatabase",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92915,6 +93439,7 @@
     "/service/systempartner_systempartner/action/get": {
       "get": {
         "description": "Retrieve all info about partner\n\t This service gets partner id as parameter and accessable to the admin console partner only\n\t ",
+        "operationId": "systemPartner.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -92957,6 +93482,7 @@
     "/service/systempartner_systempartner/action/getAdminSession": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getAdminSession",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93003,6 +93529,7 @@
     "/service/systempartner_systempartner/action/getConfiguration": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getConfiguration",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93045,6 +93572,7 @@
     "/service/systempartner_systempartner/action/getPackages": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getPackages",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93077,6 +93605,7 @@
     "/service/systempartner_systempartner/action/getPackagesClassOfService": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getPackagesClassOfService",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93109,6 +93638,7 @@
     "/service/systempartner_systempartner/action/getPackagesVertical": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getPackagesVertical",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93141,6 +93671,7 @@
     "/service/systempartner_systempartner/action/getPlayerDeliveryTypes": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getPlayerDeliveryTypes",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93173,6 +93704,7 @@
     "/service/systempartner_systempartner/action/getPlayerEmbedCodeTypes": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getPlayerEmbedCodeTypes",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93205,6 +93737,7 @@
     "/service/systempartner_systempartner/action/getUsage": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.getUsage",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93446,6 +93979,7 @@
     "/service/systempartner_systempartner/action/list": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93660,6 +94194,7 @@
     "/service/systempartner_systempartner/action/listUserLoginData": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.listUserLoginData",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93712,6 +94247,7 @@
     "/service/systempartner_systempartner/action/resetUserPassword": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.resetUserPassword",
         "parameters": [
           {
             "description": "The format of the response",
@@ -93765,6 +94301,7 @@
     "/service/systempartner_systempartner/action/updateConfiguration": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.updateConfiguration",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94466,6 +95003,7 @@
     "/service/systempartner_systempartner/action/updateStatus": {
       "get": {
         "description": "",
+        "operationId": "systemPartner.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94531,6 +95069,7 @@
     "/service/tagsearch_tag/action/deletePending": {
       "get": {
         "description": "Action goes over all tags with instanceCount==0 and checks whether they need to be removed from the DB. Returns number of removed tags.\n     ",
+        "operationId": "tag.deletePending",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94563,6 +95102,7 @@
     "/service/tagsearch_tag/action/indexCategoryEntryTags": {
       "get": {
         "description": "",
+        "operationId": "tag.indexCategoryEntryTags",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94616,6 +95156,7 @@
     "/service/tagsearch_tag/action/search": {
       "get": {
         "description": "",
+        "operationId": "tag.search",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94705,6 +95246,7 @@
     "/service/thumbasset/action/add": {
       "get": {
         "description": "Add thumbnail asset\n     ",
+        "operationId": "thumbAsset.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94800,6 +95342,7 @@
     "/service/thumbasset/action/addFromImage": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.addFromImage",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94842,6 +95385,7 @@
     "/service/thumbasset/action/addFromUrl": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.addFromUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94891,6 +95435,7 @@
     "/service/thumbasset/action/delete": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -94930,6 +95475,7 @@
     "/service/thumbasset/action/generate": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.generate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -95264,6 +95810,7 @@
     "/service/thumbasset/action/generateByEntryId": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.generateByEntryId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -95313,6 +95860,7 @@
     "/service/thumbasset/action/get": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -95355,6 +95903,7 @@
     "/service/thumbasset/action/getByEntryId": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.getByEntryId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -95394,6 +95943,7 @@
     "/service/thumbasset/action/getRemotePaths": {
       "get": {
         "description": "Get remote storage existing paths for the asset\n\t ",
+        "operationId": "thumbAsset.getRemotePaths",
         "parameters": [
           {
             "description": "The format of the response",
@@ -95436,6 +95986,7 @@
     "/service/thumbasset/action/getUrl": {
       "get": {
         "description": "Get download URL for the asset\n\t ",
+        "operationId": "thumbAsset.getUrl",
         "parameters": [
           {
             "description": "The format of the response",
@@ -95767,6 +96318,7 @@
     "/service/thumbasset/action/list": {
       "get": {
         "description": "List Thumbnail Assets by filter and pager\n\t ",
+        "operationId": "thumbAsset.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96203,6 +96755,7 @@
     "/service/thumbasset/action/regenerate": {
       "get": {
         "description": "",
+        "operationId": "thumbAsset.regenerate",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96245,6 +96798,7 @@
     "/service/thumbasset/action/serve": {
       "get": {
         "description": "Serves thumbnail by its id\n\t ",
+        "operationId": "thumbAsset.serve",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96581,6 +97135,7 @@
     "/service/thumbasset/action/serveByEntryId": {
       "get": {
         "description": "Serves thumbnail by entry id and thumnail params id\n\t ",
+        "operationId": "thumbAsset.serveByEntryId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96627,6 +97182,7 @@
     "/service/thumbasset/action/setAsDefault": {
       "get": {
         "description": "Tags the thumbnail as DEFAULT_THUMB and removes that tag from all other thumbnail assets of the entry.\n\t Create a new file sync link on the entry thumbnail that points to the thumbnail asset file sync.\n\t ",
+        "operationId": "thumbAsset.setAsDefault",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96666,6 +97222,7 @@
     "/service/thumbasset/action/setContent": {
       "get": {
         "description": "Update content of thumbnail asset\n     ",
+        "operationId": "thumbAsset.setContent",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96858,6 +97415,7 @@
     "/service/thumbasset/action/update": {
       "get": {
         "description": "Update thumbnail asset\n     ",
+        "operationId": "thumbAsset.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -96953,6 +97511,7 @@
     "/service/thumbparams/action/add": {
       "get": {
         "description": "Add new Thumb Params\n\t ",
+        "operationId": "thumbParams.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97273,6 +97832,7 @@
     "/service/thumbparams/action/delete": {
       "get": {
         "description": "Delete Thumb Params by ID\n\t ",
+        "operationId": "thumbParams.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97312,6 +97872,7 @@
     "/service/thumbparams/action/get": {
       "get": {
         "description": "Get Thumb Params by ID\n\t ",
+        "operationId": "thumbParams.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97354,6 +97915,7 @@
     "/service/thumbparams/action/getByConversionProfileId": {
       "get": {
         "description": "Get Thumb Params by Conversion Profile ID\n\t ",
+        "operationId": "thumbParams.getByConversionProfileId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97393,6 +97955,7 @@
     "/service/thumbparams/action/list": {
       "get": {
         "description": "List Thumb Params by filter with paging support (By default - all system default params will be listed too)\n\t ",
+        "operationId": "thumbParams.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97550,6 +98113,7 @@
     "/service/thumbparams/action/update": {
       "get": {
         "description": "Update Thumb Params by ID\n\t ",
+        "operationId": "thumbParams.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97877,6 +98441,7 @@
     "/service/thumbparamsoutput/action/get": {
       "get": {
         "description": "Get thumb params output object by ID\n\t ",
+        "operationId": "thumbParamsOutput.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97919,6 +98484,7 @@
     "/service/thumbparamsoutput/action/list": {
       "get": {
         "description": "List thumb params output objects by filter and pager\n\t ",
+        "operationId": "thumbParamsOutput.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -97986,6 +98552,7 @@
     "/service/uiconf/action/add": {
       "get": {
         "description": "UIConf Add action allows you to add a UIConf to Kaltura DB\n\t ",
+        "operationId": "uiConf.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98177,6 +98744,7 @@
     "/service/uiconf/action/clone": {
       "get": {
         "description": "Clone an existing UIConf\n\t ",
+        "operationId": "uiConf.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98219,6 +98787,7 @@
     "/service/uiconf/action/delete": {
       "get": {
         "description": "Delete an existing UIConf\n\t ",
+        "operationId": "uiConf.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98258,6 +98827,7 @@
     "/service/uiconf/action/get": {
       "get": {
         "description": "Retrieve a UIConf by id\n\t ",
+        "operationId": "uiConf.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98300,6 +98870,7 @@
     "/service/uiconf/action/getAvailableTypes": {
       "get": {
         "description": "Retrieve a list of all available versions by object type\n\t ",
+        "operationId": "uiConf.getAvailableTypes",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98332,6 +98903,7 @@
     "/service/uiconf/action/list": {
       "get": {
         "description": "Retrieve a list of available UIConfs\n\t ",
+        "operationId": "uiConf.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98540,6 +99112,7 @@
     "/service/uiconf/action/listTemplates": {
       "get": {
         "description": "retrieve a list of available template UIConfs\n\t ",
+        "operationId": "uiConf.listTemplates",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98748,6 +99321,7 @@
     "/service/uiconf/action/update": {
       "get": {
         "description": "Update an existing UIConf\n\t ",
+        "operationId": "uiConf.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98946,6 +99520,7 @@
     "/service/upload/action/getUploadedFileTokenByFileName": {
       "get": {
         "description": "",
+        "operationId": "upload.getUploadedFileTokenByFileName",
         "parameters": [
           {
             "description": "The format of the response",
@@ -98988,6 +99563,7 @@
     "/service/upload/action/upload": {
       "get": {
         "description": "",
+        "operationId": "upload.upload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99020,6 +99596,7 @@
     "/service/uploadtoken/action/add": {
       "get": {
         "description": "Adds new upload token to upload a file\n\t ",
+        "operationId": "uploadToken.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99067,6 +99644,7 @@
     "/service/uploadtoken/action/delete": {
       "get": {
         "description": "Deletes the upload token by upload token id\n\t ",
+        "operationId": "uploadToken.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99106,6 +99684,7 @@
     "/service/uploadtoken/action/get": {
       "get": {
         "description": "Get upload token by id\n\t ",
+        "operationId": "uploadToken.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99148,6 +99727,7 @@
     "/service/uploadtoken/action/list": {
       "get": {
         "description": "List upload token by filter with pager support. \n\t When using a user session the service will be restricted to users objects only.\n\t ",
+        "operationId": "uploadToken.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99246,6 +99826,7 @@
     "/service/uploadtoken/action/upload": {
       "get": {
         "description": "Upload a file using the upload token id, returns an error on failure (an exception will be thrown when using one of the Kaltura clients)\n\t Chunks can be uploaded in parallel and they will be appended according to their resumeAt position.\n\t A parallel upload session should have three stages:\n\t 1. A single upload with resume=false and finalChunk=false\n\t 2. Parallel upload requests each with resume=true,finalChunk=false and the expected resumetAt position.\n\t If a chunk fails to upload it can be re-uploaded.\n\t 3. After all of the chunks have been uploaded a final chunk (can be of zero size) should be uploaded \n\t with resume=true, finalChunk=true and the expected resumeAt position. In case an UPLOAD_TOKEN_CANNOT_MATCH_EXPECTED_SIZE exception\n\t has been returned (indicating not all of the chunks were appended yet) the final request can be retried.     \n\t ",
+        "operationId": "uploadToken.upload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99309,6 +99890,7 @@
     "/service/user/action/add": {
       "get": {
         "description": "Adds a new user to an existing account in the Kaltura database.\n\t Input param $id is the unique identifier in the partner's system.\n\t ",
+        "operationId": "user.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99799,6 +100381,7 @@
     "/service/user/action/addFromBulkUpload": {
       "get": {
         "description": "",
+        "operationId": "user.addFromBulkUpload",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99890,6 +100473,7 @@
     "/service/user/action/checkLoginDataExists": {
       "get": {
         "description": "Action which checks whther user login \n     ",
+        "operationId": "user.checkLoginDataExists",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99927,6 +100511,7 @@
     "/service/user/action/delete": {
       "get": {
         "description": "Deletes a user from a partner account.\n\t ",
+        "operationId": "user.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -99969,6 +100554,7 @@
     "/service/user/action/disableLogin": {
       "get": {
         "description": "Disables a user's ability to log into a partner account using an email address and a password.\n\t You may use either a userId or a loginId parameter for this action.\n\t ",
+        "operationId": "user.disableLogin",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100018,6 +100604,7 @@
     "/service/user/action/enableLogin": {
       "get": {
         "description": "Enables a user to log into a partner account using an email address and a password\n\t ",
+        "operationId": "user.enableLogin",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100074,6 +100661,7 @@
     "/service/user/action/get": {
       "get": {
         "description": "Retrieves a user object for a specified user ID.\n\t ",
+        "operationId": "user.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100116,6 +100704,7 @@
     "/service/user/action/getByLoginId": {
       "get": {
         "description": "Retrieves a user object for a user's login ID and partner ID.\n\t A login ID is the email address used by a user to log into the system.\n\t ",
+        "operationId": "user.getByLoginId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100158,6 +100747,7 @@
     "/service/user/action/index": {
       "get": {
         "description": "Index an entry by id.\n\t ",
+        "operationId": "user.index",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100204,6 +100794,7 @@
     "/service/user/action/list": {
       "get": {
         "description": "Lists user objects that are associated with an account.\n\t Blocked users are listed unless you use a filter to exclude them.\n\t Deleted users are not listed unless you use a filter to include them.\n\t ",
+        "operationId": "user.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100428,6 +101019,7 @@
     "/service/user/action/login": {
       "get": {
         "description": "Logs a user into a partner account with a partner ID, a partner user ID (puser), and a user password.\n\t ",
+        "operationId": "user.login",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100495,6 +101087,7 @@
     "/service/user/action/loginByLoginId": {
       "get": {
         "description": "Logs a user into a partner account with a user login ID and a user password.\n\t ",
+        "operationId": "user.loginByLoginId",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100562,6 +101155,7 @@
     "/service/user/action/notifyBan": {
       "get": {
         "description": "Notifies that a user is banned from an account.\n\t ",
+        "operationId": "user.notifyBan",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100601,6 +101195,7 @@
     "/service/user/action/resetPassword": {
       "get": {
         "description": "Reset user's password and send the user an email to generate a new one.\n\t ",
+        "operationId": "user.resetPassword",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100640,6 +101235,7 @@
     "/service/user/action/setInitialPassword": {
       "get": {
         "description": "Set initial users password\n\t ",
+        "operationId": "user.setInitialPassword",
         "parameters": [
           {
             "description": "The format of the response",
@@ -100686,6 +101282,7 @@
     "/service/user/action/update": {
       "get": {
         "description": "Updates an existing user object.\n\t You can also use this action to update the userId.\n\t ",
+        "operationId": "user.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101183,6 +101780,7 @@
     "/service/user/action/updateLoginData": {
       "get": {
         "description": "Updates a user's login data: email, password, name.\n\t ",
+        "operationId": "user.updateLoginData",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101257,6 +101855,7 @@
     "/service/userentry/action/add": {
       "get": {
         "description": "Adds a user_entry to the Kaltura DB.\n\t ",
+        "operationId": "userEntry.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101309,6 +101908,7 @@
     "/service/userentry/action/delete": {
       "get": {
         "description": "",
+        "operationId": "userEntry.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101351,6 +101951,7 @@
     "/service/userentry/action/get": {
       "get": {
         "description": "",
+        "operationId": "userEntry.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101393,6 +101994,7 @@
     "/service/userentry/action/list": {
       "get": {
         "description": "",
+        "operationId": "userEntry.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101568,6 +102170,7 @@
     "/service/userentry/action/submitQuiz": {
       "get": {
         "description": "Submits the quiz so that it's status will be submitted and calculates the score for the quiz\n\t ",
+        "operationId": "userEntry.submitQuiz",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101610,6 +102213,7 @@
     "/service/userentry/action/update": {
       "get": {
         "description": "",
+        "operationId": "userEntry.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101666,6 +102270,7 @@
     "/service/userrole/action/add": {
       "get": {
         "description": "Adds a new user role object to the account.\n\t ",
+        "operationId": "userRole.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101741,6 +102346,7 @@
     "/service/userrole/action/clone": {
       "get": {
         "description": "Creates a new user role object that is a duplicate of an existing role.\n\t ",
+        "operationId": "userRole.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101783,6 +102389,7 @@
     "/service/userrole/action/delete": {
       "get": {
         "description": "Deletes an existing user role object.\n\t ",
+        "operationId": "userRole.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101825,6 +102432,7 @@
     "/service/userrole/action/get": {
       "get": {
         "description": "Retrieves a user role object using its ID.\n\t ",
+        "operationId": "userRole.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -101867,6 +102475,7 @@
     "/service/userrole/action/list": {
       "get": {
         "description": "Lists user role objects that are associated with an account.\n\t Blocked user roles are listed unless you use a filter to exclude them.\n\t Deleted user roles are not listed unless you use a filter to include them.\n\t ",
+        "operationId": "userRole.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102009,6 +102618,7 @@
     "/service/userrole/action/update": {
       "get": {
         "description": "Updates an existing user role object.\n\t ",
+        "operationId": "userRole.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102091,6 +102701,7 @@
     "/service/varconsole_varconsole/action/getPartnerUsage": {
       "get": {
         "description": "Function which calulates partner usage of a group of a VAR's sub-publishers\n     ",
+        "operationId": "varConsole.getPartnerUsage",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102416,6 +103027,7 @@
     "/service/varconsole_varconsole/action/updateStatus": {
       "get": {
         "description": "Function to change a sub-publisher's status\n\t ",
+        "operationId": "varConsole.updateStatus",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102474,6 +103086,7 @@
     "/service/virusscan_virusscanprofile/action/add": {
       "get": {
         "description": "Allows you to add an virus scan profile object and virus scan profile content associated with Kaltura object\n\t ",
+        "operationId": "virusScanProfile.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102561,6 +103174,7 @@
     "/service/virusscan_virusscanprofile/action/delete": {
       "get": {
         "description": "Mark the virus scan profile as deleted\n\t ",
+        "operationId": "virusScanProfile.delete",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102603,6 +103217,7 @@
     "/service/virusscan_virusscanprofile/action/get": {
       "get": {
         "description": "Retrieve an virus scan profile object by id\n\t ",
+        "operationId": "virusScanProfile.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102645,6 +103260,7 @@
     "/service/virusscan_virusscanprofile/action/list": {
       "get": {
         "description": "List virus scan profile objects by filter and pager\n\t ",
+        "operationId": "virusScanProfile.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102778,6 +103394,7 @@
     "/service/virusscan_virusscanprofile/action/scan": {
       "get": {
         "description": "Scan flavor asset according to virus scan profile\n\t ",
+        "operationId": "virusScanProfile.scan",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102824,6 +103441,7 @@
     "/service/virusscan_virusscanprofile/action/update": {
       "get": {
         "description": "Update exisitng virus scan profile, it is possible to update the virus scan profile id too\n\t ",
+        "operationId": "virusScanProfile.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -102918,6 +103536,7 @@
     "/service/widget/action/add": {
       "get": {
         "description": "Add new widget, can be attached to entry or kshow\n\t SourceWidget is ignored.\n\t ",
+        "operationId": "widget.add",
         "parameters": [
           {
             "description": "The format of the response",
@@ -103010,6 +103629,7 @@
     "/service/widget/action/clone": {
       "get": {
         "description": "Add widget based on existing widget.\n\t Must provide valid sourceWidgetId\n\t ",
+        "operationId": "widget.clone",
         "parameters": [
           {
             "description": "The format of the response",
@@ -103102,6 +103722,7 @@
     "/service/widget/action/get": {
       "get": {
         "description": "Get widget by id\n\t ",
+        "operationId": "widget.get",
         "parameters": [
           {
             "description": "The format of the response",
@@ -103144,6 +103765,7 @@
     "/service/widget/action/list": {
       "get": {
         "description": "Retrieve a list of available widget depends on the filter given\n\t ",
+        "operationId": "widget.list",
         "parameters": [
           {
             "description": "The format of the response",
@@ -103251,6 +103873,7 @@
     "/service/widget/action/update": {
       "get": {
         "description": "Update exisiting widget\n \t ",
+        "operationId": "widget.update",
         "parameters": [
           {
             "description": "The format of the response",
@@ -103350,6 +103973,7 @@
     "/service/xinternal/action/xAddBulkDownload": {
       "get": {
         "description": "Creates new download job for multiple entry ids (comma separated), an email will be sent when the job is done\n\t This sevice support the following entries: \n\t - MediaEntry\n\t - Video will be converted using the flavor params id\n\t - Audio will be downloaded as MP3\n\t - Image will be downloaded as Jpeg\n\t - MixEntry will be flattened using the flavor params id\n\t - Other entry types are not supported\n\t Returns the admin email that the email message will be sent to \n\t ",
+        "operationId": "xInternal.xAddBulkDownload",
         "parameters": [
           {
             "description": "The format of the response",
