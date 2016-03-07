@@ -13,7 +13,7 @@ Converter.convert({
     if (errs) console.log("ERRORS", JSON.stringify(errs, null, 2));
     if (warnings) {
       warnings = warnings.filter(w => w.code !== 'UNUSED_DEFINITION')
-      console.log("WARNINGS", JSON.stringify(warnings, null, 2));
+      if (warnings.length) console.log("WARNINGS", JSON.stringify(warnings, null, 2));
     }
   })
 });
