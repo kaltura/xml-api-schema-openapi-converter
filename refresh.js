@@ -10,7 +10,10 @@ Converter.convert({
   if (err) console.log(err);
   FS.writeFileSync('out/swagger.json', spec.stringify());
   spec.validate(function(errs, warnings) {
-    if (errs) console.log("ERRORS", errs);
-    if (warnings) console.log("WARNINGS", warnings);
+    if (errs) console.log("ERRORS", JSON.stringify(errs, null, 2));
+    if (warnings) {
+      warnings = warnings.filter(w => w.code !== 'UNUSED_DEFINITION')
+      console.log("WARNINGS", JSON.stringify(warnings, null, 2));
+    }
   })
 });
