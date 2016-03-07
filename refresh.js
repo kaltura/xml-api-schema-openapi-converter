@@ -9,4 +9,8 @@ Converter.convert({
 }, function(err, spec) {
   if (err) console.log(err);
   FS.writeFileSync('out/swagger.json', spec.stringify());
+  spec.validate(function(errs, warnings) {
+    if (errs) console.log("ERRORS", errs);
+    if (warnings) console.log("WARNINGS", warnings);
+  })
 });
