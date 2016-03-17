@@ -1,6 +1,7 @@
 var FS = require('fs');
 var Converter = require('api-spec-converter');
 var Kaltura = require('./lib/kaltura-spec');
+var args = require('yargs').argv;
 
 Converter.convert({
   from: 'kaltura',
@@ -9,11 +10,14 @@ Converter.convert({
 }, function(err, spec) {
   if (err) console.log(err);
   FS.writeFileSync('out/swagger.json', spec.stringify());
-  spec.validate(function(errs, warnings) {
-    if (errs) console.log("ERRORS", JSON.stringify(errs, null, 2));
-    if (warnings) {
-      warnings = warnings.filter(w => w.code !== 'UNUSED_DEFINITION')
-      if (warnings.length) console.log("WARNINGS", JSON.stringify(warnings, null, 2));
-    }
-  })
+  if (!args.novalidate) {
+    console.log('Done, validating...');
+    spec.validate(function(errs, warnings) {
+      if (errs) console.log("ERRORS", JSON.stringify(errs, null, 2));
+      if (warnings) {
+        warnings = warnings.filter(w => w.code !== 'UNUSED_DEFINITION')
+        if (warnings.length) console.log("WARNINGS", JSON.stringify(warnings, null, 2));
+      }
+    })
+  }
 });
