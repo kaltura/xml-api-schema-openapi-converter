@@ -16,7 +16,7 @@
     "url": "https://github.com/bobby-brennan/kaltura-spec-converter/issues"
   },
   "homepage": "https://github.com/bobby-brennan/kaltura-spec-converter",
-  "dependencies": {
+  "devDependencies": {
     "api-spec-converter": "^1.6.1",
     "kaltura-schema": "^3.2.0",
     "xml2js": "^0.4.9",
