@@ -1,5 +1,6 @@
 var fs = require('fs');
 var request = require('request');
+var cheerio = require('cheerio');
 
 var schemas = [{
   label: 'Syndication Feed',
@@ -23,19 +24,17 @@ var schemas = [{
 
 schemas.forEach(function(s) {
   s.downloadURL = 'http://www.kaltura.com/api_v3/index.php/service/schema/action/serve/type/' + s.type + '/name/' + s.type + '.xsd';
-  s.filename = __dirname + '/schemas/' + s.type + '.xsd';
-  s.xml = fs.readFileSync(s.filename, 'utf8');
+  s.htmlURL = 'http://www.kaltura.com/api_v3/xsdDoc/index.php?type=' + s.type;
+  s.xsdFilename = __dirname + '/schemas/' + s.type + '.xsd';
+  s.htmlFilename = __dirname + '/schemas/html/' + s.type + '.html';
+  s.html = fs.readFileSync(s.htmlFilename, 'utf8');
+  s.xml = fs.readFileSync(s.xsdFilename, 'utf8');
 })
 
+var SCHEMA_MD = fs.readFileSync(__dirname + '/schemas.md', 'utf8');
+
 function getContents(s) {
-  return [
-    '## ' + s.label,
-    '[Download XSD](' + s.downloadURL + ')',
-    '',
-    '```xml',
-    s.xml,
-    '```',
-  ].join('\n');
+  return SCHEMA_MD.replace('{{ label }}', s.label).replace('{{ html }}', s.html);
 }
 
 module.exports = schemas.map(function(s) {
@@ -49,7 +48,12 @@ if (require.main === module) {
   schemas.forEach(function(s) {
     request.get(s.downloadURL, function(err, resp, body) {
       if (err || resp.statusCode !== 200) throw new Error(err || resp.statusCode);
-      fs.writeFileSync(__dirname + '/schemas/' + s.type + '.xsd', body)
+      fs.writeFileSync(s.xsdFilename, body);
+      request.get(s.htmlURL, function(err, resp, body) {
+        if (err || resp.statusCode !== 200) throw new Error(err || resp.statusCode);
+        var $ = cheerio.load(body);
+        fs.writeFileSync(s.htmlFilename, $('#doc').html());
+      })
     })
   })
 }
