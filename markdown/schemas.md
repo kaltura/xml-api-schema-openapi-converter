@@ -1,3 +1,5 @@
+# {{ label }}
+
 <style>
 #KalturaSchemaDoc .code {
     height: 300px;
@@ -32,8 +34,6 @@
   font-size: 12px;
 }
 </style>
-
-# {{ label }}
 
 <div id="KalturaSchemaDoc">
 {{ html }}
