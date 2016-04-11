@@ -1,0 +1,490 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+	<xs:complexType name="T_scenes">
+		<xs:sequence>
+			<xs:element ref="scene" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Cue point element</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="T_scene" abstract="true">
+		<xs:sequence>
+			<xs:element name="sceneStartTime" minOccurs="1" maxOccurs="1" type="xs:time">
+				<xs:annotation>
+					<xs:documentation>Cue point start time</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tags" minOccurs="0" maxOccurs="1" type="T_tags">
+				<xs:annotation>
+					<xs:documentation>Cue point searchable keywords</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		
+		<xs:attribute name="sceneId" use="optional">
+			<xs:annotation>
+				<xs:documentation>ID of cue point to which actions (update/delete) can be applied</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="250"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="systemName" use="optional">
+			<xs:annotation>
+				<xs:documentation>System name of cue point to which actions (update/delete) can be applied</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="120"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="entryId" use="required">
+			<xs:annotation>
+				<xs:documentation>ID of entry to associate the cue point with</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		
+	</xs:complexType>
+	<xs:complexType name="T_tags">
+		<xs:sequence>
+			<xs:element name="tag" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Specifies a single free text tag to be set for the related object</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="scenes" type="T_scenes">
+		<xs:annotation>
+			<xs:documentation>Cue points wrapper</xs:documentation>
+			<xs:appinfo>
+				<example>
+					<scenes>
+						<scene-ad-cue-point entryId="{entry id}" systemName="MY_AD_CUE_POINT_SYSTEM_NAME">...</scene-ad-cue-point>
+						<scene-annotation entryId="{entry id}" systemName="MY_ANNOTATION_PARENT_SYSTEM_NAME">...</scene-annotation>
+						<scene-annotation entryId="{entry id}">...</scene-annotation>
+						<scene-code-cue-point entryId="{entry id}">...</scene-code-cue-point>
+						<scene-thumb-cue-point entryId="{entry id}">...</scene-thumb-cue-point>
+					</scenes>
+				</example>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="scene" type="T_scene">
+		<xs:annotation>
+			<xs:documentation>
+				Base cue point element<br/>
+				Is abstract and cannot be used<br/>
+				Use the extended elements only
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="scene-extension"/>		
+		
+	<!-- adCuePoint -->
+		
+	<xs:complexType name="T_scene_adCuePoint">
+		<xs:complexContent>
+			<xs:extension base="T_scene">
+				<xs:sequence>
+					<xs:element name="sceneEndTime" minOccurs="0" maxOccurs="1" type="xs:time">
+						<xs:annotation>
+							<xs:documentation>Cue point end time</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="sceneTitle" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Textual title</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="250"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="sourceUrl" minOccurs="0" maxOccurs="1" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The URL of the ad XML</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="adType" minOccurs="1" maxOccurs="1" type="KalturaAdType">
+						<xs:annotation>
+							<xs:documentation>Indicates the ad type</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="protocolType" minOccurs="1" maxOccurs="1" type="KalturaAdProtocolType">
+						<xs:annotation>
+							<xs:documentation>Indicates the ad protocol type</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					
+					<xs:element ref="scene-extension" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="scene-ad-cue-point" type="T_scene_adCuePoint" substitutionGroup="scene">
+		<xs:annotation>
+			<xs:documentation>Single ad cue point element</xs:documentation>
+			<xs:appinfo>
+				<example>
+					<scene-ad-cue-point sceneId="{scene id}" entryId="{entry id}" systemName="MY_AD_CUE_POINT_SYSTEM_NAME">
+						<sceneStartTime>00:00:05</sceneStartTime>
+						<tags>
+							<tag>sample</tag>
+							<tag>my_tag</tag>
+						</tags>
+						<sceneTitle>my ad title</sceneTitle>
+						<sourceUrl>http://source.to.my/ad.xml</sourceUrl>
+						<adType>1</adType>
+						<protocolType>1</protocolType>
+					</scene-ad-cue-point>
+				</example>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+		
+		
+	<!-- annotation -->
+	
+	<xs:complexType name="T_scene_annotation">
+		<xs:complexContent>
+			<xs:extension base="T_scene">
+				<xs:sequence>
+					<xs:element name="sceneEndTime" minOccurs="1" maxOccurs="1" type="xs:time">
+						<xs:annotation>
+							<xs:documentation>Cue point end time</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="sceneText" minOccurs="0" maxOccurs="1" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Free text description</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:choice minOccurs="0" maxOccurs="1">
+						<xs:element name="parent" minOccurs="1" maxOccurs="1">
+							<xs:annotation>
+								<xs:documentation>System name of the parent annotation</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="120"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="parentId" minOccurs="1" maxOccurs="1">
+							<xs:annotation>
+								<xs:documentation>ID of the parent annotation</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="250"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:choice>
+					
+					<xs:element ref="scene-extension" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="scene-annotation" type="T_scene_annotation" substitutionGroup="scene">
+		<xs:annotation>
+			<xs:documentation>Single annotation element</xs:documentation>
+			<xs:appinfo>
+				<example title="Single annotation example">
+					<scene-annotation entryId="{entry id}">
+						<sceneStartTime>00:00:05.3</sceneStartTime>
+						<tags>
+							<tag>sample</tag>
+							<tag>my_tag</tag>
+						</tags>
+						<sceneEndTime>00:00:10</sceneEndTime>
+						<sceneText>my annotation</sceneText>
+					</scene-annotation>
+				</example>
+				<example title="Multiple related annotations example">
+					<scene-annotation entryId="{entry id}" systemName="MY_ANNOTATION_PARENT_SYSTEM_NAME">
+						<sceneStartTime>00:00:05.3</sceneStartTime>
+						<tags>
+							<tag>sample</tag>
+							<tag>my_tag</tag>
+						</tags>
+						<sceneEndTime>00:00:10</sceneEndTime>
+						<sceneText>my annotation parent</sceneText>
+					</scene-annotation>
+					<scene-annotation entryId="{entry id}">
+						<sceneStartTime>00:00:05.3</sceneStartTime>
+						<tags>
+							<tag>sample</tag>
+							<tag>my_tag</tag>
+						</tags>
+						<sceneEndTime>00:00:10</sceneEndTime>
+						<sceneText>my annotation child</sceneText>
+						<parent>MY_ANNOTATION_PARENT_SYSTEM_NAME</parent>
+					</scene-annotation>
+				</example>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+		
+		
+	<!-- codeCuePoint -->
+	
+	<xs:complexType name="T_scene_codeCuePoint">
+		<xs:complexContent>
+			<xs:extension base="T_scene">
+				<xs:sequence>
+					<xs:element name="sceneEndTime" minOccurs="0" maxOccurs="1" type="xs:time">
+						<xs:annotation>
+							<xs:documentation>Cue point end time</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="code" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Textual code</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="250"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="description" minOccurs="0" maxOccurs="1" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Free text description</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+	
+					<xs:element ref="scene-extension" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="scene-code-cue-point" type="T_scene_codeCuePoint" substitutionGroup="scene">
+		<xs:annotation>
+			<xs:documentation>Single code cue point element</xs:documentation>
+			<xs:appinfo>
+				<example>
+					<scene-code-cue-point sceneId="{scene id}" entryId="{entry id}">
+						<sceneStartTime>00:00:05.3</sceneStartTime>
+						<tags>
+							<tag>sample</tag>
+							<tag>my_tag</tag>
+						</tags>
+						<code>MY_CODE</code>
+						<description>my code cue point description</description>
+					</scene-code-cue-point>
+				</example>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+		
+		
+	<!-- thumbCuePoint -->
+	
+	<xs:complexType name="T_scene_thumbCuePoint">
+		<xs:complexContent>
+			<xs:extension base="T_scene">
+				<xs:sequence>
+					<xs:element name="title" minOccurs="1" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="description" minOccurs="1" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="subType" minOccurs="0" maxOccurs="1" type="KalturaThumbCuePointSubType">
+						<xs:annotation>
+							<xs:documentation>Indicates the thumb cue point sub type 1 = Slide 2 = Chapter</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="scene-extension" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="scene-thumb-cue-point" type="T_scene_thumbCuePoint" substitutionGroup="scene">
+		<xs:annotation>
+			<xs:documentation>Single thumb cue point element</xs:documentation>
+			<xs:appinfo>
+				<example>
+					<scene-thumb-cue-point sceneId="{scene id}" entryId="{entry id}">
+						<sceneStartTime>00:00:05.3</sceneStartTime>
+						<tags>
+							<tag>my_tag</tag>
+						</tags>
+					</scene-thumb-cue-point>
+				</example>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+	
+		
+		
+	<!-- cuePointMetadata -->
+	
+	<xs:complexType name="T_customData">
+		<xs:sequence>
+			<xs:any namespace="##local" processContents="skip" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Custom metadata XML according to schema profile</xs:documentation>
+				</xs:annotation>		
+			</xs:any>			
+		</xs:sequence>
+		
+		<xs:attribute name="metadataId" use="optional" type="xs:int">
+			<xs:annotation>
+				<xs:documentation>Id of the custom metadata object</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="metadataProfile" use="optional" type="xs:string">
+			<xs:annotation>
+				<xs:documentation>Custom metadata schema profile system name</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="metadataProfileId" use="optional" type="xs:int">
+			<xs:annotation>
+				<xs:documentation>Custom metadata schema profile id</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+	</xs:complexType>
+	
+	<xs:element name="scene-customData" type="T_customData" substitutionGroup="scene-extension">
+		<xs:annotation>
+			<xs:documentation>XML for custom metadata</xs:documentation>
+			<xs:appinfo>
+				<example>
+					<scene-ad-cue-point entryId="{entry id}">
+						<sceneStartTime>00:00:05</sceneStartTime>
+						<sceneTitle>my ad title</sceneTitle>
+						<sourceUrl>http://source.to.my/ad.xml</sourceUrl>
+						<adType>1</adType>
+						<protocolType>1</protocolType>
+						<scene-customData metadataProfile="MY_AD_METADATA_PROFILE_SYSTEM_NAME">
+							<metadata>
+								<adData>my ad custom data</adData>
+							</metadata>
+						</scene-customData>
+					</scene-ad-cue-point>
+				</example>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+			
+
+		<!-- quiz -->
+
+		<xs:complexType name="T_scene_questionCuePoint">
+			<xs:complexContent>
+				<xs:extension base="T_scene">
+				<xs:sequence>
+					<xs:element name="question" minOccurs="1" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="hint" minOccurs="0" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="explanation" minOccurs="0" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="optionalAnswers" minOccurs="0" maxOccurs="1" type="KalturaOptionalAnswersArray"></xs:element>
+					<xs:element name="correctAnswerKeys" minOccurs="0" maxOccurs="1" type="KalturaStringArray"></xs:element>
+				</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+
+		<xs:element name="scene-question-cue-point" type="T_scene_questionCuePoint" substitutionGroup="scene">
+			<xs:annotation>
+				<xs:documentation>Single question cue point element</xs:documentation>
+				<xs:appinfo>
+					<example>
+						<scene-question-cue-point sceneId="{scene id}" entryId="{entry id}">
+							<sceneStartTime>00:00:05.3</sceneStartTime>
+							<tags>
+								<tag>my_tag</tag>
+							</tags>
+						</scene-question-cue-point>
+					</example>
+				</xs:appinfo>
+			</xs:annotation>
+		</xs:element>
+
+		<xs:complexType name="T_scene_answerCuePoint">
+			<xs:complexContent>
+				<xs:extension base="T_scene">
+				<xs:sequence>
+					<xs:element name="answerKey" minOccurs="1" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="quizUserEntryId" minOccurs="1" maxOccurs="1" type="xs:string"> </xs:element>
+					<xs:element name="parentId" minOccurs="1" maxOccurs="1" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>ID of the parent questionCuePoint</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+
+		<xs:element name="scene-answer-cue-point" type="T_scene_answerCuePoint" substitutionGroup="scene">
+			<xs:annotation>
+				<xs:documentation>Single answer cue point element</xs:documentation>
+				<xs:appinfo>
+					<example>
+						<scene-answer-cue-point sceneId="{scene id}" entryId="{entry id}">
+							<sceneStartTime>00:00:05.3</sceneStartTime>
+							<tags>
+								<tag>my_tag</tag>
+							</tags>
+						</scene-answer-cue-point>
+					</example>
+				</xs:appinfo>
+			</xs:annotation>
+		</xs:element>
+
+		
+	<!-- Kaltura enum types -->
+	
+	<xs:simpleType name="KalturaAdType">
+		<xs:annotation><xs:documentation>http://www.kaltura.com/api_v3/testmeDoc/index.php?object=KalturaAdType</xs:documentation></xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"><xs:annotation><xs:documentation>VIDEO</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="2"><xs:annotation><xs:documentation>OVERLAY</xs:documentation></xs:annotation></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+			
+	<xs:simpleType name="KalturaDynamicEnum">
+		<xs:annotation><xs:documentation>http://www.kaltura.com/api_v3/testmeDoc/index.php?object=KalturaDynamicEnum</xs:documentation></xs:annotation>
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+			
+	<xs:simpleType name="KalturaAdProtocolType">
+		<xs:annotation><xs:documentation>http://www.kaltura.com/api_v3/testmeDoc/index.php?object=KalturaAdProtocolType</xs:documentation></xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="0"><xs:annotation><xs:documentation>CUSTOM</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="1"><xs:annotation><xs:documentation>VAST</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="2"><xs:annotation><xs:documentation>VAST_2_0</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="3"><xs:annotation><xs:documentation>VPAID</xs:documentation></xs:annotation></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+			
+	<xs:simpleType name="KalturaThumbCuePointSubType">
+		<xs:annotation><xs:documentation>http://www.kaltura.com/api_v3/testmeDoc/index.php?object=KalturaThumbCuePointSubType</xs:documentation></xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:enumeration value="1"><xs:annotation><xs:documentation>SLIDE</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="2"><xs:annotation><xs:documentation>CHAPTER</xs:documentation></xs:annotation></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+			
+</xs:schema>
