@@ -19,8 +19,9 @@ or [create your own Client Library Generator](http://www.kaltura.org/api-client-
 **Click any language below to download the latest library**
 
 You can also install Kaltura using a few different package managers:
-* Ruby `gem install kaltura`
+* PHP `composer require kaltura/api-client-library`
 * NodeJS `npm install kaltura`
+* Ruby `gem install kaltura`
 * Java (via Maven)
 ```
 <dependency>
@@ -29,7 +30,6 @@ You can also install Kaltura using a few different package managers:
   <version>3.2.1</version>
 </dependency>
 ```
-* PHP `composer require kaltura/api-client-library`
 
 <style>
 .client-lib-link {
