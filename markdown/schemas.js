@@ -31,7 +31,7 @@ schemas.forEach(function(s) {
   s.xml = fs.readFileSync(s.xsdFilename, 'utf8');
 })
 
-var SCHEMA_MD = fs.readFileSync(__dirname + '/schemas.md', 'utf8');
+var SCHEMA_MD = fs.readFileSync(__dirname + '/schema.md', 'utf8');
 
 function getContents(s) {
   return SCHEMA_MD.replace('{{ label }}', s.label).replace('{{ html }}', s.html);
