@@ -3,13 +3,16 @@ var Converter = require('api-spec-converter');
 var Kaltura = require('./lib/kaltura-spec');
 var args = require('yargs').argv;
 
+args.schema = args.schema || __dirname + '/node_modules/kaltura-schema/api_schema.xml';
+args.output = args.output || __dirname + '/out/swagger.json';
+
 Converter.convert({
   from: 'kaltura',
   to: 'swagger_2',
-  source: __dirname + '/node_modules/kaltura-schema/api_schema.xml',
+  source: args.schema,
 }, function(err, spec) {
   if (err) console.log(err);
-  FS.writeFileSync('out/swagger.json', spec.stringify());
+  FS.writeFileSync(args.output, spec.stringify());
   if (!args.novalidate) {
     console.log('Done, validating...');
     spec.validate(function(errs, warnings) {
