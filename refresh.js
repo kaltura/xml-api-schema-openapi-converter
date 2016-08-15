@@ -4,7 +4,8 @@ var Kaltura = require('./lib/kaltura-spec');
 Converter.Formats['kaltura'] = Kaltura;
 var args = require('yargs').argv;
 
-args.schema = args.schema || __dirname + '/node_modules/kaltura-schema/api_schema.xml';
+var SCHEMA_URL = "http://www.kaltura.com/api_v3/api_schema.php";
+args.schema = args.schema || SCHEMA_URL;
 args.output = args.output || __dirname + '/out/swagger.json';
 
 Converter.convert({
