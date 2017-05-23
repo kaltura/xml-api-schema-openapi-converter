@@ -1,4 +1,4 @@
-# kaltura-spec-converter
+# xml-api-schema-openapi-converter
 Converts the Kaltura API schema XML to an Open API document
 
 ## Usage
