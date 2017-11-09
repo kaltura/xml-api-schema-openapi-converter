@@ -19,7 +19,7 @@ Converter.convert({
   source: args.schema,
 }, function(err, spec) {
   if (err) throw err;
-  FS.writeFileSync(args.output, spec.stringify());
+  FS.writeFileSync(args.output, spec.stringify({order: 'alpha'}));
   if (!args.novalidate) {
     console.log('Done, validating...');
     spec.validate(function(errs, warnings) {
