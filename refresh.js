@@ -1,8 +1,10 @@
+var args = require('yargs').argv;
+process.env.TARGET_API = args.target || process.env.TARGET_API || 'ovp';
+
 var FS = require('fs');
 var Converter = require('api-spec-converter');
 var Kaltura = require('./lib/kaltura-spec');
 Converter.Formats['kaltura'] = Kaltura;
-var args = require('yargs').argv;
 
 var SCHEMA_URL = process.env.TARGET_API === 'ott'
   ? "https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/KalturaClient.xml"
