@@ -98760,10 +98760,6 @@
   "swagger": "2.0",
   "tags": [
     {
-      "description": "EmailIngestionProfile service lets you manage email ingestion profile records",
-      "name": "EmailIngestionProfile"
-    },
-    {
       "description": "Add & Manage Access Controls",
       "name": "accessControl"
     },
@@ -98794,14 +98790,14 @@
       "x-plugin": "aspera"
     },
     {
-      "description": "Att Uverse Service",
-      "name": "attUverse",
-      "x-plugin": "attUverseDistribution"
-    },
-    {
       "description": "Retrieve information and invoke actions on attachment Asset",
       "name": "attachmentAsset",
       "x-plugin": "attachment"
+    },
+    {
+      "description": "Att Uverse Service",
+      "name": "attUverse",
+      "x-plugin": "attUverseDistribution"
     },
     {
       "description": "Audit Trail service",
@@ -98958,8 +98954,8 @@
       "x-plugin": "dropFolder"
     },
     {
-      "name": "eSearch",
-      "x-plugin": "elasticSearch"
+      "description": "EmailIngestionProfile service lets you manage email ingestion profile records",
+      "name": "EmailIngestionProfile"
     },
     {
       "description": "Entry Distribution service",
@@ -98969,6 +98965,10 @@
     {
       "description": "Base class for entry server node",
       "name": "entryServerNode"
+    },
+    {
+      "name": "eSearch",
+      "x-plugin": "elasticSearch"
     },
     {
       "description": "Event notification template service lets you create and manage event notification templates",
@@ -99105,12 +99105,12 @@
       "name": "permissionItem"
     },
     {
-      "name": "playReadyDrm",
-      "x-plugin": "playReady"
-    },
-    {
       "description": "Playlist service lets you create,manage and play your playlists\n Playlists could be static (containing a fixed list of entries) or dynamic (baseed on a filter)",
       "name": "playlist"
+    },
+    {
+      "name": "playReadyDrm",
+      "x-plugin": "playReady"
     },
     {
       "description": "Poll service\n The poll service works against the cache entirely no DB instance should be used here",
@@ -99131,6 +99131,11 @@
       "name": "responseProfile"
     },
     {
+      "description": "Schedule task service lets you create and manage scheduled task profiles",
+      "name": "scheduledTaskProfile",
+      "x-plugin": "scheduledTask"
+    },
+    {
       "description": "The ScheduleEvent service enables you to create and manage (update, delete, retrieve, etc.) scheduled recording events.",
       "name": "scheduleEvent",
       "x-plugin": "schedule"
@@ -99144,11 +99149,6 @@
       "description": "The ScheduleResource service enables you to create and manage (update, delete, retrieve, etc.) the resources required for scheduled events (cameras, capture devices, etc.).",
       "name": "scheduleResource",
       "x-plugin": "schedule"
-    },
-    {
-      "description": "Schedule task service lets you create and manage scheduled task profiles",
-      "name": "scheduledTaskProfile",
-      "x-plugin": "scheduledTask"
     },
     {
       "description": "Expose the schema definitions for syndication MRSS, bulk upload XML and other schema types.",
