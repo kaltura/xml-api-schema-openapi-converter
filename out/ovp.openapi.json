@@ -65069,14 +65069,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/accesscontrol/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -65305,14 +65298,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/accesscontrolprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -65927,14 +65913,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/annotation_annotation/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -66328,14 +66307,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/apptoken/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -67130,14 +67102,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/audit_audittrail/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -67798,14 +67763,7 @@
             "schema": {
               "properties": {
                 "entryId": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "name",
-                    "method": "post",
-                    "path": "/service/media/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 },
                 "version": {
                   "default": -1,
@@ -71048,14 +71006,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/bulkupload/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -71272,14 +71223,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/bulkupload_bulk/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -72025,14 +71969,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/businessprocessnotification_businessprocessserver/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -72915,14 +72852,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/caption_captionparams/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -73591,14 +73521,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/category/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -75003,14 +74926,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/contentdistribution_distributionprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -75397,14 +75313,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/contentdistribution_entrydistribution/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -76053,14 +75962,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/contentdistribution_genericdistributionprovider/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -76654,14 +76556,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/contentdistribution_genericdistributionprovideraction/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -77031,14 +76926,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/conversionprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -77597,14 +77485,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/cuepoint_cuepoint/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -78050,14 +77931,7 @@
             "schema": {
               "properties": {
                 "entryId": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "name",
-                    "method": "post",
-                    "path": "/service/media/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 },
                 "version": {
                   "default": -1,
@@ -78351,14 +78225,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/deliveryprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -78891,14 +78758,7 @@
             "schema": {
               "properties": {
                 "entryId": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "name",
-                    "method": "post",
-                    "path": "/service/media/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 },
                 "version": {
                   "default": -1,
@@ -81124,14 +80984,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/entryservernode/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -81574,14 +81427,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/eventnotification_eventnotificationtemplate/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -82113,14 +81959,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/externalmedia_externalmedia/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -82349,14 +82188,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/fileasset/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -82933,14 +82765,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/flavorasset/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -83702,14 +83527,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/flavorparams/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -83894,14 +83712,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/flavorparamsoutput/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -88907,14 +88718,7 @@
             "schema": {
               "properties": {
                 "entryId": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "name",
-                    "method": "post",
-                    "path": "/service/media/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 },
                 "version": {
                   "default": -1,
@@ -91795,14 +91599,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/metadata_metadata/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -92479,14 +92276,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/metadata_metadataprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -93231,14 +93021,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/partner/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "type": "object"
@@ -94538,14 +94321,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/playlist/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 },
                 "version": {
                   "default": -1,
@@ -95235,14 +95011,7 @@
             "schema": {
               "properties": {
                 "entryId": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "name",
-                    "method": "post",
-                    "path": "/service/media/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -95690,14 +95459,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/reach_entryvendortask/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -96202,14 +95964,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/reach_reachprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -96598,14 +96353,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/reach_vendorcatalogitem/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -97764,14 +97512,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/responseprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -99061,14 +98802,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/scheduledtask_scheduledtaskprofile/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -100261,14 +99995,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/shortlink_shortlink/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -101040,14 +100767,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/syndicationfeed/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -102483,14 +102203,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/thumbparams/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -102675,14 +102388,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/thumbparamsoutput/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -103002,14 +102708,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "integer",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/uiconf/action/list",
-                    "value": "id"
-                  }
+                  "type": "integer"
                 }
               },
               "required": [
@@ -104742,14 +104441,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/userentry/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
@@ -105843,14 +105535,7 @@
             "schema": {
               "properties": {
                 "id": {
-                  "type": "string",
-                  "x-dynamicEnum": {
-                    "array": "objects",
-                    "label": "id",
-                    "method": "post",
-                    "path": "/service/widget/action/list",
-                    "value": "id"
-                  }
+                  "type": "string"
                 }
               },
               "required": [
