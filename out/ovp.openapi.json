@@ -67870,6 +67870,9 @@
             "schema": {
               "properties": {
                 "cloneOptions": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaBaseEntryCloneOptionItem"
+                  },
                   "type": "array"
                 },
                 "entryId": {
@@ -68887,6 +68890,9 @@
                   "$ref": "#/definitions/KalturaBulkUploadResult"
                 },
                 "pluginDataArray": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaBulkUploadPluginData"
+                  },
                   "type": "array"
                 }
               },
@@ -70220,6 +70226,9 @@
             "schema": {
               "properties": {
                 "flavorsData": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaConvertCollectionFlavorData"
+                  },
                   "type": "array"
                 },
                 "id": {
@@ -70654,9 +70663,15 @@
                   "$ref": "#/definitions/KalturaScheduler"
                 },
                 "schedulerStatuses": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaSchedulerStatus"
+                  },
                   "type": "array"
                 },
                 "workerQueueFilters": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaWorkerQueueFilter"
+                  },
                   "type": "array"
                 }
               },
@@ -78953,6 +78968,9 @@
                   "type": "integer"
                 },
                 "dynamicConversionAttributes": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaConversionAttribute"
+                  },
                   "type": "array"
                 },
                 "entryId": {
@@ -90596,6 +90614,9 @@
                   "type": "integer"
                 },
                 "dynamicConversionAttributes": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaConversionAttribute"
+                  },
                   "type": "array"
                 },
                 "entryId": {
@@ -90839,6 +90860,9 @@
                   "type": "string"
                 },
                 "extendingItemsArray": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaExtendingItemMrssParameter"
+                  },
                   "type": "array"
                 },
                 "features": {
@@ -94599,6 +94623,9 @@
                   "type": "string"
                 },
                 "filters": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaMediaEntryFilterForPlaylist"
+                  },
                   "type": "array"
                 },
                 "pager": {
@@ -96854,6 +96881,9 @@
                   "type": "integer"
                 },
                 "params": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaKeyValue"
+                  },
                   "type": "array"
                 }
               },
@@ -97020,6 +97050,9 @@
                   "type": "integer"
                 },
                 "params": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaKeyValue"
+                  },
                   "type": "array"
                 }
               },
@@ -103889,6 +103922,9 @@
             "schema": {
               "properties": {
                 "additionalFields": {
+                  "items": {
+                    "$ref": "#/definitions/KalturaCsvAdditionalFieldInfo"
+                  },
                   "type": "array"
                 },
                 "filter": {
