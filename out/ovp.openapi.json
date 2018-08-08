@@ -90805,7 +90805,8 @@
                     "method": "post",
                     "path": "/service/media/action/list",
                     "value": "id"
-                  }
+                  },
+                  "x-inputType": "text"
                 },
                 "version": {
                   "default": -1,
