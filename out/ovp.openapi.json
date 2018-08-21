@@ -24919,12 +24919,16 @@
           "enum": [
             "content",
             "end_time",
+            "label",
+            "language",
             "start_time"
           ],
           "type": "string",
           "x-enumLabels": [
             "CONTENT",
             "END_TIME",
+            "LABEL",
+            "LANGUAGE",
             "START_TIME"
           ],
           "x-enumType": "KalturaESearchCaptionFieldName"
@@ -64781,7 +64785,7 @@
   "info": {
     "description": "The Kaltura VPaaS API",
     "title": "Kaltura VPaaS",
-    "version": "14.3.0"
+    "version": "14.4.0"
   },
   "parameters": {
     "KalturaBulkUploadCategoryData:bulkUploadCategoryData[objectType]": {
@@ -115322,6 +115326,18 @@
             "end_time"
           ],
           "title": "END_TIME"
+        },
+        {
+          "enum": [
+            "label"
+          ],
+          "title": "LABEL"
+        },
+        {
+          "enum": [
+            "language"
+          ],
+          "title": "LANGUAGE"
         },
         {
           "enum": [
