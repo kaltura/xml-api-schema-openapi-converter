@@ -68199,7 +68199,6 @@
             "description": "* `APP_TOKEN_ID_NOT_FOUND`: Application token id \"@ID@\" not found"
           }
         },
-        "security": [],
         "tags": [
           "appToken"
         ],
