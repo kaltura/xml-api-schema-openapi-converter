@@ -982,6 +982,21 @@
       "title": "KalturaAkamaiUniversalProvisionJobData",
       "type": "object"
     },
+    "KalturaAlignmentVendorTaskData": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaVendorTaskData"
+        }
+      ],
+      "properties": {
+        "transcriptAssetId": {
+          "description": "The id of the transcript object the vendor should use while runing the alignment task",
+          "type": "string"
+        }
+      },
+      "title": "KalturaAlignmentVendorTaskData",
+      "type": "object"
+    },
     "KalturaAmazonS3StorageExportJobData": {
       "allOf": [
         {
@@ -7154,6 +7169,56 @@
       "title": "KalturaBeacon",
       "type": "object"
     },
+    "KalturaBeaconAbstractScheduledResourceItem": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceBaseItem"
+        }
+      ],
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceItem"
+        }
+      ],
+      "description": "`abstract`",
+      "discriminator": "objectType",
+      "properties": {
+        "itemType": {
+          "description": "Enum Type: `KalturaESearchItemType`",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "type": "integer",
+          "x-enumLabels": [
+            "EXACT_MATCH",
+            "PARTIAL",
+            "STARTS_WITH",
+            "EXISTS",
+            "RANGE"
+          ],
+          "x-enumType": "KalturaESearchItemType"
+        },
+        "objectType": {
+          "enum": [
+            "KalturaBeaconScheduledResourceItem"
+          ],
+          "type": "string"
+        },
+        "range": {
+          "$ref": "#/definitions/KalturaESearchRange"
+        },
+        "searchTerm": {
+          "type": "string"
+        }
+      },
+      "title": "KalturaBeaconAbstractScheduledResourceItem",
+      "type": "object",
+      "x-abstract": true
+    },
     "KalturaBeaconBaseFilter": {
       "allOf": [
         {
@@ -7293,6 +7358,186 @@
         }
       },
       "title": "KalturaBeaconListResponse",
+      "type": "object"
+    },
+    "KalturaBeaconScheduledResourceBaseItem": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaESearchBaseItem"
+        }
+      ],
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceOperator"
+        },
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceItem"
+        }
+      ],
+      "description": "`abstract`",
+      "discriminator": "objectType",
+      "properties": {
+        "objectType": {
+          "enum": [
+            "KalturaBeaconScheduledResourceOperator",
+            "KalturaBeaconScheduledResourceItem"
+          ],
+          "type": "string"
+        }
+      },
+      "title": "KalturaBeaconScheduledResourceBaseItem",
+      "type": "object",
+      "x-abstract": true
+    },
+    "KalturaBeaconScheduledResourceItem": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconAbstractScheduledResourceItem"
+        }
+      ],
+      "properties": {
+        "fieldName": {
+          "description": "Enum Type: `KalturaBeaconScheduledResourceFieldName`",
+          "enum": [
+            "event_type",
+            "is_log",
+            "object_id",
+            "recording",
+            "resource_name",
+            "status",
+            "updated_at"
+          ],
+          "type": "string",
+          "x-enumLabels": [
+            "EVENT_TYPE",
+            "IS_LOG",
+            "OBJECT_ID",
+            "RECORDING",
+            "RESOURCE_NAME",
+            "STATUS",
+            "UPDATED_AT"
+          ],
+          "x-enumType": "KalturaBeaconScheduledResourceFieldName"
+        }
+      },
+      "title": "KalturaBeaconScheduledResourceItem",
+      "type": "object"
+    },
+    "KalturaBeaconScheduledResourceOperator": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceBaseItem"
+        }
+      ],
+      "properties": {
+        "operator": {
+          "description": "Enum Type: `KalturaESearchOperatorType`",
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "type": "integer",
+          "x-enumLabels": [
+            "AND_OP",
+            "OR_OP",
+            "NOT_OP"
+          ],
+          "x-enumType": "KalturaESearchOperatorType"
+        },
+        "searchItems": {
+          "items": {
+            "$ref": "#/definitions/KalturaBeaconScheduledResourceBaseItem"
+          },
+          "type": "array"
+        }
+      },
+      "title": "KalturaBeaconScheduledResourceOperator",
+      "type": "object"
+    },
+    "KalturaBeaconScheduledResourceSearchParams": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconSearchParams"
+        }
+      ],
+      "properties": {},
+      "title": "KalturaBeaconScheduledResourceSearchParams",
+      "type": "object"
+    },
+    "KalturaBeaconSearchOrderBy": {
+      "description": "`abstract`",
+      "properties": {},
+      "title": "KalturaBeaconSearchOrderBy",
+      "type": "object"
+    },
+    "KalturaBeaconSearchParams": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceSearchParams"
+        }
+      ],
+      "description": "`abstract`",
+      "discriminator": "objectType",
+      "properties": {
+        "objectId": {
+          "type": "string"
+        },
+        "objectType": {
+          "enum": [
+            "KalturaBeaconScheduledResourceSearchParams"
+          ],
+          "type": "string"
+        },
+        "orderBy": {
+          "$ref": "#/definitions/KalturaBeaconSearchScheduledResourceOrderBy"
+        },
+        "searchOperator": {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceOperator"
+        }
+      },
+      "title": "KalturaBeaconSearchParams",
+      "type": "object",
+      "x-abstract": true
+    },
+    "KalturaBeaconSearchScheduledResourceOrderBy": {
+      "properties": {
+        "orderItems": {
+          "items": {
+            "$ref": "#/definitions/KalturaBeaconSearchScheduledResourceOrderByItem"
+          },
+          "type": "array"
+        }
+      },
+      "title": "KalturaBeaconSearchScheduledResourceOrderBy",
+      "type": "object"
+    },
+    "KalturaBeaconSearchScheduledResourceOrderByItem": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaESearchOrderByItem"
+        }
+      ],
+      "properties": {
+        "sortField": {
+          "description": "Enum Type: `KalturaBeaconScheduledResourceOrderByFieldName`",
+          "enum": [
+            "app_status",
+            "recording_phase",
+            "resource_Name",
+            "updated_at"
+          ],
+          "type": "string",
+          "x-enumLabels": [
+            "STATUS",
+            "RECORDING",
+            "RESOURCE_NAME",
+            "UPDATED_AT"
+          ],
+          "x-enumType": "KalturaBeaconScheduledResourceOrderByFieldName"
+        }
+      },
+      "title": "KalturaBeaconSearchScheduledResourceOrderByItem",
       "type": "object"
     },
     "KalturaBooleanField": {
@@ -7853,6 +8098,9 @@
         },
         {
           "$ref": "#/definitions/KalturaBulkUploadXmlJobData"
+        },
+        {
+          "$ref": "#/definitions/KalturaDropFolderXmlBulkUploadJobData"
         }
       ],
       "discriminator": "objectType",
@@ -7921,7 +8169,8 @@
             "KalturaBulkUploadCsvJobData",
             "KalturaBulkUploadFilterJobData",
             "KalturaBulkUploadICalJobData",
-            "KalturaBulkUploadXmlJobData"
+            "KalturaBulkUploadXmlJobData",
+            "KalturaDropFolderXmlBulkUploadJobData"
           ],
           "type": "string"
         },
@@ -8078,7 +8327,9 @@
             "3",
             "4",
             "5",
-            "6"
+            "6",
+            "7",
+            "8"
           ],
           "type": "string",
           "x-enumLabels": [
@@ -8088,7 +8339,9 @@
             "DELETE",
             "REPLACE",
             "TRANSFORM_XSLT",
-            "ADD_OR_UPDATE"
+            "ADD_OR_UPDATE",
+            "ACTIVATE",
+            "REJECT"
           ],
           "x-enumType": "KalturaBulkUploadAction"
         },
@@ -8493,8 +8746,24 @@
           "$ref": "#/definitions/KalturaBulkUploadJobData"
         }
       ],
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KalturaBulkUploadXmlJobData"
+        },
+        {
+          "$ref": "#/definitions/KalturaDropFolderXmlBulkUploadJobData"
+        }
+      ],
       "description": "Represents the Bulk upload job data for xml bulk upload",
-      "properties": {},
+      "discriminator": "objectType",
+      "properties": {
+        "objectType": {
+          "enum": [
+            "KalturaDropFolderXmlBulkUploadJobData"
+          ],
+          "type": "string"
+        }
+      },
       "title": "KalturaBulkUploadXmlJobData",
       "type": "object"
     },
@@ -11680,6 +11949,30 @@
       "title": "KalturaCaptionParamsListResponse",
       "type": "object"
     },
+    "KalturaCaptionPlaybackPluginData": {
+      "properties": {
+        "format": {
+          "type": "string"
+        },
+        "isDefault": {
+          "type": "boolean"
+        },
+        "label": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "webVttUrl": {
+          "type": "string"
+        }
+      },
+      "title": "KalturaCaptionPlaybackPluginData",
+      "type": "object"
+    },
     "KalturaCaptureSpaceUpdateResponse": {
       "properties": {
         "info": {
@@ -11807,12 +12100,14 @@
           "description": "Enum Type: `KalturaVendorServiceFeature`",
           "enum": [
             1,
-            2
+            2,
+            3
           ],
           "type": "integer",
           "x-enumLabels": [
             "CAPTIONS",
-            "TRANSLATION"
+            "TRANSLATION",
+            "ALIGNMENT"
           ],
           "x-enumType": "KalturaVendorServiceFeature"
         },
@@ -16647,6 +16942,10 @@
             "CONVERT_WHEN_MISSING"
           ],
           "x-enumType": "KalturaAssetParamsOrigin"
+        },
+        "overloadParams": {
+          "description": "JSON string containing an array of flavotParams field-value pairs.",
+          "type": "string"
         },
         "readyBehavior": {
           "description": "Enum Type: `KalturaFlavorReadyBehaviorType`\n\nThe ingestion origin of the asset params",
@@ -24815,6 +25114,22 @@
       "title": "KalturaDropFolderXmlBulkUploadFileHandlerConfig",
       "type": "object"
     },
+    "KalturaDropFolderXmlBulkUploadJobData": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaBulkUploadXmlJobData"
+        }
+      ],
+      "description": "Represents the Bulk upload job data for drop folder xml bulk upload",
+      "properties": {
+        "dropFolderId": {
+          "description": "the job drop folder id",
+          "type": "integer"
+        }
+      },
+      "title": "KalturaDropFolderXmlBulkUploadJobData",
+      "type": "object"
+    },
     "KalturaDynamicObjectSearchItem": {
       "allOf": [
         {
@@ -25031,6 +25346,12 @@
     "KalturaESearchBaseItem": {
       "anyOf": [
         {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceOperator"
+        },
+        {
+          "$ref": "#/definitions/KalturaBeaconScheduledResourceItem"
+        },
+        {
           "$ref": "#/definitions/KalturaESearchCategoryOperator"
         },
         {
@@ -25081,6 +25402,8 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaBeaconScheduledResourceOperator",
+            "KalturaBeaconScheduledResourceItem",
             "KalturaESearchCategoryOperator",
             "KalturaESearchCategoryItem",
             "KalturaESearchCategoryMetadataItem",
@@ -25114,6 +25437,7 @@
         "fieldName": {
           "description": "Enum Type: `KalturaESearchCaptionFieldName`",
           "enum": [
+            "caption_asset_id",
             "content",
             "end_time",
             "label",
@@ -25122,6 +25446,7 @@
           ],
           "type": "string",
           "x-enumLabels": [
+            "CAPTION_ASSET_ID",
             "CONTENT",
             "END_TIME",
             "LABEL",
@@ -26292,6 +26617,9 @@
     "KalturaESearchOrderByItem": {
       "anyOf": [
         {
+          "$ref": "#/definitions/KalturaBeaconSearchScheduledResourceOrderByItem"
+        },
+        {
           "$ref": "#/definitions/KalturaESearchCategoryOrderByItem"
         },
         {
@@ -26309,6 +26637,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaBeaconSearchScheduledResourceOrderByItem",
             "KalturaESearchCategoryOrderByItem",
             "KalturaESearchEntryOrderByItem",
             "KalturaESearchMetadataOrderByItem",
@@ -26525,6 +26854,7 @@
             "screen_name",
             "tags",
             "updated_at",
+            "user_id",
             "user_type"
           ],
           "type": "string",
@@ -26539,6 +26869,7 @@
             "SCREEN_NAME",
             "TAGS",
             "UPDATED_AT",
+            "USER_ID",
             "TYPE"
           ],
           "x-enumType": "KalturaESearchUserFieldName"
@@ -28689,6 +29020,9 @@
             "ABORTED"
           ],
           "x-enumType": "KalturaEntryVendorTaskStatus"
+        },
+        "taskJobData": {
+          "$ref": "#/definitions/KalturaVendorTaskData"
         },
         "updatedAt": {
           "description": "`readOnly`",
@@ -31799,6 +32133,9 @@
           "$ref": "#/definitions/KalturaVendorCatalogItemFilter"
         },
         {
+          "$ref": "#/definitions/KalturaVendorAlignmentCatalogItemFilter"
+        },
+        {
           "$ref": "#/definitions/KalturaVendorCaptionsCatalogItemFilter"
         },
         {
@@ -32325,6 +32662,7 @@
             "KalturaUserLoginDataFilter",
             "KalturaUserRoleFilter",
             "KalturaVendorCatalogItemFilter",
+            "KalturaVendorAlignmentCatalogItemFilter",
             "KalturaVendorCaptionsCatalogItemFilter",
             "KalturaVendorTranslationCatalogItemFilter",
             "KalturaBatchJobFilter",
@@ -38167,6 +38505,9 @@
           "$ref": "#/definitions/KalturaBulkUploadXmlJobData"
         },
         {
+          "$ref": "#/definitions/KalturaDropFolderXmlBulkUploadJobData"
+        },
+        {
           "$ref": "#/definitions/KalturaConvertCollectionJobData"
         },
         {
@@ -38288,6 +38629,7 @@
             "KalturaBulkUploadFilterJobData",
             "KalturaBulkUploadICalJobData",
             "KalturaBulkUploadXmlJobData",
+            "KalturaDropFolderXmlBulkUploadJobData",
             "KalturaConvertCollectionJobData",
             "KalturaConvertJobData",
             "KalturaExtractMediaJobData",
@@ -47374,6 +47716,12 @@
           },
           "type": "array"
         },
+        "playbackCaptions": {
+          "items": {
+            "$ref": "#/definitions/KalturaCaptionPlaybackPluginData"
+          },
+          "type": "array"
+        },
         "sources": {
           "items": {
             "$ref": "#/definitions/KalturaPlaybackSource"
@@ -49036,6 +49384,10 @@
           ],
           "x-enumType": "KalturaNullableBoolean"
         },
+        "flavorParamsIds": {
+          "description": "Comma separated flavorParamsIds that the vendor should look for it matching asset when trying to download the asset",
+          "type": "string"
+        },
         "id": {
           "description": "`readOnly`",
           "readOnly": true,
@@ -49238,12 +49590,14 @@
           "description": "Enum Type: `KalturaVendorServiceFeature`",
           "enum": [
             1,
-            2
+            2,
+            3
           ],
           "type": "integer",
           "x-enumLabels": [
             "CAPTIONS",
-            "TRANSLATION"
+            "TRANSLATION",
+            "ALIGNMENT"
           ],
           "x-enumType": "KalturaVendorServiceFeature"
         },
@@ -49745,6 +50099,9 @@
           "$ref": "#/definitions/KalturaVendorCatalogItemFilter"
         },
         {
+          "$ref": "#/definitions/KalturaVendorAlignmentCatalogItemFilter"
+        },
+        {
           "$ref": "#/definitions/KalturaVendorCaptionsCatalogItemFilter"
         },
         {
@@ -49845,6 +50202,7 @@
             "KalturaUserLoginDataFilter",
             "KalturaUserRoleFilter",
             "KalturaVendorCatalogItemFilter",
+            "KalturaVendorAlignmentCatalogItemFilter",
             "KalturaVendorCaptionsCatalogItemFilter",
             "KalturaVendorTranslationCatalogItemFilter"
           ],
@@ -50277,8 +50635,24 @@
       ],
       "discriminator": "objectType",
       "properties": {
+        "browserFamilyIn": {
+          "description": "Filter by browser family",
+          "type": "string"
+        },
         "categories": {
-          "description": "Search onjects in specified categories",
+          "description": "Search objects in specified categories",
+          "type": "string"
+        },
+        "categoriesIdsIn": {
+          "description": "Search objects in specified category ids",
+          "type": "string"
+        },
+        "citiesIn": {
+          "description": "Filter by city",
+          "type": "string"
+        },
+        "countryIn": {
+          "description": "Filter by country",
           "type": "string"
         },
         "customVar1In": {
@@ -50291,6 +50665,10 @@
         },
         "customVar3In": {
           "description": "Filter by customVar3",
+          "type": "string"
+        },
+        "deviceIn": {
+          "description": "Filter by device",
           "type": "string"
         },
         "interval": {
@@ -50310,6 +50688,10 @@
           "description": "Search keywords to filter objects",
           "type": "string"
         },
+        "mediaTypeIn": {
+          "description": "Filter by media types",
+          "type": "string"
+        },
         "objectType": {
           "enum": [
             "KalturaEndUserReportInputFilter",
@@ -50317,13 +50699,25 @@
           ],
           "type": "string"
         },
+        "operatingSystemFamilyIn": {
+          "description": "Filter by operating system family",
+          "type": "string"
+        },
+        "regionIn": {
+          "description": "Filter by region",
+          "type": "string"
+        },
         "searchInAdminTags": {
-          "description": "Search keywords in onjects admin tags",
+          "description": "Search keywords in objects admin tags",
           "type": "boolean"
         },
         "searchInTags": {
-          "description": "Search keywords in onjects tags",
+          "description": "Search keywords in objects tags",
           "type": "boolean"
+        },
+        "sourceTypeIn": {
+          "description": "Filter by source types",
+          "type": "string"
         },
         "timeZoneOffset": {
           "description": "Time zone offset in minutes",
@@ -53501,6 +53895,10 @@
         "description": {
           "type": "string"
         },
+        "environment": {
+          "description": "Environment",
+          "type": "string"
+        },
         "heartbeatTime": {
           "description": "`readOnly`",
           "readOnly": true,
@@ -53629,6 +54027,12 @@
           "type": "integer"
         },
         "dcIn": {
+          "type": "string"
+        },
+        "environmentEqual": {
+          "type": "string"
+        },
+        "environmentIn": {
           "type": "string"
         },
         "heartbeatTimeGreaterThanOrEqual": {
@@ -61582,6 +61986,89 @@
       "title": "KalturaVelocixProvisionJobData",
       "type": "object"
     },
+    "KalturaVendorAlignmentCatalogItem": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaVendorCatalogItem"
+        }
+      ],
+      "properties": {
+        "outputFormat": {
+          "description": "Enum Type: `KalturaVendorCatalogItemOutputFormat`",
+          "enum": [
+            1,
+            2
+          ],
+          "type": "integer",
+          "x-enumLabels": [
+            "SRT",
+            "DFXP"
+          ],
+          "x-enumType": "KalturaVendorCatalogItemOutputFormat"
+        },
+        "sourceLanguage": {
+          "description": "Enum Type: `KalturaCatalogItemLanguage`",
+          "enum": [
+            "Arabic",
+            "Cantonese",
+            "Chinese",
+            "Dutch",
+            "English",
+            "English (American)",
+            "English (British)",
+            "French",
+            "German",
+            "Hebrew",
+            "Hindi",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Mandarin Chinese",
+            "Portuguese",
+            "Russian",
+            "Spanish",
+            "Thai",
+            "Turkish"
+          ],
+          "type": "string",
+          "x-enumLabels": [
+            "AR",
+            "YUE",
+            "ZH",
+            "NL",
+            "EN",
+            "EN_US",
+            "EN_GB",
+            "FR",
+            "DE",
+            "HE",
+            "HI",
+            "IT",
+            "JA",
+            "KO",
+            "CMN",
+            "PT",
+            "RU",
+            "ES",
+            "TH",
+            "TR"
+          ],
+          "x-enumType": "KalturaCatalogItemLanguage"
+        }
+      },
+      "title": "KalturaVendorAlignmentCatalogItem",
+      "type": "object"
+    },
+    "KalturaVendorAlignmentCatalogItemFilter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/KalturaVendorCaptionsCatalogItemBaseFilter"
+        }
+      ],
+      "properties": {},
+      "title": "KalturaVendorAlignmentCatalogItemFilter",
+      "type": "object"
+    },
     "KalturaVendorCaptionsCatalogItem": {
       "allOf": [
         {
@@ -61696,6 +62183,9 @@
       ],
       "anyOf": [
         {
+          "$ref": "#/definitions/KalturaVendorAlignmentCatalogItemFilter"
+        },
+        {
           "$ref": "#/definitions/KalturaVendorCaptionsCatalogItemFilter"
         },
         {
@@ -61707,6 +62197,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaVendorAlignmentCatalogItemFilter",
             "KalturaVendorCaptionsCatalogItemFilter",
             "KalturaVendorTranslationCatalogItemFilter"
           ],
@@ -61834,6 +62325,9 @@
     "KalturaVendorCatalogItem": {
       "anyOf": [
         {
+          "$ref": "#/definitions/KalturaVendorAlignmentCatalogItem"
+        },
+        {
           "$ref": "#/definitions/KalturaVendorCaptionsCatalogItem"
         },
         {
@@ -61858,6 +62352,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaVendorAlignmentCatalogItem",
             "KalturaVendorCaptionsCatalogItem",
             "KalturaVendorTranslationCatalogItem"
           ],
@@ -61870,13 +62365,15 @@
           "description": "`readOnly`\n\nEnum Type: `KalturaVendorServiceFeature`",
           "enum": [
             1,
-            2
+            2,
+            3
           ],
           "readOnly": true,
           "type": "integer",
           "x-enumLabels": [
             "CAPTIONS",
-            "TRANSLATION"
+            "TRANSLATION",
+            "ALIGNMENT"
           ],
           "x-enumType": "KalturaVendorServiceFeature"
         },
@@ -61967,6 +62464,9 @@
           "$ref": "#/definitions/KalturaVendorCatalogItemFilter"
         },
         {
+          "$ref": "#/definitions/KalturaVendorAlignmentCatalogItemFilter"
+        },
+        {
           "$ref": "#/definitions/KalturaVendorCaptionsCatalogItemFilter"
         },
         {
@@ -61994,6 +62494,7 @@
         "objectType": {
           "enum": [
             "KalturaVendorCatalogItemFilter",
+            "KalturaVendorAlignmentCatalogItemFilter",
             "KalturaVendorCaptionsCatalogItemFilter",
             "KalturaVendorTranslationCatalogItemFilter"
           ],
@@ -62003,12 +62504,14 @@
           "description": "Enum Type: `KalturaVendorServiceFeature`",
           "enum": [
             1,
-            2
+            2,
+            3
           ],
           "type": "integer",
           "x-enumLabels": [
             "CAPTIONS",
-            "TRANSLATION"
+            "TRANSLATION",
+            "ALIGNMENT"
           ],
           "x-enumType": "KalturaVendorServiceFeature"
         },
@@ -62111,6 +62614,9 @@
           "$ref": "#/definitions/KalturaVendorCatalogItemFilter"
         },
         {
+          "$ref": "#/definitions/KalturaVendorAlignmentCatalogItemFilter"
+        },
+        {
           "$ref": "#/definitions/KalturaVendorCaptionsCatalogItemFilter"
         },
         {
@@ -62121,6 +62627,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaVendorAlignmentCatalogItemFilter",
             "KalturaVendorCaptionsCatalogItemFilter",
             "KalturaVendorTranslationCatalogItemFilter"
           ],
@@ -62234,6 +62741,26 @@
       },
       "title": "KalturaVendorCredit",
       "type": "object"
+    },
+    "KalturaVendorTaskData": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KalturaAlignmentVendorTaskData"
+        }
+      ],
+      "description": "`abstract`",
+      "discriminator": "objectType",
+      "properties": {
+        "objectType": {
+          "enum": [
+            "KalturaAlignmentVendorTaskData"
+          ],
+          "type": "string"
+        }
+      },
+      "title": "KalturaVendorTaskData",
+      "type": "object",
+      "x-abstract": true
     },
     "KalturaVendorTranslationCatalogItem": {
       "allOf": [
@@ -65338,7 +65865,7 @@
   "info": {
     "description": "The Kaltura VPaaS API",
     "title": "Kaltura VPaaS",
-    "version": "14.7.0"
+    "version": "14.11.0"
   },
   "parameters": {
     "KalturaBulkUploadCategoryData:bulkUploadCategoryData[objectType]": {
@@ -65353,6 +65880,19 @@
       "name": "bulkUploadCategoryData[objectType]",
       "type": "string",
       "x-group": "bulkUploadCategoryData"
+    },
+    "KalturaBulkUploadCategoryEntryData:bulkUploadCategoryEntryData[objectType]": {
+      "enum": [
+        "KalturaBulkUploadCategoryData",
+        "KalturaBulkUploadCategoryEntryData",
+        "KalturaBulkUploadCategoryUserData",
+        "KalturaBulkUploadEntryData",
+        "KalturaBulkUploadUserData"
+      ],
+      "in": "query",
+      "name": "bulkUploadCategoryEntryData[objectType]",
+      "type": "string",
+      "x-group": "bulkUploadCategoryEntryData"
     },
     "KalturaBulkUploadCategoryUserData:bulkUploadCategoryUserData[objectType]": {
       "enum": [
@@ -65459,6 +65999,7 @@
         "KalturaBulkUploadFilterJobData",
         "KalturaBulkUploadICalJobData",
         "KalturaBulkUploadXmlJobData",
+        "KalturaDropFolderXmlBulkUploadJobData",
         "KalturaConvertCollectionJobData",
         "KalturaConvertJobData",
         "KalturaExtractMediaJobData",
@@ -65611,6 +66152,7 @@
         "KalturaBulkUploadFilterJobData",
         "KalturaBulkUploadICalJobData",
         "KalturaBulkUploadXmlJobData",
+        "KalturaDropFolderXmlBulkUploadJobData",
         "KalturaConvertCollectionJobData",
         "KalturaConvertJobData",
         "KalturaExtractMediaJobData",
@@ -65727,6 +66269,7 @@
         "KalturaBulkUploadFilterJobData",
         "KalturaBulkUploadICalJobData",
         "KalturaBulkUploadXmlJobData",
+        "KalturaDropFolderXmlBulkUploadJobData",
         "KalturaConvertCollectionJobData",
         "KalturaConvertJobData",
         "KalturaExtractMediaJobData",
@@ -69967,7 +70510,7 @@
     },
     "/service/baseentry/action/updateThumbnailFromUrl": {
       "post": {
-        "description": "Update entry thumbnail using url.",
+        "description": "Update entry thumbnail using URL.",
         "operationId": "baseEntry.updateThumbnailFromUrl",
         "parameters": [
           {
@@ -71925,7 +72468,7 @@
     },
     "/service/batchcontrol/action/kill": {
       "post": {
-        "description": "batch kill action forces stop og a batch on a remote scheduler",
+        "description": "batch kill action forces stop of a batch on a remote scheduler",
         "operationId": "batchcontrol.kill",
         "parameters": [
           {
@@ -72119,7 +72662,7 @@
     },
     "/service/batchcontrol/action/reportStatus": {
       "post": {
-        "description": "batch reportStatus action saves the a status attribute from a remote scheduler and returns pending commands for the scheduler",
+        "description": "batch reportStatus action saves the status attribute from a remote scheduler and returns pending commands for the scheduler",
         "operationId": "batchcontrol.reportStatus",
         "parameters": [
           {
@@ -72188,7 +72731,7 @@
     },
     "/service/batchcontrol/action/setCommandResult": {
       "post": {
-        "description": "batch setCommandResult action saves the results of a command as recieved from a remote scheduler",
+        "description": "batch setCommandResult action saves the results of a command as received from a remote scheduler",
         "operationId": "batchcontrol.setCommandResult",
         "parameters": [
           {
@@ -72775,6 +73318,62 @@
         ]
       }
     },
+    "/service/beacon_beacon/action/searchScheduledResource": {
+      "post": {
+        "operationId": "beacon.searchScheduledResource",
+        "parameters": [
+          {
+            "$ref": "#/parameters/ks"
+          },
+          {
+            "$ref": "#/parameters/format"
+          },
+          {
+            "$ref": "#/parameters/clientTag"
+          },
+          {
+            "$ref": "#/parameters/partnerId"
+          },
+          {
+            "$ref": "#/parameters/responseProfile"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "properties": {
+                "pager": {
+                  "$ref": "#/definitions/KalturaPager"
+                },
+                "searchParams": {
+                  "$ref": "#/definitions/KalturaBeaconSearchParams"
+                }
+              },
+              "required": [
+                "searchParams"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/KalturaBeaconListResponse"
+            }
+          }
+        },
+        "tags": [
+          "beacon"
+        ],
+        "x-kaltura-format": "post",
+        "x-kaltura-parameters": [
+          "searchParams",
+          "pager"
+        ]
+      }
+    },
     "/service/bulkupload/action/abort": {
       "post": {
         "description": "Aborts the bulk upload and all its child jobs",
@@ -72840,7 +73439,7 @@
             "$ref": "#/parameters/format"
           },
           {
-            "description": "Convertion profile id to use for converting the current bulk (-1 to use partner's default)",
+            "description": "Conversion profile id to use for converting the current bulk (-1 to use partner's default)",
             "in": "query",
             "name": "conversionProfileId",
             "required": true,
@@ -73070,7 +73669,7 @@
     },
     "/service/bulkupload/action/serveLog": {
       "post": {
-        "description": "serveLog action returan the original file.",
+        "description": "serveLog action return the original file.",
         "operationId": "bulkUpload.serveLog",
         "parameters": [
           {
@@ -76607,6 +77206,83 @@
         ]
       }
     },
+    "/service/categoryentry/action/updateStatusFromBulk": {
+      "post": {
+        "operationId": "categoryEntry.updateStatusFromBulk",
+        "parameters": [
+          {
+            "$ref": "#/parameters/ks"
+          },
+          {
+            "$ref": "#/parameters/format"
+          },
+          {
+            "in": "formData",
+            "name": "fileData",
+            "required": true,
+            "type": "file"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadJobData:bulkUploadData[objectType]"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadJobData:bulkUploadData[fileName]"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadJobData:bulkUploadData[objectData][objectType]"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadJobData:bulkUploadData[emailRecipients]"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadJobData:bulkUploadData[numOfErrorObjects]"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadJobData:bulkUploadData[privileges]"
+          },
+          {
+            "$ref": "#/parameters/KalturaBulkUploadCategoryEntryData:bulkUploadCategoryEntryData[objectType]"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/KalturaBulkUpload"
+            }
+          }
+        },
+        "tags": [
+          "categoryEntry"
+        ],
+        "x-kaltura-format": "file",
+        "x-kaltura-parameters": [
+          "fileData"
+        ],
+        "x-parameterGroups": [
+          {
+            "description": "Object Type: `KalturaBulkUploadJobData`",
+            "name": "bulkUploadData",
+            "schema": {
+              "$ref": "#/definitions/KalturaBulkUploadJobData"
+            },
+            "subGroups": [
+              {
+                "name": "bulkUploadData[objectData]"
+              }
+            ]
+          },
+          {
+            "description": "Object Type: `KalturaBulkUploadCategoryEntryData`",
+            "name": "bulkUploadCategoryEntryData",
+            "schema": {
+              "$ref": "#/definitions/KalturaBulkUploadCategoryEntryData"
+            },
+            "subGroups": []
+          }
+        ]
+      }
+    },
     "/service/categoryuser/action/activate": {
       "post": {
         "description": "activate CategoryUser",
@@ -76797,7 +77473,7 @@
     },
     "/service/categoryuser/action/copyFromCategory": {
       "post": {
-        "description": "Copy all memeber from parent category",
+        "description": "Copy all member from parent category",
         "operationId": "categoryUser.copyFromCategory",
         "parameters": [
           {
@@ -81130,7 +81806,7 @@
     },
     "/service/data/action/serve": {
       "post": {
-        "description": "serve action returan the file from dataContent field.",
+        "description": "return the file from dataContent field.",
         "operationId": "data.serve",
         "parameters": [
           {
@@ -81470,7 +82146,7 @@
     },
     "/service/deliveryprofile/action/update": {
       "post": {
-        "description": "Update exisiting delivery",
+        "description": "Update existing delivery profile",
         "operationId": "deliveryProfile.update",
         "parameters": [
           {
@@ -91399,7 +92075,7 @@
     },
     "/service/jobs/action/retryBulkUpload": {
       "post": {
-        "description": "batch retryBulkUploadAction retrys and returns the status of bulk upload task",
+        "description": "batch retryBulkUploadAction retries and returns the status of bulk upload task",
         "operationId": "jobs.retryBulkUpload",
         "parameters": [
           {
@@ -91452,7 +92128,7 @@
     },
     "/service/jobs/action/retryCaptureThumb": {
       "post": {
-        "description": "batch retryCaptureThumbAction retrys and returns the status of capture thumbnail task",
+        "description": "batch retryCaptureThumbAction retries and returns the status of capture thumbnail task",
         "operationId": "jobs.retryCaptureThumb",
         "parameters": [
           {
@@ -91505,7 +92181,7 @@
     },
     "/service/jobs/action/retryConvert": {
       "post": {
-        "description": "batch retryConvertAction retrys and returns the status of convert task",
+        "description": "batch retryConvertAction retries and returns the status of convert task",
         "operationId": "jobs.retryConvert",
         "parameters": [
           {
@@ -91558,7 +92234,7 @@
     },
     "/service/jobs/action/retryConvertCollection": {
       "post": {
-        "description": "batch retryConvertCollectionAction retrys and returns the status of convert profile task",
+        "description": "batch retryConvertCollectionAction retries and returns the status of convert profile task",
         "operationId": "jobs.retryConvertCollection",
         "parameters": [
           {
@@ -91611,7 +92287,7 @@
     },
     "/service/jobs/action/retryConvertProfile": {
       "post": {
-        "description": "batch retryConvertProfileAction retrys and returns the status of convert profile task",
+        "description": "batch retryConvertProfileAction retries and returns the status of convert profile task",
         "operationId": "jobs.retryConvertProfile",
         "parameters": [
           {
@@ -91664,7 +92340,7 @@
     },
     "/service/jobs/action/retryExtractMedia": {
       "post": {
-        "description": "batch retryExtractMediaAction retrys and returns the status of extract media task",
+        "description": "batch retryExtractMediaAction retries and returns the status of extract media task",
         "operationId": "jobs.retryExtractMedia",
         "parameters": [
           {
@@ -91717,7 +92393,7 @@
     },
     "/service/jobs/action/retryImport": {
       "post": {
-        "description": "batch retryImportAction retrys and returns the status of import task",
+        "description": "batch retryImportAction retries and returns the status of import task",
         "operationId": "jobs.retryImport",
         "parameters": [
           {
@@ -91968,7 +92644,7 @@
     },
     "/service/jobs/action/retryMail": {
       "post": {
-        "description": "batch retryMailAction retrys and returns the status of mail task",
+        "description": "batch retryMailAction retries and returns the status of mail task",
         "operationId": "jobs.retryMail",
         "parameters": [
           {
@@ -92021,7 +92697,7 @@
     },
     "/service/jobs/action/retryNotification": {
       "post": {
-        "description": "batch retryNotificationAction retrys and returns the status of notification task",
+        "description": "batch retryNotificationAction retries and returns the status of notification task",
         "operationId": "jobs.retryNotification",
         "parameters": [
           {
@@ -92074,7 +92750,7 @@
     },
     "/service/jobs/action/retryPostConvert": {
       "post": {
-        "description": "batch retryPostConvertAction retrys and returns the status of post convert task",
+        "description": "batch retryPostConvertAction retries and returns the status of post convert task",
         "operationId": "jobs.retryPostConvert",
         "parameters": [
           {
@@ -92127,7 +92803,7 @@
     },
     "/service/jobs/action/retryProvisionDelete": {
       "post": {
-        "description": "batch retryProvisionDeleteAction retrys and returns the status of ProvisionDelete task",
+        "description": "batch retryProvisionDeleteAction retries and returns the status of ProvisionDelete task",
         "operationId": "jobs.retryProvisionDelete",
         "parameters": [
           {
@@ -92180,7 +92856,7 @@
     },
     "/service/jobs/action/retryProvisionProvide": {
       "post": {
-        "description": "batch retryProvisionProvideAction retrys and returns the status of ProvisionProvide task",
+        "description": "batch retryProvisionProvideAction retries and returns the status of ProvisionProvide task",
         "operationId": "jobs.retryProvisionProvide",
         "parameters": [
           {
@@ -92233,7 +92909,7 @@
     },
     "/service/jobs/action/retryStorageDelete": {
       "post": {
-        "description": "batch retryStorageDeleteAction retrys and returns the status of export task",
+        "description": "batch retryStorageDeleteAction retries and returns the status of export task",
         "operationId": "jobs.retryStorageDelete",
         "parameters": [
           {
@@ -92286,7 +92962,7 @@
     },
     "/service/jobs/action/retryStorageExport": {
       "post": {
-        "description": "batch retryStorageExportAction retrys and returns the status of export task",
+        "description": "batch retryStorageExportAction retries and returns the status of export task",
         "operationId": "jobs.retryStorageExport",
         "parameters": [
           {
@@ -93214,6 +93890,9 @@
               "properties": {
                 "entryId": {
                   "type": "string"
+                },
+                "env": {
+                  "type": "string"
                 }
               },
               "required": [
@@ -93237,7 +93916,8 @@
         "x-beta": true,
         "x-kaltura-format": "post",
         "x-kaltura-parameters": [
-          "entryId"
+          "entryId",
+          "env"
         ]
       }
     },
@@ -94919,7 +95599,7 @@
     "/service/media/action/addFromRecordedWebcam": {
       "post": {
         "deprecated": true,
-        "description": "Add new entry after the file was recored on the server and the token id exists",
+        "description": "Add new entry after the file was recorded on the server and the token id exists",
         "operationId": "media.addFromRecordedWebcam",
         "parameters": [
           {
@@ -96371,7 +97051,7 @@
     "/service/media/action/updateThumbnailFromUrl": {
       "post": {
         "deprecated": true,
-        "description": "Update entry thumbnail using url",
+        "description": "Update entry thumbnail using URL",
         "operationId": "media.updateThumbnailFromUrl",
         "parameters": [
           {
@@ -98817,7 +99497,7 @@
     "/service/partner/action/getUsage": {
       "post": {
         "deprecated": true,
-        "description": "Get usage statistics for a partner\n\nCalculation is done according to partner's package\n\nAdditional data returned is a graph points of streaming usage in a timeframe\n\nThe resolution can be \"days\" or \"months\"",
+        "description": "Get usage statistics for a partner\n\nCalculation is done according to partner's package\n\nAdditional data returned is a graph points of streaming usage in a time frame\n\nThe resolution can be \"days\" or \"months\"",
         "operationId": "partner.getUsage",
         "parameters": [
           {
@@ -98888,7 +99568,7 @@
     },
     "/service/partner/action/list": {
       "post": {
-        "description": "List partners by filter with paging support\n\nCurrent implementation will only list the sub partners of the partner initiating the api call (using the current KS).\n\nThis action is only partially implemented to support listing sub partners of a VAR partner.",
+        "description": "List partners by filter with paging support\n\nCurrent implementation will only list the sub partners of the partner initiating the API call (using the current KS).\n\nThis action is only partially implemented to support listing sub partners of a VAR partner.",
         "operationId": "partner.list",
         "parameters": [
           {
@@ -100093,7 +100773,7 @@
     },
     "/service/playlist/action/executeFromFilters": {
       "post": {
-        "description": "Revrieve playlist for playing purpose, based on media entry filters",
+        "description": "Retrieve playlist for playing purpose, based on media entry filters",
         "operationId": "playlist.executeFromFilters",
         "parameters": [
           {
@@ -100351,7 +101031,7 @@
     },
     "/service/playlist/action/update": {
       "post": {
-        "description": "Update existing playlist\n\nNote - you cannot change playlist type. updated playlist must be of the same type.",
+        "description": "Update existing playlist\n\nNote - you cannot change playlist type. Updated playlist must be of the same type.",
         "operationId": "playlist.update",
         "parameters": [
           {
@@ -102826,7 +103506,7 @@
     },
     "/service/report/action/getBaseTotal": {
       "post": {
-        "description": "report getBaseTotal action allows to get a the total base for storage reports",
+        "description": "report getBaseTotal action allows to get the total base for storage reports",
         "operationId": "report.getBaseTotal",
         "parameters": [
           {
@@ -102887,6 +103567,14 @@
                     "27",
                     "28",
                     "29",
+                    "30",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
                     "201"
                   ],
                   "type": "string",
@@ -102921,6 +103609,14 @@
                     "ENTRY_USAGE",
                     "REACH_USAGE",
                     "TOP_CUSTOM_VAR1",
+                    "MAP_OVERLAY_CITY",
+                    "OPERATING_SYSTEM_FAMILIES",
+                    "BROWSERS_FAMILIES",
+                    "USER_ENGAGEMENT_TIMELINE",
+                    "UNIQUE_USERS_PLAY",
+                    "MAP_OVERLAY_COUNTRY",
+                    "MAP_OVERLAY_REGION",
+                    "TOP_CONTENT_CREATOR",
                     "PARTNER_USAGE"
                   ],
                   "x-enumType": "KalturaReportType"
@@ -103138,6 +103834,14 @@
                     "27",
                     "28",
                     "29",
+                    "30",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
                     "201"
                   ],
                   "type": "string",
@@ -103172,6 +103876,14 @@
                     "ENTRY_USAGE",
                     "REACH_USAGE",
                     "TOP_CUSTOM_VAR1",
+                    "MAP_OVERLAY_CITY",
+                    "OPERATING_SYSTEM_FAMILIES",
+                    "BROWSERS_FAMILIES",
+                    "USER_ENGAGEMENT_TIMELINE",
+                    "UNIQUE_USERS_PLAY",
+                    "MAP_OVERLAY_COUNTRY",
+                    "MAP_OVERLAY_REGION",
+                    "TOP_CONTENT_CREATOR",
                     "PARTNER_USAGE"
                   ],
                   "x-enumType": "KalturaReportType"
@@ -103277,6 +103989,14 @@
                     "27",
                     "28",
                     "29",
+                    "30",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
                     "201"
                   ],
                   "type": "string",
@@ -103311,6 +104031,14 @@
                     "ENTRY_USAGE",
                     "REACH_USAGE",
                     "TOP_CUSTOM_VAR1",
+                    "MAP_OVERLAY_CITY",
+                    "OPERATING_SYSTEM_FAMILIES",
+                    "BROWSERS_FAMILIES",
+                    "USER_ENGAGEMENT_TIMELINE",
+                    "UNIQUE_USERS_PLAY",
+                    "MAP_OVERLAY_COUNTRY",
+                    "MAP_OVERLAY_REGION",
+                    "TOP_CONTENT_CREATOR",
                     "PARTNER_USAGE"
                   ],
                   "x-enumType": "KalturaReportType"
@@ -103409,6 +104137,14 @@
                     "27",
                     "28",
                     "29",
+                    "30",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
                     "201"
                   ],
                   "type": "string",
@@ -103443,6 +104179,14 @@
                     "ENTRY_USAGE",
                     "REACH_USAGE",
                     "TOP_CUSTOM_VAR1",
+                    "MAP_OVERLAY_CITY",
+                    "OPERATING_SYSTEM_FAMILIES",
+                    "BROWSERS_FAMILIES",
+                    "USER_ENGAGEMENT_TIMELINE",
+                    "UNIQUE_USERS_PLAY",
+                    "MAP_OVERLAY_COUNTRY",
+                    "MAP_OVERLAY_REGION",
+                    "TOP_CONTENT_CREATOR",
                     "PARTNER_USAGE"
                   ],
                   "x-enumType": "KalturaReportType"
@@ -103477,7 +104221,7 @@
     },
     "/service/report/action/getUrlForReportAsCsv": {
       "post": {
-        "description": "will create a Csv file for the given report and return the URL to access it",
+        "description": "will create a CSV file for the given report and return the URL to access it",
         "operationId": "report.getUrlForReportAsCsv",
         "parameters": [
           {
@@ -103556,6 +104300,14 @@
                     "27",
                     "28",
                     "29",
+                    "30",
+                    "32",
+                    "33",
+                    "34",
+                    "35",
+                    "36",
+                    "37",
+                    "38",
                     "201"
                   ],
                   "type": "string",
@@ -103590,6 +104342,14 @@
                     "ENTRY_USAGE",
                     "REACH_USAGE",
                     "TOP_CUSTOM_VAR1",
+                    "MAP_OVERLAY_CITY",
+                    "OPERATING_SYSTEM_FAMILIES",
+                    "BROWSERS_FAMILIES",
+                    "USER_ENGAGEMENT_TIMELINE",
+                    "UNIQUE_USERS_PLAY",
+                    "MAP_OVERLAY_COUNTRY",
+                    "MAP_OVERLAY_REGION",
+                    "TOP_CONTENT_CREATOR",
                     "PARTNER_USAGE"
                   ],
                   "x-enumType": "KalturaReportType"
@@ -108049,7 +108809,7 @@
     },
     "/service/syndicationfeed/action/requestConversion": {
       "post": {
-        "description": "request conversion for all entries that doesnt have the required flavor param\n\nreturns a comma-separated ids of conversion jobs",
+        "description": "request conversion for all entries that doesn't have the required flavor param\n\nreturns a comma-separated ids of conversion jobs",
         "operationId": "syndicationFeed.requestConversion",
         "parameters": [
           {
@@ -113217,8 +113977,14 @@
                 "accountId": {
                   "type": "string"
                 },
+                "createUserIfNotExist": {
+                  "type": "boolean"
+                },
                 "defaultUserId": {
                   "type": "string"
+                },
+                "enableRecordingUpload": {
+                  "type": "boolean"
                 },
                 "zoomCategory": {
                   "type": "string"
@@ -113227,7 +113993,9 @@
               "required": [
                 "defaultUserId",
                 "zoomCategory",
-                "accountId"
+                "accountId",
+                "enableRecordingUpload",
+                "createUserIfNotExist"
               ],
               "type": "object"
             }
@@ -113248,7 +114016,9 @@
         "x-kaltura-parameters": [
           "defaultUserId",
           "zoomCategory",
-          "accountId"
+          "accountId",
+          "enableRecordingUpload",
+          "createUserIfNotExist"
         ]
       }
     },
@@ -113864,7 +114634,7 @@
     },
     "/service/widget/action/update": {
       "post": {
-        "description": "Update exisiting widget",
+        "description": "Update existing widget",
         "operationId": "widget.update",
         "parameters": [
           {
@@ -113986,7 +114756,7 @@
     },
     "/service/xinternal/action/xAddBulkDownload": {
       "post": {
-        "description": "Creates new download job for multiple entry ids (comma separated), an email will be sent when the job is done\n\nThis sevice support the following entries: \n\n- MediaEntry\n\n- Video will be converted using the flavor params id\n\n- Audio will be downloaded as MP3\n\n- Image will be downloaded as Jpeg\n\n- MixEntry will be flattened using the flavor params id\n\n- Other entry types are not supported\n\nReturns the admin email that the email message will be sent to",
+        "description": "Creates new download job for multiple entry ids (comma separated), an email will be sent when the job is done\n\nThis service support the following entries: \n\n- MediaEntry\n\n- Video will be converted using the flavor params id\n\n- Audio will be downloaded as MP3\n\n- Image will be downloaded as Jpeg\n\n- MixEntry will be flattened using the flavor params id\n\n- Other entry types are not supported\n\nReturns the admin email that the email message will be sent to",
         "operationId": "xInternal.xAddBulkDownload",
         "parameters": [
           {
@@ -114116,11 +114886,11 @@
       "name": "baseEntry"
     },
     {
-      "description": "batch service lets you handle different batch process from remote machines.\n As opposed to other objects in the system, locking mechanism is critical in this case.\n For this reason the GetExclusiveXX, UpdateExclusiveXX and FreeExclusiveXX actions are important for the system's intergity.\n In general - updating batch object should be done only using the UpdateExclusiveXX which in turn can be called only after\n acuiring a batch objet properly (using  GetExclusiveXX).\n If an object was aquired and should be returned to the pool in it's initial state - use the FreeExclusiveXX action\n Terminology:\n LocationId\n ServerID\n ParternGroups",
+      "description": "batch service lets you handle different batch process from remote machines.\n As opposed to other objects in the system, locking mechanism is critical in this case.\n For this reason the GetExclusiveXX, UpdateExclusiveXX and FreeExclusiveXX actions are important for the system's integrity.\n In general - updating batch object should be done only using the UpdateExclusiveXX which in turn can be called only after\n acquiring a batch object properly (using  GetExclusiveXX).\n If an object was acquired and should be returned to the pool in it's initial state - use the FreeExclusiveXX action\n Terminology:\n LocationId\n ServerID\n ParternGroups",
       "name": "batch"
     },
     {
-      "description": "batch service lets you handle different batch process from remote machines.\n As opposed to other objects in the system, locking mechanism is critical in this case.\n For this reason the GetExclusiveXX, UpdateExclusiveXX and FreeExclusiveXX actions are important for the system's intergity.\n In general - updating batch object should be done only using the UpdateExclusiveXX which in turn can be called only after \n acuiring a batch objet properly (using  GetExclusiveXX).\n If an object was aquired and should be returned to the pool in it's initial state - use the FreeExclusiveXX action \n Terminology:\n LocationId\n ServerID\n ParternGroups",
+      "description": "batch service lets you handle different batch process from remote machines.\n As opposed to other objects in the system, locking mechanism is critical in this case.\n For this reason the GetExclusiveXX, UpdateExclusiveXX and FreeExclusiveXX actions are important for the system's integrity.\n In general - updating batch object should be done only using the UpdateExclusiveXX which in turn can be called only after \n acquiring a batch object properly (using  GetExclusiveXX).\n If an object was acquired and should be returned to the pool in it's initial state - use the FreeExclusiveXX action \n Terminology:\n LocationId\n ServerID\n ParternGroups",
       "name": "batchcontrol"
     },
     {
@@ -114332,7 +115102,7 @@
       "x-plugin": "integration"
     },
     {
-      "description": "batch service lets you handle different batch process from remote machines.\n As opposed to other objects in the system, locking mechanism is critical in this case.\n For this reason the GetExclusiveXX, UpdateExclusiveXX and FreeExclusiveXX actions are important for the system's intergity.\n In general - updating batch object should be done only using the UpdateExclusiveXX which in turn can be called only after \n acuiring a batch objet properly (using  GetExclusiveXX).\n If an object was aquired and should be returned to the pool in it's initial state - use the FreeExclusiveXX action \n Terminology:\n LocationId\n ServerID\n ParternGroups",
+      "description": "batch service lets you handle different batch process from remote machines.\n As opposed to other objects in the system, locking mechanism is critical in this case.\n For this reason the GetExclusiveXX, UpdateExclusiveXX and FreeExclusiveXX actions are important for the system's integrity.\n In general - updating batch object should be done only using the UpdateExclusiveXX which in turn can be called only after \n acuiring a batch objet properly (using  GetExclusiveXX).\n If an object was aquired and should be returned to the pool in it's initial state - use the FreeExclusiveXX action \n Terminology:\n LocationId\n ServerID\n ParternGroups",
       "name": "jobs"
     },
     {
@@ -114417,7 +115187,7 @@
       "name": "permissionItem"
     },
     {
-      "description": "Playlist service lets you create,manage and play your playlists\n Playlists could be static (containing a fixed list of entries) or dynamic (baseed on a filter)",
+      "description": "Playlist service lets you create,manage and play your playlists\n Playlists could be static (containing a fixed list of entries) or dynamic (based on a filter)",
       "name": "playlist"
     },
     {
@@ -117887,6 +118657,82 @@
       ],
       "title": "KalturaBeaconOrderBy"
     },
+    "KalturaBeaconScheduledResourceFieldName": {
+      "oneOf": [
+        {
+          "enum": [
+            "event_type"
+          ],
+          "title": "EVENT_TYPE"
+        },
+        {
+          "enum": [
+            "is_log"
+          ],
+          "title": "IS_LOG"
+        },
+        {
+          "enum": [
+            "object_id"
+          ],
+          "title": "OBJECT_ID"
+        },
+        {
+          "enum": [
+            "recording"
+          ],
+          "title": "RECORDING"
+        },
+        {
+          "enum": [
+            "resource_name"
+          ],
+          "title": "RESOURCE_NAME"
+        },
+        {
+          "enum": [
+            "status"
+          ],
+          "title": "STATUS"
+        },
+        {
+          "enum": [
+            "updated_at"
+          ],
+          "title": "UPDATED_AT"
+        }
+      ],
+      "title": "KalturaBeaconScheduledResourceFieldName"
+    },
+    "KalturaBeaconScheduledResourceOrderByFieldName": {
+      "oneOf": [
+        {
+          "enum": [
+            "app_status"
+          ],
+          "title": "STATUS"
+        },
+        {
+          "enum": [
+            "recording_phase"
+          ],
+          "title": "RECORDING"
+        },
+        {
+          "enum": [
+            "resource_Name"
+          ],
+          "title": "RESOURCE_NAME"
+        },
+        {
+          "enum": [
+            "updated_at"
+          ],
+          "title": "UPDATED_AT"
+        }
+      ],
+      "title": "KalturaBeaconScheduledResourceOrderByFieldName"
+    },
     "KalturaBitRateMode": {
       "oneOf": [
         {
@@ -117947,6 +118793,18 @@
             "6"
           ],
           "title": "ADD_OR_UPDATE"
+        },
+        {
+          "enum": [
+            "7"
+          ],
+          "title": "ACTIVATE"
+        },
+        {
+          "enum": [
+            "8"
+          ],
+          "title": "REJECT"
         }
       ],
       "title": "KalturaBulkUploadAction"
@@ -123274,6 +124132,12 @@
       "oneOf": [
         {
           "enum": [
+            "caption_asset_id"
+          ],
+          "title": "CAPTION_ASSET_ID"
+        },
+        {
+          "enum": [
             "content"
           ],
           "title": "CONTENT"
@@ -124248,6 +125112,12 @@
             "updated_at"
           ],
           "title": "UPDATED_AT"
+        },
+        {
+          "enum": [
+            "user_id"
+          ],
+          "title": "USER_ID"
         },
         {
           "enum": [
@@ -142009,6 +142879,54 @@
         },
         {
           "enum": [
+            "30"
+          ],
+          "title": "MAP_OVERLAY_CITY"
+        },
+        {
+          "enum": [
+            "32"
+          ],
+          "title": "OPERATING_SYSTEM_FAMILIES"
+        },
+        {
+          "enum": [
+            "33"
+          ],
+          "title": "BROWSERS_FAMILIES"
+        },
+        {
+          "enum": [
+            "34"
+          ],
+          "title": "USER_ENGAGEMENT_TIMELINE"
+        },
+        {
+          "enum": [
+            "35"
+          ],
+          "title": "UNIQUE_USERS_PLAY"
+        },
+        {
+          "enum": [
+            "36"
+          ],
+          "title": "MAP_OVERLAY_COUNTRY"
+        },
+        {
+          "enum": [
+            "37"
+          ],
+          "title": "MAP_OVERLAY_REGION"
+        },
+        {
+          "enum": [
+            "38"
+          ],
+          "title": "TOP_CONTENT_CREATOR"
+        },
+        {
+          "enum": [
             "201"
           ],
           "title": "PARTNER_USAGE"
@@ -146018,23 +146936,6 @@
       ],
       "title": "KalturaVendorCatalogItemStatus"
     },
-    "KalturaVendorCatalogItemType": {
-      "oneOf": [
-        {
-          "enum": [
-            null
-          ],
-          "title": "CAPTIONS"
-        },
-        {
-          "enum": [
-            null
-          ],
-          "title": "TRANSLATION"
-        }
-      ],
-      "title": "KalturaVendorCatalogItemType"
-    },
     "KalturaVendorCreditRecurrenceFrequency": {
       "oneOf": [
         {
@@ -146077,6 +146978,12 @@
             2
           ],
           "title": "TRANSLATION"
+        },
+        {
+          "enum": [
+            3
+          ],
+          "title": "ALIGNMENT"
         }
       ],
       "title": "KalturaVendorServiceFeature"
@@ -148728,6 +149635,11 @@
       "name": "INGEST_NOT_FOUND_IN_CONVERSION_PROFILE"
     },
     {
+      "code": "SOURCE_FLAVOR_CHANGED_DURING_CONVERSION",
+      "message": "Source flavor was changed during conversion, current - \"@CURRENT_SOURCE_FILE@\" ,original source file - \"@ORIGINAL_SOURCE_FILE@\", ID - \"@ID@\" ,  aborting.",
+      "name": "SOURCE_FLAVOR_CHANGED_DURING_CONVERSION"
+    },
+    {
       "code": "FLAVOR_PARAMS_ID_NOT_FOUND",
       "message": "Flavor params id \"@ID@\" not found",
       "name": "FLAVOR_PARAMS_ID_NOT_FOUND"
@@ -148976,6 +149888,11 @@
       "code": "AGGREGATION_CATEGORY_WRONG_ASSOCIATION",
       "message": " Cannot create aggregation category association",
       "name": "AGGREGATION_CATEGORY_WRONG_ASSOCIATION"
+    },
+    {
+      "code": "CATEGORY_NAME_CONTAINS_INVALID_CHARS",
+      "message": "Category name contains invalid chars.",
+      "name": "CATEGORY_NAME_CONTAINS_INVALID_CHARS"
     },
     {
       "code": "SCHEDULER_HOST_CONFLICT",
