@@ -31,12 +31,13 @@ node refresh.js --target ovp --schema <xml-schema-file> --output <output-file>
 ### For example (Kaltura.com core services schema)
 
 ```bash
-node refresh.js --target ovp --schema https://www.kaltura.com/api_v3/api_schema.php --output ./openapi.json
+node refresh.js --target ovp --schema https://www.kaltura.com/api_v3/api_schema.php --output ./out/ovp.swagger2.json --genopenapi3 ./out/ovp.openapi3x.json --novalidate
 ```
 
 ### Parameters
 
-* `--target` Should be `ovp` or `ott` (default `ovp`)
-* `--schema` Argument can be a URL or a local file (default is the schema hosted on kaltura.com)
-* `--output` Is the destination file (default is in the `./out/` folder)
+* `--target <ovp/ott>` Should be `ovp` or `ott` (default `ovp`)
+* `--schema <kaltura_api_schema.xml>` Argument can be a URL or a local file (default is the schema hosted on kaltura.com)
+* `--output <filename>` Is the destination file (default is in the `./out/` folder)
 * `--novalidate` Will skip validation at the end of generating the new schema
+* `--genopenapiv3 <filename>` *Experimental & will likely fail!* Used to generate an OpenAPI 3.x file in addition to the Swagger 2.0  
