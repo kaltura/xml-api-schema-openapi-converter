@@ -4,8 +4,8 @@
 
 ## Requirements
 
-Minimum version: node v14.21.3 (npm v6.14.18)  
-**Last tested with**:  node: v20.1.0 and npm v9.6.4 (this is also the current package.json)
+Minimum version: node v14.21.3 / npm v6.14.18  
+**Last tested with**:  node v20.1.0 / npm v9.6.4 - *this is also the current package.json*
 
 ## To install
 
