@@ -4,15 +4,23 @@
 
 ## Requirements
 
-node v14.21.3 (npm v6.14.18)  
-**Note: This project is designed to run as a local dev tool**  
-It should never be run in production servers, only as a local dev tool.
+Minimum version: node v14.21.3 (npm v6.14.18)  
+**Last tested with**:  node: v20.1.0 and npm v9.6.4 (this is also the current package.json)
 
 ## To install
 
 ```bash
 npm install
 ```
+
+### If you don't have package.json
+
+```bash
+npm install yargs
+npm install api-spec-converter
+```
+
+After installing the packages, you will be able to run the converter
 
 ## To run
 
