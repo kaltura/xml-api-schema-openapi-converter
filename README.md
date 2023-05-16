@@ -1,4 +1,4 @@
-# XML API Schema to OpenAPI 3 Converter
+# XML API Schema to Swagger 2 Converter
 
  A tool that convert the Kaltura API XML-based schema to an OpenAPI 3 compliant json file.
 
