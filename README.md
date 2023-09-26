@@ -31,9 +31,9 @@ node refresh.js --target ovp --schema <xml-schema-file> --output <output-file>
 ### For example (Kaltura.com core services schema)
 
 ```bash
-node refresh.js --target ovp --schema https://www.kaltura.com/api_v3/api_schema.php --output ./out/ovp.swagger2.json --genopenapi3 ./out/ovp.openapi.json --novalidate
+node refresh.js --target ovp --schema https://www.kaltura.com/api_v3/api_schema.php --output ./out/ovp.swagger2.json --genopenapiv3 ./out/ovp.openapi.json --novalidate
 
-node refresh.js --target ott --schema http://phoenix.service.consul:8080/clientlibs/KalturaClient.xml --output ./out/ott.swagger2.json --genopenapi3 ./out/ott.openapi.json --novalidate
+node refresh.js --target ott --schema http://phoenix.service.consul:8080/clientlibs/KalturaClient.xml --output ./out/ott.swagger2.json --genopenapiv3 ./out/ott.openapi.json --novalidate
 ```
 
 ### Parameters
