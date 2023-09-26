@@ -27140,11 +27140,11 @@
     },
     "OTTRequest": {
       "properties": {
-        "ks": {
+        "apiVersion": {
+          "default": "9.2.1.1",
           "type": "string"
         },
-        "version": {
-          "default": "9.2.1.1",
+        "ks": {
           "type": "string"
         }
       },
