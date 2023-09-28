@@ -3,7 +3,6 @@ const yargs = require('yargs');
 const fs = require('fs');
 const Converter = require('api-spec-converter');
 const swagger2openapi = require('swagger2openapi');
-const Kaltura = require('./lib/kaltura-spec');
 
 /**
 * Get command-line arguments
@@ -19,6 +18,7 @@ const args = yargs.argv;
 process.env.TARGET_API = args.target || process.env.TARGET_API || 'ovp';
 
 // Add Kaltura format to converter
+const Kaltura = require('./lib/kaltura-spec');
 Converter.Formats['kaltura'] = Kaltura;
 
 /**
